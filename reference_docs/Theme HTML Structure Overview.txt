@@ -1,0 +1,95 @@
+
+
+
+
+Front and Home templates use transition sections to add featured posts, CTA's, product enticements, etc.
+Header
+Central container
+	Welcome section
+	Transition section
+	Content section
+	Transition section
+Footer
+
+THE HTML:
+<div id="central-container" class="home-template container">
+
+	<!-- Welcome Section
+	============================================= -->
+	<?php get_template_part( 'template-parts/top-page-welcome-section',  'welcome-section' ); ?>
+
+	
+	<!-- Transition Section
+	============================================= -->
+	<section id="first-transition-section" class="container">
+		<?php get_template_part( 'template-parts/featured-posts',  'featured-posts-section' ); ?>
+	</section><!-- #first-transition-section -->
+
+
+	<!-- Content Section
+	============================================= -->
+	<section id="page-content" class="container">
+
+		<main id="primary" class="site-main">
+
+				<div id="masonry-container" class="ms-container">
+
+				</div><!-- #masonry-container -->
+
+		</main><!-- #primary -->
+
+		<?php get_sidebar(); ?>
+
+	</section><!-- #page-content-->
+
+
+	<!-- Transition Section
+	============================================= -->
+	<section id="second-transition-section" class="container">
+	<?php get_template_part( 'template-parts/featured-posts',  'featured-posts-section' ); ?>
+	</section><!-- #first-transition-section -->
+
+
+</div><!-- #central-container -->
+
+<?php
+get_footer();
+
+
+
+
+_________________________________________________________________________
+
+Standard page HTML Structure:
+Header
+Central container
+	Welcome section
+	Content section
+Footer
+
+
+THE HTML:
+get_header();
+?>
+<div id="central-container" class="page-template section container">
+
+	<!-- Welcome Section
+	============================================= -->
+	<?php get_template_part( 'template-parts/top-page-welcome-section',  'welcome-section' ); ?>
+
+	<!-- Content Section
+	============================================= -->
+	<section id="page-content" class="container">
+
+		<main id="primary" class="site-main">
+
+				get_template_part( 'template-parts/content', 'page' );
+
+		</main><!-- #primary -->
+
+	<?php get_sidebar(); ?>
+
+</div><!-- #page-content -->
+<?php
+
+get_footer();

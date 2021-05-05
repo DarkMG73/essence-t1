@@ -1,0 +1,4 @@
+Animate.css Pre-Made CSS Animations
+
+Interactive cheatsheet available at:
+https://animate.style/

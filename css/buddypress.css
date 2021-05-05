@@ -1,0 +1,17 @@
+/**
+*  Buddypress Modifications
+**/
+
+/* Fix BP core issue with Member list column items responsivness. */
+#buddypress #members-list.bp-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#buddypress #members-list.bp-list > li {
+  flex-grow: 1;
+}
+
+#buddypress #members-list.bp-list .list-wrap {
+  min-height: 100%;
+}

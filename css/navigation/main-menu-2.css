@@ -1,0 +1,364 @@
+#primary-menu {
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: auto;
+}
+
+.menu-item-has-children:not(.sub-menu .menu-item-has-children):before,
+.menu-item-has-children:not(.sub-menu .menu-item-has-children):after {
+  content: "\0021e3";
+  transform: translateY(25%);
+  display: inline-block;
+  margin: 0 0.25em;
+  opacity: 1;
+  transition: 0.7s all ease;
+}
+
+.menu-item-has-children:not(.sub-menu .menu-item-has-children):hover:before,
+.menu-item-has-children:not(.sub-menu .menu-item-has-children):hover:after,
+.menu-item-has-children:not(.sub-menu .menu-item-has-children):focus:before,
+.menu-item-has-children:not(.sub-menu .menu-item-has-children):focus:after {
+  opacity: 0;
+  transform: translateY(75%);
+}
+
+#primary-menu .menu-item {
+  display: block;
+  position: relative;
+  margin: auto 1em;
+}
+
+#primary-menu > .menu-item {
+  min-width: fit-content;
+}
+
+#primary-menu .sub-menu .menu-item {
+  margin: 0.5em 0;
+}
+
+#primary-menu ul.sub-menu {
+  flex-direction: column;
+  background: var(--color-white);
+  position: relative;
+  /* width: max-content; */
+  height: max-content;
+  max-width: 300px;
+  max-height: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  transition: 0.3s all ease;
+  transition: var(--tran-3);
+  overflow: hidden;
+  border-radius: 10px;
+  /* overflow: auto; */
+  line-height: normal;
+}
+
+@keyframes hide-scroll {
+  from,
+  to {
+    overflow: hidden;
+  }
+}
+
+#primary-menu .sub-menu .menu-item {
+  margin: 0.5em 1em;
+}
+
+#primary-menu .sub-menu .menu-item:not(.menu-item-has-children) {
+  margin: 0 1.5em;
+}
+
+#primary-menu > li > ul.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-white);
+  box-shadow: var(--box-shadow-outset-high-flat);
+  transition-delay: 0.4s;
+}
+
+#primary-menu ul.sub-menu.sub-menu-open {
+  max-height: 1000px;
+  opacity: 1;
+  transition: var(--tran-7);
+}
+
+#primary-menu > li > ul.sub-menu.sub-menu-open {
+  max-height: 75vh;
+  overflow: auto;
+  /* Prevents scrollbar from temorarily appearing when element expanding */
+  animation: hide-scroll 0.7s backwards;
+}
+
+#primary-menu > li > ul.sub-menu > li {
+  padding: 0 2em;
+}
+
+@media (hover: hover) {
+  #primary-menu > li:hover > .sub-menu,
+  #primary-menu > li:focus > .sub-menu,
+  #primary-menu > .menu-item:focus-within > .sub-menu {
+    max-height: 100vh;
+    overflow: auto;
+    /* Prevents scrollbar from temorarily appearing when element expanding */
+    animation: hide-scroll 0.3s backwards;
+  }
+
+  /* For accessability: Simulates the javascript click actions */
+  #primary-menu .menu-item-has-children:focus > .sub-menu,
+  #primary-menu .menu-item-has-children:focus-within > .sub-menu {
+    max-height: 1000px;
+    opacity: 1;
+    transition: var(--tran-7);
+  }
+
+  #primary-menu > li > .menu-item-has-children:focus > .sub-menu,
+  #primary-menu > li > .menu-item-has-children:focus > .sub-menu {
+    max-height: 75vh;
+    overflow: auto;
+    /* Prevents scrollbar from temorarily appearing when element expanding */
+    animation: hide-scroll 0.7s backwards;
+  }
+  /* ******* */
+}
+
+#primary-menu li:hover .sub-menu *,
+#primary-menu li:focus .sub-menu * {
+  max-width: 100%;
+}
+
+#primary-menu li:hover .sub-menu,
+#primary-menu li:focus .sub-menu {
+  /* transition: var(--tran-10-lin); */
+  transition-delay: 0s;
+}
+
+#primary-menu > li > .sub-menu > li > a:first-child {
+  margin-top: 2em;
+  display: inline-block;
+}
+
+#primary-menu > li > .sub-menu > :last-child {
+  margin-bottom: 3em;
+  display: inline-block;
+}
+
+.sub-menu-toggle {
+  cursor: pointer;
+  position: relative;
+  display: inline;
+  margin-right: 0.5em;
+  transition: var(--tran-7-lin);
+}
+
+.sub-menu-toggle:before {
+  content: "\eb1d";
+  font-family: "font-icons";
+  transform: translateY(26.5%);
+  display: inline-block;
+  transition: var(--tran-7);
+}
+
+.sub-menu-open.sub-menu-toggle:before {
+  content: "\e71e";
+  transform: translateY(26.5%) rotate(360);
+}
+
+#primary-menu > li > .sub-menu-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 600px), (hover: none) {
+  .menu-item-has-children:not(.sub-menu .menu-item-has-children)::before,
+  .menu-item-has-children:not(.sub-menu .menu-item-has-children)::after {
+    display: none;
+  }
+
+  #primary-menu > li > .sub-menu-toggle {
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Small menu. */
+  #masthead .site-branding .menubar-title-positioning-wrap-x,
+  #masthead .site-branding .menubar-title-positioning-wrap-y {
+    transform: none !important;
+  }
+
+  #masthead.site-header {
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    max-height: 100vh;
+    width: 100%;
+    box-shadow: inset 20px 20px 50px -40px white,
+      inset -20px -20px 50px -40px #000000;
+  }
+
+  .site-header #site-navigation.toggled:after {
+    content: "";
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    box-shadow: inset 20px 20px 50px -40px white,
+      inset -20px -20px 50px -40px #000000;
+  }
+
+  body.admin-bar #wpadminbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  body.admin-bar #masthead.site-header {
+    top: 46px;
+    max-height: calc(100vh - 46px);
+  }
+
+  #custom-logo-wrap {
+    display: none;
+  }
+
+  #masthead.site-header .site-title {
+    font-size: calc(10px + 1vw);
+    letter-spacing: 0.1em;
+  }
+
+  .site-header #site-navigation {
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 14px 30px -10px black;
+  }
+
+  button.menu-toggle {
+    font-size: calc(12px + 1vh);
+    background: inherit;
+    border: none;
+    box-shadow: var(--box-shadow-outset-round);
+  }
+
+  .main-navigation.toggled .menu-toggle {
+    filter: invert(1);
+    font-weight: 900;
+  }
+
+  .main-navigation.toggled .menu-toggle:before {
+    content: "Close the ";
+    text-shadow: inherit;
+  }
+
+  nav#site-navigation.toggled .menu-main-menu-container {
+    max-height: 100vh;
+    min-height: 100vh;
+  }
+
+  .menu-main-menu-container {
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    max-height: 0;
+    background: inherit;
+    transition: 0.3s all ease;
+    box-shadow: inset 20px 20px 50px -40px white,
+      inset -20px -20px 50px -40px black;
+  }
+
+  #primary-menu {
+    margin: 0 auto;
+    max-height: none;
+    overflow: hidden;
+    padding: 3em 1em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  #primary-menu .menu-item {
+    margin: 1em auto;
+    font-size: calc(14px + 1vh);
+    width: 100%;
+    text-align: center;
+  }
+
+  #primary-menu .menu-item.menu-item-has-children {
+    margin-left: -0.5em;
+  }
+
+  #primary-menu > li > ul.sub-menu {
+    position: relative;
+    top: 0;
+  }
+
+  #primary-menu ul.sub-menu {
+    max-width: 100%;
+    margin: 0.5em;
+    padding: 0.25em;
+    overflow: hidden;
+    background: inherit;
+    color: inherit;
+  }
+
+  #primary-menu .sub-menu .menu-item {
+    max-width: fit-content;
+    margin: auto;
+  }
+
+  #primary-menu .menu-item-has-children:last-child {
+    margin-bottom: 4em !important;
+  }
+
+  @media (hover: hover) {
+    #primary-menu > li:hover > .sub-menu,
+    #primary-menu > li:focus > .sub-menu {
+      max-height: 100vh;
+      max-width: 100%;
+      max-height: initial;
+    }
+  }
+
+  #primary-menu > li > ul.sub-menu {
+    max-height: 0 !important;
+    max-width: 100vw !important;
+    overflow: hidden;
+    transition: 0.3s all ease;
+    background: inherit;
+    color: inherit;
+    box-shadow: none;
+  }
+
+  #primary-menu ul.sub-menu.sub-menu-open {
+    max-height: 10000px !important;
+    max-width: min-content;
+    transition: 0.3s all ease;
+    box-shadow: inset 0 0 4px -1px;
+    background: inherit;
+    color: inherit;
+  }
+
+  /* Offsets previous rule neded for large menu */
+  #primary-menu li:hover .sub-menu *,
+  #primary-menu li:focus .sub-menu * {
+    max-width: fit-content;
+  }
+
+  #primary-menu .sub-menu .menu-item:not(.menu-item-has-children) {
+    margin: auto;
+    padding: 0.5em 2em;
+  }
+}

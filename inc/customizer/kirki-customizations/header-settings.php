@@ -1,0 +1,81 @@
+<?php
+
+/*
+----------------------------
+    
+    Default Mods
+    
+----------------------------
+*/   
+function gi_customizer_default_header_mods( $wp_customize ) {
+
+    $wp_customize->get_section( 'header_image'  )->title   = 'Header Background';
+	$wp_customize->get_section( 'header_image'  )->priority   = 10;
+    $wp_customize->get_control( 'header_image'  )->priority   = 5;
+    
+}
+add_action( 'customize_register', 'gi_customizer_default_header_mods' );
+
+
+/*
+----------------------------
+    
+     Intro Text
+    
+----------------------------
+*/   
+Kirki::add_field( 'gi_theme_config', [
+	'type'        => 'custom',
+	'settings'    => 'header_title_for_customizer',
+	'section'     => 'header_image',
+	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'kirki' ) . '</div>',
+	'priority'    => 0,
+] );
+
+Kirki::add_field( 'gi_theme_config', [
+	'type'        => 'custom',
+	'settings'    => 'header_intro_output_for_customizer',
+	'section'     => 'header_image',
+		'default'         => '<div class="intro-text"><p>Here we can setup the page header for the "Home" and "Front" pages. <i><b>Note:</b> All font settings for the page head area are found in the <b>Typography</b> section.</i></p></div>',
+	'priority'    => 0,
+] );
+
+
+/*
+----------------------------
+    
+   Header Background
+    
+----------------------------
+*/  
+	/* 
+	----------------------------*/  
+	Kirki::add_field( 'gi_theme_config', array(
+		'type'        => 'color',
+		'settings'    => 'header_backgroundcolor-setting',
+		'label'       => __( 'Header Background Color', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'Set the background color for the page head. Note: This will only show when there is no background image for the header.', 'gi-essence-theme' ),
+		'section'     => 'header_image',
+		'default'     => $generalThemeDefaults['header']['header_background_color'],
+		'priority'       => 10,
+		'transport'   => 'auto',
+		'choices'     => array(
+			'alpha' => true,
+			'palettes' => array(
+				$colorOne,
+				$colorTwo,
+				$colorThree,
+				$colorFour,
+				$colorFive,
+				$colorSix,
+				$colorSeven,
+				),
+		),
+		'output' => array(
+			array(
+				'element'  => '#site-welcome-container',
+				'property' => 'background-color',
+				),
+			),
+		) 
+	);

@@ -1,0 +1,9 @@
+Magnific Popup
+Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device
+(for jQuery or Zepto.js).
+
+Samples & info:
+https://dimsemenov.com/plugins/magnific-popup/
+
+Adding to element:
+https://dimsemenov.com/plugins/magnific-popup/documentation.html#initializing-popup

@@ -1,0 +1,87 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package gi-essence-theme
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<!-- Stylesheets & Scripts
+	============================================= -->
+
+	<?php wp_head(); ?>
+
+	<script type="text/javascript">
+		var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+	</script>
+
+	<!-- ======================================== -->
+</head>
+
+<body <?php body_class(); ?> 
+			itemscope itemtype="https://schema.org/WebPage">
+
+	<?php wp_body_open(); ?>
+
+	<div class="color-overlay"></div>
+
+	<!-- Document Container
+    ============================================= -->
+	<div id="page-container" class="container site">
+
+		<div class="color-overlay"></div>
+
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'gi-essence-theme' ); ?></a>
+
+		<header id="masthead" class="container site-header">
+			<div class="color-overlay"></div>
+			<div class="site-branding">
+			<?php if ( true == get_theme_mod( 'logo_menubar_toggle_setting', true ) ) : ?>
+				<div id="custom-logo-wrap">
+					<div class="custom-logo-positioning-wrap-x">
+						<div class="custom-logo-positioning-wrap-y">
+							<?php
+							the_custom_logo();
+							?>
+						</div><!-- .positioning-wrap-y -->
+					</div><!-- .positioning-wrap-x -->
+				</div><!-- #custom-logo-wrap -->
+			<?php endif; ?>
+
+			<?php if ( true == get_theme_mod( 'site_title_menubar_toggle_setting', true ) ) : ?>
+				<div class="menubar-title-positioning-wrap-x">
+					<div class="menubar-title-positioning-wrap-y">
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					</div><!-- .positioning-wrap-y -->
+				</div><!-- .positioning-wrap-x -->
+			<?php endif; ?>
+
+
+			</div><!-- .site-branding -->
+			
+			<!-- Primary Navigation
+			============================================= -->
+			<nav id="site-navigation" class="container main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'gi-essence-theme' ); ?></button>
+
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->

@@ -1,0 +1,1788 @@
+/*!
+Theme Name: gi-essence-theme
+Theme URI: http://www.essence-theme.glassinteractive.com/
+Author: Mike Glass
+Author URI: http://www.glassinteractive.com/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: gi-essence-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+
+NOTE--> normalizing is handled via enqued normalize.css
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Borders
+	- Box sizing
+	- Scrollbars
+
+# Variables
+	- Color Palett
+	- Locations
+	- Margins, Padding & Index
+	- Sizes
+	- Shadows
+
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+
+# Layout Containers (Wireframe-like containers of the layout)
+	- Page Wrap 
+	-Header
+	- Top Welcome Section
+	- First Transition Section
+	- Central Section
+		- Primary
+		- Secondary
+	- Second Transition Section
+	- Pre-Footer
+	- Footer
+
+# Internal Components (Theme components inside a Layout Container)
+	- Branding and Logos
+	- Navigation
+	- Title Header
+	- Featured Posts & Pages
+	- Post and Page Content Area
+		- Media
+		- Captions
+		- Galleries
+	- Comments
+	- Sidebar
+	- Widgets
+
+# Plugins
+	- Jetpack infinite scroll
+
+# Utilities
+	- Accessibility
+	- Alignments
+	- Blocks
+
+---------------------------------------------------------*/
+
+/**********************************************************
+# Generic
+**********************************************************/
+
+/* - Box sizing
+	--------------------------------------------- */
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* - Scrollbars
+	--------------------------------------------- */
+/* 
+*	From "CRAZY COOL PURE CSS SCROLLBARS"
+*   https://www.glassinteractive.com/crazy-cool-pure-css-scrollbars/
+ *  STYLE 1
+ */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: inset -10px -10px 10px -10px rgb(255 255 255 / 10%),
+    inset 10px 10px 10px -10px rgb(0 0 0 / 10%);
+}
+
+::-webkit-scrollbar {
+  min-width: 14px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+  background: gray;
+  background: var(--color-accent);
+  box-shadow: inset 10px 10px 10px -10px rgb(255 255 255 / 50%),
+    inset -10px -10px 10px -10px rgb(0 0 0 / 50%);
+}
+
+/* Main scrollbar on the body needs to be kept simple */
+body::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: transparent;
+	box-shadow: inset -10px -10px 10px -10px rgb(255 255 255 / 10%),
+	  inset 10px 10px 10px -10px rgb(0 0 0 / 10%); */
+  border: 2px inset #8080807d;
+}
+
+body::-webkit-scrollbar {
+  /* width: 14px; */
+  background-color: var(--color-black);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+  background: gray;
+  background: var(--color-white);
+  border: 3px inset var(--color-black);
+}
+
+/**********************************************************
+# Variables
+**********************************************************/
+
+/* - Borders */
+
+/* - Color Palett */
+/* - Defined in 'default-color-palette.php' 
+			or the Customizer settings, if available.*/
+
+/* - Locations */
+
+/* - Margins, Padding & Index */
+
+/* - Sizes */
+
+/* - Shadows */
+:root {
+  --box-shadow-outset-flat: 2px 2px 4px -4px black, -2px -2px 4px -4px #434242;
+  --box-shadow-outset-high-flat: 3px 3px 4px -4px black,
+    4px 4px 10px -10px #434242, inset 4px 4px 4px -4px #c3c3c3,
+    inset -4px -4px 4px -4px #c3c3c3;
+  --box-shadow-outset-round: 2px 2px 4px -4px black, -2px -2px 4px -4px #434242,
+    inset -3px -3px 10px -7px rgb(0 0 0 / 50%),
+    inset 4px 4px 10px -7px rgb(229 229 229 / 50%);
+  --box-shadow-inset-shallow: inset 2px 2px 10px -7px rgba(0, 0, 0, 0.5),
+    inset -2px -2px 10px -7px rgb(255 255 255 / 50%),
+    -2px -2px 10px -3px rgba(0, 0, 0, 0.5),
+    2px 2px 10px -3px rgb(255 255 255 / 50%);
+}
+
+/* - Transitions and Animations */
+:root {
+  --tran-1: 0.1s all ease;
+  --tran-3: 0.3s all ease;
+  --tran-7: 0.7s all ease;
+  --tran-10: 1s all ease;
+  --tran-1: 0.1s all linear;
+  --tran-3: 0.3s all linear;
+  --tran-7: 0.7s all linear;
+  --tran-10: 1s all linear;
+  --tran-20: 2s all linear;
+}
+
+/**********************************************************
+# Base
+**********************************************************/
+
+/* - Typography
+		--------------------------------------------- */
+html {
+  font-size: 10px;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: var(--color-black);
+  font-family: "Kodchasan", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+cite {
+  margin-left: 2em;
+}
+
+blockquote {
+  margin: 0 1.5em;
+  padding-left: 1em;
+  border-left: 6px solid;
+  border-color: inherit;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background-color: #eee;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  font-size: inherit;
+  line-height: normal;
+  padding: 1.6em;
+  box-shadow: var(--box-shadow-inset-shallow);
+}
+
+code,
+pre,
+var {
+  font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+code {
+  font-size: inherit;
+}
+
+tt,
+kbd {
+  font-size: inherit;
+  font-family: "Courier 10 Pitch", courier, monospace;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+  color: black;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+big {
+  font-size: 125%;
+}
+
+.has-drop-cap:not(:focus):first-letter {
+  float: left;
+  font-size: 8.4em;
+  line-height: 0.68;
+  font-weight: 100;
+  margin: 0;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+/* - Elements
+		--------------------------------------------- */
+body {
+  background: #fff;
+  background: var(--color-white);
+  color: black;
+  color: var(--color-black);
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+  color: black;
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.color-overlay {
+  position: fixed;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body.custom-background #page-container .color-overlay {
+  position: absolute;
+}
+
+/* - Links
+		--------------------------------------------- */
+a {
+  color: #4169e1;
+  color: var(--color-accent);
+}
+
+a:visited {
+  color: #800080;
+  color: var(--color-accent);
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-shadow: 0 0 1px;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+.entry-title a {
+  color: inherit;
+  word-break: break-word;
+}
+
+/* - Forms
+		--------------------------------------------- */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+}
+
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #111;
+}
+
+select {
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+}
+
+/**********************************************************
+# Layout Containers (Wireframe/HOC containers for the layout)
+**********************************************************/
+
+/* - Page Container 
+		--------------------------------------------- */
+#page-container {
+  flex-flow: column;
+  box-shadow: var(--box-shadow-outset-high-flat),
+    7px 7px 14px -7px rgb(0 0 0 / 50%);
+}
+
+#page-container,
+.site-footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* -Header 
+		--------------------------------------------- */
+/* If WP admin bar, adjust for it */
+body.admin-bar .site-header {
+  top: 32px;
+}
+
+@media all and (max-width: 782px) {
+  body.admin-bar .site-header {
+    top: 46px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  body.admin-bar .site-header {
+    top: 0;
+  }
+}
+/* ******** */
+
+/* - Top Welcome Section 
+		--------------------------------------------- */
+#top-welcome-section {
+  background-position: center;
+  background-size: cover;
+  max-height: 720px;
+}
+
+#page-welcome-container {
+  /* Id no featured image is used, this is needed 
+		to offset the title being moved up into the image area */
+  min-height: 200px;
+}
+
+#site-welcome-container {
+  overflow: hidden;
+}
+
+/* - First Transition Section 
+		--------------------------------------------- */
+#first-transition-section {
+  flex-direction: column;
+}
+
+/* - Central Section
+		--------------------------------------------- */
+#central-container {
+  flex-direction: column;
+  background-color: inherit;
+  color: inherit;
+}
+
+/* - Primary 
+		--------------------------------------------- */
+main#primary {
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 60%;
+  flex-grow: 1;
+  padding-right: 3%;
+  background-color: inherit;
+  color: inherit;
+  margin: 4% 0 4% 7%;
+  /* Overflow must be set to contain excessive inline styles */
+  overflow: auto;
+}
+
+/* - Secondary 
+		--------------------------------------------- */
+#secondary {
+  flex-basis: 25%;
+  flex-grow: 1;
+  min-width: 250px;
+  padding: 1.6rem;
+  text-align: center;
+  box-shadow: 3px 3px 4px -4px black, -3px -3px 4px -4px white;
+  box-shadow: var(--box-shadow-inset-shallow);
+  margin: 4% 7% 4% 0;
+}
+
+#secondary .widget:last-child {
+  position: sticky;
+  top: 100px;
+}
+
+/* - Second Transition Section 
+		--------------------------------------------- */
+
+/* - Pre-Footer 
+		--------------------------------------------- */
+
+/* - Footer 
+		--------------------------------------------- */
+.site-footer {
+  flex-direction: column;
+  padding: 4rem 2rem;
+  box-shadow: inset 0 62px 47px -93px black;
+  box-shadow: var(--box-shadow-inset-shallow);
+  width: 100%;
+  /* margin-top and border-radius work together.
+			#page-container provides padding-bottom for offset */
+  margin-top: -10px;
+  border-radius: 3% 3% 0 0;
+}
+
+.site-footer #topic-info {
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+}
+
+.footer-topic-column {
+  flex-basis: 33.33%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: min-content;
+  margin: auto;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-topic-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-topic-column > .widget {
+  margin: auto;
+}
+
+/* Photo CTA */
+.photo-cta-container {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+#photo-cta-photo-contianer {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-cta-image-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 6px 6px 7px -5px rgb(0 0 0), -1px -1px 0px 0px #e0e0e0,
+    1px 1px 0px 0px rgb(0 0 0 / 50%);
+}
+
+.photo-cta-image-wrap-X-adjustment {
+  width: 100%;
+}
+.photo-cta-image-wrap .photo-cta-image {
+  position: relative;
+  display: block;
+  height: auto;
+  min-width: 100%;
+}
+
+@media all and (max-width: 800px) {
+  #photo-cta-photo-contianer {
+    flex-direction: column;
+  }
+
+  #photo-cta-photo-contianer * {
+    transform: none;
+  }
+}
+
+/**********************************************************
+# Internal Components (Theme components inside a Layout Container)
+**********************************************************/
+
+/* - Branding & Logos
+		--------------------------------------------- */
+.site-branding {
+  display: flex;
+  align-items: center;
+}
+
+#custom-logo-wrap {
+  position: relative;
+  width: 75;
+  top: 10px;
+  background: white;
+  border-bottom: 1px solid rgb(0 0 0 / 22%);
+  border-left: 1px solid rgb(0 0 0 / 8%);
+  border-radius: 0 0 50% 0;
+  box-shadow: 2px 14px 21px -21px black;
+  transform: translate(0, 10px) scale(1);
+  padding: 3px;
+}
+.custom-logo-link {
+  position: relative;
+  display: flex;
+
+  margin: 0 7px 0 0;
+  padding: 0 3% 0 0;
+}
+
+.custom-logo-link img {
+  max-width: none;
+  width: 100%;
+}
+
+.site-title {
+  font-size: inherit;
+  transition: var(--tran-3);
+}
+
+.site-title a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--tran-3);
+}
+
+.site-title a:hover,
+.site-title a:focus {
+  transform: scale(1.125, 1.25);
+}
+
+/* - Navigation
+		--------------------------------------------- */
+.site-header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: 0;
+  justify-content: start;
+  z-index: 100;
+  background: inherit;
+  color: inherit;
+  box-shadow: rgb(0 0 0 / 16%) 8px 7px 14px -7px, rgb(0 0 0 / 23%) 2px 3px 6px;
+  max-height: 4em;
+}
+
+nav#site-navigation {
+  max-height: inherit;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+.menu-main-menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#masthead .site-branding .menubar-title-positioning-wrap-x {
+  z-index: 10;
+}
+
+/* Page Navigation */
+.postnav-outerwrap,
+.pagenav-outerwrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+}
+
+.pagenav-outerwrap {
+  position: relative;
+  box-shadow: 1px 4px 50px -8px, inset 1px 4px 50px -8px;
+  box-shadow: inset 0 0 300px -93px;
+  border-radius: 10px;
+  /*border: 1px solid;*/
+  padding: 1em 1em 0;
+  margin: 2em auto 0;
+  width: fit-content;
+}
+
+.pagenav-wrap {
+  display: flex;
+}
+
+.pagenav-special-post .pagenav-wrap h3 {
+  text-align: center;
+}
+
+.postnav-outerwrap h4,
+.pagenav-outerwrap h3 {
+  letter-spacing: 0.1em;
+  padding: 0;
+}
+
+.pagenav-wrap .menu a {
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+
+.pagenav-wrap .menu {
+  list-style: none;
+  margin: 0 auto;
+  width: 17em;
+}
+
+.pagenav-wrap .menu li {
+  margin-bottom: 0.5em;
+}
+
+.pagenav-wrap .next {
+  text-align: right;
+}
+
+.pagenav-wrap .previous {
+  text-align: left;
+}
+
+.pagenav-wrap .next,
+.pagenav-wrap .previous {
+  display: inline-flex;
+  margin: 10px 50px;
+  opacity: 0.8;
+  transition: 0.3s all ease;
+}
+
+.pagenav-wrap .next a,
+.pagenav-wrap .previous a {
+  text-decoration: none;
+}
+
+.pagenav-wrap .previous:hover,
+.pagenav-wrap .next:hover,
+.pagenav-wrap .previous:focus,
+.pagenav-wrap .next:focus {
+  transition: 0.3s all ease;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.pagenav-prev a span {
+  transform: rotate(180deg);
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.pagenav-next a span {
+  margin-left: 0.5em;
+}
+
+/* - simple open  dropdown*/
+.pagenav-outerwrap {
+  box-shadow: none;
+  width: 100%;
+}
+.pagenav-special-post .pagenav-wrap {
+  position: relative;
+  flex-direction: column;
+  padding: 1em;
+  overflow: hidden;
+  transition: 0.7s all ease;
+}
+
+.pagenav-holder .menu ul {
+  justify-content: space-between;
+}
+
+.pagenav-special-post .pagenav-wrap h3 {
+  margin: auto;
+}
+
+.pagenav-special-post ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.pagenav-special-post .pagenav-wrap .menu {
+  list-style: none;
+  margin: 0 auto;
+  width: auto;
+  max-height: 11em;
+  overflow-y: auto;
+}
+.pagenav-special-post .pagenav-wrap {
+  width: 100%;
+}
+.pagenav-special-post .page_item {
+  display: flex;
+  flex-grow: 1;
+  margin: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagenav-wrap .menu li.page_item_has_children {
+  width: 100%;
+  box-shadow: var(--box-shadow-outset-round);
+  padding: 0.5em;
+  transition: 1s all ease;
+  flex-direction: column;
+}
+
+.pagenav-special-post a:hover,
+.pagenav-special-post a:focus,
+.pagenav-special-post a:active {
+  color: var(--color-accent);
+  transform: scale(1.12) translateY(-3.12%);
+}
+
+.pagenav-special-post .icon-long-arrow-down:before {
+  display: none;
+}
+
+nav.navigation.post-navigation {
+  max-width: calc(100% - 2em);
+  margin: auto;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-navigation ul {
+    display: flex;
+    /* justify-content: space-evenly; */
+  }
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+  display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  text-align: end;
+  flex: 1 0 50%;
+}
+
+.nav-links > a {
+  margin: 0 0.5em;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  padding: 1em 1em 2em;
+}
+
+.navigation.post-navigation .nav-links .nav-next {
+  text-align: left;
+}
+.navigation.post-navigation .nav-links .nav-previous {
+  text-align: right;
+}
+
+.navigation.post-navigation .nav-links .nav-next,
+.navigation.post-navigation .nav-links .nav-previous {
+  flex-grow: 1;
+  flex-basis: 50%;
+  word-break: break-word;
+}
+.navigation.post-navigation .nav-links {
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: auto 2em;
+}
+
+.icon-long-arrow-right:before {
+  display: inline-block;
+  transform-origin: left;
+  margin: auto;
+  transform: scale(1, 0.5) translateY(6px);
+  transition: 0.3s all ease;
+}
+
+.moretag:hover .icon-long-arrow-right:before,
+.moretag:focus .icon-long-arrow-right:before {
+  transform: scale(1.5, 0.5) translateY(6px);
+}
+
+.next.page-numbers:after, .prev.page-numbers:before, /*.icon-long-arrow-right:before, */.navigation.post-navigation .nav-links .nav-next a:before, .navigation.post-navigation .nav-links .nav-previous a:after {
+  display: inline-block;
+  font-family: "font-icons";
+  margin: 0 1em;
+  transform: scale(2, 0.5);
+  transition: 0.3s all ease;
+}
+
+.next.page-numbers:after,
+.navigation.post-navigation .nav-links .nav-previous a:after {
+  content: "\e811";
+  transform-origin: left;
+}
+
+.prev.page-numbers:before,
+.navigation.post-navigation .nav-links .nav-next a:before {
+  content: "\e810";
+  transform-origin: right;
+}
+
+.next.page-numbers:hover:after, .prev.page-numbers:hover:before,  .next.page-numbers:focus:after, 
+	.prev.page-numbers:focus:before, .next.page-numbers:after, .prev.page-numbers:before/* .icon-long-arrow-right:before*/ {
+  transform: scale(3, 0.5);
+}
+
+.navigation.post-navigation .nav-links .nav-next a,
+.navigation.post-navigation .nav-links .nav-previous a {
+  position: relative;
+}
+
+.navigation.post-navigation .nav-links .nav-next a:before {
+  margin-left: -32px;
+}
+.navigation.post-navigation .nav-links .nav-next a:before,
+.navigation.post-navigation .nav-links .nav-previous a:after {
+  top: 50%;
+  position: absolute;
+  transform: scale(2, 0.5) translateY(-50%);
+}
+
+.navigation.post-navigation .nav-links .nav-next:hover a:before,
+.navigation.post-navigation .nav-links .nav-previous:hover a:after,
+.navigation.post-navigation .nav-links .nav-next:focus a:before,
+.navigation.post-navigation .nav-links .nav-previous:focus a:after {
+  transform: scale(3, 0.5) translateY(-50%);
+}
+
+.page-numbers {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.page-numbers.current {
+  font-weight: 900;
+  color: var(--color-white);
+  text-shadow: 0px -1px 3px black;
+  padding: 0 0.5em 0 0.5em;
+  border-radius: 0.25em;
+  background: var(--color-accent);
+}
+
+/* - Page Title Header
+		--------------------------------------------- */
+#welcome-title-wrap {
+  flex-direction: column;
+  align-items: center;
+  top: 10%;
+}
+
+#welcome-title-wrap .page-title {
+  font-weight: 900;
+  font-size: 7.2rem;
+  margin: 0 10px;
+}
+
+#welcome-title-wrap .site-description {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 0.9em;
+  text-align: center;
+  transform: translateY(-18px);
+}
+
+#page-welcome-container {
+  max-height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+#page-welcome-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 2px 2px 2px -2px black, inset -2px -2px 2px -1px #c5c5c5;
+  box-shadow: var(--box-shadow-outset-round);
+}
+
+.entry-title {
+  word-break: break-word;
+}
+
+/* --- single post ---*/
+.single #page-welcome-container .wp-post-image {
+  min-width: 100%;
+  max-height: none;
+  min-height: 100%;
+  max-width: none;
+  height: auto;
+}
+
+.single .entry-header,
+.page .entry-header,
+.search .page-header,
+.category #page-title {
+  position: absolute;
+  /* top: -92px; */
+  top: -1%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: inherit;
+  background-color: inherit;
+  max-width: 90%;
+  padding: 1em 4em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--box-shadow-outset-round);
+}
+
+.single .entry-header .entry-meta {
+  font-size: 0.75em;
+  letter-spacing: 0.125em;
+  margin-top: 1em;
+}
+
+#page-title .container {
+  flex-direction: column;
+  margin: auto 4%;
+}
+
+.single .entry-title {
+  margin: 0 auto;
+}
+
+.single .entry-footer {
+  display: flex;
+  justify-content: center;
+  margin: 0.75em;
+}
+
+.single .entry-footer > * {
+  margin: 0 1em;
+}
+
+.moretag {
+  font-variant: all-small-caps;
+}
+
+/* - Posts & Page Content
+		--------------------------------------------- */
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.post {
+  background-color: inherit;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+  overflow: auto;
+  line-height: normal;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+#page-welcome {
+  flex-direction: column;
+}
+
+#featured-posts {
+  flex-direction: row;
+  min-height: 300px;
+}
+
+@media screen and (min-width: 1200px) {
+  #featured-posts {
+    min-height: 400px;
+    margin-top: -50px;
+  }
+}
+#featured-posts > * {
+  flex-basis: 33.33%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: 0.1s all linear;
+}
+
+#featured-posts > *:hover,
+#featured-posts > *:focus {
+  transform: scale(1.125);
+  z-index: 10;
+  transition: 0.3s all ease;
+}
+
+#featured-posts :nth-child(2) {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+#featured-posts .entry-header {
+  text-align: center;
+  /* background: #ffffff; */
+  margin: 0 3em;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  color: black;
+  /* background: #000000; */
+  /* transform: translateY(25%); */
+  color: white;
+  border-radius: 10px;
+  text-shadow: -1px -1px 1px #b7b7b7, 1px 1px 1px black;
+  transform: scale(1, 1.25);
+}
+
+#featured-posts .entry-header a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+#page-content {
+  flex-wrap: wrap;
+  background-color: inherit;
+  color: inherit;
+  box-shadow: var(--box-shadow-outset-round);
+  padding-bottom: 10px;
+}
+
+/** Masonry Flow
+		---------- */
+.ms-container {
+  min-width: 100%;
+  position: relative;
+}
+.item {
+  position: absolute;
+  overflow: hidden;
+}
+
+#secondary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* - One Column
+		Post Flow
+		---------- */
+
+#one-column-container .post {
+  max-width: 700px;
+  margin: 0 auto;
+}
+#one-column-container .post-content-container {
+  display: flex;
+}
+
+#one-column-container .post-thumbnail {
+  min-width: 10%;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#one-column-container .post-thumbnail img {
+  min-width: 100%;
+}
+
+#one-column-container .post-data-container {
+  display: grid;
+  flex-basis: 30%;
+  grid-auto-rows: max-content;
+  padding: 1em;
+  font-size: 75%;
+  text-align: right;
+}
+
+#one-column-container .post-text-container {
+  flex-basis: 70%;
+  padding: 0.5em 1em 1em;
+  /* This is offset by margin-bottom on .post-content-container */
+  background-color: var(--color-white);
+  display: flex;
+  color: var(--color-black);
+  flex-wrap: wrap;
+}
+
+#one-column-container .post-text-container a {
+  color: var(--color-black);
+}
+
+/* The following moves the post content into the featured image 
+		and provides needed offsets*/
+#one-column-container .post-text-container {
+  margin-top: -43px;
+}
+
+#one-column-container .post-content-container {
+  margin-bottom: 43px;
+}
+
+#one-column-container .post {
+  padding-top: 43px;
+}
+
+#one-column-container .post-thumbnail {
+  margin-top: -43px;
+}
+/********/
+
+#one-column-container .post-text-container .entry-title {
+  margin: auto;
+}
+
+#one-column-container .post-text-container .entry-content p {
+  margin: 0 auto;
+}
+
+#one-column-container .post-data-container .tags-links {
+  display: none;
+}
+
+/* - Media
+		---------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* - Captions
+		---------- */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text,
+.wp-block-image .aligncenter > figcaption,
+.wp-block-image .alignleft > figcaption,
+.wp-block-image .alignright > figcaption {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* - Galleries
+		---------- */
+.gallery {
+  margin-bottom: 1.5em;
+  display: grid;
+  grid-gap: 1.5em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.gallery-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+  display: block;
+}
+
+/* - Comments
+		--------------------------------------------- */
+.comment-body {
+  border-left: 3px solid;
+  border-radius: 50px 31%/30px 3%;
+  padding: 3em 2em 13%;
+}
+
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+#comments ol {
+  list-style: none;
+}
+
+/* - Widgets
+		--------------------------------------------- */
+.widget {
+  /* Overly-tall widgets,  like large numbers of categories, can dominate a widget area */
+  max-height: 500px;
+  overflow: auto;
+  line-height: normal;
+}
+
+.site-footer .widget {
+  /* The footer can be disrupted by longer widgets */
+  max-height: 300px;
+}
+
+.widget {
+  margin: 0 0 1.5em;
+}
+
+.widget select {
+  max-width: 100%;
+}
+
+/* - Site Info
+		--------------------------------------------- */
+.site-info.container {
+  font-size: 1.2rem;
+  opacity: 0.5;
+  transition: 0.3s all ease;
+}
+
+.site-info.container:hover,
+.site-info.container:focus {
+  opacity: 1;
+}
+
+.site-info a {
+  color: inherit;
+}
+
+/**********************************************************
+# Plugins
+**********************************************************/
+
+/* - Jetpack infinite scroll
+		--------------------------------------------- */
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  display: none;
+}
+
+/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/* - BuddyPress
+		--------------------------------------------- */
+
+/* Adapt BuddyPress Members page. */
+#buddypress-template {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* #buddypress-template #buddypress .bp-list {
+		display: flex;
+		flex-wrap: wrap;
+	} */
+
+/* #buddypress-template #buddypress .list-wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	} */
+
+/* #buddypress-template #buddypress .list-wrap > * {
+		flex-basis: 50%;
+		flex-grow: 1;
+	} */
+
+#buddypress-template #buddypress .bp-list > li {
+  /* flex-grow: 1;
+    	flex-basis: 50%; */
+  box-shadow: var(--box-shadow-outset-flat);
+  /* padding: 2em; */
+  border-radius: 10px;
+}
+
+#buddypress-template #buddypress .bp-list li .item {
+  position: relative;
+}
+
+.bp-list li .item-avatar img.avatar {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#buddypress-template .bp-list li .item-avatar {
+  position: relative;
+  /* border-radius: 50%;
+		overflow: hidden; */
+  padding: 0;
+  display: flex;
+}
+
+#buddypress-template .bp-list li .item-avatar a {
+  width: 100%;
+}
+
+/* .item-avatar > a {
+		overflow: hidden;
+		display: block;
+		border-radius: 50%;
+	} */
+
+#buddypress-template .buddypress-wrap .avatar {
+  box-shadow: -3px -3px 5px -4px rgb(0 0 0 / 50%),
+    2px 2px 0 1px rgb(219 219 219 / 30%);
+}
+
+.bp-pagination .next.page-numbers:after,
+.bp-pagination .prev.page-numbers:before {
+  display: none;
+}
+
+/* Adapt BuddyPress Single Member page. */
+.buddypress-members-single-template .bp-wrap.container {
+  flex-direction: column;
+}
+
+.buddypress-members-single-template
+  #buddypress
+  div#item-header
+  #item-header-cover-image
+  #item-header-content {
+  margin: auto;
+  padding: 0;
+}
+
+.buddypress-members-single-template #buddypress #header-cover-image {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.buddypress-members-single-template
+  .single-headers
+  #cover-image-container
+  .item-meta {
+  background-color: var(--color-white);
+  padding: 0.3em 1em;
+  color: var(--color-black);
+}
+
+/* With custom member header diabled */
+.buddypress-members-single-template .users-header.single-headers .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+
+	.buddypress-members-single-template #buddypress #header-cover-image { */
+/* height: auto; */
+/* display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.buddypress-members-single-template #buddypress-template .buddypress-wrap .avatar {
+		margin: 1%;
+	}
+	
+	.buddypress-members-single-template .single-headers #item-header-avatar a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+	}
+	.buddypress-members-single-template  #cover-image-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.buddypress-members-single-template .bp-user #buddypress #item-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.buddypress-members-single-template  #buddypress #item-header-cover-image {
+		min-height: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	} */
+
+/**********************************************************
+# Utilities
+**********************************************************/
+
+/* - Accessibility
+		--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/* - Alignments
+		--------------------------------------------- */
+.alignleft {
+  /*rtl:ignore*/
+  float: left;
+
+  /*rtl:ignore*/
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.alignright {
+  /*rtl:ignore*/
+  float: right;
+
+  /*rtl:ignore*/
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+/* - Blocks
+		--------------------------------------------- */
+/*  Block: Button */
+.wp-block-button.is-style-squared .wp-block-button__link {
+  border-radius: 0;
+}
+
+/* TEMPORARY */
+/* div#wpadminbar {
+    display: none;
+} */
