@@ -1,7 +1,7 @@
 <?php
 
 Kirki::add_panel( 'typography', array(
-    'priority'    => 7,
+    'priority'    => 8,
     'title'       => esc_html__( 'Typography', 'kirki' ),
     'description' => esc_html__( 'The style, arrangement, or appearance of all of the text.', 'kirki' ),
 ) );
@@ -126,7 +126,7 @@ Kirki::add_section( 'body_text_type', array(
 		'type'        => 'typography',
 		'settings'    => 'link_font_setting',
 		'label'       => esc_html__( 'Link Font & Style', 'kirki' ),
-		'description'       => esc_html__( 'It is unlikely to ever want to have a different font family for the links, but styling links bold, italics, etc, is not uncommon. This tool will defaul tot the body font settings for almost everything, but we can override them here, if desired. &nbsp; &nbsp; NOTE: This will affect posts in the masonry post display, but not affect the link color in the one-column post display. This is due to the latter being designed with a white background and dark text as part of intended style', 'kirki' ),
+		'description'       => esc_html__( 'It is unlikely to ever want to have a different font family for the links, but styling links bold, italics, etc, is not uncommon. This tool will default to the body font settings for almost everything, but we can override them here, if desired. &nbsp; &nbsp; NOTE: This will affect posts in the masonry post display, but not affect the link color in the one-column post display. This is due to the latter being designed with a white background and dark text as part of intended style', 'kirki' ),
 		'section'     => 'body_text_type',
 		'choices' => [
 			'fonts' => [
@@ -824,7 +824,7 @@ Kirki::add_section( 'footer_text', array(
 		'type'        => 'color',
 		'settings'    => 'footer_text_color_setting',
 		'label'       => __( 'Footer Text Color', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'This will set the footer text. The link colors can be set seperately with the controls below this section.', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'This will set the footer text. The link colors can be set separately with the controls below this section.', 'gi-essence-theme' ),
 		'section'     => 'footer_text',
 		'default'     => $generalThemeDefaults['typography']['footer_text_color'],
 		'transport'   => 'auto',

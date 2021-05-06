@@ -11,6 +11,7 @@ function gi_customizer_default_homepage_mods( $wp_customize ) {
 
     $wp_customize->get_section( 'static_front_page'  )->title   = 'Home/Front Page';
     $wp_customize->get_section( 'static_front_page'  )->description   = '';
+    $wp_customize->get_section( 'static_front_page'  )->priority   = 15;
     $wp_customize->get_control( 'show_on_front'  )->label   = 'Chose the Home or Front Page';
     $wp_customize->get_control( 'show_on_front'  )->priority   = 5;
     $wp_customize->get_control( 'show_on_front'  )->description   = 'We can choose what is displayed on the first page of this site. It can be a standard blog page with posts in reverse chronological order, or a fixed/static page. To set a static first page, we first need to create two pages. One will become the "Front" page with a custom-made display, and the other will be the "Home" page where the posts are displayed.';
@@ -57,7 +58,7 @@ Kirki::add_field( 'gi_theme_config', [
         'type'        => 'switch',
         'settings'    => 'home_page_masonry_posts_enable_setting',
         'label'       => esc_html__( 'Masonry Post Flow', 'kirki' ),
-        'description'    => esc_html__('The standard WordPress layout for posts is a single column. Our theme provides a powerful and effective masonry post flow to display the posts in multiple columns without unnecesary whitespace. This masonry post flow is turned on and off here.', 'kirki' ),
+        'description'    => esc_html__('The standard WordPress layout for posts is a single column. Our theme provides a powerful and effective masonry post flow to display the posts in multiple columns without unnecessary whitespace. This masonry post flow is turned on and off here.', 'kirki' ),
         'section'     => 'static_front_page',
         'default'     => '1',
         'priority'    => 10,

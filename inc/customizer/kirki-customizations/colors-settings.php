@@ -54,7 +54,7 @@ function gi_customizer_default_color_mods( $wp_customize ) {
 	// [description] => 
 	// [choices] => Array
 	
-	$wp_customize->get_section( 'colors' )->priority = 5;
+	$wp_customize->get_section( 'colors' )->priority = 3;
 	$wp_customize->get_section( 'colors' )->title = 'Color Palette';
 	$wp_customize->remove_control( 'header_textcolor'  );
 	$wp_customize->remove_control( 'background_color'  );

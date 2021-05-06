@@ -9,7 +9,7 @@
 function gi_customizer_default_branding_mods( $wp_customize ) {
 
     $wp_customize->get_section( 'title_tagline'  )->title   = 'Branding';
-	$wp_customize->get_section( 'title_tagline'  )->priority   = 3;
+	$wp_customize->get_section( 'title_tagline'  )->priority   = 5;
     $wp_customize->get_control( 'blogname'  )->priority   = 5;
     $wp_customize->get_control( 'blogdescription'  )->priority   = 5;
     $wp_customize->get_control( 'site_icon'  )->priority   = 8;
@@ -132,7 +132,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_container_shape_setting',
 	'label'       => esc_html__( 'Logo Container Shape Adjustment.', 'kirki' ),
-	'description'=>  esc_html__( 'Change the shape of the logo container. The purpose of this control is to allow for the logo container to better match the various round, square or rectangle logos. It is not needed to match it exactly, but just to generally alow the whitespace around the logo to be similar in shape.', 'kirki' ),
+	'description'=>  esc_html__( 'Change the shape of the logo container. The purpose of this control is to allow for the logo container to better match the various round, square or rectangle logos. It is not needed to match it exactly, but just to generally allow the whitespace around the logo to be similar in shape.', 'kirki' ),
 	'section'     => 'title_tagline',
 	'default'     => $generalThemeDefaults['branding']['menubar_logo_cont_shape_adjustment'],
 	'choices'     => [

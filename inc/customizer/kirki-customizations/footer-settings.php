@@ -296,7 +296,7 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_zindex_setting',
             'label'       => esc_html__( $title.' Container Front-Back Adjustment.', 'kirki' ),
-            'description'=>  esc_html__( 'When images are overlapping each other, move the ' . $descriptive_use  . ' container in front of or behind the other imnages. NOTE: This only has an affect when we have the set the images to be overlapping each other.', 'kirki' ),
+            'description'=>  esc_html__( 'When images are overlapping each other, move the ' . $descriptive_use  . ' container in front of or behind the other images. NOTE: This only has an affect when we have the set the images to be overlapping each other.', 'kirki' ),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_zindex_adjustment'],
             'choices'     => [
