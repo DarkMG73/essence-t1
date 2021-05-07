@@ -1,7 +1,9 @@
-=== gi-essence-theme ===
+=== EssenceTheme ===
 
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+By Mike Glass 
+mike@glassinteractive.com
+
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, buddy-press, woo-commerce, customizable, professional
 
 Requires at least: 4.5
 Tested up to: 5.4
@@ -10,11 +12,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called gi-essence-theme.
 
 == Description ==
 
-Description
+EssenceTheme is a powerful and elegant theme focused on providing all of the needed functionality, without extra gadgets and filler, and a wealth of very fine-grain and easy to use customization tools. All of this is housed in an classy, but not fancy, comfortable design that highlights the content, not the theme. Ultimately, EssenceTheme was designed to stay out of the creators way, while providing an assortment of helpful tools to showcase any material and reach any audience with grace and style.
+
 
 == Installation ==
 
@@ -26,14 +28,15 @@ Description
 
 = Does this theme support any plugins? =
 
-gi-essence-theme includes support for WooCommerce and for Infinite Scroll in Jetpack.
+EssenceTheme works with all plugins that follow standard practices (plus many that do not).
+In addition, EssenceTheme includes extended special support for WooCommerce, BuddyPress and JetPack's Infinite Scroll.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0 - 5 7 2020 =
 * Initial release
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* TO ensure best WordPress Coding practivces, and maximum compatibility, Essence theme incorporates Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
