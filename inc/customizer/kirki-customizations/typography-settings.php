@@ -511,11 +511,14 @@ Kirki::add_section( 'page_head_title_type', array(
 	
 	/* Horixontal Placement of
 	   Site title in page head
+	   Site title & Description
+	   in page head
 	----------------------------*/
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_title_horizonal_setting',
 		'label'       => esc_html__( 'Large Page Title Horizontal Plaement (NOT on the "Front" and "Home" pages)', 'kirki' ),
+		'label'       => esc_html__( 'Large Page Title & Description Horizontal Plaement (NOT on the "Front" and "Home" pages)', 'kirki' ),
 		'description'=>  esc_html__( 'Move the large page title up or down. NOTE: This will NOT affect the large site title on the "Front" and "Home" pages.', 'kirki' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['large_page_title_horizonal_adjustment'],
@@ -538,11 +541,13 @@ Kirki::add_section( 'page_head_title_type', array(
 
 	/* Vertical Placement of
 	   Site title in page head
+	   Site title & Description
+	   in page head
 	----------------------------*/
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_title_vertical_setting',
-		'label'       => esc_html__( 'Large Page Title Vertical Plaement (NOT on the "Front" and "Home" pages)', 'kirki' ),
+		'label'       => esc_html__( 'Large Page Title & Description Vertical Plaement (NOT on the "Front" and "Home" pages)', 'kirki' ),
 		'description'=>  esc_html__( 'Move the large page title up or down. NOTE: This will NOT affect the large site title on the "Front" and "Home" pages.', 'kirki' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['large_page_title_vertical_adjustment'],
@@ -650,6 +655,32 @@ Kirki::add_section( 'page_head_title_type', array(
 		'priority'    => 70,
 	] );
 
+	/* Horizontal Placement of Site 
+	 Descripton in the page head
+	----------------------------*/  
+	Kirki::add_field( 'gi_theme_config', [
+		'type'        => 'slider',
+		'settings'    => 'page_description_horizontal_setting',
+		'label'       => esc_html__( 'Page Description Horizontal Plaement', 'kirki' ),
+		'description'=>  esc_html__( 'Move the page description left or right.', 'kirki' ),
+		'section'     => 'page_head_title_type',
+		'default'     => $generalThemeDefaults['branding']['page_description_horizontal_adjustment'],
+		'choices'     => [
+			'min'  => -500,
+			'max'  => 500,
+			'step' => 1,
+		],
+		'output'      => [
+			[
+				'element' => '#site-welcome-container #welcome-title-wrap .site-description',
+				'property' => 'transform',
+				'suffix' => 'em)',
+				'prefix' => 'translateX(',
+			],
+		],
+		'priority'    => 70,
+		'transport'   => 'auto',
+	] );
 
  	/* Vertical Placement of Site 
 	 Descripton in the page head
@@ -677,6 +708,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'priority'    => 70,
 		'transport'   => 'auto',
 	] );
+
 
 	/* Site Description in 
 	   the Page Head Font
@@ -907,4 +939,5 @@ Kirki::add_section( 'footer_text', array(
 				),
 			),
 		) 
+
 	);

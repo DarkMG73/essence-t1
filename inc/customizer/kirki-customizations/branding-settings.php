@@ -40,6 +40,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'settings'    => 'brand_intro_output_for_customizer',
 	'section'     => 'title_tagline',
 		'default'         => '<div class="intro-text"><p>Here we can setup the basic branding for the site.<i><b>Note:</b></i> All font settings and site title in the page head area settings are found in the <b>Typography</b> section.</p></div>',
+		'default'         => '<div class="intro-text"><p>Here we can setup the basic branding for the site. <i><b>Note:</b></i> All font settings, as well as the settings for the site title in the page head area, are found in the <b>Typography</b> section.</p></div>',
 	'priority'    => 0,
 ] );
 

@@ -388,6 +388,7 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 body.custom-background #page-container .color-overlay {
@@ -714,6 +715,8 @@ main#primary {
 .site-branding {
   display: flex;
   align-items: center;
+  flex-grow: 1;
+  min-width: fit-content;
 }
 
 #custom-logo-wrap {
