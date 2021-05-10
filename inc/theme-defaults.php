@@ -138,8 +138,7 @@
 															'text-align'     => 'center',
 															],
 			'Site_title_color_pagehead'					=> '',
-			// Page Description Horizonral must be half letter-spacing to center
-			'page_description_horizontal_adjustment'		=> '0.45',	
+			'page_description_horizontal_adjustment'		=> '0',	
 			'page_description_vertical_adjustment'		=> '-18px',	
 			'description_font'							=> [
 															'font-family'    => $default_font,
