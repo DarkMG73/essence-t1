@@ -522,8 +522,8 @@ Kirki::add_section( 'page_head_title_type', array(
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['large_page_title_horizonal_adjustment'],
 		'choices'     => [
-			'min'  => -500,
-			'max'  => 500,
+			'min'  => -1000,
+			'max'  => 1000,
 			'step' => 1,
 		],
 		'priority'    => 50,
@@ -532,7 +532,7 @@ Kirki::add_section( 'page_head_title_type', array(
 				'element' => '#site-welcome-container #welcome-title-wrap .positioning-wrap-x',
 				'property' => 'transform',
 				'prefix' => 'translateX(',
-				'suffix' => '%)',
+				'suffix' => 'px)',
 			],
 		],
 		'transport'   => 'auto',
@@ -663,8 +663,8 @@ Kirki::add_section( 'page_head_title_type', array(
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_description_horizontal_adjustment'],
 		'choices'     => [
-			'min'  => -10,
-			'max'  => 10,
+			'min'  => -20,
+			'max'  => 20,
 			'step' => 0.05,
 		],
 		'output'      => [
