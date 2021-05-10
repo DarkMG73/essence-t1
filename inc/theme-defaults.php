@@ -139,7 +139,7 @@
 															],
 			'Site_title_color_pagehead'					=> '',
 			'page_description_horizontal_adjustment'		=> '0',	
-			'page_description_vertical_adjustment'		=> '-18px',	
+			'page_description_vertical_adjustment'		=> '-54',	
 			'description_font'							=> [
 															'font-family'    => $default_font,
 															'font-style'     => 'normal',
