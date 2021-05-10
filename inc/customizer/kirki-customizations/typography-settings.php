@@ -510,7 +510,6 @@ Kirki::add_section( 'page_head_title_type', array(
 	] );
 	
 	/* Horixontal Placement of
-	   Site title in page head
 	   Site title & Description
 	   in page head
 	----------------------------*/
@@ -575,7 +574,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'typography',
 		'settings'    => 'page_title_font_setting',
 		'label'       => esc_html__( 'Large Page Title Text', 'kirki' ),
-		'description' => esc_html__( 'This will control all settings for the the large page title in the page head of standard pages. In addition, this will control the large site title that is used in the page head on the "Home" and "Front" pages, but settings for this can be overridden in the "Large Site Title Text" controller above, which allows us to make the site title unique, if we wish. ', 'kirki' ),
+		'description' => esc_html__( 'This will control all settings for the the large page title in the page head of standard pages. In addition, this will control the large site title that is used in the page head on the "Home" and "Front" pages, but settings for this can be overridden in the "Large Site Title Text" controller above, which allows us to make the site title unique, if we wish.', 'kirki' ),
 		'section'     => 'page_head_title_type',
 		'choices' => [
 			'fonts' => [
@@ -602,7 +601,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	----------------------------*/  
 	Kirki::add_field( 'gi_theme_config', array(
 		'type'        => 'color',
-		'settings'    => 'Site_title_color_pagehead_setting',
+		'settings'    => 'site_title_color_pagehead_setting',
 		'label'       => __( 'Color the Page Head Site Title', 'gi-essence-theme' ),
 		'description' => esc_attr__( 'Set the color for the large site title in the page head.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
@@ -629,8 +628,6 @@ Kirki::add_section( 'page_head_title_type', array(
 			),
 		) 
 	);
-
-
 
 
 	/* Site Description Group Title
@@ -666,13 +663,13 @@ Kirki::add_section( 'page_head_title_type', array(
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_description_horizontal_adjustment'],
 		'choices'     => [
-			'min'  => -500,
-			'max'  => 500,
-			'step' => 1,
+			'min'  => -10,
+			'max'  => 10,
+			'step' => 0.05,
 		],
 		'output'      => [
 			[
-				'element' => '#site-welcome-container #welcome-title-wrap .site-description',
+				'element' => '#site-welcome-container #welcome-title-wrap #site-description-wrap.positioning-wrap-x',
 				'property' => 'transform',
 				'suffix' => 'em)',
 				'prefix' => 'translateX(',

@@ -133,7 +133,7 @@
 															'variant'        => 'bold',
 															'font-size'      => '72px',
 															'line-height'    => '1.5',
-															'letter-spacing' => '0.01',
+															'letter-spacing' => '0.01em',
 															'text-transform' => 'none',
 															'text-align'     => 'center',
 															],

@@ -94,4 +94,20 @@
 			// paletteResetBtn.checked = !paletteResetBtn.checked;
 		} );
 	} );
+
+
+	// if text-align:center and letter-spacing, offset right whitespace
+	wp.customize( 'page_title_font_setting', function( value ) {
+		value.bind( function( to ) {
+			giGlobalChest.adjustForLetterSpacing('#site-welcome-container #welcome-title-wrap .page-title')
+		} );
+	} );
+
+	wp.customize( 'description_font_setting', function( value ) {
+		value.bind( function( to ) {
+			giGlobalChest.adjustForLetterSpacing('#site-welcome-container #welcome-title-wrap .site-description')
+		} );
+	} );
+	////////////////////////////////////////////////////////////////
+	
 }( jQuery ) );

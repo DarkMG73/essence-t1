@@ -1104,12 +1104,19 @@ nav.navigation.post-navigation {
 }
 
 #welcome-title-wrap .page-title {
+  /* Margin left & right must be auto as 
+    JS sets margin-left when centered to 
+    offset letter-spacing movement */
+  margin: auto;
   font-weight: 900;
   font-size: 7.2rem;
-  margin: 0 10px;
 }
 
 #welcome-title-wrap .site-description {
+  /* Margin left & right must be auto as 
+    JS sets margin-left when centered to 
+    offset letter-spacing movement */
+  margin: auto;
   margin-top: 0;
   font-weight: 300;
   font-size: 1.8rem;

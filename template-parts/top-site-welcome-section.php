@@ -35,7 +35,9 @@
                             $gi_essence_theme_description = get_bloginfo( 'description', 'display' );
                             if ( $gi_essence_theme_description || is_customize_preview() ) :
                                 ?>
-                                <p class="site-description"><?php echo $gi_essence_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+                                <div id="site-description-wrap" class="positioning-wrap-x">
+                                    <p class="site-description"><?php echo $gi_essence_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+                                </div><!-- .positioning-wrap-x -->
                             <?php 
                             endif;
                         endif;
