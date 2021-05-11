@@ -391,7 +391,7 @@ table {
   pointer-events: none;
 }
 
-body.custom-background #page-container .color-overlay {
+body #page-container .color-overlay {
   position: absolute;
 }
 

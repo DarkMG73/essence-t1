@@ -81,7 +81,7 @@ Kirki::add_field( 'gi_theme_config', [
 		'transport'   => 'auto',
 		'output'      => [
 			[
-				'element' => 'body.custom-background',
+				'element' => 'body',
 			],
 		],
 	] );
@@ -111,7 +111,7 @@ Kirki::add_field( 'gi_theme_config', [
 		),
 		'output' => array(
 			array(
-				'element'  => 'body.custom-background > .color-overlay',
+				'element'  => 'body > .color-overlay',
 				'property' => 'background-color',
 				),
 			),
@@ -155,7 +155,7 @@ Kirki::add_field( 'gi_theme_config', [
 		'transport'   => 'auto',
 		'output'      => [
 			[
-				'element' => 'body.custom-background #page-container',
+				'element' => 'body #page-container',
 			],
 		],
 	] );
@@ -185,7 +185,7 @@ Kirki::add_field( 'gi_theme_config', [
 		),
 		'output' => array(
 			array(
-				'element'  => 'body.custom-background #page-container .color-overlay, #page-container .site-header .color-overlay',
+				'element'  => 'body #page-container .color-overlay, #page-container .site-header .color-overlay',
 				'property' => 'background-color',
 				),
 			),
