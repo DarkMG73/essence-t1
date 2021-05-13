@@ -185,7 +185,7 @@ Kirki::add_field( 'gi_theme_config', [
 		),
 		'output' => array(
 			array(
-				'element'  => 'body #page-container .color-overlay, #page-container .site-header .color-overlay',
+				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay',
 				'property' => 'background-color',
 				),
 			),

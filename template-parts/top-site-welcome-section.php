@@ -2,6 +2,8 @@
 
     <section id="top-welcome-section" class="section" style="background-image: url(<?php echo esc_url( get_header_image() ); ?>); height: <?php echo absint( get_custom_header()->height ); ?>px; min-width: <?php echo absint( get_custom_header()->width ); ?>px;">
 
+        <div class="color-overlay"></div>
+
         <div id="welcome-title-wrap" class="container">
             <div class="positioning-wrap-x">
                 <div class="positioning-wrap-y">
