@@ -115,7 +115,7 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
         add_theme_support( 'custom-header', $default_args );
         
          // Support for menus.
-        register_nav_menu( 'primary', __( 'Primary Menu', 'gi-essence-theme' ) );
+        register_nav_menu( 'menu-1', __( 'Primary Menu', 'gi-essence-theme' ) );
         // register_nav_menu( 'secondary', __( 'Secondary Menu', 'gi-essence-theme' ) );
      
 
