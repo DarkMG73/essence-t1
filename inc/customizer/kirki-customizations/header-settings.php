@@ -12,8 +12,6 @@ function gi_customizer_default_header_mods( $wp_customize ) {
     $wp_customize->get_section( 'header_image'  )->title   = 'Header Background';
 	$wp_customize->get_section( 'header_image'  )->priority   = 10;
     $wp_customize->get_control( 'header_image'  )->priority   = 10;
-	$wp_customize->get_control( 'header_image'  )->description = esc_attr__( 'Click “Add new image” to upload an image file from your computer. This is only visible if either no color is set above or, if a color is set, the transparency is set to less that full. This theme works best with an image with a header size of 1280 × 250 pixels, but most sizes will work We can crop the image once it is uploaded, if needed.', 'gi-essence-theme' ),
-    
 }
 add_action( 'customize_register', 'gi_customizer_default_header_mods' );
 
@@ -55,10 +53,10 @@ Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'color',
 		'settings'    => 'header_backgroundcolor-setting',
 		'label'       => __( 'Header Background Color', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'Set the background color for the page head. Note: This will cover over any image set below. This allows us to tint the image if we wish by setting the color transparency (slider on the far right) to about halfway or wherever is desired. If we wish to only see the image with no tinting, click the  "Clear" button to remove the color completely.', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'Set the background color for the page head. NOTE: THIS WILL COVER OVER ANY IMAGE SET BELOW. This allows us to tint the image, if we wish, by setting the color transparency (slider on the far right) to something less than 100%. Setting the transparency slider around half way down will usually provide an ideal tint, but more or less can be used if desired. If we wish to only see the image with no tinting, click the  "Clear" button to remove the color completely.', 'gi-essence-theme' ),
 		'section'     => 'header_image',
 		'default'     => $generalThemeDefaults['header']['header_background_color'],
-		'priority'       => 10,
+		'priority'       => 5,
 		'transport'   => 'auto',
 		'choices'     => array(
 			'alpha' => true,
