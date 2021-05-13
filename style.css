@@ -172,10 +172,10 @@ body::-webkit-scrollbar-thumb {
   --box-shadow-outset-round: 2px 2px 4px -4px black, -2px -2px 4px -4px #434242,
     inset -3px -3px 10px -7px rgb(0 0 0 / 50%),
     inset 4px 4px 10px -7px rgb(229 229 229 / 50%);
-  --box-shadow-inset-shallow: inset 2px 2px 10px -7px rgba(0, 0, 0, 0.5),
-    inset -2px -2px 10px -7px rgb(255 255 255 / 50%),
-    -2px -2px 10px -3px rgba(0, 0, 0, 0.5),
-    2px 2px 10px -3px rgb(255 255 255 / 50%);
+  --box-shadow-inset-shallow: inset 1px 1px 3px -1px rgba(0, 0, 0, 0.25),
+    inset -1px -1px 3px -1px rgb(255 255 255 / 50%),
+    1px 1px 3px -2px rgba(0, 0, 0, 0.25),
+    1px 1px 25px -2px rgb(255 255 255 / 50%);
 }
 
 /* - Transitions and Animations */
@@ -525,6 +525,7 @@ textarea {
 .site-footer {
   max-width: 1280px;
   margin: 0 auto;
+  background: inherit;
 }
 
 /* -Header 
@@ -575,7 +576,7 @@ body.admin-bar .site-header {
 		--------------------------------------------- */
 #central-container {
   flex-direction: column;
-  background-color: inherit;
+  background-color: transparent;
   color: inherit;
 }
 
@@ -622,9 +623,12 @@ main#primary {
 		--------------------------------------------- */
 .site-footer {
   flex-direction: column;
-  padding: 4rem 2rem;
-  box-shadow: inset 0 62px 47px -93px black;
-  box-shadow: var(--box-shadow-inset-shallow);
+  padding: 17.25px 5px;
+  background-image: none;
+  box-shadow: inset 0px 2px 4px rgb(222 222 222 / 50%),
+    inset 0px 7px 8px -4px rgb(255 255 255 / 25%),
+    inset -2px -2px 4px rgb(68 68 68 / 25%), inset -4px -4px 4px -4px rgb(0 0 0),
+    8px 6px 8px -4px rgb(0 0 0 / 25%), -2px -2px 4px -4px #434242;
   width: 100%;
   /* margin-top and border-radius work together.
 			#page-container provides padding-bottom for offset */
@@ -636,18 +640,17 @@ main#primary {
   flex-wrap: wrap;
   max-width: 100%;
   width: 100%;
+  padding: 70px 5px;
 }
 
 .footer-topic-column {
-  flex-basis: 33.33%;
+  flex-basis: 25%;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: min-content;
   margin: auto;
-  flex-grow: 1;
   text-align: center;
 }
 
@@ -667,6 +670,7 @@ main#primary {
   max-width: 100%;
   align-items: center;
   flex-direction: column;
+  padding: 0 10%;
 }
 
 #photo-cta-photo-contianer {
@@ -675,6 +679,7 @@ main#primary {
   max-width: 100%;
   justify-content: center;
   align-items: center;
+  padding: 0 10%;
 }
 
 .photo-cta-image-wrap {
@@ -702,7 +707,17 @@ main#primary {
   }
 
   #photo-cta-photo-contianer * {
+    top: 0;
     transform: none;
+  }
+}
+@media all and (max-width: 600px) {
+  .site-footer #topic-info > div {
+    margin-bottom: 30px;
+  }
+
+  .site-footer #topic-info {
+    flex-direction: column;
   }
 }
 
@@ -788,6 +803,7 @@ nav#site-navigation {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 #masthead .site-branding .menubar-title-positioning-wrap-x {
@@ -1532,6 +1548,8 @@ nav.navigation.post-navigation {
   font-size: 1.2rem;
   opacity: 0.5;
   transition: 0.3s all ease;
+  padding: 0 1em;
+  text-align: center;
 }
 
 .site-info.container:hover,
@@ -1543,6 +1561,19 @@ nav.navigation.post-navigation {
   color: inherit;
 }
 
+@media all and (max-width: 600px) {
+  .site-info.container .sep {
+    display: none;
+  }
+  .site-info.container {
+    flex-direction: column;
+  }
+  .site-info.container > .site-info-child {
+    flex-basis: 100%;
+    min-width: 100%;
+    margin: 0.5em;
+  }
+}
 /**********************************************************
 # Plugins
 **********************************************************/
@@ -1559,6 +1590,15 @@ nav.navigation.post-navigation {
 /* Re-display the Theme Footer when Infinite Scroll has reached its end. */
 .infinity-end.neverending .site-footer {
   display: block;
+}
+
+/* - Jetpack sharing buttons
+		--------------------------------------------- */
+.entry-content .sharedaddy .sd-content ul li a.sd-button {
+  background: inherit;
+  color: inherit !important;
+  border: none;
+  box-shadow: none;
 }
 
 /* - BuddyPress

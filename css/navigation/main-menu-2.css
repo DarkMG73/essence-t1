@@ -236,32 +236,51 @@
   }
 
   .site-header #site-navigation {
-    height: auto;
+    height: 100%;
     flex-direction: column;
     overflow: hidden;
     box-shadow: 0px 14px 30px -10px black;
+    max-height: 0;
+    min-height: 0;
+    transition: 1s all ease;
+    overflow-y: auto;
   }
 
   button.menu-toggle {
     font-size: calc(12px + 1vh);
-    background: inherit;
+    background: var(--color-primary);
     border: none;
-    box-shadow: var(--box-shadow-outset-round);
+    color: var(--color-black);
+    box-shadow: inset -3px -3px 3px -2px black, inset 3px 3px 3px -2px white,
+      3px 3px 3px -2px rgb(0 0 0 / 50%);
+    z-index: 1;
+    border-radius: 10px;
+    margin: 0 auto 0.75em;
+    padding: 0.5em 2em;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    transition: 0.1s width cubic-bezier(0, 1.1, 0.58, 1);
+    width: 8em;
+    min-height: 2em;
+    max-height: 2em;
+    overflow: hidden;
   }
 
   .main-navigation.toggled .menu-toggle {
-    filter: invert(1);
-    font-weight: 900;
   }
 
-  .main-navigation.toggled .menu-toggle:before {
+  button.menu-toggle[aria-expanded="true"] {
+    width: 17em;
+  }
+
+  button.menu-toggle[aria-expanded="true"]:before {
     content: "Close the ";
     text-shadow: inherit;
   }
 
-  nav#site-navigation.toggled .menu-main-menu-container {
-    max-height: 100vh;
-    min-height: 100vh;
+  nav#site-navigation.toggled {
+    max-height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
   }
 
   .menu-main-menu-container {
@@ -270,7 +289,6 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    max-height: 0;
     background: inherit;
     transition: 0.3s all ease;
     box-shadow: inset 20px 20px 50px -40px white,
@@ -281,12 +299,12 @@
     margin: 0 auto;
     max-height: none;
     overflow: hidden;
-    padding: 3em 1em 3em;
+    padding: 3em 1em 7em;
     display: flex;
     flex-direction: column;
     justify-content: normal;
     align-items: center;
-    overflow: scroll;
+    overflow: visible;
   }
 
   #primary-menu .menu-item {

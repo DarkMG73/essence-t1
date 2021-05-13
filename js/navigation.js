@@ -5,6 +5,7 @@
  * navigation support for dropdown menus.
  */
 ( function() {
+	const siteMasthead = document.getElementById( 'masthead' );
 	const siteNavigation = document.getElementById( 'site-navigation' );
 
 	// Return early if the navigation don't exist.
@@ -12,7 +13,7 @@
 		return;
 	}
 
-	const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+	const button = siteMasthead.querySelector( '.menu-toggle' );
 
 	// Return early if the button don't exist.
 	if ( 'undefined' === typeof button ) {
@@ -44,7 +45,7 @@
 
 	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
 	document.addEventListener( 'click', function( event ) {
-		const isClickInside = siteNavigation.contains( event.target );
+		const isClickInside = siteMasthead.contains( event.target );
 
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );

@@ -70,18 +70,21 @@
 
 			</div><!-- .site-branding -->
 			
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'gi-essence-theme' ); ?></button>
+			
 			<!-- Primary Navigation
 			============================================= -->
 			<nav id="site-navigation" class="container main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'gi-essence-theme' ); ?></button>
-
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
+				<div class="menu-main-menu-container">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'container' => '',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+				</div>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
