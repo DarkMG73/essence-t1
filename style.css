@@ -554,6 +554,7 @@ body.admin-bar .site-header {
   background-position: center;
   background-size: cover;
   max-height: 720px;
+  min-width: 100%;
 }
 
 #page-welcome-container {
@@ -1119,13 +1120,21 @@ nav.navigation.post-navigation {
   top: 10%;
 }
 
+#title-font-size-wrap {
+  font-size: 3.6rem;
+}
+
 #welcome-title-wrap .page-title {
   /* Margin left & right must be auto as 
     JS sets margin-left when centered to 
     offset letter-spacing movement */
   margin: auto;
   font-weight: 900;
-  font-size: 7.2rem;
+  font-size: calc(100% + 2vw);
+}
+
+#description-font-size-wrap {
+  font-size: 0.9rem;
 }
 
 #welcome-title-wrap .site-description {
@@ -1135,10 +1144,10 @@ nav.navigation.post-navigation {
   margin: auto;
   margin-top: 0;
   font-weight: 300;
-  font-size: 1.8rem;
   letter-spacing: 0.9em;
   text-align: center;
   transform: translateY(-18px);
+  font-size: calc(100% + 0.5vw);
 }
 
 #page-welcome-container {

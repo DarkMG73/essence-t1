@@ -1,19 +1,20 @@
 <div id="site-welcome-container" class="container">
 
-    <section id="top-welcome-section" class="section" style="background-image: url(<?php echo esc_url( get_header_image() ); ?>); height: <?php echo absint( get_custom_header()->height ); ?>px; min-width: <?php echo absint( get_custom_header()->width ); ?>px;">
+    <section id="top-welcome-section" class="section" style="background-image: url(<?php echo esc_url( get_header_image() ); ?>); height: <?php echo absint( get_custom_header()->height ); ?>px; ">
 
         <div class="color-overlay"></div>
 
         <div id="welcome-title-wrap" class="container">
             <div class="positioning-wrap-x">
                 <div class="positioning-wrap-y">
+                    
                     <?php
                     if ( !is_front_page() && !is_home() ) :
                         ?>
 
                         <?php if ( true == get_theme_mod( 'site_title_pagehead_toggle_setting', true ) ) : ?>
 
-                            <h1 class="page-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                                <h1 class="page-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
                         <?php endif; ?>
 
@@ -21,16 +22,19 @@
                             $gi_essence_theme_description = get_bloginfo( 'description', 'display' );
                             if ( $gi_essence_theme_description || is_customize_preview() ) :
                                 ?>
-                                <p class="site-description"><?php echo $gi_essence_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+
+                                    <p class="site-description"><?php echo $gi_essence_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+
                             <?php endif;
                         endif; 
                     else :
                         ?>
 
                         <?php if ( true == get_theme_mod( 'site_title_pagehead_toggle_setting', true ) ) : ?>
-                            <h1 class="page-title site-title"><?php bloginfo( 'name' ); ?></h1>
+                            <div id="title-font-size-wrap">
+                                <h1 class="page-title site-title"><?php bloginfo( 'name' ); ?></h1>
+                            </div> <!-- .font-size-wrap -->
                         <?php endif; ?>
-                        
 
                         <?php if ( true == get_theme_mod( 'site_description_pagehead_toggle_setting', true ) ) : ?>
                             <?php
@@ -38,7 +42,9 @@
                             if ( $gi_essence_theme_description || is_customize_preview() ) :
                                 ?>
                                 <div id="site-description-wrap" class="positioning-wrap-x">
-                                    <p class="site-description"><?php echo $gi_essence_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+                                    <div id="description-font-size-wrap">
+                                        <p class="site-description"><?php echo $gi_essence_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+                                    </div> <!-- .font-size-wrap -->
                                 </div><!-- .positioning-wrap-x -->
                             <?php 
                             endif;

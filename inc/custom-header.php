@@ -24,8 +24,8 @@ function gi_essence_theme_custom_header_setup() {
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
-				'width'              => 1000,
-				'height'             => 250,
+				'width'              => 1280,
+				'height'             => 720,
 				'flex-height'        => true,
 				'wp-head-callback'   => 'gi_essence_theme_header_style',
 			)

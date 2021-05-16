@@ -256,10 +256,10 @@ Kirki::add_section( 'nav_text_type', array(
 	/* Override Input Box for Nav bar general text
 	----------------------------*/ 
 	Kirki::add_field( 'my_theme_config', array(
-		'type'        => 'textarea',
+		'type'        => 'text',
 		'settings'    => 'menu_typography_override_box',
-		'label'       => esc_attr__( 'Menu Font Family Manual Override', 'human-connection' ),
-		'description' => esc_attr__( 'These settings override the setting above. This can be any CSS you wish to apply. It must be is valid CSS format. For example: font-family: "Good Times Rg";', 'human-connection' ),
+		'label'       => esc_attr__( 'Menu Font Family Manual Override', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg"; NOTE: loading the font will need to be done through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
 		'section'     => 'nav_text_type',
 		'default'     => $generalThemeDefaults['typography']['menu_typography_override_box'],
 		'transport'   => 'auto',
@@ -267,7 +267,8 @@ Kirki::add_section( 'nav_text_type', array(
 		'output'      => [
 			[
 				'element' => '#masthead, .site-header:not(.site-title a)',
-				'property' => 'font-famly'
+				'property' => 'font-famly',
+				'suffix' => ' !important',
 			],
 		],
 		) 
@@ -481,7 +482,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'custom',
 		'settings'    => 'site_pagehead_intro_for_customizer',
 		'section'     => 'page_head_title_type',
-			'default'         => '<div class="intro-text"><p>Here we can set up the font, size, color and more for the large site title and description in the page head. <strong>NOTE: Only the "Home" and "Front" pages.</strong></p></div>',
+			'default'         => '<div class="intro-text"><p>Here we can set up the font, size, color and more for the large site title and description in the page head. <strong>NOTE: This applies only on the "Home" and "Front" pages as these use the site title and description instead of a page title. This will not affect any other page.</strong></p></div>',
 		'priority'    => 0,
 	] );
 
@@ -498,7 +499,7 @@ Kirki::add_section( 'page_head_title_type', array(
 
 
 	/* Toggle Visibility of the
-	   Site title in page head
+	   Site Title in Page Head
 	----------------------------*/
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'toggle',
@@ -510,44 +511,42 @@ Kirki::add_section( 'page_head_title_type', array(
 	] );
 	
 	/* Horixontal Placement of
-	   Site title & Description
-	   in page head
+	   Site Title & Description
+	   in Page Head
 	----------------------------*/
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_title_horizonal_setting',
-		'label'       => esc_html__( 'Large Page Title Horizontal Plaement (NOT on the "Front" and "Home" pages)', 'kirki' ),
-		'label'       => esc_html__( 'Large Page Title & Description Horizontal Plaement (NOT on the "Front" and "Home" pages)', 'kirki' ),
-		'description'=>  esc_html__( 'Move the large page title up or down. NOTE: This will NOT affect the large site title on the "Front" and "Home" pages.', 'kirki' ),
+		'label'       => esc_html__( 'Large Site Title Horizontal Plaement ("Front" and "Home" pages only)', 'kirki' ),
+		'description'=>  esc_html__( 'Move the large site title up or down. NOTE: This will only affect the large site title on the "Front" and "Home" pages, not the page title on all other pages.', 'kirki' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['large_page_title_horizonal_adjustment'],
 		'choices'     => [
-			'min'  => -1000,
-			'max'  => 1000,
+			'min'  => -20,
+			'max'  => 20,
 			'step' => 1,
 		],
 		'priority'    => 50,
 		'output'      => [
 			[
 				'element' => '#site-welcome-container #welcome-title-wrap .positioning-wrap-x',
-				'property' => 'transform',
-				'prefix' => 'translateX(',
-				'suffix' => 'px)',
+				'property' => 'margin-left',
+				'suffix' => '%',
 			],
 		],
 		'transport'   => 'auto',
 	] );
 
 	/* Vertical Placement of
-	   Site title in page head
-	   Site title & Description
-	   in page head
+	   Site Title in Page Head
+	   Site Title & Description
+	   in Page Head
 	----------------------------*/
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_title_vertical_setting',
-		'label'       => esc_html__( 'Large Page Title & Description Vertical Plaement (NOT on the "Front" and "Home" pages)', 'kirki' ),
-		'description'=>  esc_html__( 'Move the large page title up or down. NOTE: This will NOT affect the large site title on the "Front" and "Home" pages.', 'kirki' ),
+		'label'       => esc_html__( 'Large Site Title & Description Vertical Plaement ("Front" and "Home" pages only)', 'kirki' ),
+		'description'=>  esc_html__( 'Move the large site title up or down. NOTE: This will only affect the large site title on the "Front" and "Home" pages, not the page title on all other pages.', 'kirki' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['large_page_title_vertical_adjustment'],
 		'choices'     => [
@@ -568,13 +567,13 @@ Kirki::add_section( 'page_head_title_type', array(
 	] );
 
 
-	/* Site title in Page Head Font
+	/* Site Title in Page Head Font
 	----------------------------*/
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'page_title_font_setting',
-		'label'       => esc_html__( 'Large Page Title Text', 'kirki' ),
-		'description' => esc_html__( 'This will control all settings for the the large page title in the page head of standard pages. In addition, this will control the large site title that is used in the page head on the "Home" and "Front" pages, but settings for this can be overridden in the "Large Site Title Text" controller above, which allows us to make the site title unique, if we wish.', 'kirki' ),
+		'label'       => esc_html__( 'Large Site Title Text', 'kirki' ),
+		'description' => esc_html__( 'This will control all settings for the the large site title in the page head of standard pages. In addition, this will control the large site title that is used in the page head on the "Home" and "Front" pages, but settings for this can be overridden in the "Large Site Title Text" controller above, which allows us to make the site title unique, if we wish.', 'kirki' ),
 		'section'     => 'page_head_title_type',
 		'choices' => [
 			'fonts' => [
@@ -597,6 +596,68 @@ Kirki::add_section( 'page_head_title_type', array(
 		],
 	] );
 
+
+	/* Site Title Size (%)
+		in Page Head
+	----------------------------*/
+	Kirki::add_field( 'gi_theme_config', [
+		'type'        => 'slider',
+		'settings'    => 'large_page_font_size_setting',
+		'label'       => esc_html__( 'Site Title Font Size', 'kirki' ),
+		'description'=>  esc_html__( 'We want the site title in the page head to look good on all devices. Setting this size as a percentage here, along with some wizardry behind the scenes, will keep the title looking right on cell phones as well as 4K monitors.', 'kirki' ),
+		'section'     => 'page_head_title_type',
+		'default'     => $generalThemeDefaults['branding']['page_title_font_size_percent'],
+		'choices'     => [
+			'min'  => 1,
+			'max'  => 150,
+			'step' => 1,
+		],
+		'priority'    => 60,
+		'output'      => [
+			[
+				'element' => '#site-welcome-container #welcome-title-wrap .page-title ',
+				'property' => 'font-size',
+				'prefix' => 'calc(',
+				'suffix' => '% + 2vw)',
+			],
+		],
+		'transport'   => 'auto',
+	] );
+	
+
+	/* Site Title in Page
+	    Head Font Variant
+	----------------------------*/  
+	Kirki::add_field( 'gi_theme_config', array(
+		'type'        => 'select',
+		'settings'    => 'site_title_pagehead_font_variant_setting',
+		'label'       => esc_html__( 'Site Title Font Variant', 'kirki' ),
+		'description' => esc_html__( 'Here we can make the site title small caps, petite caps and more. NOTE: These options will only work if the specific font being used supplies them. For example, most fonts will have small caps, but not all will have petite caps.', 'kirki' ),
+		'section'     => 'page_head_title_type',
+		'default'     => $generalThemeDefaults['branding']['page_title_font_variant'],
+		'placeholder' => esc_html__( 'Select an option...', 'kirki' ),
+		'priority'    => 60,
+		'multiple'    => 1,
+		'choices'     => [
+			'' => esc_html__( '-none-', 'kirki' ),
+			'small-caps' => esc_html__( 'small-caps', 'kirki' ),
+			'all-small-caps' => esc_html__( 'all-small-caps', 'kirki' ),
+			'petite-caps' => esc_html__( 'petite-caps', 'kirki' ),
+			'all-petite-caps' => esc_html__( 'all-petite-caps', 'kirki' ),
+			'unicase' => esc_html__( 'unicase', 'kirki' ),
+			'titling-caps' => esc_html__( 'titling-caps', 'kirki' ),
+			'common-lig-values' => esc_html__( 'common-lig-values', 'kirki' ),
+			'no-common-ligatures' => esc_html__( 'no-common-ligatures', 'kirki' ),
+		],
+		'output' => array(
+			array(
+				'element'  => '#welcome-title-wrap .page-title',
+				'property' => 'font-variant',
+				),
+			),
+		),
+	);
+
 	/* Site Title in Page Head Color
 	----------------------------*/  
 	Kirki::add_field( 'gi_theme_config', array(
@@ -605,7 +666,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'label'       => __( 'Color the Page Head Site Title', 'gi-essence-theme' ),
 		'description' => esc_attr__( 'Set the color for the large site title in the page head.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
-		'default'     => $generalThemeDefaults['branding']['Site_title_color_pagehead'],
+		'default'     => $generalThemeDefaults['branding']['site_title_color_pagehead'],
 		'priority'       => 70,
 		'transport'   => 'auto',
 		'choices'     => array(
@@ -626,6 +687,27 @@ Kirki::add_section( 'page_head_title_type', array(
 				'property' => 'color',
 				),
 			),
+		) 
+	);
+
+	/* Override Input Box for Large Site Title
+	----------------------------*/ 
+	Kirki::add_field( 'my_theme_config', array(
+		'type'        => 'text',
+		'settings'    => 'large_title_font_family_override_box',
+		'label'       => esc_attr__( 'Large Site Title Manual Override', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg"; NOTE: loading the font will need to be done through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
+		'section'     => 'page_head_title_type',
+		'default'     => $generalThemeDefaults['branding']['large_title_typography_override_box'],
+		'transport'   => 'auto',
+		'priority'    => 60,
+		'output'      => [
+			[
+				'element' => '#welcome-title-wrap .page-title',
+				'property' =>'font-family',
+				'suffix' => ' !important'
+			],
+		],
 		) 
 	);
 
@@ -653,7 +735,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	] );
 
 	/* Horizontal Placement of Site 
-	 Descripton in the page head
+	 Descripton in the Page Head
 	----------------------------*/  
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
@@ -670,9 +752,8 @@ Kirki::add_section( 'page_head_title_type', array(
 		'output'      => [
 			[
 				'element' => '#site-welcome-container #welcome-title-wrap #site-description-wrap.positioning-wrap-x',
-				'property' => 'transform',
-				'suffix' => 'em)',
-				'prefix' => 'translateX(',
+				'property' => 'margin-left',
+				'suffix' => 'em',
 			],
 		],
 		'priority'    => 70,
@@ -680,7 +761,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	] );
 
  	/* Vertical Placement of Site 
-	 Descripton in the page head
+	 Descripton in the Page Head
 	----------------------------*/  
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
@@ -690,8 +771,8 @@ Kirki::add_section( 'page_head_title_type', array(
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_description_vertical_adjustment'],
 		'choices'     => [
-			'min'  => -500,
-			'max'  => 500,
+			'min'  => -50,
+			'max'  => 50,
 			'step' => 1,
 		],
 		'output'      => [
@@ -699,16 +780,15 @@ Kirki::add_section( 'page_head_title_type', array(
 				'element' => '#site-welcome-container #welcome-title-wrap .site-description',
 				'property' => 'transform',
 				'prefix' => 'translateY(',
-				'suffix' => '%)',
+				'suffix' => 'em)',
 			],
 		],
 		'priority'    => 70,
 		'transport'   => 'auto',
 	] );
 
-
-	/* Site Description in 
-	   the Page Head Font
+	/* Site Description Font 
+	    in the Page Head
 	----------------------------*/ 
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
@@ -738,8 +818,68 @@ Kirki::add_section( 'page_head_title_type', array(
 		'transport'   => 'auto',
 	] );
 
+	/* Site Description
+	Size (%) in Page Head
+	----------------------------*/	
+	Kirki::add_field( 'gi_theme_config', [
+		'type'        => 'slider',
+		'settings'    => 'site_description_font_size_setting',
+		'label'       => esc_html__( 'Site Description Font Size', 'kirki' ),
+		'description'=>  esc_html__( 'Like the site title, we want the site description in the page head to look good on all devices. Setting this size as a percentage here, along with some wizardry behind the scenes, will keep the description looking right on cell phones and large 4K monitors.', 'kirki' ),
+		'section'     => 'page_head_title_type',
+		'default'     => $generalThemeDefaults['branding']['page_description_font_size_percent'],
+		'choices'     => [
+			'min'  => 1,
+			'max'  => 150,
+			'step' => 1,
+		],
+		'priority'    => 70,
+		'output'      => [
+			[
+				'element' => '#site-welcome-container #welcome-title-wrap .site-description ',
+				'property' => 'font-size',
+				'prefix' => 'calc(',
+				'suffix' => '% + 0.5vw)',
+			],
+		],
+		'transport'   => 'auto',
+	] );
+
+	/* Site Description in Page
+		Head Font Variant
+	----------------------------*/  
+	Kirki::add_field( 'gi_theme_config', array(
+		'type'        => 'select',
+		'settings'    => 'site_description_pagehead_font_variant_setting',
+		'label'       => esc_html__( 'Site Description Font Variant', 'kirki' ),
+		'description' => esc_html__( 'Like the site title, we can make the site description small caps, petite caps and more. NOTE: These options will only work if the specific font being used supplies them. For example, most fonts will have small caps, but not all will have petite caps.', 'kirki' ),
+		'section'     => 'page_head_title_type',
+		'default'     => $generalThemeDefaults['branding']['site_description_font_variant'],
+		'placeholder' => esc_html__( 'Select an option...', 'kirki' ),
+		'priority'    => 70,
+		'multiple'    => 1,
+		'choices'     => [
+			'' => esc_html__( '-none-', 'kirki' ),
+			'small-caps' => esc_html__( 'small-caps', 'kirki' ),
+			'all-small-caps' => esc_html__( 'all-small-caps', 'kirki' ),
+			'petite-caps' => esc_html__( 'petite-caps', 'kirki' ),
+			'all-petite-caps' => esc_html__( 'all-petite-caps', 'kirki' ),
+			'unicase' => esc_html__( 'unicase', 'kirki' ),
+			'titling-caps' => esc_html__( 'titling-caps', 'kirki' ),
+			'common-lig-values' => esc_html__( 'common-lig-values', 'kirki' ),
+			'no-common-ligatures' => esc_html__( 'no-common-ligatures', 'kirki' ),
+		],
+		'output' => array(
+			array(
+				'element'  => '#site-welcome-container #welcome-title-wrap .site-description',
+				'property' => 'font-variant',
+				),
+			),
+		),
+	);
+
 	/* Site Description in 
-	   Pagehead Color
+	   Page Head Color
 	----------------------------*/  
 	Kirki::add_field( 'gi_theme_config', array(
 		'type'        => 'color',
@@ -771,10 +911,26 @@ Kirki::add_section( 'page_head_title_type', array(
 		) 
 	);
 
-
-
-	
-
+    /* Override Input Box for Site Description
+	----------------------------*/ 
+	Kirki::add_field( 'my_theme_config', array(
+		'type'        => 'text',
+		'settings'    => 'site_description_font_family_override_box',
+		'label'       => esc_attr__( 'Site Description Manual Override', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg", Arial, sans; NOTE: loading the font will need to be done through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
+		'section'     => 'page_head_title_type',
+		'default'     => $generalThemeDefaults['branding']['site_description_typography_override_box'],
+		'transport'   => 'auto',
+		'priority'    => 70,
+		'output'      => [
+			[
+				'element' => '#site-welcome-container #welcome-title-wrap .site-description',
+				'property' =>'font-family',
+				'suffix' => ' !important'
+			],
+		],
+		) 
+	);
 
 
 /*

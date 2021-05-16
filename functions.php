@@ -30,6 +30,7 @@ include( get_theme_file_path( '/inc/theme-defaults.php') );
 
 /* Add frontend styles and scripts */
 include( get_theme_file_path( '/inc/frontend-specific/enqueue.php') );
+include( get_theme_file_path( '/inc/customizer/customizer-output.php') );
 
 
 /* Widgets */
