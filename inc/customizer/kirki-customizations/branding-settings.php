@@ -14,6 +14,7 @@ function gi_customizer_default_branding_mods( $wp_customize ) {
     $wp_customize->get_control( 'blogdescription'  )->priority   = 5;
     $wp_customize->get_control( 'site_icon'  )->priority   = 8;
     $wp_customize->get_control( 'custom_logo'  )->priority   = 20;
+	$wp_customize->get_control( 'custom_logo'  )->description   = 'A logo is highly recommended as it helps your audience easily and visually recognize and identify you or your business. This can be an official logo or, in the case of a blogger, even just initials. The recommended logo size is 512px x 512px but most sizes will work fine. A cropping tool is provided after you select the image. Round or Square are most common, but any shape will work. A sizing tool is provided below to bring the end size down to a more common 100px or so. There are other tools below including special tools for rounding the frame to match, if needed. ';
     
     $wp_customize->remove_control( 'display_header_text'  );
 }

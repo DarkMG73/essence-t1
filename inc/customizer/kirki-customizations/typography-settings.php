@@ -75,6 +75,7 @@ Kirki::add_section( 'body_text_type', array(
 			],
 		],
 	] );
+	
 
 	/* Color Picker for Body Text
 	----------------------------*/  
@@ -252,27 +253,7 @@ Kirki::add_section( 'nav_text_type', array(
 			],
 		],
 	] );
- 
-	/* Override Input Box for Nav bar general text
-	----------------------------*/ 
-	Kirki::add_field( 'my_theme_config', array(
-		'type'        => 'text',
-		'settings'    => 'menu_typography_override_box',
-		'label'       => esc_attr__( 'Menu Font Family Manual Override', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg"; NOTE: loading the font will need to be done through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
-		'section'     => 'nav_text_type',
-		'default'     => $generalThemeDefaults['typography']['menu_typography_override_box'],
-		'transport'   => 'auto',
-		'priority'    => 20,
-		'output'      => [
-			[
-				'element' => '#masthead, .site-header:not(.site-title a)',
-				'property' => 'font-famly',
-				'suffix' => ' !important',
-			],
-		],
-		) 
-	);
+
 
 	/* Color Picker for Nav bar general text
 	----------------------------*/  
@@ -343,7 +324,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'slider',
 		'settings'    => 'menubar-logo_horizonal_setting',
 		'label'       => esc_html__( 'Menu Bar Site Title Horizontal Adjustment', 'kirki' ),
-		'description'=>  esc_html__( 'Move the menu bar site title left or right NOTE: The page must be SCROLLED UPWARD to see the site title.', 'kirki' ),
+		'description'=>  esc_html__( 'Move the menu bar site title left or right NOTE: IN some cases the page must be SCROLLED UPWARD to see the site title.', 'kirki' ),
 		'section'     => 'nav_text_type',
 		'default'     => $generalThemeDefaults['typography']['menubar-logo_horizonal_adjustment'],
 		'choices'     => [
@@ -370,7 +351,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'slider',
 		'settings'    => 'menubar-title_vertical_setting',
 		'label'       => esc_html__( 'Menu Bar Site Title Vertical Adjustment', 'kirki' ),
-		'description'=>  esc_html__( 'Move the menu bar site title up or down NOTE: The page must be SCROLLED UPWARD to see the site title.', 'kirki' ),
+		'description'=>  esc_html__( 'Move the menu bar site title up or down NOTE: In some cases the page must be SCROLLED UPWARD to see the site title.', 'kirki' ),
 		'section'     => 'nav_text_type',
 		'default'     => $generalThemeDefaults['typography']['menubar-logo_vertical_adjustment'],
 		'choices'     => [
@@ -419,7 +400,22 @@ Kirki::add_section( 'nav_text_type', array(
 		],
 	] );
 
-	/* SIte Title in Menu Bar Color
+		/* Override Input Box 
+		for Site Title in Menu Bar
+	----------------------------*/ 
+	Kirki::add_field( 'my_theme_config', array(
+		'type'        => 'text',
+		'settings'    => 'site_title_manubar_font_family_override_box',
+		'label'       => esc_attr__( 'Menubar Site Title Manual Override', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg"; NOTE: THIS DOES NOT LOAD THE FONT INTO THE BROWSER. If the font is not already one of the included Google fonts or part of the browser, this will need to be loaded either through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
+		'section'     => 'nav_text_type',
+		'default'     => $generalThemeDefaults['typography']['site_title_menubar_typography_override_box'],
+		'transport'   => 'refresh',
+		'priority'    => 60,
+		) 
+	);
+
+	/* Site Title in Menu Bar Color
 	----------------------------*/  
 	Kirki::add_field( 'gi_theme_config', array(
 		'type'        => 'color',
@@ -696,18 +692,11 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'text',
 		'settings'    => 'large_title_font_family_override_box',
 		'label'       => esc_attr__( 'Large Site Title Manual Override', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg"; NOTE: loading the font will need to be done through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg"; NOTE: THIS DOES NOT LOAD THE FONT INTO THE BROWSER. If the font is not already one of the included Google fonts or part of the browser, this will need to be loaded either through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['large_title_typography_override_box'],
-		'transport'   => 'auto',
+		'transport'   => 'refresh',
 		'priority'    => 60,
-		'output'      => [
-			[
-				'element' => '#welcome-title-wrap .page-title',
-				'property' =>'font-family',
-				'suffix' => ' !important'
-			],
-		],
 		) 
 	);
 
@@ -917,18 +906,11 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'text',
 		'settings'    => 'site_description_font_family_override_box',
 		'label'       => esc_attr__( 'Site Description Manual Override', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg", Arial, sans; NOTE: loading the font will need to be done through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg", Arial, sans; NOTE: THIS DOES NOT LOAD THE FONT INTO THE BROWSER. If the font is not already one of the included Google fonts or part of the browser, this will need to be loaded either through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['site_description_typography_override_box'],
-		'transport'   => 'auto',
+		'transport'   => 'refresh',
 		'priority'    => 70,
-		'output'      => [
-			[
-				'element' => '#site-welcome-container #welcome-title-wrap .site-description',
-				'property' =>'font-family',
-				'suffix' => ' !important'
-			],
-		],
 		) 
 	);
 

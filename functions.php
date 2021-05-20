@@ -68,10 +68,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 include( get_theme_file_path( '/inc/custom-nav-walker.php') );
 include( get_theme_file_path( '/inc/frontend-specific/pagination.php') );
 
+/* Comment Error Handler */
+include( get_theme_file_path( '/inc/error-handler-comments.php') );
+
 
 /****************
  * Hooks
  ***************/
+add_filter('wp_die_handler', 'get_gi_custom_die_handler');
 
 /****************
  * Shortcodes

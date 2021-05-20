@@ -12,7 +12,7 @@
 	 $themePaletteDefaults = array(
 		
 		$color1 = '#528212', 
-		$color2 = '#cbcecd',
+		$color2 = '#ffffff',
 		$color3 = '#798e91',
 		$color4 = '#0c1c2c',
 		$color5 = '#d4849a',
@@ -31,7 +31,7 @@
 
 		'background' => array(
 			'body_color'								=>	'',
-			'content_color'								=>	'',
+			'content_color'								=>	$themePaletteDefaults[1],
 		), 
 
 		'typography' => array(
@@ -57,9 +57,7 @@
 															'line-height'    => '1.5',
 															'letter-spacing' => '0.01',
 															'text-transform' => 'none',
-															'text-align'     => 'left',
 															],
-			'menu_typography_override_box' 				=> '',
 			// 'menubar_general_text_color'   				=> $themePaletteDefaults[1],
 			'menubar-logo_horizonal_adjustment'			=> 0,
 			'menubar-logo_vertical_adjustment'			=> 0,
@@ -72,8 +70,8 @@
 															'line-height'    => '1.5',
 															'letter-spacing' => '0.01',
 															'text-transform' => 'none',
-															'text-align'     => 'left',
 															],
+		  	'site_title_menubar_typography_override_box' 	=> '',
 			'color_title_menubar' 						=> '',
 			
 			'site_title_pagehead_toggle'				=> 1,
@@ -88,7 +86,6 @@
 															'line-height'    => 'inherit',
 															'letter-spacing' => 'inherit',
 															'text-transform' => 'inherit',
-															'text-align'     => 'inherit',
 															],
 			'link_color'								=> $themePaletteDefaults[0],
 			
@@ -100,7 +97,7 @@
 				'line-height'    => '1.5',
 				'letter-spacing' => '0.01',
 				'text-transform' => 'none',
-				'text-align'     => 'left',
+				'text-align'     => 'center',
 				],
 				'footer_text_color'							=> $themePaletteDefaults[5],
 				
@@ -112,7 +109,6 @@
 					'line-height'    => 'inherit',
 					'letter-spacing' => 'inherit',
 					'text-transform' => 'inherit',
-					'text-align'     => 'inherit',
 					],
 					'footer_link_color'							=> $themePaletteDefaults[0],
 
@@ -163,9 +159,8 @@
 			'copyright_text'							=>	'Copyrights &copy; ' . date('Y') . ' All Rights Reserved.',
 		), 
 		'footer-photo-cta'									=> array(
-			'footer_photo_cta_on_off_toggle_setting'			=> '1', // Must be set in initial theme activation, as well. see setup.php
-			'footer_photo_cta_text_editor_setting'				=> '<strong>Hire Us!</strong><br>573-425-3245<br>sales@dream-productions.com',
-
+			'footer_photo_cta_on_off_toggle_setting'			=> '1',   // Must be set in initial theme activation, as well. See setup.php
+			'footer_photo_cta_text_editor_setting'				=> '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com',   // This is also listed as the default on footer.php. It must be for new installations of the theme to render the default on the frontend
 			'photo_cta_photo_one_width'							=> '150',
 			'photo_cta_photo_one_cont_shape_adjustment' 		=> 0,
 			'photo_cta_photo_one_cont_vertical_adjustment' 		=> 0,

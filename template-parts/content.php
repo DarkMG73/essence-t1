@@ -11,6 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<!-- .entry-header's absolute positioning throws off a background image set to position:fixed. To allow for a correction for this, .image-overlay is used with css corrections.  -->
+		<div class="image-overlay"></div>
+		<div class="color-overlay"></div>
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );

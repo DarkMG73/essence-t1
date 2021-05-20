@@ -1,19 +1,18 @@
-<div id="page-welcome-container" class="container">
-    <?php
-    if( !isset($args['image']) ) {
-        ?>
-        <section id="top-welcome-section" class="section" style="background-image: url(<?php  echo esc_url( get_header_image() ); ?>); height: <?php echo absint( get_custom_header()->height ); ?>px; min-width: <?php echo absint( get_custom_header()->width ); ?>px;">
+<?php
+    if ( has_post_thumbnail() ) {
+        $featured_image_class = 'has-featured-image';
+    } else {
+        $featured_image_class = 'no-featured-image';
+    }
+?>
 
-            <?php
-        } else {
-            echo $args['image'];
-            ?>
+<div id="page-welcome-container" class="container <?php echo $featured_image_class; ?>">
 
-            <section id="top-welcome-section" class="section">
+    <section id="top-welcome-section" class="section">
+        <?php if(!empty($args['image']) ) echo $args['image'];  ?>
 
-            <?php
-        }
-
+        <?php
+        
         if( isset($args['title']) && $args['title'] != false  ){
         ?>
 

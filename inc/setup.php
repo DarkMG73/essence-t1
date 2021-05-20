@@ -91,8 +91,8 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
 
         // Support for selective refresh for widgets.
         add_theme_support( 'custom-logo', array(
-            'height'      => 100,
-            'width'       => 400,
+            'height'      => 512,
+            'width'       => 769,
             'flex-height' => true,
             'flex-width'  => true,
             'header-text' => array( 'site-title', 'site-description' ),
@@ -220,8 +220,8 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
         */
         if (function_exists('quads_register_ad')){
             quads_register_ad( array(
-                'location' => 'udemy_header', 
-                'description' => 'Udemy Header position') );
+                'location' => 'gi_header', 
+                'description' => 'Theme Header position') );
             }
 
 

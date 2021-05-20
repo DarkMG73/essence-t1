@@ -23,7 +23,7 @@ dynamic_sidebar( 'bottom-widget' );
 				<div class="footer-topic-column">
 					
 					<?php 
-					if( get_theme_mod('footer_photo_cta_on_off_toggle_setting') == '1' ){
+					if( get_theme_mod('footer_photo_cta_on_off_toggle_setting')  ==  1){
 						?>
 						<div class="photo-cta-container">
 							<div id="photo-cta-photo-contianer">
@@ -88,7 +88,7 @@ dynamic_sidebar( 'bottom-widget' );
 								?>
 							</div>
 							<div class="photo-cta-text">
-								<?php echo get_theme_mod('footer_photo_cta_photo_text_editor_setting', false) ?>
+								<?php echo get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com') ?>
 							</div>
 						</div>
 					<?php

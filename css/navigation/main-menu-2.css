@@ -81,6 +81,7 @@
   background: var(--color-white);
   box-shadow: var(--box-shadow-outset-high-flat);
   transition-delay: 0.4s;
+  z-index: 1;
 }
 
 #primary-menu ul.sub-menu.sub-menu-open {
@@ -243,14 +244,15 @@
     max-height: 0;
     min-height: 0;
     transition: 1s all ease;
-    overflow-y: auto;
+    justify-content: initial;
+    animation: hide-scroll 1.5s backwards;
   }
 
   button.menu-toggle {
     font-size: calc(12px + 1vh);
-    background: var(--color-primary);
+    background: var(--color-black);
     border: none;
-    color: var(--color-black);
+    color: var(--color-white);
     box-shadow: inset -3px -3px 3px -2px black, inset 3px 3px 3px -2px white,
       3px 3px 3px -2px rgb(0 0 0 / 50%);
     z-index: 1;
@@ -281,6 +283,8 @@
   nav#site-navigation.toggled {
     max-height: calc(100vh - 100px);
     min-height: calc(100vh - 100px);
+    overflow: auto;
+    animation: hide-scroll 1s backwards;
   }
 
   .menu-main-menu-container {
@@ -290,9 +294,8 @@
     padding: 0;
     height: 100vh;
     background: inherit;
+    justify-content: initial;
     transition: 0.3s all ease;
-    box-shadow: inset 20px 20px 50px -40px white,
-      inset -20px -20px 50px -40px black;
   }
 
   #primary-menu {
@@ -325,7 +328,6 @@
 
   #primary-menu ul.sub-menu {
     max-width: 100%;
-    margin: 0.5em;
     padding: 0.25em;
     overflow: hidden;
     background: inherit;

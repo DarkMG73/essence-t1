@@ -382,9 +382,10 @@ table {
   justify-content: center;
 }
 
-.color-overlay {
+.color-overlay,
+.image-overlay {
   position: fixed;
-  top: auto;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -393,6 +394,19 @@ table {
 
 body #page-container .color-overlay {
   position: absolute;
+}
+
+.single .entry-header .color-overlay,
+.page .entry-header .color-overlay {
+  z-index: -1;
+}
+
+#page-container .entry-header > .image-overlay {
+  /* The parent's positioning throws off the background image if this div if set to fixed (controlled by Customizer setting). The following adjust to correct this.*/
+  left: -50%;
+  transform: translate(50%, 100%);
+  z-index: -1;
+  top: -100%;
 }
 
 /* - Links
@@ -436,16 +450,23 @@ input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  background: inherit;
+  color: inherit;
   line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  padding: 0.5em 1em;
+  box-shadow: var(--box-shadow-outset-flat);
+  transition: 0.1s all linear;
+  font-weight: 700;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  box-shadow: var(--box-shadow-outset-high-flat);
+  font-weight: 700;
   border-color: #ccc #bbb #aaa;
 }
 
@@ -557,6 +578,12 @@ body.admin-bar .site-header {
   min-width: 100%;
 }
 
+@media all and (max-width: 600px) {
+  section#top-welcome-section {
+    max-height: 80vh;
+  }
+}
+
 #page-welcome-container {
   /* Id no featured image is used, this is needed 
 		to offset the title being moved up into the image area */
@@ -577,8 +604,8 @@ body.admin-bar .site-header {
 		--------------------------------------------- */
 #central-container {
   flex-direction: column;
-  background-color: transparent;
   color: inherit;
+  background-color: transparent;
 }
 
 /* - Primary 
@@ -591,7 +618,7 @@ main#primary {
   padding-right: 3%;
   background-color: inherit;
   color: inherit;
-  margin: 4% 0 4% 7%;
+  margin: 3% 0 3% 2.5%;
   /* Overflow must be set to contain excessive inline styles */
   overflow: auto;
 }
@@ -652,7 +679,6 @@ main#primary {
   align-items: center;
   justify-content: center;
   margin: auto;
-  text-align: center;
 }
 
 .footer-topic-column ul {
@@ -777,6 +803,15 @@ main#primary {
   transform: scale(1.125, 1.25);
 }
 
+@media screen and (max-width: 600px) {
+  #site-welcome-container #welcome-title-wrap .positioning-wrap-x,
+  #site-welcome-container #welcome-title-wrap .positioning-wrap-y {
+    max-width: 100%;
+    margin: 0 auto !important;
+    padding: 0 1em;
+  }
+}
+
 /* - Navigation
 		--------------------------------------------- */
 .site-header {
@@ -812,6 +847,10 @@ nav#site-navigation {
 }
 
 /* Page Navigation */
+nav.navigation.pagination {
+  margin: 4em auto 0;
+}
+
 .postnav-outerwrap,
 .pagenav-outerwrap {
   display: flex;
@@ -1201,6 +1240,27 @@ nav.navigation.post-navigation {
   box-shadow: var(--box-shadow-outset-round);
 }
 
+@media screen and (max-width: 600px) {
+  .no-featured-image#page-welcome-container {
+    min-height: 15px;
+    background-color: var(--color-accent);
+  }
+
+  .single .entry-header,
+  .page .entry-header,
+  .search .page-header,
+  .category #page-title {
+    top: 0;
+    position: relative;
+    transform: none;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: calc(8px + 0.5vw);
+  }
+}
+
 .single .entry-header .entry-meta {
   font-size: 0.75em;
   letter-spacing: 0.125em;
@@ -1228,6 +1288,47 @@ nav.navigation.post-navigation {
 
 .moretag {
   font-variant: all-small-caps;
+}
+
+/* --- 404 Error Page ---*/
+.error404 #page-welcome-container {
+  background: var(--color-accent);
+  min-height: 70px;
+}
+
+/* --- Archive, Category & Search Results ---*/
+.archive #page-welcome-container,
+.search #page-welcome-container {
+  min-height: 15px;
+  background-color: var(--color-accent);
+}
+
+.category #page-title,
+.search .page-header {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  color: inherit;
+  background-color: inherit;
+  max-width: 90%;
+  padding: 1em 4em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  box-shadow: none;
+}
+
+.category #page-title h1,
+.search .page-header .page-title h1 {
+  font-size: 2.4rem;
+}
+
+.category #page-title .page-title,
+.search .page-header .page-title .page-title {
+  font-size: 2.8rem;
 }
 
 /* - Posts & Page Content
@@ -1333,9 +1434,11 @@ nav.navigation.post-navigation {
   min-width: 100%;
   position: relative;
 }
-.item {
+
+.ms-container .item {
   position: absolute;
   overflow: hidden;
+  padding: 1em;
 }
 
 #secondary ul {
@@ -1527,6 +1630,37 @@ nav.navigation.post-navigation {
 
 #comments ol {
   list-style: none;
+}
+
+.comment-error-message a {
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.comment-error-message {
+  background: var(--color-accent);
+  text-align: center;
+  color: var(--color-primary);
+  padding: 1em;
+  text-shadow: 1px 1px 1px rgb(255 255 255 / 50%),
+    -1px -1px 1px rgb(0 0 0 / 50%);
+  box-shadow: inset 3px 3px 4px -3px hsl(0deg 0% 100%),
+    inset -3px -3px 4px -3px black;
+}
+
+.comment-error-message a:hover {
+  transform: scaleX(1.125) translateX(-6.25%);
+  display: inline-block;
+  text-shadow: inherit;
+}
+.comment-error-message a {
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  display: inline-block;
+  transition: 0.3s all ease;
+  transform-origin: right;
 }
 
 /* - Widgets

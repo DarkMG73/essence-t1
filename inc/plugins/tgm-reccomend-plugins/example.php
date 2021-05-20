@@ -10,7 +10,7 @@
  *
  * @package    TGM-Plugin-Activation
  * @subpackage Example
- * @version    2.6.1 for parent theme Udemy
+ * @version    2.6.1 for parent theme EssenceTheme
  * @author     Thomas Griffin, Gary Jones, Juliette Reinders Folmer
  * @copyright  Copyright (c) 2011, Thomas Griffin
  * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
@@ -33,7 +33,7 @@
  */
 require_once get_template_directory() . '/path/to/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'udemy_register_required_plugins' );
+add_action( 'tgmpa_register', 'gi_register_required_plugins' );
 
 /**
  * Register the required plugins for this theme.
@@ -52,7 +52,7 @@ add_action( 'tgmpa_register', 'udemy_register_required_plugins' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function udemy_register_required_plugins() {
+function gi_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
@@ -121,7 +121,7 @@ function udemy_register_required_plugins() {
 	 * Only uncomment the strings in the config array if you want to customize the strings.
 	 */
 	$config = array(
-		'id'           => 'udemy',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'gi-essence-theme',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'parent_slug'  => 'themes.php',            // Parent menu slug.
@@ -134,76 +134,76 @@ function udemy_register_required_plugins() {
 
 		/*
 		'strings'      => array(
-			'page_title'                      => __( 'Install Required Plugins', 'udemy' ),
-			'menu_title'                      => __( 'Install Plugins', 'udemy' ),
+			'page_title'                      => __( 'Install Required Plugins', 'gi-essence-theme' ),
+			'menu_title'                      => __( 'Install Plugins', 'gi-essence-theme' ),
 			/* translators: %s: plugin name. * /
-			'installing'                      => __( 'Installing Plugin: %s', 'udemy' ),
+			'installing'                      => __( 'Installing Plugin: %s', 'gi-essence-theme' ),
 			/* translators: %s: plugin name. * /
-			'updating'                        => __( 'Updating Plugin: %s', 'udemy' ),
-			'oops'                            => __( 'Something went wrong with the plugin API.', 'udemy' ),
+			'updating'                        => __( 'Updating Plugin: %s', 'gi-essence-theme' ),
+			'oops'                            => __( 'Something went wrong with the plugin API.', 'gi-essence-theme' ),
 			'notice_can_install_required'     => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'This theme requires the following plugin: %1$s.',
 				'This theme requires the following plugins: %1$s.',
-				'udemy'
+				'gi-essence-theme'
 			),
 			'notice_can_install_recommended'  => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'This theme recommends the following plugin: %1$s.',
 				'This theme recommends the following plugins: %1$s.',
-				'udemy'
+				'gi-essence-theme'
 			),
 			'notice_ask_to_update'            => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
 				'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
-				'udemy'
+				'gi-essence-theme'
 			),
 			'notice_ask_to_update_maybe'      => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'There is an update available for: %1$s.',
 				'There are updates available for the following plugins: %1$s.',
-				'udemy'
+				'gi-essence-theme'
 			),
 			'notice_can_activate_required'    => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'The following required plugin is currently inactive: %1$s.',
 				'The following required plugins are currently inactive: %1$s.',
-				'udemy'
+				'gi-essence-theme'
 			),
 			'notice_can_activate_recommended' => _n_noop(
 				/* translators: 1: plugin name(s). * /
 				'The following recommended plugin is currently inactive: %1$s.',
 				'The following recommended plugins are currently inactive: %1$s.',
-				'udemy'
+				'gi-essence-theme'
 			),
 			'install_link'                    => _n_noop(
 				'Begin installing plugin',
 				'Begin installing plugins',
-				'udemy'
+				'gi-essence-theme'
 			),
 			'update_link' 					  => _n_noop(
 				'Begin updating plugin',
 				'Begin updating plugins',
-				'udemy'
+				'gi-essence-theme'
 			),
 			'activate_link'                   => _n_noop(
 				'Begin activating plugin',
 				'Begin activating plugins',
-				'udemy'
+				'gi-essence-theme'
 			),
-			'return'                          => __( 'Return to Required Plugins Installer', 'udemy' ),
-			'plugin_activated'                => __( 'Plugin activated successfully.', 'udemy' ),
-			'activated_successfully'          => __( 'The following plugin was activated successfully:', 'udemy' ),
+			'return'                          => __( 'Return to Required Plugins Installer', 'gi-essence-theme' ),
+			'plugin_activated'                => __( 'Plugin activated successfully.', 'gi-essence-theme' ),
+			'activated_successfully'          => __( 'The following plugin was activated successfully:', 'gi-essence-theme' ),
 			/* translators: 1: plugin name. * /
-			'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'udemy' ),
+			'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'gi-essence-theme' ),
 			/* translators: 1: plugin name. * /
-			'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'udemy' ),
+			'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'gi-essence-theme' ),
 			/* translators: 1: dashboard link. * /
-			'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'udemy' ),
-			'dismiss'                         => __( 'Dismiss this notice', 'udemy' ),
-			'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'udemy' ),
-			'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'udemy' ),
+			'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'gi-essence-theme' ),
+			'dismiss'                         => __( 'Dismiss this notice', 'gi-essence-theme' ),
+			'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'gi-essence-theme' ),
+			'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'gi-essence-theme' ),
 
 			'nag_type'                        => '', // Determines admin notice type - can only be one of the typical WP notice classes, such as 'updated', 'update-nag', 'notice-warning', 'notice-info' or 'error'. Some of which may not work as expected in older WP versions.
 		),

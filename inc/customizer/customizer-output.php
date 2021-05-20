@@ -10,6 +10,8 @@ function gi_customizer_css() {
 
 	<style type="text/css">
 
+.site-branding .site-title a { font-family: <?php echo get_theme_mod( 'site_title_manubar_font_family_override_box' ); ?> ; }
+
 		#central-container #site-welcome-container #welcome-title-wrap .page-title { font-family: <?php echo get_theme_mod( 'large_title_font_family_override_box' ); ?> ; }
 		
 		#central-container #site-welcome-container #welcome-title-wrap .site-description { font-family: <?php echo get_theme_mod( 'site_description_font_family_override_box' ); ?> ; }

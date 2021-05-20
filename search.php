@@ -50,17 +50,48 @@ get_header();
 						get_template_part( 'template-parts/content', 'search' );
 
 					endwhile;
+					?>
 
-					the_posts_navigation();
+				</div><!-- #masonry-container -->
+				
+				<?php
+				the_posts_navigation();
 
-				else :
+			else :
 
-					get_template_part( 'template-parts/content', 'none' );
+				get_template_part( 'template-parts/content', 'none' );
 
-				endif;
+				the_widget( 'WP_Widget_Recent_Posts' );
 				?>
 
-			</div><!-- #masonry-container -->
+				<div class="widget widget_categories">
+					<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'gi-essence-theme' ); ?></h2>
+					<ul>
+						<?php
+						wp_list_categories(
+							array(
+								'orderby'    => 'count',
+								'order'      => 'DESC',
+								'show_count' => 1,
+								'title_li'   => '',
+								'number'     => 10,
+							)
+						);
+						?>
+					</ul>
+				</div><!-- .widget -->
+
+				<?php
+				/* translators: %1$s: smiley */
+				$gi_essence_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'gi-essence-theme' ), convert_smilies( ':)' ) ) . '</p>';
+				the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$gi_essence_theme_archive_content" );
+
+											the_widget( 'WP_Widget_Tag_Cloud' );
+
+						endif;
+						?>
+
+			
 
 		</main><!-- #primary -->
 

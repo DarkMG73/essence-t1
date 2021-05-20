@@ -9,7 +9,7 @@
 */   
 function gi_customizer_default_header_mods( $wp_customize ) {
 
-    $wp_customize->get_section( 'header_image'  )->title   = 'Header Background';
+    $wp_customize->get_section( 'header_image'  )->title   = 'Home Page Header Background';
 	$wp_customize->get_section( 'header_image'  )->priority   = 10;
     $wp_customize->get_control( 'header_image'  )->priority   = 10;
 }
