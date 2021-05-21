@@ -26,19 +26,19 @@
 }
 
 #primary-menu .menu-item,
-#primary-menu .page-item {
+#primary-menu .page_item {
   display: block;
   position: relative;
   margin: auto 1em;
 }
 
 #primary-menu > .menu-item,
-#primary-menu > .page-item {
+#primary-menu > .page_item {
   min-width: fit-content;
 }
 
 #primary-menu .sub-menu .menu-item,
-#primary-menu .sub-menu .page-item {
+#primary-menu .sub-menu .page_item {
   margin: 0.5em 0;
 }
 
@@ -69,7 +69,7 @@
 }
 
 #primary-menu .sub-menu .menu-item,
-#primary-menu .sub-menu .page-item {
+#primary-menu .sub-menu .page_item {
   margin: 0.5em 1em;
 }
 
@@ -315,7 +315,7 @@
   }
 
   #primary-menu .menu-item,
-  #primary-menu .page-item {
+  #primary-menu .page_item {
     margin: 1em auto;
     font-size: calc(14px + 1vh);
     width: 100%;
@@ -340,7 +340,7 @@
   }
 
   #primary-menu .sub-menu .menu-item,
-  #primary-menu .sub-menu .page-item {
+  #primary-menu .sub-menu .page_item {
     max-width: fit-content;
     margin: auto;
   }

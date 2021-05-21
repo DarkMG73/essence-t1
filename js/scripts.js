@@ -20,13 +20,16 @@ function masonry1Init(){
 ////////////////////
 giGlobalChest.adjustForLetterSpacing = function(elm){ 
     targetElm = document.querySelector(elm)
-    const elmStyles = window.getComputedStyle(targetElm)
 
-    if(elmStyles.textAlign === 'center'){
-        const letterSpacingAmount = parseFloat(elmStyles.letterSpacing, 10)
-        targetElm.style.marginLeft = letterSpacingAmount/2 + 'px'
-    } else {
-        targetElm.style.marginLeft =  ''
+    if(targetElm){
+        const elmStyles = window.getComputedStyle(targetElm)
+
+        if(elmStyles.textAlign === 'center'){
+            const letterSpacingAmount = parseFloat(elmStyles.letterSpacing, 10)
+            targetElm.style.marginLeft = letterSpacingAmount/2 + 'px'
+        } else {
+            targetElm.style.marginLeft =  ''
+        }
     }
 }
 
