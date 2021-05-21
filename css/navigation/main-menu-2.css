@@ -7,6 +7,11 @@
   margin: auto;
 }
 
+#primary-menu > .nav-menu {
+  margin: 0;
+  padding: 0;
+}
+
 .menu-item-has-children:not(.sub-menu .menu-item-has-children):before,
 .menu-item-has-children:not(.sub-menu .menu-item-has-children):after {
   content: "\0021e3";
@@ -144,8 +149,8 @@
   transition-delay: 0s;
 }
 
-#primary-menu > li > .sub-menu > li > a:first-child {
-  margin-top: 2em;
+#primary-menu > li > .sub-menu > :first-child {
+  margin-top: 2em !important;
   display: inline-block;
 }
 
@@ -160,6 +165,8 @@
   display: inline;
   margin-right: 0.5em;
   transition: var(--tran-7-lin);
+  position: absolute;
+  transform: translateX(-150%);
 }
 
 .sub-menu-toggle:before {
