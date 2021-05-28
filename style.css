@@ -397,7 +397,8 @@ body #page-container .color-overlay {
 }
 
 .single .entry-header .color-overlay,
-.page .entry-header .color-overlay {
+.page .entry-header .color-overlay,
+.home-template #page-title .color-overlay {
   z-index: -1;
 }
 
@@ -576,6 +577,13 @@ body.admin-bar .site-header {
   background-size: cover;
   max-height: 720px;
   min-width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#top-welcome-section img {
+  min-width: 100%;
 }
 
 @media all and (max-width: 600px) {
@@ -592,6 +600,8 @@ body.admin-bar .site-header {
 
 #site-welcome-container {
   overflow: hidden;
+  box-shadow: var(--box-shadow-outset-round);
+  /* border: 1px outset gainsboro; */
 }
 
 /* - First Transition Section 
@@ -1211,6 +1221,37 @@ nav.navigation.post-navigation {
   word-break: break-word;
 }
 
+/* --- Home Tmeplate ---*/
+.home-template #welcome-title-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.home-template #welcome-title-wrap,
+.home-template #welcome-title-wrap > * {
+  width: 100%;
+  text-align: center;
+}
+
+.home-template #welcome-title-wrap #page-title {
+  position: relative;
+  z-index: 1;
+  color: inherit;
+  background-color: inherit;
+  max-width: 90%;
+  padding: 2em 4em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--box-shadow-outset-round);
+  margin: 2em auto;
+}
+
 /* --- single post ---*/
 .single #page-welcome-container .wp-post-image {
   min-width: 100%;
@@ -1221,12 +1262,12 @@ nav.navigation.post-navigation {
 }
 
 .single .entry-header,
-.page .entry-header,
+.page > .entry-header,
 .search .page-header,
 .category #page-title {
   position: absolute;
   /* top: -92px; */
-  top: -1%;
+  top: -2em;
   left: 50%;
   transform: translate(-50%, -100%);
   color: inherit;

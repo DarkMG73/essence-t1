@@ -1,6 +1,6 @@
 <?php
 /**
- * Home template file
+ * Front-Page Template File
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  * @package gi-essence-theme
  */

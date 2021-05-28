@@ -241,7 +241,7 @@ Kirki::add_field( 'gi_theme_config', [
         	'type'        => 'color',
         	'settings'    => 'color_palette_c7',
         	'label'       => __( 'High Contrast: White (Post Background)', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'This should be pure white or a near-white gray that compliments the current palette. This will be the default post background color and can be used anytime a high-contrast light color is needed.', 'gi-essence-theme' ),
+        	'description' => esc_attr__( 'This should be pure white or a near-white (light gray, cream, light blue, etc) that compliments the current palette. This will be the default post background color and can be used anytime a high-contrast light color is needed.', 'gi-essence-theme' ),
         	'section'     => 'colors',
         	'default'     => $themePaletteDefault[6],
         	'transport'   => 'refresh',

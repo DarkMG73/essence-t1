@@ -27,9 +27,13 @@ EssenceTheme is a powerful and elegant theme focused on providing all of the nee
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =
+EssenceTheme has been designed and built with the latest WordPress and coding best practices in mind. This ensures it will be fully compatible with any plugin that also follows best practices, and most that do not.
 
-EssenceTheme works with all plugins that follow standard practices (plus many that do not).
-In addition, EssenceTheme includes extended special support for WooCommerce, BuddyPress and JetPack's Infinite Scroll.
+In addition, EssenceTheme includes extended optimized support for:
+
+WooCommerce
+BuddyPress
+JetPack (all modules except for Infinite Scroll, which is not supported )
 
 == Changelog ==
 

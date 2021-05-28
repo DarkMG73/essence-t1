@@ -185,7 +185,7 @@ Kirki::add_field( 'gi_theme_config', [
 		),
 		'output' => array(
 			array(
-				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay',
+				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay, .home-template #page-title > .color-overlay',
 				'property' => 'background-color',
 				),
 			),

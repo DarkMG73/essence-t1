@@ -14,8 +14,8 @@
 		$color1 = '#528212', 
 		$color2 = '#ffffff',
 		$color3 = '#798e91',
-		$color4 = '#0c1c2c',
-		$color5 = '#d4849a',
+		$color4 = '#d4849a',
+		$color5 = '#0c1c2c',
 		$color6 = '#373737',
 		$color7 = '#ffffff',
 		

@@ -12,7 +12,7 @@ function gi_customizer_default_homepage_mods( $wp_customize ) {
     $wp_customize->get_section( 'static_front_page'  )->title   = 'Home/Front Page';
     $wp_customize->get_section( 'static_front_page'  )->description   = '';
     $wp_customize->get_section( 'static_front_page'  )->priority   = 15;
-    $wp_customize->get_control( 'show_on_front'  )->label   = 'Chose the Home or Front Page';
+    $wp_customize->get_control( 'show_on_front'  )->label   = 'Choose the Home or Front Page';
     $wp_customize->get_control( 'show_on_front'  )->priority   = 5;
     $wp_customize->get_control( 'show_on_front'  )->description   = 'We can choose what is displayed on the first page of this site. It can be a standard blog page with posts in reverse chronological order, or a fixed/static page. To set a static first page, we first need to create two pages. One will become the "Front" page with a custom-made display, and the other will be the "Home" page where the posts are displayed.';
     

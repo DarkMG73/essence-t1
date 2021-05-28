@@ -15,9 +15,6 @@
 		<div class="color-overlay"></div>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-
-	<?php gi_essence_theme_post_thumbnail(); ?>
-
 	<div class="entry-content">
 		<?php
 		the_content();

@@ -209,7 +209,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'navtext_intro_for_customizer',
 		'section'     => 'nav_text_type',
-			'default'         => '<div class="intro-text"><p>Here we can set up the font, size, color and more for the main nav menu text. <strong>NOTE: This does not include the site title and logo in the menu bar.</strong>.</p></div>',
+			'default'         => '<div class="intro-text"><p>Here we can set up the font, size, color and more for the main nav menu text. <strong>NOTE: This does not include the site title and logo in the menu bar.</strong></p></div>',
 		'priority'    => 0,
 	] );
 
@@ -734,15 +734,15 @@ Kirki::add_section( 'page_head_title_type', array(
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_description_horizontal_adjustment'],
 		'choices'     => [
-			'min'  => -20,
-			'max'  => 20,
-			'step' => 0.05,
+			'min'  => -500,
+			'max'  => 500,
+			'step' => 1,
 		],
 		'output'      => [
 			[
 				'element' => '#site-welcome-container #welcome-title-wrap #site-description-wrap.positioning-wrap-x',
 				'property' => 'margin-left',
-				'suffix' => 'em',
+				'suffix' => 'px',
 			],
 		],
 		'priority'    => 70,
@@ -760,8 +760,8 @@ Kirki::add_section( 'page_head_title_type', array(
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_description_vertical_adjustment'],
 		'choices'     => [
-			'min'  => -50,
-			'max'  => 50,
+			'min'  => -200,
+			'max'  => 200,
 			'step' => 1,
 		],
 		'output'      => [
@@ -769,7 +769,7 @@ Kirki::add_section( 'page_head_title_type', array(
 				'element' => '#site-welcome-container #welcome-title-wrap .site-description',
 				'property' => 'transform',
 				'prefix' => 'translateY(',
-				'suffix' => 'em)',
+				'suffix' => 'px)',
 			],
 		],
 		'priority'    => 70,
