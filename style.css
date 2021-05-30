@@ -848,7 +848,7 @@ nav#site-navigation {
 .menu-main-menu-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -1022,7 +1022,7 @@ nav.navigation.post-navigation {
   margin: auto;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 800px) {
   .menu-toggle {
     display: none;
   }
