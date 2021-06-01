@@ -776,10 +776,9 @@ main#primary {
   width: 75;
   top: 10px;
   background: white;
-  border-bottom: 1px solid rgb(0 0 0 / 22%);
   border-left: 1px solid rgb(0 0 0 / 8%);
   border-radius: 0 0 50% 0;
-  box-shadow: 2px 14px 21px -21px black;
+  box-shadow: -3px 18px 21px -21px black;
   transform: translate(0, 10px) scale(1);
   padding: 3px;
 }
