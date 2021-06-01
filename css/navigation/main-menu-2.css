@@ -235,16 +235,18 @@
   #masthead .site-branding .menubar-title-positioning-wrap-x,
   #masthead .site-branding .menubar-title-positioning-wrap-y {
     transform: none !important;
+    width: 100%;
   }
 
   #masthead.site-header {
     position: sticky;
     top: 0;
-    flex-direction: column;
+    flex-direction: row;
     max-height: 100vh;
     width: 100%;
     box-shadow: inset 20px 20px 50px -40px white,
       inset -20px -20px 50px -40px #000000;
+    flex-wrap: wrap;
   }
 
   .site-header #site-navigation.toggled:after {
@@ -278,6 +280,7 @@
   #masthead.site-header .site-title {
     font-size: calc(10px + 1vw);
     letter-spacing: 0.1em;
+    text-align: center;
   }
 
   .site-header #site-navigation {
@@ -301,14 +304,16 @@
       3px 3px 3px -2px rgb(0 0 0 / 50%);
     z-index: 1;
     border-radius: 10px;
-    margin: 0 auto 0.75em;
+    margin: 0 1%;
     padding: 0.5em 2em;
     letter-spacing: 0.25em;
     font-weight: 700;
     transition: 0.1s width cubic-bezier(0, 1.1, 0.58, 1);
-    width: 8em;
     min-height: 2em;
     max-height: 2em;
+    min-width: 320px;
+    flex-basis: 50%;
+    flex-grow: 1;
     overflow: hidden;
   }
 

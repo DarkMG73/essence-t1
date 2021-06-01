@@ -42,5 +42,6 @@ JetPack (all modules except for Infinite Scroll, which is not supported )
 
 == Credits ==
 
+* EssenceTheme was designed and built by Mike Glass.
 * To ensure best WordPress Coding practices, and maximum compatibility, Essence theme incorporates Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)

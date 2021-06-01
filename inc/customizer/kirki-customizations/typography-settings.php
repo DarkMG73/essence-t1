@@ -335,9 +335,8 @@ Kirki::add_section( 'nav_text_type', array(
 		'output'      => [
 			[
 				'element' => '#masthead .site-branding .menubar-title-positioning-wrap-x',
-				'property' => 'transform',
-				'prefix' => 'translateX(',
-				'suffix' => '%)',
+				'property' => 'margin-left',
+				'suffix' => 'px',
 			],
 		],
 		'priority'    => 30,

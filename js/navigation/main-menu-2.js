@@ -27,4 +27,10 @@
         
         }
     });
+
+    // Clear open sub-menus on resize
+    $(window).resize(function () {
+        $('.sub-menu-open').removeClass("sub-menu-open");
+    });
+
 })(jQuery)
