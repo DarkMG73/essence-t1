@@ -27,7 +27,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'header_title_for_customizer',
 	'section'     => 'header_image',
-	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'kirki' ) . '</div>',
+	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'gi-essence-theme' ) . '</div>',
 	'priority'    => 5,
 ] );
 

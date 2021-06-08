@@ -12,8 +12,9 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
-define( 'gi_DEV_MODE', true);
+define( 'gi_DEV_MODE', false);
 
+// Dev use only
 // function  removeHeadCSS(){
 // 	unset($set_color_pallet);
 // }

@@ -2,8 +2,8 @@
 
 Kirki::add_panel( 'typography', array(
     'priority'    => 8,
-    'title'       => esc_html__( 'Typography', 'kirki' ),
-    'description' => esc_html__( 'The style, arrangement, or appearance of all of the text.', 'kirki' ),
+    'title'       => esc_html__( 'Typography', 'gi-essence-theme' ),
+    'description' => esc_html__( 'The style, arrangement, or appearance of all of the text.', 'gi-essence-theme' ),
 ) );
 
 
@@ -15,7 +15,7 @@ Kirki::add_panel( 'typography', array(
 ----------------------------
 */   
 Kirki::add_section( 'body_text_type', array(
-    'title'          => esc_html__( 'Body Typography', 'kirki' ),
+    'title'          => esc_html__( 'Body Typography', 'gi-essence-theme' ),
     'panel'          => 'typography',
     'priority'       => 5,
 ) );
@@ -26,7 +26,7 @@ Kirki::add_section( 'body_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'bodytext_title_for_customizer',
 		'section'     => 'body_text_type',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'kirki' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 0,
 	] );
 
@@ -44,7 +44,7 @@ Kirki::add_section( 'body_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'body_text_title_for_customizer',
 		'section'     => 'body_text_type',
-		'default'         => '<div class="customizer-divider">' . __( 'General Body Text', 'kirki' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'General Body Text', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 5,
 	] );
 
@@ -53,7 +53,7 @@ Kirki::add_section( 'body_text_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'typography_setting',
-		'label'       => esc_html__( 'Body Font', 'kirki' ),
+		'label'       => esc_html__( 'Body Font', 'gi-essence-theme' ),
 		'section'     => 'body_text_type',
 		'choices' => [
 			'fonts' => [
@@ -117,7 +117,7 @@ Kirki::add_section( 'body_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'link_title_for_customizer',
 		'section'     => 'body_text_type',
-		'default'         => '<div class="customizer-divider">' . __( 'Link Text', 'kirki' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'Link Text', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 40,
 	] );
 
@@ -126,8 +126,8 @@ Kirki::add_section( 'body_text_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'link_font_setting',
-		'label'       => esc_html__( 'Link Font & Style', 'kirki' ),
-		'description'       => esc_html__( 'It is unlikely to ever want to have a different font family for the links, but styling links bold, italics, etc, is not uncommon. This tool will default to the body font settings for almost everything, but we can override them here, if desired. &nbsp; &nbsp; NOTE: This will affect posts in the masonry post display, but not affect the link color in the one-column post display. This is due to the latter being designed with a white background and dark text as part of intended style', 'kirki' ),
+		'label'       => esc_html__( 'Link Font & Style', 'gi-essence-theme' ),
+		'description'       => esc_html__( 'It is unlikely to ever want to have a different font family for the links, but styling links bold, italics, etc, is not uncommon. This tool will default to the body font settings for almost everything, but we can override them here, if desired. &nbsp; &nbsp; NOTE: This will affect posts in the masonry post display, but not affect the link color in the one-column post display. This is due to the latter being designed with a white background and dark text as part of intended style', 'gi-essence-theme' ),
 		'section'     => 'body_text_type',
 		'choices' => [
 			'fonts' => [
@@ -190,7 +190,7 @@ Kirki::add_section( 'body_text_type', array(
 ----------------------------
 */  
 Kirki::add_section( 'nav_text_type', array(
-    'title'          => esc_html__( 'Navigation Typography', 'kirki' ),
+    'title'          => esc_html__( 'Navigation Typography', 'gi-essence-theme' ),
     'panel'          => 'typography',
     'priority'       => 5,
 ) );
@@ -201,7 +201,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'navtext_title_for_customizer',
 		'section'     => 'nav_text_type',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'kirki' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 0,
 	] );
 
@@ -219,7 +219,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'text_menubar_title_for_customizer',
 		'section'     => 'nav_text_type',
-		'default'         => '<div class="customizer-divider">' . __( 'General Text in Menubar', 'kirki' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'General Text in Menubar', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 20,
 	] );
 
@@ -228,8 +228,8 @@ Kirki::add_section( 'nav_text_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'menu_bar_type_setting',
-		'label'       => esc_html__( 'Menu Bar Text', 'kirki' ),
-		'description' => esc_html__( 'This will control the settings for the menu bar text. NOTE: This will not affect the small site title in the menu bar. That is controlled in the "Small Site Title Text" controller above.', 'kirki' ),
+		'label'       => esc_html__( 'Menu Bar Text', 'gi-essence-theme' ),
+		'description' => esc_html__( 'This will control the settings for the menu bar text. NOTE: This will not affect the small site title in the menu bar. That is controlled in the "Small Site Title Text" controller above.', 'gi-essence-theme' ),
 		'section'     => 'nav_text_type',
 		'choices' => [
 			'fonts' => [
@@ -254,40 +254,6 @@ Kirki::add_section( 'nav_text_type', array(
 		],
 	] );
 
-
-	/* Color Picker for Nav bar general text
-	----------------------------*/  
-	// Kirki::add_field( 'gi_theme_config', array(
-	// 	'type'        => 'color',
-	// 	'settings'    => 'menubar_general_text_color_setting',
-	// 	'label'       => __( 'Menu Bar Text Color', 'gi-essence-theme' ),
-	// 	'description' => esc_attr__( 'This will set the color for the text in the menu bar, but will not affect the site title or logo in there.', 'gi-essence-theme' ),
-	// 	'section'     => 'nav_text_type',
-	// 	'default'     => 'inherit',
-	// 	'transport'   => 'auto',
-	// 	'priority'    => 20,
-	// 	'choices'     => array(
-	// 		'alpha' => true,
-	// 		'palettes' => array(
-	// 			$colorOne,
-	// 			$colorTwo,
-	// 			$colorThree,
-	// 			$colorFour,
-	// 			$colorFive,
-	// 			$colorSix,
-	// 			$colorSeven,
-	// 			),
-	// 	),
-	// 	'output' => array(
-	// 		array(
-	// 			'element'  => '#masthead, .site-header:not(.site-title a) .page_item,  .site-header:not(.site-title a)  *',
-	// 			'property' => 'color',
-	// 			),
-	// 		),
-	// 	) 
-	// );
-
-
 /*
 ----------------------------
     
@@ -301,7 +267,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'sitetitle_menubar_title_for_customizer',
 		'section'     => 'nav_text_type',
-		'default'         => '<div class="customizer-divider">' . __( 'Site Title in Menubar', 'kirki' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'Site Title in Menubar', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 30,
 	] );
 
@@ -311,7 +277,7 @@ Kirki::add_section( 'nav_text_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'toggle',
 		'settings'    => 'site_title_menubar_toggle_setting',
-		'label'       => esc_html__( 'Show/Hide the Site Title in the Menu Bar', 'kirki' ),
+		'label'       => esc_html__( 'Show/Hide the Site Title in the Menu Bar', 'gi-essence-theme' ),
 		'section'     => 'nav_text_type',
 		'default'     => '1',
 		'priority'    => 30,
@@ -323,8 +289,8 @@ Kirki::add_section( 'nav_text_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'menubar-logo_horizonal_setting',
-		'label'       => esc_html__( 'Menu Bar Site Title Horizontal Adjustment', 'kirki' ),
-		'description'=>  esc_html__( 'Move the menu bar site title left or right NOTE: IN some cases the page must be SCROLLED UPWARD to see the site title.', 'kirki' ),
+		'label'       => esc_html__( 'Menu Bar Site Title Horizontal Adjustment', 'gi-essence-theme' ),
+		'description'=>  esc_html__( 'Move the menu bar site title left or right NOTE: IN some cases the page must be SCROLLED UPWARD to see the site title.', 'gi-essence-theme' ),
 		'section'     => 'nav_text_type',
 		'default'     => $generalThemeDefaults['typography']['menubar-logo_horizonal_adjustment'],
 		'choices'     => [
@@ -349,8 +315,8 @@ Kirki::add_section( 'nav_text_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'menubar-title_vertical_setting',
-		'label'       => esc_html__( 'Menu Bar Site Title Vertical Adjustment', 'kirki' ),
-		'description'=>  esc_html__( 'Move the menu bar site title up or down NOTE: In some cases the page must be SCROLLED UPWARD to see the site title.', 'kirki' ),
+		'label'       => esc_html__( 'Menu Bar Site Title Vertical Adjustment', 'gi-essence-theme' ),
+		'description'=>  esc_html__( 'Move the menu bar site title up or down NOTE: In some cases the page must be SCROLLED UPWARD to see the site title.', 'gi-essence-theme' ),
 		'section'     => 'nav_text_type',
 		'default'     => $generalThemeDefaults['typography']['menubar-logo_vertical_adjustment'],
 		'choices'     => [
@@ -375,8 +341,8 @@ Kirki::add_section( 'nav_text_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'site_title_font_setting',
-		'label'       => esc_html__( 'Small Site Title Text', 'kirki' ),
-		'description' => esc_html__( 'This will control the settings ONLY for the the website title in the menu bar. This will not control the large site title that appears in the page head on the "Front and "Home" pages. For that, use the "Large Site Title Text" controller below.', 'kirki' ),
+		'label'       => esc_html__( 'Small Site Title Text', 'gi-essence-theme' ),
+		'description' => esc_html__( 'This will control the settings ONLY for the the website title in the menu bar. This will not control the large site title that appears in the page head on the "Front and "Home" pages. For that, use the "Large Site Title Text" controller below.', 'gi-essence-theme' ),
 		'section'     => 'nav_text_type',
 		'choices' => [
 			'fonts' => [
@@ -457,8 +423,8 @@ Kirki::add_section( 'nav_text_type', array(
 ----------------------------
 */  
 Kirki::add_section( 'page_head_title_type', array(
-	'title'          => esc_html__( 'Large Page Head Titles', 'kirki' ),
-	'description'    => esc_html__( 'The style, arrangement, or appearance of large titles in the page heads on the "Front, "Home and standard pages.', 'kirki' ),
+	'title'          => esc_html__( 'Large Page Head Titles', 'gi-essence-theme' ),
+	'description'    => esc_html__( 'The style, arrangement, or appearance of large titles in the page heads on the "Front, "Home and standard pages.', 'gi-essence-theme' ),
 	'panel'          => 'typography',
 	'priority'       => 5,
 ) );
@@ -469,7 +435,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'custom',
 		'settings'    => 'site_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'kirki' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 0,
 	] );
 
@@ -488,7 +454,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'custom',
 		'settings'    => 'sitetitle_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
-			'default'         => '<div class="customizer-divider">' . __( 'Page Head Site Title', 'kirki' ) . '</div>',
+			'default'         => '<div class="customizer-divider">' . __( 'Page Head Site Title', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 50,
 	] );
 
@@ -499,7 +465,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'toggle',
 		'settings'    => 'site_title_pagehead_toggle_setting',
-		'label'       => esc_html__( 'Show/Hide the Site Title in the Page Head (Front & Home Pages Only)', 'kirki' ),
+		'label'       => esc_html__( 'Show/Hide the Site Title in the Page Head (Front & Home Pages Only)', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['typography']['site_title_pagehead_toggle'],
 		'priority'    => 50,
@@ -512,8 +478,8 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_title_horizonal_setting',
-		'label'       => esc_html__( 'Large Site Title Horizontal Plaement ("Front" and "Home" pages only)', 'kirki' ),
-		'description'=>  esc_html__( 'Move the large site title up or down. NOTE: This will only affect the large site title on the "Front" and "Home" pages, not the page title on all other pages.', 'kirki' ),
+		'label'       => esc_html__( 'Large Site Title Horizontal Plaement ("Front" and "Home" pages only)', 'gi-essence-theme' ),
+		'description'=>  esc_html__( 'Move the large site title up or down. NOTE: This will only affect the large site title on the "Front" and "Home" pages, not the page title on all other pages.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['large_page_title_horizonal_adjustment'],
 		'choices'     => [
@@ -540,8 +506,8 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_title_vertical_setting',
-		'label'       => esc_html__( 'Large Site Title & Description Vertical Plaement ("Front" and "Home" pages only)', 'kirki' ),
-		'description'=>  esc_html__( 'Move the large site title up or down. NOTE: This will only affect the large site title on the "Front" and "Home" pages, not the page title on all other pages.', 'kirki' ),
+		'label'       => esc_html__( 'Large Site Title & Description Vertical Plaement ("Front" and "Home" pages only)', 'gi-essence-theme' ),
+		'description'=>  esc_html__( 'Move the large site title up or down. NOTE: This will only affect the large site title on the "Front" and "Home" pages, not the page title on all other pages.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['large_page_title_vertical_adjustment'],
 		'choices'     => [
@@ -567,8 +533,8 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'page_title_font_setting',
-		'label'       => esc_html__( 'Large Site Title Text', 'kirki' ),
-		'description' => esc_html__( 'This will control all settings for the the large site title in the page head of standard pages. In addition, this will control the large site title that is used in the page head on the "Home" and "Front" pages, but settings for this can be overridden in the "Large Site Title Text" controller above, which allows us to make the site title unique, if we wish.', 'kirki' ),
+		'label'       => esc_html__( 'Large Site Title Text', 'gi-essence-theme' ),
+		'description' => esc_html__( 'This will control all settings for the the large site title in the page head of standard pages. In addition, this will control the large site title that is used in the page head on the "Home" and "Front" pages, but settings for this can be overridden in the "Large Site Title Text" controller above, which allows us to make the site title unique, if we wish.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'choices' => [
 			'fonts' => [
@@ -598,8 +564,8 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_font_size_setting',
-		'label'       => esc_html__( 'Site Title Font Size', 'kirki' ),
-		'description'=>  esc_html__( 'We want the site title in the page head to look good on all devices. Setting this size as a percentage here, along with some wizardry behind the scenes, will keep the title looking right on cell phones as well as 4K monitors.', 'kirki' ),
+		'label'       => esc_html__( 'Site Title Font Size', 'gi-essence-theme' ),
+		'description'=>  esc_html__( 'We want the site title in the page head to look good on all devices. Setting this size as a percentage here, along with some wizardry behind the scenes, will keep the title looking right on cell phones as well as 4K monitors.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_title_font_size_percent'],
 		'choices'     => [
@@ -626,23 +592,23 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', array(
 		'type'        => 'select',
 		'settings'    => 'site_title_pagehead_font_variant_setting',
-		'label'       => esc_html__( 'Site Title Font Variant', 'kirki' ),
-		'description' => esc_html__( 'Here we can make the site title small caps, petite caps and more. NOTE: These options will only work if the specific font being used supplies them. For example, most fonts will have small caps, but not all will have petite caps.', 'kirki' ),
+		'label'       => esc_html__( 'Site Title Font Variant', 'gi-essence-theme' ),
+		'description' => esc_html__( 'Here we can make the site title small caps, petite caps and more. NOTE: These options will only work if the specific font being used supplies them. For example, most fonts will have small caps, but not all will have petite caps.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_title_font_variant'],
-		'placeholder' => esc_html__( 'Select an option...', 'kirki' ),
+		'placeholder' => esc_html__( 'Select an option...', 'gi-essence-theme' ),
 		'priority'    => 60,
 		'multiple'    => 1,
 		'choices'     => [
-			'' => esc_html__( '-none-', 'kirki' ),
-			'small-caps' => esc_html__( 'small-caps', 'kirki' ),
-			'all-small-caps' => esc_html__( 'all-small-caps', 'kirki' ),
-			'petite-caps' => esc_html__( 'petite-caps', 'kirki' ),
-			'all-petite-caps' => esc_html__( 'all-petite-caps', 'kirki' ),
-			'unicase' => esc_html__( 'unicase', 'kirki' ),
-			'titling-caps' => esc_html__( 'titling-caps', 'kirki' ),
-			'common-lig-values' => esc_html__( 'common-lig-values', 'kirki' ),
-			'no-common-ligatures' => esc_html__( 'no-common-ligatures', 'kirki' ),
+			'' => esc_html__( '-none-', 'gi-essence-theme' ),
+			'small-caps' => esc_html__( 'small-caps', 'gi-essence-theme' ),
+			'all-small-caps' => esc_html__( 'all-small-caps', 'gi-essence-theme' ),
+			'petite-caps' => esc_html__( 'petite-caps', 'gi-essence-theme' ),
+			'all-petite-caps' => esc_html__( 'all-petite-caps', 'gi-essence-theme' ),
+			'unicase' => esc_html__( 'unicase', 'gi-essence-theme' ),
+			'titling-caps' => esc_html__( 'titling-caps', 'gi-essence-theme' ),
+			'common-lig-values' => esc_html__( 'common-lig-values', 'gi-essence-theme' ),
+			'no-common-ligatures' => esc_html__( 'no-common-ligatures', 'gi-essence-theme' ),
 		],
 		'output' => array(
 			array(
@@ -706,7 +672,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'custom',
 		'settings'    => 'sitedesc_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
-			'default'         => '<div class="customizer-divider">' . __( 'Page Head Site Description', 'kirki' ) . '</div>',
+			'default'         => '<div class="customizer-divider">' . __( 'Page Head Site Description', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 70,
 	] );
 
@@ -716,7 +682,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'toggle',
 		'settings'    => 'site_description_pagehead_toggle_setting',
-		'label'       => esc_html__( 'Show/Hide the Site description in the Page Head (Front & Home Pages Only)', 'kirki' ),
+		'label'       => esc_html__( 'Show/Hide the Site description in the Page Head (Front & Home Pages Only)', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => '1',
 		'priority'    => 70,
@@ -728,8 +694,8 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'page_description_horizontal_setting',
-		'label'       => esc_html__( 'Page Description Horizontal Plaement', 'kirki' ),
-		'description'=>  esc_html__( 'Move the page description left or right.', 'kirki' ),
+		'label'       => esc_html__( 'Page Description Horizontal Plaement', 'gi-essence-theme' ),
+		'description'=>  esc_html__( 'Move the page description left or right.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_description_horizontal_adjustment'],
 		'choices'     => [
@@ -754,8 +720,8 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'page_description_vertical_setting',
-		'label'       => esc_html__( 'Page Description Vertical Plaement', 'kirki' ),
-		'description'=>  esc_html__( 'Move the page description up or down.', 'kirki' ),
+		'label'       => esc_html__( 'Page Description Vertical Plaement', 'gi-essence-theme' ),
+		'description'=>  esc_html__( 'Move the page description up or down.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_description_vertical_adjustment'],
 		'choices'     => [
@@ -781,8 +747,8 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'description_font_setting',
-		'label'       => esc_html__( 'Page & Site Description Text', 'kirki' ),
-		'description' => esc_html__( 'Here we can control the page and site descriptions shown under the title in the page head.', 'kirki' ),
+		'label'       => esc_html__( 'Page & Site Description Text', 'gi-essence-theme' ),
+		'description' => esc_html__( 'Here we can control the page and site descriptions shown under the title in the page head.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'choices' => [
 			'fonts' => [
@@ -812,8 +778,8 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'site_description_font_size_setting',
-		'label'       => esc_html__( 'Site Description Font Size', 'kirki' ),
-		'description'=>  esc_html__( 'Like the site title, we want the site description in the page head to look good on all devices. Setting this size as a percentage here, along with some wizardry behind the scenes, will keep the description looking right on cell phones and large 4K monitors.', 'kirki' ),
+		'label'       => esc_html__( 'Site Description Font Size', 'gi-essence-theme' ),
+		'description'=>  esc_html__( 'Like the site title, we want the site description in the page head to look good on all devices. Setting this size as a percentage here, along with some wizardry behind the scenes, will keep the description looking right on cell phones and large 4K monitors.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['page_description_font_size_percent'],
 		'choices'     => [
@@ -839,23 +805,23 @@ Kirki::add_section( 'page_head_title_type', array(
 	Kirki::add_field( 'gi_theme_config', array(
 		'type'        => 'select',
 		'settings'    => 'site_description_pagehead_font_variant_setting',
-		'label'       => esc_html__( 'Site Description Font Variant', 'kirki' ),
-		'description' => esc_html__( 'Like the site title, we can make the site description small caps, petite caps and more. NOTE: These options will only work if the specific font being used supplies them. For example, most fonts will have small caps, but not all will have petite caps.', 'kirki' ),
+		'label'       => esc_html__( 'Site Description Font Variant', 'gi-essence-theme' ),
+		'description' => esc_html__( 'Like the site title, we can make the site description small caps, petite caps and more. NOTE: These options will only work if the specific font being used supplies them. For example, most fonts will have small caps, but not all will have petite caps.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'default'     => $generalThemeDefaults['branding']['site_description_font_variant'],
-		'placeholder' => esc_html__( 'Select an option...', 'kirki' ),
+		'placeholder' => esc_html__( 'Select an option...', 'gi-essence-theme' ),
 		'priority'    => 70,
 		'multiple'    => 1,
 		'choices'     => [
-			'' => esc_html__( '-none-', 'kirki' ),
-			'small-caps' => esc_html__( 'small-caps', 'kirki' ),
-			'all-small-caps' => esc_html__( 'all-small-caps', 'kirki' ),
-			'petite-caps' => esc_html__( 'petite-caps', 'kirki' ),
-			'all-petite-caps' => esc_html__( 'all-petite-caps', 'kirki' ),
-			'unicase' => esc_html__( 'unicase', 'kirki' ),
-			'titling-caps' => esc_html__( 'titling-caps', 'kirki' ),
-			'common-lig-values' => esc_html__( 'common-lig-values', 'kirki' ),
-			'no-common-ligatures' => esc_html__( 'no-common-ligatures', 'kirki' ),
+			'' => esc_html__( '-none-', 'gi-essence-theme' ),
+			'small-caps' => esc_html__( 'small-caps', 'gi-essence-theme' ),
+			'all-small-caps' => esc_html__( 'all-small-caps', 'gi-essence-theme' ),
+			'petite-caps' => esc_html__( 'petite-caps', 'gi-essence-theme' ),
+			'all-petite-caps' => esc_html__( 'all-petite-caps', 'gi-essence-theme' ),
+			'unicase' => esc_html__( 'unicase', 'gi-essence-theme' ),
+			'titling-caps' => esc_html__( 'titling-caps', 'gi-essence-theme' ),
+			'common-lig-values' => esc_html__( 'common-lig-values', 'gi-essence-theme' ),
+			'no-common-ligatures' => esc_html__( 'no-common-ligatures', 'gi-essence-theme' ),
 		],
 		'output' => array(
 			array(
@@ -922,7 +888,7 @@ Kirki::add_section( 'page_head_title_type', array(
 ----------------------------
 */   
 Kirki::add_section( 'footer_text', array(
-    'title'          => esc_html__( 'Footer Typography', 'kirki' ),
+    'title'          => esc_html__( 'Footer Typography', 'gi-essence-theme' ),
     'panel'          => 'typography',
     'priority'       => 5,
 ) );
@@ -933,7 +899,7 @@ Kirki::add_section( 'footer_text', array(
 		'type'        => 'custom',
 		'settings'    => 'footer_title_for_customizer',
 		'section'     => 'footer_text',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'kirki' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 0,
 	] );
 
@@ -952,7 +918,7 @@ Kirki::add_section( 'footer_text', array(
 		'type'        => 'custom',
 		'settings'    => 'footer_title_for_customizer',
 		'section'     => 'footer_text',
-		'default'         => '<div class="customizer-divider">' . __( 'Footer Text', 'kirki' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'Footer Text', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 20,
 	] );
 
@@ -961,7 +927,7 @@ Kirki::add_section( 'footer_text', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'footer_typography_setting',
-		'label'       => esc_html__( 'Footer Font', 'kirki' ),
+		'label'       => esc_html__( 'Footer Font', 'gi-essence-theme' ),
 		'section'     => 'footer_text',
 		'choices' => [
 			'fonts' => [
@@ -1021,7 +987,7 @@ Kirki::add_section( 'footer_text', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'footer_link_typography_setting',
-		'label'       => esc_html__( 'Footer Link Font', 'kirki' ),
+		'label'       => esc_html__( 'Footer Link Font', 'gi-essence-theme' ),
 		'section'     => 'footer_text',
 		'choices' => [
 			'fonts' => [

@@ -76,10 +76,6 @@ function pagenav_standard() {
                     var nextPageId = '#' + $('.current_page_item, .current_page_parent').next('.menu-item').attr('id');
                     var prevPageUrl = $(prevPageId + ' a').attr('href');
                     var nextPageUrl = $(nextPageId + ' a').attr('href');
- 
-                    
-    
-    
                     
                     if (prevPageUrl) {
                         
@@ -90,7 +86,7 @@ function pagenav_standard() {
                         
                         $('.pagenav-standard .pagenav-holder').append('<div class="pagenav-next next"><a href="' + nextPageUrl + '">' + nextPageName + '<span>q</span></a></div>');
                     }
-                    
+
 
                     function openMunuList(elm) {
 
@@ -142,7 +138,6 @@ function pagenav_standard() {
                 }); // END (window).load
 
             })( jQuery );
-            
             </script>
     <?php
 

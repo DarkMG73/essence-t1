@@ -6,7 +6,7 @@
         // WP_Query arguments
         $args = array(
             'paged' => $paged,
-            'posts_per_page'   => 10,
+            'posts_per_page'   => 9,
             'ignore_sticky_posts'  => true,
             'post__not_in' => $args['exclude_featured'],
         );

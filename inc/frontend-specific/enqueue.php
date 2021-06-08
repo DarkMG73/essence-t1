@@ -2,10 +2,6 @@
 /**
  * Define the colors.
  */
-// echo '----------------->' . $set_color_pallet;
-
-
-
 
 /**
  * Enqueue scripts and styles.

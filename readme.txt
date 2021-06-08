@@ -14,8 +14,7 @@ License URI: LICENSE
 
 
 == Description ==
-
-EssenceTheme is a powerful and elegant theme focused on providing all of the needed functionality, without extra gadgets and filler, and a wealth of very fine-grain and easy to use customization tools. All of this is housed in an classy, but not fancy, comfortable design that highlights the content, not the theme. Ultimately, EssenceTheme was designed to stay out of the creators way, while providing an assortment of helpful tools to showcase any material and reach any audience with grace and style.
+EssenceTheme is a powerful and elegant theme focused on providing all of the needed functionality, without extra gadgets and filler, plus a wealth of very fine-grain and easy customization tools. All of this is housed in a classy and comfortable design that highlights the content, not the theme. Ultimately, EssenceTheme was designed to stay out of the creator’s way, while providing an assortment of helpful tools to showcase any material and reach any audience with both grace and style.
 
 
 == Installation ==
@@ -34,6 +33,7 @@ In addition, EssenceTheme includes extended optimized support for:
 WooCommerce
 BuddyPress
 JetPack (all modules except for Infinite Scroll, which is not supported )
+
 
 == Changelog ==
 

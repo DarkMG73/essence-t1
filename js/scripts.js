@@ -8,7 +8,7 @@ function masonry1Init(){
     if(document.querySelector('.ms-container')){
         var masonry1 = new MiniMasonry({
             container: '.ms-container',
-            gutter: 40,
+            gutter: 0,
             // basewidth: '500px'
         });
     }

@@ -129,14 +129,14 @@ class Kirki_Control_Base extends WP_Customize_Control {
 			'kirkiL10n',
 			array(
 				'isScriptDebug'        => ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG ),
-				'noFileSelected'       => esc_html__( 'No File Selected', 'kirki' ),
-				'remove'               => esc_html__( 'Remove', 'kirki' ),
-				'default'              => esc_html__( 'Default', 'kirki' ),
-				'selectFile'           => esc_html__( 'Select File', 'kirki' ),
-				'standardFonts'        => esc_html__( 'Standard Fonts', 'kirki' ),
-				'googleFonts'          => esc_html__( 'Google Fonts', 'kirki' ),
-				'defaultCSSValues'     => esc_html__( 'CSS Defaults', 'kirki' ),
-				'defaultBrowserFamily' => esc_html__( 'Default Browser Font-Family', 'kirki' ),
+				'noFileSelected'       => esc_html__( 'No File Selected', 'gi-essence-theme' ),
+				'remove'               => esc_html__( 'Remove', 'gi-essence-theme' ),
+				'default'              => esc_html__( 'Default', 'gi-essence-theme' ),
+				'selectFile'           => esc_html__( 'Select File', 'gi-essence-theme' ),
+				'standardFonts'        => esc_html__( 'Standard Fonts', 'gi-essence-theme' ),
+				'googleFonts'          => esc_html__( 'Google Fonts', 'gi-essence-theme' ),
+				'defaultCSSValues'     => esc_html__( 'CSS Defaults', 'gi-essence-theme' ),
+				'defaultBrowserFamily' => esc_html__( 'Default Browser Font-Family', 'gi-essence-theme' ),
 			)
 		);
 

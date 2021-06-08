@@ -74,7 +74,7 @@ class Kirki_Control_Repeater extends Kirki_Control_Base {
 		// Set up defaults for row labels.
 		$this->row_label = array(
 			'type'  => 'text',
-			'value' => esc_attr__( 'row', 'kirki' ),
+			'value' => esc_attr__( 'row', 'gi-essence-theme' ),
 			'field' => false,
 		);
 
@@ -83,7 +83,7 @@ class Kirki_Control_Repeater extends Kirki_Control_Base {
 
 		if ( empty( $this->button_label ) ) {
 			/* translators: %s represents the label of the row. */
-			$this->button_label = sprintf( esc_html__( 'Add new %s', 'kirki' ), $this->row_label['value'] );
+			$this->button_label = sprintf( esc_html__( 'Add new %s', 'gi-essence-theme' ), $this->row_label['value'] );
 		}
 
 		if ( empty( $args['fields'] ) || ! is_array( $args['fields'] ) ) {
@@ -118,7 +118,7 @@ class Kirki_Control_Repeater extends Kirki_Control_Base {
 							array(
 								'name'              => '',
 								'echo'              => 0,
-								'show_option_none'  => esc_html__( 'Select a Page', 'kirki' ),
+								'show_option_none'  => esc_html__( 'Select a Page', 'gi-essence-theme' ),
 								'option_none_value' => '0',
 								'selected'          => '',
 							)
@@ -224,7 +224,7 @@ class Kirki_Control_Repeater extends Kirki_Control_Base {
 
 		<?php if ( isset( $this->choices['limit'] ) ) : ?>
 			<?php /* translators: %s represents the number of rows we're limiting the repeater to allow. */ ?>
-			<p class="limit"><?php printf( esc_html__( 'Limit: %s rows', 'kirki' ), esc_html( $this->choices['limit'] ) ); ?></p>
+			<p class="limit"><?php printf( esc_html__( 'Limit: %s rows', 'gi-essence-theme' ), esc_html( $this->choices['limit'] ) ); ?></p>
 		<?php endif; ?>
 		<button class="button-secondary repeater-add"><?php echo esc_html( $this->button_label ); ?></button>
 
@@ -373,22 +373,22 @@ class Kirki_Control_Repeater extends Kirki_Control_Base {
 									<# if ( field.description ) { #><span class="description customize-control-description">{{{ field.description }}}</span><# } #>
 								</label>
 
-								<figure class="kirki-image-attachment" data-placeholder="<?php esc_attr_e( 'No Image Selected', 'kirki' ); ?>" >
+								<figure class="kirki-image-attachment" data-placeholder="<?php esc_attr_e( 'No Image Selected', 'gi-essence-theme' ); ?>" >
 									<# if ( field.default ) { #>
 										<# var defaultImageURL = ( field.default.url ) ? field.default.url : field.default; #>
 										<img src="{{{ defaultImageURL }}}">
 									<# } else { #>
-										<?php esc_html_e( 'No Image Selected', 'kirki' ); ?>
+										<?php esc_html_e( 'No Image Selected', 'gi-essence-theme' ); ?>
 									<# } #>
 								</figure>
 
 								<div class="actions">
-									<button type="button" class="button remove-button<# if ( ! field.default ) { #> hidden<# } #>"><?php esc_html_e( 'Remove', 'kirki' ); ?></button>
-									<button type="button" class="button upload-button" data-label=" <?php esc_attr_e( 'Add Image', 'kirki' ); ?>" data-alt-label="<?php echo esc_attr_e( 'Change Image', 'kirki' ); ?>" >
+									<button type="button" class="button remove-button<# if ( ! field.default ) { #> hidden<# } #>"><?php esc_html_e( 'Remove', 'gi-essence-theme' ); ?></button>
+									<button type="button" class="button upload-button" data-label=" <?php esc_attr_e( 'Add Image', 'gi-essence-theme' ); ?>" data-alt-label="<?php echo esc_attr_e( 'Change Image', 'gi-essence-theme' ); ?>" >
 										<# if ( field.default ) { #>
-											<?php esc_html_e( 'Change Image', 'kirki' ); ?>
+											<?php esc_html_e( 'Change Image', 'gi-essence-theme' ); ?>
 										<# } else { #>
-											<?php esc_html_e( 'Add Image', 'kirki' ); ?>
+											<?php esc_html_e( 'Add Image', 'gi-essence-theme' ); ?>
 										<# } #>
 									</button>
 									<# if ( field.default.id ) { #>
@@ -405,22 +405,22 @@ class Kirki_Control_Repeater extends Kirki_Control_Base {
 									<# if ( field.description ) { #><span class="description customize-control-description">{{{ field.description }}}</span><# } #>
 								</label>
 
-								<figure class="kirki-file-attachment" data-placeholder="<?php esc_attr_e( 'No File Selected', 'kirki' ); ?>" >
+								<figure class="kirki-file-attachment" data-placeholder="<?php esc_attr_e( 'No File Selected', 'gi-essence-theme' ); ?>" >
 									<# if ( field.default ) { #>
 										<# var defaultFilename = ( field.default.filename ) ? field.default.filename : field.default; #>
 										<span class="file"><span class="dashicons dashicons-media-default"></span> {{ defaultFilename }}</span>
 									<# } else { #>
-										<?php esc_html_e( 'No File Selected', 'kirki' ); ?>
+										<?php esc_html_e( 'No File Selected', 'gi-essence-theme' ); ?>
 									<# } #>
 								</figure>
 
 								<div class="actions">
-									<button type="button" class="button remove-button<# if ( ! field.default ) { #> hidden<# } #>"><?php esc_html_e( 'Remove', 'kirki' ); ?></button>
-									<button type="button" class="button upload-button" data-label="<?php esc_attr_e( 'Add File', 'kirki' ); ?>" data-alt-label="<?php esc_attr_e( 'Change File', 'kirki' ); ?>">
+									<button type="button" class="button remove-button<# if ( ! field.default ) { #> hidden<# } #>"><?php esc_html_e( 'Remove', 'gi-essence-theme' ); ?></button>
+									<button type="button" class="button upload-button" data-label="<?php esc_attr_e( 'Add File', 'gi-essence-theme' ); ?>" data-alt-label="<?php esc_attr_e( 'Change File', 'gi-essence-theme' ); ?>">
 										<# if ( field.default ) { #>
-											<?php esc_html_e( 'Change File', 'kirki' ); ?>
+											<?php esc_html_e( 'Change File', 'gi-essence-theme' ); ?>
 										<# } else { #>
-											<?php esc_html_e( 'Add File', 'kirki' ); ?>
+											<?php esc_html_e( 'Add File', 'gi-essence-theme' ); ?>
 										<# } #>
 									</button>
 									<# if ( field.default.id ) { #>
@@ -440,7 +440,7 @@ class Kirki_Control_Repeater extends Kirki_Control_Base {
 
 						</div>
 					<# }); #>
-					<button type="button" class="button-link repeater-row-remove"><?php esc_html_e( 'Remove', 'kirki' ); ?></button>
+					<button type="button" class="button-link repeater-row-remove"><?php esc_html_e( 'Remove', 'gi-essence-theme' ); ?></button>
 				</div>
 			</li>
 		</script>

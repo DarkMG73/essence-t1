@@ -26,10 +26,6 @@ class ctUp_ads extends WP_Widget {
 
     function widget($args, $instance) {
         echo $before_widget;
-
-        print '<pre>';
-print_r($instance);
-print '</pre>';
 ?>
 
     <h1><?php echo apply_filters('widget_title', $instance['text'] ); ?></h1>
@@ -95,7 +91,6 @@ print '</pre>';
 
 		
 <?php
-print_r($instance);
 return $instance;
     }
 }

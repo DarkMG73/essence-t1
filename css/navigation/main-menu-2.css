@@ -236,6 +236,7 @@
   #masthead .site-branding .menubar-title-positioning-wrap-y {
     transform: none !important;
     width: 100%;
+    margin: auto;
   }
 
   #masthead.site-header {
@@ -266,10 +267,11 @@
     position: fixed;
     top: 0;
     left: 0;
+    height: 46px;
   }
 
   body.admin-bar #masthead.site-header {
-    top: 32px;
+    top: 46px;
     max-height: calc(100vh - 32px);
   }
 
@@ -304,14 +306,18 @@
       3px 3px 3px -2px rgb(0 0 0 / 50%);
     z-index: 1;
     border-radius: 10px;
-    margin: 0 1%;
-    padding: 0.5em 2em;
+    margin: 1%;
+    padding: 0;
     letter-spacing: 0.25em;
     font-weight: 700;
     transition: 0.1s width cubic-bezier(0, 1.1, 0.58, 1);
-    min-height: 2em;
+    transition-property: width;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0, 1.1, 0.58, 1);
+    transition-delay: 0s;
+    min-height: 30px;
     max-height: 2em;
-    min-width: 320px;
+    min-width: 200px;
     flex-basis: 50%;
     flex-grow: 1;
     overflow: hidden;
@@ -385,6 +391,12 @@
     margin-top: 0.5em !important;
   }
 
+  /* The following provides an offset for the expand symbol */
+  #site-navigation .page_item.page_item_has_children:before {
+    content: "";
+    padding-left: 1em;
+  }
+
   @media (hover: hover) {
     #site-navigation .nav-menu > li:hover > ul,
     #site-navigation .nav-menu > li:focus > ul {
@@ -395,11 +407,6 @@
     }
   }
 }
-
-/* ------------------ */
-/* ------------------ */
-/* ------------------ */
-/* ------------------ */
 
 #site-navigation .nav-menu .menu-item,
 #site-navigation .nav-menu .page_item {
@@ -417,12 +424,6 @@
 #site-navigation .nav-menu > .menu-item-has-children:last-child,
 #site-navigation .nav-menu > .page_item_has_children:last-child {
   margin-bottom: 4em !important;
-}
-
-/* The following provides an offset for the expand symbol */
-#site-navigation .page_item.page_item_has_children:before {
-  content: "";
-  padding-left: 1em;
 }
 
 #site-navigation .nav-menu ul.sub-menu-open {
@@ -446,10 +447,10 @@
   padding: 0.5em 2em;
 }
 
-/* #site-navigation .nav-menu ul.sub-menu .menu-item-has-children ul {
+#site-navigation .nav-menu ul.sub-menu .menu-item-has-children ul {
   left: -0.5em;
 }
 
 #site-navigation .nav-menu ul.sub-menu .menu-item-has-children {
   left: 0.5em;
-} */
+}

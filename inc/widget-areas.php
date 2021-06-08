@@ -12,8 +12,8 @@ function gi_essence_theme_widgets_init() {
 			'name'          => esc_html__( 'Sidebar', 'gi-essence-theme' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'gi-essence-theme' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
@@ -26,8 +26,8 @@ function gi_essence_theme_widgets_init() {
 			'name'          => esc_html__( 'Footer Column One', 'gi-essence-theme' ),
 			'id'            => 'footer-col-1',
 			'description'   => esc_html__( 'Add footer widgets here.', 'gi-essence-theme' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
@@ -38,8 +38,8 @@ function gi_essence_theme_widgets_init() {
 			'name'          => esc_html__( 'Footer Column Two', 'gi-essence-theme' ),
 			'id'            => 'footer-col-2',
 			'description'   => esc_html__( 'Add footer widgets here.', 'gi-essence-theme' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
@@ -50,8 +50,8 @@ function gi_essence_theme_widgets_init() {
 			'name'          => esc_html__( 'Footer Column Three', 'gi-essence-theme' ),
 			'id'            => 'footer-col-3',
 			'description'   => esc_html__( 'Add footer widgets here.', 'gi-essence-theme' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)

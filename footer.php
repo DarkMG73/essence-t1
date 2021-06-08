@@ -87,9 +87,9 @@ dynamic_sidebar( 'bottom-widget' );
 								}
 								?>
 							</div>
-							<div class="photo-cta-text">
+							<h2 class="photo-cta-text">
 								<?php echo get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com') ?>
-							</div>
+							</h2>
 						</div>
 					<?php
 					}

@@ -620,15 +620,17 @@ body.admin-bar .site-header {
 
 /* - Primary 
 		--------------------------------------------- */
-main#primary {
+#primary {
   width: 100%;
   max-width: 100%;
-  flex-basis: 60%;
+  padding: 0;
+  margin: 3% 0 3% 2.5%;
+  flex-basis: 70%;
   flex-grow: 1;
   padding-right: 3%;
   background-color: inherit;
   color: inherit;
-  margin: 3% 0 3% 2.5%;
+
   /* Overflow must be set to contain excessive inline styles */
   overflow: auto;
 }
@@ -636,6 +638,8 @@ main#primary {
 /* - Secondary 
 		--------------------------------------------- */
 #secondary {
+  margin: 4% 2.5% 4% 0;
+  min-width: 200px;
   flex-basis: 25%;
   flex-grow: 1;
   min-width: 250px;
@@ -643,12 +647,11 @@ main#primary {
   text-align: center;
   box-shadow: 3px 3px 4px -4px black, -3px -3px 4px -4px white;
   box-shadow: var(--box-shadow-inset-shallow);
-  margin: 4% 7% 4% 0;
 }
 
 #secondary .widget:last-child {
   position: sticky;
-  top: 100px;
+  top: 25%;
 }
 
 /* - Second Transition Section 
@@ -687,8 +690,8 @@ main#primary {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: auto;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer-topic-column ul {
@@ -698,7 +701,7 @@ main#primary {
 }
 
 .footer-topic-column > .widget {
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Photo CTA */
@@ -708,6 +711,7 @@ main#primary {
   align-items: center;
   flex-direction: column;
   padding: 0 10%;
+  margin: auto;
 }
 
 #photo-cta-photo-contianer {
@@ -716,7 +720,7 @@ main#primary {
   max-width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 9%;
 }
 
 .photo-cta-image-wrap {
@@ -736,6 +740,14 @@ main#primary {
   display: block;
   height: auto;
   min-width: 100%;
+}
+
+.photo-cta-text {
+  margin: 0 auto;
+}
+
+.photo-cta-text p {
+  margin: 1em auto auto;
 }
 
 @media all and (max-width: 800px) {
@@ -1252,6 +1264,10 @@ nav.navigation.post-navigation {
 }
 
 /* --- single post ---*/
+.single .post {
+  padding: 0 1em;
+}
+
 .single #page-welcome-container .wp-post-image {
   min-width: 100%;
   max-height: none;
@@ -1394,7 +1410,8 @@ nav.navigation.post-navigation {
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   line-height: normal;
 }
 
@@ -1410,20 +1427,31 @@ nav.navigation.post-navigation {
 #featured-posts {
   flex-direction: row;
   min-height: 300px;
+  margin-top: -50px;
 }
 
 @media screen and (min-width: 1200px) {
   #featured-posts {
     min-height: 400px;
-    margin-top: -50px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  #featured-posts {
+    flex-direction: column;
+    min-height: 1000px;
+    min-width: 100%;
+  }
+}
+
 #featured-posts > * {
   flex-basis: 33.33%;
   position: relative;
   background-size: cover;
   background-position: center;
   transition: 0.1s all linear;
+  flex-grow: 1;
+  filter: brightness(1) saturate(1);
 }
 
 #featured-posts > *:hover,
@@ -1431,6 +1459,8 @@ nav.navigation.post-navigation {
   transform: scale(1.125);
   z-index: 10;
   transition: 0.3s all ease;
+  box-shadow: 3.5px 3.5px 4px -3.5px black, 7px 7px 16px -7px black;
+  filter: brightness(1.1) saturate(1.2);
 }
 
 #featured-posts :nth-child(2) {
@@ -1439,19 +1469,23 @@ nav.navigation.post-navigation {
 }
 
 #featured-posts .entry-header {
-  text-align: center;
-  /* background: #ffffff; */
-  margin: 0 3em;
   position: absolute;
+  text-align: center;
+  margin: 0 3em;
   bottom: 0;
   width: 80%;
-  color: black;
-  /* background: #000000; */
-  /* transform: translateY(25%); */
-  color: white;
   border-radius: 10px;
-  text-shadow: -1px -1px 1px #b7b7b7, 1px 1px 1px black;
   transform: scale(1, 1.25);
+  opacity: 0.8;
+  transition: 0.3s all ease;
+}
+
+#featured-posts .post:hover > .entry-header {
+  opacity: 1;
+}
+
+#featured-posts .entry-title {
+  box-shadow: var(--box-shadow-outset-high-flat);
 }
 
 #featured-posts .entry-header a {
@@ -1478,13 +1512,21 @@ nav.navigation.post-navigation {
 .ms-container .item {
   position: absolute;
   overflow: hidden;
-  padding: 1em;
+  padding: 1em 3% 0 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 #secondary ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.ms-container .entry-title a {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* - One Column
@@ -1706,8 +1748,8 @@ nav.navigation.post-navigation {
 /* - Widgets
 		--------------------------------------------- */
 .widget {
-  /* Overly-tall widgets,  like large numbers of categories, can dominate a widget area */
-  max-height: 500px;
+  /* This controls overly-tall widgets,  like large numbers of categories */
+  max-height: 800px;
   overflow: auto;
   line-height: normal;
 }
@@ -1782,6 +1824,16 @@ nav.navigation.post-navigation {
   color: inherit !important;
   border: none;
   box-shadow: none;
+}
+
+/* - Jetpack gallery widget
+		--------------------------------------------- */
+.widget_media_gallery {
+  max-height: none;
+}
+
+.widget .tiled-gallery .gallery-row {
+  margin: auto;
 }
 
 /* - BuddyPress

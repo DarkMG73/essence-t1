@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // No need to proceed if Kirki already exists.
-if ( class_exists( 'Kirki' ) ) {
+if ( class_exists( 'kirki' ) ) {
 	return;
 }
 
@@ -49,7 +49,7 @@ Kirki_Init::set_url();
 
 new Kirki_Controls();
 
-if ( ! function_exists( 'Kirki' ) ) {
+if ( ! function_exists( 'gi-essence-theme' ) ) {
 	/**
 	 * Returns an instance of the Kirki object.
 	 */

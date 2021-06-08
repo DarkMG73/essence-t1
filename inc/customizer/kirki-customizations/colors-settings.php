@@ -81,7 +81,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'color_palette_title_to_customizer',
 	'section'     => 'colors',
-	'default'         => '<div class="intro-text customizer-divider"><h3>' . __( 'About This Section', 'kirki' ) . '</h3></div>',
+	'default'         => '<div class="intro-text customizer-divider"><h3>' . __( 'About This Section', 'gi-essence-theme' ) . '</h3></div>',
 	'priority'    => 0,
 ] );
 

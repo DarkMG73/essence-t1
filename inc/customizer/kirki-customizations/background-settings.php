@@ -33,7 +33,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'background_title_for_customizer',
 	'section'     => 'background_image',
-	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'kirki' ) . '</div>',
+	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'gi-essence-theme' ) . '</div>',
 	'priority'    => 0,
 ] );
 
@@ -58,7 +58,7 @@ Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'body_background_title_for_customizer',
 		'section'     => 'background_image',
-		'default'         => '<div class="customizer-divider">' . __( 'Body Background', 'kirki' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'Body Background', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 5,
 	] );
 
@@ -67,8 +67,8 @@ Kirki::add_field( 'gi_theme_config', [
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'background',
 		'settings'    => 'body_background_image_settings',
-		'label'       => esc_html__( 'Body Background', 'kirki' ),
-		'description' => esc_html__( 'An image selected here will become the main background image for the entire page.   NOTE: This will only show when there is no background color for the body, or the color is set to some level of transparency (see "Body Background Color" below)', 'kirki' ),
+		'label'       => esc_html__( 'Body Background', 'gi-essence-theme' ),
+		'description' => esc_html__( 'An image selected here will become the main background image for the entire page.   NOTE: This will only show when there is no background color for the body, or the color is set to some level of transparency (see "Body Background Color" below)', 'gi-essence-theme' ),
 		'section'     => 'background_image',
 		'default'     => [
 			'background-image'      => '',
@@ -132,7 +132,7 @@ Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'content_background_title_for_customizer',
 		'section'     => 'background_image',
-		'default'         => '<div class="customizer-divider">' . __( 'Content Background', 'kirki' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'Content Background', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 30,
 	] );
 
@@ -141,8 +141,8 @@ Kirki::add_field( 'gi_theme_config', [
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'background',
 		'settings'    => 'content_background_image_settings',
-		'label'       => esc_html__( 'Content Background', 'kirki' ),
-		'description' => esc_html__( 'An image selected here will become the content area background image.   NOTE: This will only show when there is no background color set for the content area, or the color is set to some level of transparency (see "Content Area Background Color" below).', 'kirki' ),
+		'label'       => esc_html__( 'Content Background', 'gi-essence-theme' ),
+		'description' => esc_html__( 'An image selected here will become the content area background image.   NOTE: This will only show when there is no background color set for the content area, or the color is set to some level of transparency (see "Content Area Background Color" below).', 'gi-essence-theme' ),
 		'section'     => 'background_image',
 		'default'     => [
 			'background'      => '',
@@ -185,7 +185,7 @@ Kirki::add_field( 'gi_theme_config', [
 		),
 		'output' => array(
 			array(
-				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay, .home-template #page-title > .color-overlay',
+				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay, .home-template #page-title > .color-overlay, #featured-posts header.entry-header .entry-title',
 				'property' => 'background-color',
 				),
 			),

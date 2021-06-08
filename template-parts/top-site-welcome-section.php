@@ -5,7 +5,9 @@
         <div class="color-overlay"></div>
 
         <div id="welcome-title-wrap" class="container">
+
             <div class="positioning-wrap-x">
+                
                 <div class="positioning-wrap-y">
                     
                     <?php
