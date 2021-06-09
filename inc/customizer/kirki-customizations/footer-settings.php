@@ -8,8 +8,8 @@
 ----------------------------
 */  
 Kirki::add_section( 'footer_settings', array(
-    'title'       => esc_html__( 'Footer Settings', 'kirki' ),
-    'description' => esc_html__( 'Add, remove and edit content in the footer, plus set the color.', 'kirki' ),
+    'title'       => esc_html__( 'Footer Settings', 'gi-essence-theme' ),
+    'description' => esc_html__( 'Add, remove and edit content in the footer, plus set the color.', 'gi-essence-theme' ),
     'priority'       => 20,
 ) );
 
@@ -19,7 +19,7 @@ Kirki::add_section( 'footer_settings', array(
 		'type'        => 'custom',
 		'settings'    => 'footer_title_for_customizer',
 		'section'     => 'footer_settings',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'kirki' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'gi-essence-theme' ) . '</div>',
 		'priority'    => 0,
 	] );
 
@@ -47,7 +47,7 @@ Kirki::add_section( 'footer_settings', array(
         'type'        => 'custom',
         'settings'    => 'footer_background_title_for_customizer',
         'section'     => 'footer_settings',
-            'default'         => '<div class="customizer-divider">' . __( 'Footer Background Color', 'kirki' ) . '</div>',
+            'default'         => '<div class="customizer-divider">' . __( 'Footer Background Color', 'gi-essence-theme' ) . '</div>',
         'priority'    => 10,
     ] );
 
@@ -99,7 +99,7 @@ Kirki::add_section( 'footer_settings', array(
         'type'        => 'custom',
         'settings'    => 'footer_photo_cta_title_for_customizer',
         'section'     => 'footer_settings',
-            'default'         => '<div class="customizer-divider">' . __( 'Photo Call-To-Action', 'kirki' ) . '</div>',
+            'default'         => '<div class="customizer-divider">' . __( 'Photo Call-To-Action', 'gi-essence-theme' ) . '</div>',
         'priority'    => 30,
     ] );
 
@@ -108,7 +108,7 @@ Kirki::add_section( 'footer_settings', array(
     Kirki::add_field( 'gi_theme_config', [
         'type'        => 'toggle',
         'settings'    => 'footer_photo_cta_on_off_toggle_setting',
-        'label'       => esc_html__( 'Photo CTA On/Off Switch', 'kirki' ),
+        'label'       => esc_html__( 'Photo CTA On/Off Switch', 'gi-essence-theme' ),
         'section'     => 'footer_settings',
         'default'     => $generalThemeDefaults['footer-photo-cta']['footer_photo_cta_on_off_toggle_setting'],
         'priority'    => 30,
@@ -119,8 +119,8 @@ Kirki::add_section( 'footer_settings', array(
     Kirki::add_field( 'gi_theme_config', [
         'type'        => 'editor',
         'settings'    => 'footer_photo_cta_photo_text_editor_setting',
-        'label'       => esc_html__( 'Photo CTA Text', 'kirki' ),
-        'description' => esc_html__( 'Here we add the call-to-action text. this can be as simple as "Hire Us!" with contact info, or more elaborate with links, icons, and more', 'kirki' ),
+        'label'       => esc_html__( 'Photo CTA Text', 'gi-essence-theme' ),
+        'description' => esc_html__( 'Here we add the call-to-action text. this can be as simple as "Hire Us!" with contact info, or more elaborate with links, icons, and more', 'gi-essence-theme' ),
         'section'     => 'footer_settings',
         'default'     => $generalThemeDefaults['footer-photo-cta']['footer_photo_cta_text_editor_setting'],
         'priority'    => 30
@@ -175,7 +175,7 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'custom',
             'settings'    => $slug . 'subgroup_title_for_customizer',
             'section'     => 'footer_settings',
-                'default'         => '<div class="photo-cta-image-subgroup-title">' . __( $title . ' Settings Group', 'kirki' ) . '</div>',
+                'default'         => '<div class="photo-cta-image-subgroup-title">' . __( $title . ' Settings Group', 'gi-essence-theme' ) . '</div>',
                 'priority'    => $priority,
         ] );
    
@@ -183,8 +183,8 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'theme_config_id', [
             'type'        => 'image',
             'settings'    => $slug.'_setting_id',
-            'label'       => esc_html__( $title, 'kirki' ),
-            'description' => esc_html__( 'Select the ' . $descriptive_use  . ' to appear.', 'kirki' ),
+            'label'       => sprintf( esc_html__(' %s ', 'gi-essence-theme'), $title ),
+            'description' => sprintf( esc_html__(' Select the %s to appear.', 'gi-essence-theme'), $descriptive_use ),
             'section'     => $section,
             'default'     => '',
             'choices'     => [
@@ -199,7 +199,7 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_size_setting',
-            'label'       => esc_html__( $title.' Width.', 'kirki' ),
+            'label'       =>sprintf( esc_html__( '%s  Width', 'gi-essence-theme' ), $title),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_width'],
             'choices'     => [
@@ -222,8 +222,8 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_shape_setting',
-            'label'       => esc_html__( $title.' Container Shape Adjustment.', 'kirki' ),
-            'description'=>  esc_html__( 'Change the shape of the ' . $descriptive_use  . ' container: round, square or in between.', 'kirki' ),
+            'label'       => sprintf( esc_html__( '%s Container Shape Adjustment', 'gi-essence-theme' ), $title),
+            'description'=>  sprintf( esc_html__( 'Change the shape of the %s container: round, square or in between.', 'gi-essence-theme' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_shape_adjustment'],
             'choices'     => [
@@ -246,8 +246,8 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_horizonal_setting',
-            'label'       => esc_html__( $title.' Horizontal Adjustment.', 'kirki' ),
-            'description'=>  esc_html__( 'Move the ' . $descriptive_use  . ' left to right.', 'kirki' ),
+            'label'       => sprintf( esc_html__( '%s Horizontal Adjustment', 'gi-essence-theme' ), $title),
+            'description'=>  sprintf( esc_html__( 'Move the %s left to right.', 'gi-essence-theme' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_horizontal_adjustment'],
             'choices'     => [
@@ -271,8 +271,8 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_vertical_setting',
-            'label'       => esc_html__( $title.' Container Vertical Adjustment.', 'kirki' ),
-            'description'=>  esc_html__( 'Increase or decrease the position of the ' . $descriptive_use  . ' container. The purpose of this control is to allow for more versatile positioning of the ' . $descriptive_use  . ' container.', 'kirki' ),
+            'label'       => sprintf( esc_html__( '%s ontainer Vertical Adjustment', 'gi-essence-theme' ), $title),
+            'description'=>  sprintf( esc_html__( 'Increase or decrease the position of the %s container. The purpose of this control is to allow for more versatile positioning of the %s.', 'gi-essence-theme' ), $descriptive_use, $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_vertical_adjustment'],
             'choices'     => [
@@ -295,8 +295,8 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_zindex_setting',
-            'label'       => esc_html__( $title.' Container Front-Back Adjustment.', 'kirki' ),
-            'description'=>  esc_html__( 'When images are overlapping each other, move the ' . $descriptive_use  . ' container in front of or behind the other images. NOTE: This only has an affect when we have the set the images to be overlapping each other.', 'kirki' ),
+            'label'       => sprintf( esc_html__( '%s Container Front-Back Adjustment', 'gi-essence-theme' ), $title),
+            'description'=>  sprintf( esc_html__( 'When images are overlapping each other, move the %s  container in front of or behind the other images. NOTE: This only has an affect when we have the set the images to be overlapping each other.', 'gi-essence-theme' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_zindex_adjustment'],
             'choices'     => [
@@ -318,8 +318,8 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_size_setting',
-            'label'       => esc_html__( $title.' Inner Image Size Adjustment', 'kirki' ),
-            'description'=>  esc_html__( 'Adjust the ' . $descriptive_use  . ' size within the photo container. This can be used along with the "Inner Image Vertical Adjustment" setting to perfectly frame or zoom in on any specific part of the image.', 'kirki' ),
+            'label'       => sprintf( esc_html__( '%s Inner Image Size', 'gi-essence-theme' ), $title),
+            'description'=>  sprintf( esc_html__( 'Adjust the %s size within the photo container. This can be used along with the "Inner Image Vertical Adjustment" setting to perfectly frame or zoom in on any specific part of the image.', 'gi-essence-theme' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_size_adjustment'],
             'choices'     => [
@@ -343,8 +343,8 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_vertical_setting',
-            'label'       => esc_html__( $title.' Inner Image Vertical Adjustment', 'kirki' ),
-            'description'=>  esc_html__( 'Move the ' . $descriptive_use  . ' upward or downward within the photo container. This can be used along with the "Inner Image Size" adjustment to perfectly frame or zoom in on any specific part of the image.', 'kirki' ),
+            'label'       => sprintf( esc_html__( '%s Inner Image Vertical Adjustment', 'gi-essence-theme' ), $title),
+            'description'=>  sprintf( esc_html__( 'Move the %s upward or downward within the photo container. This can be used along with the "Inner Image Size" adjustment to perfectly frame or zoom in on any specific part of the image.', 'gi-essence-theme' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_vertical_adjustment'],
             'choices'     => [
@@ -367,8 +367,8 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_horizontal_setting',
-            'label'       => esc_html__( $title.' Inner Image Horizontal Adjustment', 'kirki' ),
-            'description'=>  esc_html__( 'Move the ' . $descriptive_use  . ' left or right within the photo container. This can be used along with the "Inner Image Size" adjustment to perfectly frame or zoom in on any specific part of the image.', 'kirki' ),
+            'label'       => sprintf( esc_html__( '%s Inner Image Horizontal Adjustment', 'gi-essence-theme' ), $title),
+            'description'=>  sprintf( esc_html__( 'Move the %s left or right within the photo container. This can be used along with the "Inner Image Size" adjustment to perfectly frame or zoom in on any specific part of the image.', 'gi-essence-theme' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_vertical_adjustment'],
             'choices'     => [
@@ -402,7 +402,7 @@ Kirki::add_section( 'footer_settings', array(
         'type'        => 'custom',
         'settings'    => 'footer_copyright_title_for_customizer',
         'section'     => 'footer_settings',
-            'default'         => '<div class="customizer-divider">' . __( 'Copyright Text', 'kirki' ) . '</div>',
+            'default'         => '<div class="customizer-divider">' . __( 'Copyright Text', 'gi-essence-theme' ) . '</div>',
         'priority'    => 10,
     ] );
 
@@ -411,9 +411,10 @@ Kirki::add_section( 'footer_settings', array(
     Kirki::add_field( 'gi_theme_config', [
         'type'     => 'text',
         'settings' => 'copyright_text_setting',
-        'label'    => esc_html__( 'Copyright Text', 'kirki' ),
+        'label'    => esc_html__( 'Copyright Text', 'gi-essence-theme' ),
         'section'  => 'footer_settings',
-        'default'  => esc_html__( $generalThemeDefaults['footer']['copyright_text'], 'kirki' ),
+        'default'  => sprintf( esc_html__( '%s', 'gi-essence-theme' ), $generalThemeDefaults['footer']['copyright_text']),
+
         'priority' => 10,
     ] );
 
@@ -431,14 +432,14 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'custom',
             'settings'    => 'footer_TOS_title_for_customizer',
             'section'     => 'footer_settings',
-                'default'         => '<div class="customizer-divider">' . __( '"Terms of Service" Page', 'kirki' ) . '</div>',
+                'default'         => '<div class="customizer-divider">' . __( '"Terms of Service" Page', 'gi-essence-theme' ) . '</div>',
             'priority'    => 10,
         ] );
 
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'dropdown-pages',
             'settings'    => 'gi_footer_tos_page',
-            'label'       => esc_html__( 'Select a TOS Page', 'kirki' ),
+            'label'       => esc_html__( 'Select a TOS Page', 'gi-essence-theme' ),
             'default'         => '',
             'section'     => 'footer_settings',
             'priority'    => 10,
@@ -458,7 +459,7 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'custom',
             'settings'    => 'priacy_page_title_for_customizer',
             'section'     => 'footer_settings',
-                'default'         => '<div class="customizer-divider">' . __( '"Privacy Page" Link', 'kirki' ) . '</div>',
+                'default'         => '<div class="customizer-divider">' . __( '"Privacy Page" Link', 'gi-essence-theme' ) . '</div>',
             'priority'    => 10,
         ] );
 
@@ -467,7 +468,7 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'dropdown-pages',
             'settings'    => 'gi_footer_privacy_page',
-            'label'       => esc_html__( 'Select a Privacy Page', 'kirki' ),
+            'label'       => esc_html__( 'Select a Privacy Page', 'gi-essence-theme' ),
             'section'     => 'footer_settings',
             'default'     => 3,
             'selected'    => 3, 

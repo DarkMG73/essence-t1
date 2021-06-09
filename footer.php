@@ -87,9 +87,11 @@ dynamic_sidebar( 'bottom-widget' );
 								}
 								?>
 							</div>
-							<h2 class="photo-cta-text">
-								<?php echo get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com') ?>
-							</h2>
+							<div class="photo-cta-text">
+								<p>
+									<?php echo _e( get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com'), 'gi-essence-theme' ) ?>
+								</p>
+							</div>
 						</div>
 					<?php
 					}
@@ -107,7 +109,7 @@ dynamic_sidebar( 'bottom-widget' );
 
 						<?php
 						/* translators: %s: CMS name, i.e. WordPress. */
-						printf( esc_html__( 'Proudly powered by %s', 'gi-essence-theme' ), 'WordPress' );
+						printf( _e( 'Proudly powered by %s', 'gi-essence-theme' ), 'WordPress' );
 						?>
 
 					</a>
@@ -118,7 +120,7 @@ dynamic_sidebar( 'bottom-widget' );
 				<div class="site-info-child">
 					<?php
 					/* translators: 1: Theme name, 2: Theme author. */
-					printf( esc_html__( 'Theme: %1$s by %2$s.', '' ), 'EssenceTheme', '<a href="http://www.glassinteractive.com">Mike Glass</a>' );
+					printf( _e( 'Theme: %1$s by %2$s.', 'gi-essence-theme' ), 'EssenceTheme', '<a href="http://www.glassinteractive.com">Mike Glass</a>' );
 					?>
 				</div><!-- .site-info-child -->
 
@@ -130,11 +132,11 @@ dynamic_sidebar( 'bottom-widget' );
 						<div class="container clearfix">
 
 							<div class="col_half">
-								<?php echo get_theme_mod( 'gi_footer_copyright_text' ); ?>
+								<?php echo _e( get_theme_mod( 'gi_footer_copyright_text' ), 'gi-essence-theme' ); ?>
 								<?php
 
 								if( get_theme_mod( 'gi_report_file' ) ){
-									?><a href="<?php echo get_theme_mod( 'gi_report_file' ); ?>">Download Report</a><br><?php
+									?><a href="<?php echo _e( get_theme_mod( 'gi_report_file' ), 'gi-essence-theme' ); ?>">Download Report</a><br><?php
 								}
 
 								?>
@@ -159,8 +161,8 @@ dynamic_sidebar( 'bottom-widget' );
 										?>
 
 										<span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span>										
-										<a href="<?php echo get_page_link( get_page_by_title( 'Privacy Policy')->ID 
-										); ?>">Privacy Policy</a><?php
+										<a href="<?php echo _e(get_page_link( get_page_by_title( 'Privacy Policy')->ID 
+										), 'gi-essence-theme' ); ?>">Privacy Policy</a><?php
 									}
 									?>
 
@@ -188,7 +190,7 @@ dynamic_sidebar( 'bottom-widget' );
 
 										if( get_theme_mod( 'gi_facebook_handle' ) ){
 											?>
-											<a href="https://facebook.com/<?php echo get_theme_mod( 'gi_facebook_handle' ); ?>" class="social-icon si-small si-borderless si-facebook">
+											<a href="https://facebook.com/<?php echo _e( get_theme_mod( 'gi_facebook_handle' ), 'gi-essence-theme' ); ?>" class="social-icon si-small si-borderless si-facebook">
 												<i class="icon-facebook"></i>
 												<i class="icon-facebook"></i>
 											</a>
@@ -197,7 +199,7 @@ dynamic_sidebar( 'bottom-widget' );
 
 										if( get_theme_mod( 'gi_twitter_handle' ) ){
 											?>
-											<a href="https://twitter.com/<?php echo get_theme_mod( 'gi_twitter_handle' ); ?>" class="social-icon si-small si-borderless si-twitter">
+											<a href="https://twitter.com/<?php echo _e( get_theme_mod( 'gi_twitter_handle' ), 'gi-essence-theme' ); ?>" class="social-icon si-small si-borderless si-twitter">
 												<i class="icon-twitter"></i>
 												<i class="icon-twitter"></i>
 											</a>
@@ -212,7 +214,7 @@ dynamic_sidebar( 'bottom-widget' );
 									<?php
 
 									if( get_theme_mod( 'gi_email' ) ){
-										?><i class="icon-envelope2"></i> <?php echo get_theme_mod( 'gi_email' );
+										?><i class="icon-envelope2"></i> <?php echo _e( get_theme_mod( 'gi_email' ), 'gi-essence-theme' );
 									}
 
 									if( get_theme_mod( 'gi_email' ) ){
@@ -221,7 +223,7 @@ dynamic_sidebar( 'bottom-widget' );
 										<span class="middot">&middot;</span>
 
 										<?php
-										?><i class="icon-headphones"></i> +<?php echo get_theme_mod( 'gi_phone_number' );
+										?><i class="icon-headphones"></i> +<?php echo _e( get_theme_mod( 'gi_phone_number' ), 'gi-essence-theme' );
 									}
 
 									?>

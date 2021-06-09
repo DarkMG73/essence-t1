@@ -747,6 +747,7 @@ body.admin-bar .site-header {
 }
 
 .photo-cta-text p {
+  font-size: 1.5em;
   margin: 1em auto auto;
 }
 
@@ -1606,6 +1607,21 @@ nav.navigation.post-navigation {
 
 #one-column-container .post-data-container .tags-links {
   display: none;
+}
+
+.blog .post:hover .post-thumbnail img {
+  filter: brightness(1.1) saturate(1.1);
+}
+
+/* - Masonry &
+    One Column Display
+		---------- */
+.blog .post:hover .post-thumbnail img {
+  filter: brightness(1.1) saturate(1.1);
+}
+
+.blog .post-thumbnail img {
+  transition: 0.3s all ease;
 }
 
 /* - Media
