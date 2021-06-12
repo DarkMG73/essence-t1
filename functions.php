@@ -78,6 +78,10 @@ include( get_theme_file_path( '/inc/error-handler-comments.php') );
  ***************/
 add_filter('wp_die_handler', 'get_gi_custom_die_handler');
 
+/* Registers an editor stylesheet for the theme. */
+add_theme_support( 'editor-styles' );
+add_editor_style( get_theme_file_path('css/gi-editor-style.css') );
+
 /****************
  * Shortcodes
  ***************/

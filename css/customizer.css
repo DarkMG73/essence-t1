@@ -117,29 +117,46 @@ li[id*="photo_cta_photo"] input {
   padding: 30px 15px;
 }
 
-.customize-control-kirki-toggle input:checked + .switch:after {
-  box-shadow: inset 7px 7px 10px -7px white,
-    inset -7px -7px 10px -7px rgb(0 0 0 / 50%),
-    inset 17px 17px 20px -17px rgb(255 255 255 / 50%);
-  border: none;
-}
-
 .customize-control-kirki-toggle .switch:after,
 .customize-control-kirki-toggle .switch:before,
-.customize-control-kirki-toggle .switch:after,
 input[type="range"]::-webkit-slider-thumb {
   box-shadow: inset 7px 7px 10px -7px white,
     inset -7px -7px 10px -7px rgb(0 0 0 / 50%), 7px 7px 10px -7px black !important;
   border: none !important;
   background: #e8dacf !important;
   height: 33px !important;
+  line-height: 33px;
+  width: 25px;
+  text-align: center;
+  color: rgb(0 0 0 / 25%);
+  font-variant: all-small-caps;
+  transition: inherit;
 }
 
 .customize-control-kirki-toggle .switch,
 .customize-control-kirki-slider .wrapper input[type="range"] {
   box-shadow: inset -5px -5px 7px -5px white,
     inset 3px 4px 7px -5px rgb(0 0 0 / 75%);
-  border: 1px inset #a5a5a5;
+  border: 1px inset #cdcdcd;
+  font-size: 10px;
+  transition: 0.2s all ease;
+}
+
+.customize-control-kirki-toggle .switch:after,
+.customize-control-kirki-toggle .switch:before {
+  content: "Off";
+}
+
+#customize-theme-controls
+  .customize-control-kirki-toggle
+  input:checked
+  + .switch:after {
+  content: "On";
+  color: rgb(255 255 255 / 57%);
+  background: #0073aa !important;
+  box-shadow: inset 7px 7px 10px -7px white,
+    inset -7px -7px 10px -7px rgb(0 0 0 / 50%),
+    inset 17px 17px 20px -17px rgb(255 255 255 / 50%);
 }
 
 .customize-control-kirki-switch label:after {
@@ -152,4 +169,22 @@ input[type="range"]::-webkit-slider-thumb {
 
 .customize-control-kirki-switch .switch-on {
   padding-left: 1em;
+}
+
+.customize-control-kirki-toggle .switch:active:before,
+.customize-control-kirki-toggle .switch:active:after {
+  transform: translate3d(0, -50%, 0) scale(1.25);
+}
+.customize-control-kirki-toggle input:checked + .switch:before {
+  background: rgba(0, 115, 170, 0.075);
+  transform: translate3d(100%, -50%, 0) scale(1);
+}
+.customize-control-kirki-toggle input:checked + .switch:after {
+  background: #0073aa;
+  transform: translate3d(100%, -50%, 0) scale(1);
+}
+.customize-control-kirki-toggle input:checked + .switch:active:before,
+.customize-control-kirki-toggle input:checked + .switch:active:after {
+  background: rgba(0, 115, 170, 0.075);
+  transform: translate3d(100%, -50%, 0) scale(1.25);
 }

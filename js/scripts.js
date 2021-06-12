@@ -33,6 +33,10 @@ giGlobalChest.adjustForLetterSpacing = function(elm){
     }
 }
 
+function allowAdjustment() {
+    if(jQuery('#wpadminbar')) {jQuery('body').addClass('has-wp-toolbar'); jQuery('#wpadminbar').addClass('wp-toolbar');}
+}
+
 
 /////////////////////
 //   Run Functions
@@ -44,4 +48,6 @@ window.onload = function() {
     giGlobalChest.adjustForLetterSpacing('#site-welcome-container #welcome-title-wrap .page-title')
     giGlobalChest.adjustForLetterSpacing('#site-welcome-container #welcome-title-wrap .site-description')
 
+    allowAdjustment() 
 }
+

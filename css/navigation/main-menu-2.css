@@ -263,7 +263,7 @@
       inset -20px -20px 50px -40px #000000;
   }
 
-  body.admin-bar #wpadminbar {
+  body.has-wp-toolbar .wp-toolbar {
     position: fixed;
     top: 0;
     left: 0;

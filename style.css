@@ -154,7 +154,7 @@ body::-webkit-scrollbar-thumb {
 /* - Borders */
 
 /* - Color Palett */
-/* - Defined in 'default-color-palette.php' 
+/* - Defined in 'theme-defaults.php' 
 			or the Customizer settings, if available.*/
 
 /* - Locations */
@@ -552,19 +552,19 @@ textarea {
 
 /* -Header 
 		--------------------------------------------- */
-/* If WP admin bar, adjust for it */
-body.admin-bar .site-header {
+/* If WP admin bar, adjust elms for it */
+body.has-wp-toolbar .site-header {
   top: 32px;
 }
 
 @media all and (max-width: 782px) {
-  body.admin-bar .site-header {
+  body.has-wp-toolbar .site-header {
     top: 46px;
   }
 }
 
 @media all and (max-width: 600px) {
-  body.admin-bar .site-header {
+  body.has-wp-toolbar .site-header {
     top: 0;
   }
 }
@@ -2082,8 +2082,3 @@ nav.navigation.post-navigation {
 .wp-block-button.is-style-squared .wp-block-button__link {
   border-radius: 0;
 }
-
-/* TEMPORARY */
-/* div#wpadminbar {
-    display: none;
-} */

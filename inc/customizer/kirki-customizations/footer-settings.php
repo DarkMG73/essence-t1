@@ -103,7 +103,7 @@ Kirki::add_section( 'footer_settings', array(
         'priority'    => 30,
     ] );
 
-    	/* Group Toggle
+    /* Group Toggle
 	----------------------------*/  
     Kirki::add_field( 'gi_theme_config', [
         'type'        => 'toggle',
@@ -175,9 +175,9 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'custom',
             'settings'    => $slug . 'subgroup_title_for_customizer',
             'section'     => 'footer_settings',
-                'default'         => '<div class="photo-cta-image-subgroup-title">' . __( $title . ' Settings Group', 'gi-essence-theme' ) . '</div>',
-                'priority'    => $priority,
-        ] );
+            'default'         =>  ' <div class="photo-cta-image-subgroup-title">' . sprintf( esc_html__('%s', 'gi-essence-theme'), $title ) . ' Settings Group </div>',
+            'priority'    => $priority,
+    ] );
    
         // Select the image
         Kirki::add_field( 'theme_config_id', [
@@ -271,7 +271,7 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_vertical_setting',
-            'label'       => sprintf( esc_html__( '%s ontainer Vertical Adjustment', 'gi-essence-theme' ), $title),
+            'label'       => sprintf( esc_html__( '%s Container Vertical Adjustment', 'gi-essence-theme' ), $title),
             'description'=>  sprintf( esc_html__( 'Increase or decrease the position of the %s container. The purpose of this control is to allow for more versatile positioning of the %s.', 'gi-essence-theme' ), $descriptive_use, $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_vertical_adjustment'],
@@ -410,11 +410,10 @@ Kirki::add_section( 'footer_settings', array(
 	----------------------------*/  
     Kirki::add_field( 'gi_theme_config', [
         'type'     => 'text',
-        'settings' => 'copyright_text_setting',
+        'settings' => 'gi_footer_copyright_text',
         'label'    => esc_html__( 'Copyright Text', 'gi-essence-theme' ),
         'section'  => 'footer_settings',
         'default'  => sprintf( esc_html__( '%s', 'gi-essence-theme' ), $generalThemeDefaults['footer']['copyright_text']),
-
         'priority' => 10,
     ] );
 
@@ -430,18 +429,29 @@ Kirki::add_section( 'footer_settings', array(
         ----------------------------*/  
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'custom',
-            'settings'    => 'footer_TOS_title_for_customizer',
+            'settings'    => 'footer_tos_title_for_customizer',
             'section'     => 'footer_settings',
                 'default'         => '<div class="customizer-divider">' . __( '"Terms of Service" Page', 'gi-essence-theme' ) . '</div>',
             'priority'    => 10,
         ] );
 
+        /* Group Toggle
+        ----------------------------*/  
+        Kirki::add_field( 'gi_theme_config', [
+            'type'        => 'toggle',
+            'settings'    => 'footer_tos_on_off_toggle_setting',
+            'label'       => esc_html__( 'Terms of Service On/Off Switch', 'gi-essence-theme' ),
+            'section'     => 'footer_settings',
+            'default'     => $generalThemeDefaults['footer']['footer_tos_on_off_toggle_setting'],
+            'priority'    => 10,
+        ] );
+  
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'dropdown-pages',
             'settings'    => 'gi_footer_tos_page',
             'label'       => esc_html__( 'Select a TOS Page', 'gi-essence-theme' ),
-            'default'         => '',
             'section'     => 'footer_settings',
+            'order'       => 'DESC',
             'priority'    => 10,
         ] );
 
@@ -460,6 +470,17 @@ Kirki::add_section( 'footer_settings', array(
             'settings'    => 'priacy_page_title_for_customizer',
             'section'     => 'footer_settings',
                 'default'         => '<div class="customizer-divider">' . __( '"Privacy Page" Link', 'gi-essence-theme' ) . '</div>',
+            'priority'    => 10,
+        ] );
+
+        /* Group Toggle
+        ----------------------------*/  
+        Kirki::add_field( 'gi_theme_config', [
+            'type'        => 'toggle',
+            'settings'    => 'footer_privacy_page_on_off_toggle_setting',
+            'label'       => esc_html__( 'Privacy Page On/Off Switch', 'gi-essence-theme' ),
+            'section'     => 'footer_settings',
+            'default'     => $generalThemeDefaults['footer']['footer_privacy_page_on_off_toggle_setting'],
             'priority'    => 10,
         ] );
 

@@ -15,8 +15,12 @@ function setup_theme_options () {
 
     // Set footer CTA start state in th DB (see footer-settings.php)
     set_theme_mod('footer_photo_cta_on_off_toggle_setting',  1);
+
+        // Set footer privacy page start state in th DB (see footer-settings.php)
+        set_theme_mod('footer_privacy_page_on_off_toggle_setting',  1);
+    }
   }
-}
+
 
 if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
 	/**

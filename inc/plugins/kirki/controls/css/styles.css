@@ -23,7 +23,10 @@
   display: flex;
   flex-wrap: wrap;
 }
-.customize-control-kirki-background .background-attachment .buttonset .switch-label,
+.customize-control-kirki-background
+  .background-attachment
+  .buttonset
+  .switch-label,
 .customize-control-kirki-background .background-size .buttonset .switch-label {
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -33,9 +36,17 @@
   text-align: center;
   flex-grow: 1;
 }
-.customize-control-kirki-background .background-attachment .buttonset .switch-input:checked + .switch-label,
-.customize-control-kirki-background .background-size .buttonset .switch-input:checked + .switch-label {
-  background-color: #3498DB;
+.customize-control-kirki-background
+  .background-attachment
+  .buttonset
+  .switch-input:checked
+  + .switch-label,
+.customize-control-kirki-background
+  .background-size
+  .buttonset
+  .switch-input:checked
+  + .switch-label {
+  background-color: #3498db;
   color: #fff;
 }
 
@@ -71,15 +82,23 @@
 .customize-control-kirki-color-palette .colors-wrapper.round label {
   padding: 3px;
 }
-.customize-control-kirki-color-palette .colors-wrapper.round .color-palette-color {
+.customize-control-kirki-color-palette
+  .colors-wrapper.round
+  .color-palette-color {
   border-radius: 50%;
 }
-.customize-control-kirki-color-palette .colors-wrapper.box-shadow .color-palette-color {
+.customize-control-kirki-color-palette
+  .colors-wrapper.box-shadow
+  .color-palette-color {
   box-shadow: inset 3px 3px 13px 2px rgba(0, 0, 0, 0.2);
 }
-.customize-control-kirki-color-palette .colors-wrapper input:checked + label .color-palette-color {
+.customize-control-kirki-color-palette
+  .colors-wrapper
+  input:checked
+  + label
+  .color-palette-color {
   border: 0;
-  border: 4px solid #3498DB;
+  border: 4px solid #3498db;
   position: relative;
   left: -3px;
   top: -3px;
@@ -91,16 +110,39 @@
 .customize-control-kirki-color-palette .colors-wrapper input {
   display: none;
 }
-.customize-control-kirki-color input[data-type=hue] + .iris-strip-horiz .iris-slider {
-  background-image: -webkit-linear-gradient(left, red, #ff7f00, yellow, #80ff00, lime, #00ff80, aqua, #007fff, blue, #7f00ff, fuchsia, #ff0080, red) !important;
+.customize-control-kirki-color
+  input[data-type="hue"]
+  + .iris-strip-horiz
+  .iris-slider {
+  background-image: -webkit-linear-gradient(
+    left,
+    red,
+    #ff7f00,
+    yellow,
+    #80ff00,
+    lime,
+    #00ff80,
+    aqua,
+    #007fff,
+    blue,
+    #7f00ff,
+    fuchsia,
+    #ff0080,
+    red
+  ) !important;
   widows: 100% !important;
 }
-.customize-control-kirki-color .kirki-input-container[data-has-alpha=true] .iris-picker-inner {
+.customize-control-kirki-color
+  .kirki-input-container[data-has-alpha="true"]
+  .iris-picker-inner {
   display: grid;
   grid-template-columns: 1fr 20px 20px;
   grid-gap: 7px;
 }
-.customize-control-kirki-color .kirki-input-container[data-has-alpha=true] .iris-picker-inner > * {
+.customize-control-kirki-color
+  .kirki-input-container[data-has-alpha="true"]
+  .iris-picker-inner
+  > * {
   width: 100% !important;
   margin-left: 0 !important;
 }
@@ -133,8 +175,12 @@
 .customize-control-kirki-dashicons .icons-wrapper input {
   display: none;
 }
-.customize-control-kirki-dashicons .icons-wrapper input:checked + label .dashicons {
-  border: 2px solid #3498DB;
+.customize-control-kirki-dashicons
+  .icons-wrapper
+  input:checked
+  + label
+  .dashicons {
+  border: 2px solid #3498db;
   color: #000;
 }
 
@@ -158,25 +204,52 @@
   overflow: hidden;
   cursor: pointer;
 }
-.wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-next:after, .wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-next:before,
-.wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:after,
-.wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:before {
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-header
+  .ui-datepicker-next:after,
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-header
+  .ui-datepicker-next:before,
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-header
+  .ui-datepicker-prev:after,
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-header
+  .ui-datepicker-prev:before {
   font-family: dashicons;
 }
-.wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-next .ui-icon,
-.wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-prev .ui-icon {
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-header
+  .ui-datepicker-next
+  .ui-icon,
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-header
+  .ui-datepicker-prev
+  .ui-icon {
   display: none;
 }
 .wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
   left: 0;
 }
-.wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:before {
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-header
+  .ui-datepicker-prev:before {
   content: "";
 }
 .wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-next {
   right: 0;
 }
-.wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-next:after {
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-header
+  .ui-datepicker-next:after {
   content: "";
 }
 .wp-customizer div.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
@@ -197,11 +270,29 @@
   text-decoration: none;
   text-align: center;
 }
-.wp-customizer div.ui-datepicker .ui-datepicker-calendar tr td a.ui-state-active, .wp-customizer div.ui-datepicker .ui-datepicker-calendar tr td a:hover {
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-calendar
+  tr
+  td
+  a.ui-state-active,
+.wp-customizer div.ui-datepicker .ui-datepicker-calendar tr td a:hover {
   color: #fff;
-  background-color: #3498DB;
+  background-color: #3498db;
 }
-.wp-customizer div.ui-datepicker .ui-datepicker-calendar tr td.ui-state-disabled a, .wp-customizer div.ui-datepicker .ui-datepicker-calendar tr td.ui-state-disabled .ui-state-default a {
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-calendar
+  tr
+  td.ui-state-disabled
+  a,
+.wp-customizer
+  div.ui-datepicker
+  .ui-datepicker-calendar
+  tr
+  td.ui-state-disabled
+  .ui-state-default
+  a {
   color: #999;
 }
 
@@ -266,7 +357,9 @@
 .customize-control-kirki-multicolor .wp-picker-container > .wp-color-result {
   width: 100%;
 }
-.customize-control-kirki-multicolor .wp-picker-container.wp-picker-active + .multicolor-single-label {
+.customize-control-kirki-multicolor
+  .wp-picker-container.wp-picker-active
+  + .multicolor-single-label {
   display: none;
 }
 
@@ -278,7 +371,12 @@
   width: 100%;
   -moz-appearance: textfield;
 }
-.customize-control-kirki-number .customize-control-content input::-webkit-inner-spin-button, .customize-control-kirki-number .customize-control-content input::-webkit-outer-spin-button {
+.customize-control-kirki-number
+  .customize-control-content
+  input::-webkit-inner-spin-button,
+.customize-control-kirki-number
+  .customize-control-content
+  input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -291,11 +389,11 @@
 .customize-control-kirki-palette {
   position: relative;
 }
-.customize-control-kirki-palette input[type=radio] {
+.customize-control-kirki-palette input[type="radio"] {
   display: none;
 }
-.customize-control-kirki-palette input[type=radio]:checked + label {
-  border: 2px solid #3498DB;
+.customize-control-kirki-palette input[type="radio"]:checked + label {
+  border: 2px solid #3498db;
 }
 .customize-control-kirki-palette label {
   background: none;
@@ -347,7 +445,10 @@
   padding: 0.5em 1em;
   flex-grow: 1;
 }
-.customize-control-kirki-radio-buttonset .buttonset .switch-input:checked + .switch-label {
+.customize-control-kirki-radio-buttonset
+  .buttonset
+  .switch-input:checked
+  + .switch-label {
   background-color: #00a0d2;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -389,7 +490,7 @@
 .customize-control-kirki-radio-image input:checked + label img {
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
-  border: 1px solid #3498DB;
+  border: 1px solid #3498db;
 }
 .customize-control-kirki-radio-image input + label .image-clickable {
   position: absolute;
@@ -404,11 +505,11 @@
 .customize-control-kirki-radio {
   position: relative;
 }
-.customize-control-kirki-radio input[type=radio] {
+.customize-control-kirki-radio input[type="radio"] {
   width: 18px;
   height: 18px;
 }
-.customize-control-kirki-radio input[type=radio]:checked:before {
+.customize-control-kirki-radio input[type="radio"]:checked:before {
   width: 10px;
   height: 10px;
   margin: 3px;
@@ -440,28 +541,52 @@
 .customize-control-repeater .repeater-fields .repeater-row.minimized:hover {
   border: 1px solid #e5e5e5;
 }
-.customize-control-repeater .repeater-fields .repeater-row.minimized .repeater-row-content {
+.customize-control-repeater
+  .repeater-fields
+  .repeater-row.minimized
+  .repeater-row-content {
   display: none;
 }
 .customize-control-repeater .repeater-fields .repeater-row label {
   margin-bottom: 12px;
   clear: both;
 }
-.customize-control-repeater .repeater-fields .repeater-row .repeater-field.repeater-field- {
+.customize-control-repeater
+  .repeater-fields
+  .repeater-row
+  .repeater-field.repeater-field- {
   display: none;
 }
-.customize-control-repeater .repeater-fields .repeater-row .repeater-field.repeater-field-radio-image input {
+.customize-control-repeater
+  .repeater-fields
+  .repeater-row
+  .repeater-field.repeater-field-radio-image
+  input {
   display: none;
 }
-.customize-control-repeater .repeater-fields .repeater-row .repeater-field.repeater-field-radio-image input img {
+.customize-control-repeater
+  .repeater-fields
+  .repeater-row
+  .repeater-field.repeater-field-radio-image
+  input
+  img {
   border: 1px solid transparent;
 }
-.customize-control-repeater .repeater-fields .repeater-row .repeater-field.repeater-field-radio-image input:checked + label img {
+.customize-control-repeater
+  .repeater-fields
+  .repeater-row
+  .repeater-field.repeater-field-radio-image
+  input:checked
+  + label
+  img {
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
-  border: 1px solid #3498DB;
+  border: 1px solid #3498db;
 }
-.customize-control-repeater .repeater-fields .repeater-row .repeater-field:last-child {
+.customize-control-repeater
+  .repeater-fields
+  .repeater-row
+  .repeater-field:last-child {
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -477,7 +602,7 @@
   width: 100%;
   clear: both;
   padding-bottom: 12px;
-  border-bottom: 1px dotted #CCC;
+  border-bottom: 1px dotted #ccc;
 }
 .customize-control-repeater .repeater-field .customize-control-title {
   font-size: 13px;
@@ -576,7 +701,7 @@
   border-radius: 3px;
 }
 .limit.highlight {
-  background: #D32F2F;
+  background: #d32f2f;
   color: #fff;
 }
 
@@ -596,9 +721,9 @@
 }
 .customize-control-kirki-slider .wrapper .slider-reset:hover {
   transform: scale(1.3);
-  color: #DC3232;
+  color: #dc3232;
 }
-.customize-control-kirki-slider .wrapper input[type=range] {
+.customize-control-kirki-slider .wrapper input[type="range"] {
   display: block;
   -webkit-appearance: none;
   background-color: #bdc3c7;
@@ -608,7 +733,9 @@
   margin: 0 auto;
   outline: 0;
 }
-.customize-control-kirki-slider .wrapper input[type=range]::-webkit-slider-thumb {
+.customize-control-kirki-slider
+  .wrapper
+  input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #0085ba;
   width: 17px;
@@ -618,14 +745,19 @@
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-​ .customize-control-kirki-slider .wrapper input[type=range]::-webkit-slider-thumb:hover {
+​
+  .customize-control-kirki-slider
+  .wrapper
+  input[type="range"]::-webkit-slider-thumb:hover {
   background-color: #006799;
   border: 2px solid #0085ba;
 }
-.customize-control-kirki-slider .wrapper input[type=range]::-webkit-slider-thumb:active {
+.customize-control-kirki-slider
+  .wrapper
+  input[type="range"]::-webkit-slider-thumb:active {
   transform: scale(1.2);
 }
-.customize-control-kirki-slider .wrapper input[type=text] {
+.customize-control-kirki-slider .wrapper input[type="text"] {
   font-size: 13px;
   background: transparent;
   border: none;
@@ -654,7 +786,10 @@
   color: #aaa;
   border: 1px dashed #aaa;
 }
-.customize-control-kirki-sortable ul.ui-sortable li.invisible .dashicons.visibility {
+.customize-control-kirki-sortable
+  ul.ui-sortable
+  li.invisible
+  .dashicons.visibility {
   color: #aaa;
 }
 
@@ -697,14 +832,14 @@
   border-radius: 3rem;
 }
 .customize-control-kirki-switch label:after {
-  background: #FFFFFF;
+  background: #ffffff;
   content: "";
   display: block;
   position: absolute;
   left: 5px;
   top: 5px;
-  width: calc(.85rem + 10px);
-  height: calc(.85rem + 10px);
+  width: calc(0.85rem + 10px);
+  height: calc(0.85rem + 10px);
   transition: all 0.25s ease-in-out;
   border-radius: 3rem;
 }
@@ -754,7 +889,8 @@
   user-select: none;
   transition: background 350ms ease;
 }
-.customize-control-kirki-toggle .switch:after, .customize-control-kirki-toggle .switch:before {
+.customize-control-kirki-toggle .switch:after,
+.customize-control-kirki-toggle .switch:before {
   content: "";
   display: block;
   width: 20px;
@@ -829,16 +965,29 @@
 .customize-control-kirki-typography .wrapper .text-align .text-align-choices {
   display: flex;
 }
-.customize-control-kirki-typography .wrapper .text-align .text-align-choices label {
+.customize-control-kirki-typography
+  .wrapper
+  .text-align
+  .text-align-choices
+  label {
   width: 100%;
   padding: 5px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0);
 }
-.customize-control-kirki-typography .wrapper .text-align .text-align-choices input {
+.customize-control-kirki-typography
+  .wrapper
+  .text-align
+  .text-align-choices
+  input {
   display: none;
 }
-.customize-control-kirki-typography .wrapper .text-align .text-align-choices input:checked + label {
+.customize-control-kirki-typography
+  .wrapper
+  .text-align
+  .text-align-choices
+  input:checked
+  + label {
   border-color: #0085ba;
 }
 .customize-control-kirki-typography .wrapper .color {

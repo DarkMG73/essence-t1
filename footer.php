@@ -89,8 +89,11 @@ dynamic_sidebar( 'bottom-widget' );
 							</div>
 							<div class="photo-cta-text">
 								<p>
-									<?php echo _e( get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com'), 'gi-essence-theme' ) ?>
-								</p>
+									<?php 
+									$cta_text = get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com');
+									printf( esc_html__( '%s', 'gi-essence-theme' ), $cta_text );
+									?>
+								 </p>
 							</div>
 						</div>
 					<?php
@@ -109,7 +112,7 @@ dynamic_sidebar( 'bottom-widget' );
 
 						<?php
 						/* translators: %s: CMS name, i.e. WordPress. */
-						printf( _e( 'Proudly powered by %s', 'gi-essence-theme' ), 'WordPress' );
+						printf( esc_html__( 'Proudly powered by %s', 'gi-essence-theme' ), 'WordPress' );
 						?>
 
 					</a>
@@ -120,49 +123,98 @@ dynamic_sidebar( 'bottom-widget' );
 				<div class="site-info-child">
 					<?php
 					/* translators: 1: Theme name, 2: Theme author. */
-					printf( _e( 'Theme: %1$s by %2$s.', 'gi-essence-theme' ), 'EssenceTheme', '<a href="http://www.glassinteractive.com">Mike Glass</a>' );
+					printf( esc_html__( 'Theme: %1$s by %2$s.', 'gi-essence-theme' ), 'EssenceTheme', '<a href="http://www.glassinteractive.com">Mike Glass</a>' );
 					?>
 				</div><!-- .site-info-child -->
 
 				<span class="sep">   |   </span>
 				
 				<div class="site-info-child">
+
 					<div id="copyrights">
 
 						<div class="container clearfix">
 
 							<div class="col_half">
-								<?php echo _e( get_theme_mod( 'gi_footer_copyright_text' ), 'gi-essence-theme' ); ?>
+								<?php
+								 	global $generalThemeDefaults;
+									$copyright_text = get_theme_mod( 'gi_footer_copyright_text', $generalThemeDefaults['footer']['copyright_text'] ); 
+									printf( esc_html__( '%s', 'gi-essence-theme' ), $copyright_text);
+								?>
 								<?php
 
 								if( get_theme_mod( 'gi_report_file' ) ){
-									?><a href="<?php echo _e( get_theme_mod( 'gi_report_file' ), 'gi-essence-theme' ); ?>">Download Report</a><br><?php
+									?><a href="<?php echo esc_html(get_theme_mod( 'gi_report_file' )); ?>">Download Report</a><br><?php
 								}
 
 								?>
 								<div class="copyright-links">
+								
 									<?php
 
-									if( get_theme_mod( 'gi_footer_tos_page' ) ){
-										?><a href="<?php the_permalink( get_theme_mod( 'gi_footer_tos_page' ) ); ?>">Terms of Use</a><?php
-									
-									?> /
+
+									if( get_theme_mod('footer_tos_on_off_toggle_setting') >= 1 ){
+
+											if( get_theme_mod('gi_footer_tos_page') ) {
+
+												$tos_page_link = get_the_permalink(get_theme_mod( 'gi_footer_tos_page'));
+
+											} else if(get_page_by_title( 'Terms of Service')) {
+
+												$tos_page_link = get_page_link(get_page_by_title( 'Terms of Service')->ID); 
+
+											} else {
+
+												// If toggle in on and no other previous
+												// condition is met, just use the first page.
+												$pages_args = [
+													'sort_column' => 'ID',
+												];
+												$pages = get_pages($pages_args);
+												$first_page = $pages[0]->ID;
+												$tos_page_link = get_the_permalink( $first_page );
+
+											}
+
+											?><a href="<?php 
+											echo $tos_page_link;
+											?>
+											">Terms of Service</a><?php
+									?>
 									<?php
 									}
 
-									if( get_theme_mod( 'gi_footer_privacy_page' ) ){
+									if( get_theme_mod( 'footer_privacy_page_on_off_toggle_setting' ) >= 1  ){
+
 										?>
 										<span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-										<a href="<?php the_permalink( get_theme_mod( 'gi_footer_privacy_page' ) ); ?>">Privacy Policy</a><?php
-									
-									?> /
-									<?php
-									} else if(get_page_by_title( 'Privacy Policy')) {
-										?>
+										<?php
 
-										<span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span>										
-										<a href="<?php echo _e(get_page_link( get_page_by_title( 'Privacy Policy')->ID 
-										), 'gi-essence-theme' ); ?>">Privacy Policy</a><?php
+										if( get_theme_mod( 'gi_footer_privacy_page' ) ){
+
+											$privacy_page_link = get_the_permalink( get_theme_mod( 'gi_footer_privacy_page' ));
+
+										} else if(get_page_by_title( 'Privacy Policy')) {
+																			
+											$privacy_page_link = get_page_link( get_page_by_title( 'Privacy Policy')->ID 
+										);
+										} else {
+
+											// If toggle in on and no other previous
+											// condition is met, just use the first page.
+											$pages_args = [
+												'sort_column' => 'ID',
+											];
+											$pages = get_pages($pages_args);
+											$first_page = $pages[0]->ID;
+											$privacy_page_link = get_the_permalink( $first_page );
+
+										}
+
+										?>
+										<a href="<?php echo $privacy_page_link ?>">Privacy Policy</a>
+										<?php
+										
 									}
 									?>
 
@@ -177,7 +229,7 @@ dynamic_sidebar( 'bottom-widget' );
 							if( get_theme_mod( 'gi_facebook_handle' ) 	||
 								get_theme_mod( 'gi_twitter_handle' ) 	|| 
 								get_theme_mod( 'gi_email' ) 			||
-								get_theme_mod( 'gi_email' )
+								get_theme_mod( 'gi_phone_number' )
 							 ) {
 								?><span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span><?php
 							}
@@ -190,7 +242,7 @@ dynamic_sidebar( 'bottom-widget' );
 
 										if( get_theme_mod( 'gi_facebook_handle' ) ){
 											?>
-											<a href="https://facebook.com/<?php echo _e( get_theme_mod( 'gi_facebook_handle' ), 'gi-essence-theme' ); ?>" class="social-icon si-small si-borderless si-facebook">
+											<a href="https://facebook.com/<?php echo esc_url(get_theme_mod( 'gi_facebook_handle' )); ?>" class="social-icon si-small si-borderless si-facebook">
 												<i class="icon-facebook"></i>
 												<i class="icon-facebook"></i>
 											</a>
@@ -199,7 +251,7 @@ dynamic_sidebar( 'bottom-widget' );
 
 										if( get_theme_mod( 'gi_twitter_handle' ) ){
 											?>
-											<a href="https://twitter.com/<?php echo _e( get_theme_mod( 'gi_twitter_handle' ), 'gi-essence-theme' ); ?>" class="social-icon si-small si-borderless si-twitter">
+											<a href="https://twitter.com/<?php echo esc_url(get_theme_mod( 'gi_twitter_handle' )); ?>" class="social-icon si-small si-borderless si-twitter">
 												<i class="icon-twitter"></i>
 												<i class="icon-twitter"></i>
 											</a>
@@ -214,16 +266,16 @@ dynamic_sidebar( 'bottom-widget' );
 									<?php
 
 									if( get_theme_mod( 'gi_email' ) ){
-										?><i class="icon-envelope2"></i> <?php echo _e( get_theme_mod( 'gi_email' ), 'gi-essence-theme' );
+										?><i class="icon-envelope2"></i> <?php echo esc_url(get_theme_mod( 'gi_email' ));
 									}
 
-									if( get_theme_mod( 'gi_email' ) ){
+									if( get_theme_mod( 'gi_phone_number' ) ){
 										?>
 
 										<span class="middot">&middot;</span>
 
 										<?php
-										?><i class="icon-headphones"></i> +<?php echo _e( get_theme_mod( 'gi_phone_number' ), 'gi-essence-theme' );
+										?><i class="icon-headphones"></i> +<?php echo esc_html(get_theme_mod( 'gi_phone_number' ));
 									}
 
 									?>

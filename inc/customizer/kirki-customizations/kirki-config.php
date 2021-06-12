@@ -20,7 +20,6 @@ Kirki::add_config( 'gi_theme_config', array(
  add_action( 'wp_ajax_color_palette_reset', 'color_palette_reset_callback' );
  add_action( 'wp_ajax_nopriv_color_palette_reset', 'color_palette_reset_callback' );
  function color_palette_reset_callback() {
- 
 
 	$request = isset( $_POST['request'] ) ?  $_POST['request'] : isset( $_POST['request'] );
 

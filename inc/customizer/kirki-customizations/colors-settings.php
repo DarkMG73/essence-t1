@@ -9,7 +9,7 @@
 */   
 
 //  Default color palette
-$themePaletteDefault = set_color_pallet(); // Defined in default-color-palette.php
+$themePaletteDefault = set_color_pallet(); // Defined in theme-defaults.php
 
 
 //  Grab the custom palette colors if 
