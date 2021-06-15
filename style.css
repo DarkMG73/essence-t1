@@ -575,7 +575,6 @@ body.has-wp-toolbar .site-header {
 #top-welcome-section {
   background-position: center;
   background-size: cover;
-  max-height: 720px;
   min-width: 100%;
   justify-content: center;
   align-items: center;
@@ -1212,7 +1211,6 @@ nav.navigation.post-navigation {
 }
 
 #page-welcome-container {
-  max-height: 700px;
   overflow: hidden;
   display: flex;
   align-items: center;
