@@ -342,7 +342,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'typography',
 		'settings'    => 'site_title_font_setting',
 		'label'       => esc_html__( 'Small Site Title Text', 'gi-essence-theme' ),
-		'description' => esc_html__( 'This will control the settings ONLY for the the website title in the menu bar. This will not control the large site title that appears in the page head on the "Front and "Home" pages. For that, use the "Large Site Title Text" controller below.', 'gi-essence-theme' ),
+		'description' => esc_html__( 'This will control the settings ONLY for the website title in the menu bar. This will not control the large site title that appears in the page head on the "Front and "Home" pages. For that, use the "Large Site Title Text" controller.', 'gi-essence-theme' ),
 		'section'     => 'nav_text_type',
 		'choices' => [
 			'fonts' => [
@@ -371,8 +371,8 @@ Kirki::add_section( 'nav_text_type', array(
 	Kirki::add_field( 'my_theme_config', array(
 		'type'        => 'text',
 		'settings'    => 'site_title_manubar_font_family_override_box',
-		'label'       => esc_attr__( 'Menubar Site Title Manual Override', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply to the large title selector. For example: font-family: "Good Times Rg"; NOTE: THIS DOES NOT LOAD THE FONT INTO THE BROWSER. If the font is not already one of the included Google fonts or part of the browser, this will need to be loaded either through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
+		'label'       => esc_attr__( 'Menu Bar Site Title Manual Override', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'These settings override the font-family setting above. This can be any font you wish to apply. For example: font-family: "Good Times Rg"; NOTE: THIS DOES NOT LOAD THE FONT INTO THE BROWSER. If the font is not already one of the included Google fonts or part of the browser, this will need to be loaded either through a plugin or by adding the font via linking in the document head. Information on this is readily available online. If you are not familiar with this, it might be best to stick to the many supplied Google and browser fonts.', 'gi-essence-theme' ),
 		'section'     => 'nav_text_type',
 		'default'     => $generalThemeDefaults['typography']['site_title_menubar_typography_override_box'],
 		'transport'   => 'refresh',
@@ -534,7 +534,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'typography',
 		'settings'    => 'page_title_font_setting',
 		'label'       => esc_html__( 'Large Site Title Text', 'gi-essence-theme' ),
-		'description' => esc_html__( 'This will control all settings for the the large site title in the page head of standard pages. In addition, this will control the large site title that is used in the page head on the "Home" and "Front" pages, but settings for this can be overridden in the "Large Site Title Text" controller above, which allows us to make the site title unique, if we wish.', 'gi-essence-theme' ),
+		'description' => esc_html__( 'This will control all settings for the large site title in the page head of standard pages. In addition, this will control the large site title that is used in the page head on the "Home" and "Front" pages, but settings for this can be overridden in the "Large Site Title Text" controller above, which allows us to make the site title unique, if we wish.', 'gi-essence-theme' ),
 		'section'     => 'page_head_title_type',
 		'choices' => [
 			'fonts' => [

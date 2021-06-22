@@ -15,6 +15,8 @@
 	style="background-image: url('<?php echo $backgroundImg[0]; ?>');"
 >
 	<header class="entry-header">
+		<div class="image-overlay"></div>
+		<div class="color-overlay"></div>
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h3 class="entry-title">', '</h3>' );

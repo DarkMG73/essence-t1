@@ -39,7 +39,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'static_front_page_intro_output_for_customizer',
 	'section'     => 'static_front_page',
-		'default'         => '<div class="intro-text"><p>' .esc_html__( 'Here we can define and adjust the "Home" and "Front" pages, along with make smaller adjustments concerning those pages.', 'gi-essence-theme' ) . '</p></div>',
+		'default'         => '<div class="intro-text"><p>' .esc_html__( 'Here we can define and adjust the "Home" and "Front" pages.', 'gi-essence-theme' ) . '</p></div>',
 	'priority'    => 0,
 ] );
 

@@ -600,7 +600,8 @@ body.has-wp-toolbar .site-header {
 #site-welcome-container {
   overflow: hidden;
   box-shadow: var(--box-shadow-outset-round);
-  /* border: 1px outset gainsboro; */
+  max-height: 720px;
+  align-items: center;
 }
 
 /* - First Transition Section 
@@ -663,7 +664,8 @@ body.has-wp-toolbar .site-header {
 		--------------------------------------------- */
 .site-footer {
   flex-direction: column;
-  padding: 17.25px 5px;
+  margin-top: -10px;
+  padding: 17.25px 5px 71px;
   background-image: none;
   box-shadow: inset 0px 2px 4px rgb(222 222 222 / 50%),
     inset 0px 7px 8px -4px rgb(255 255 255 / 25%),
@@ -672,7 +674,7 @@ body.has-wp-toolbar .site-header {
   width: 100%;
   /* margin-top and border-radius work together.
 			#page-container provides padding-bottom for offset */
-  margin-top: -10px;
+
   border-radius: 3% 3% 0 0;
 }
 
@@ -701,6 +703,15 @@ body.has-wp-toolbar .site-header {
 
 .footer-topic-column > .widget {
   margin: 0 auto;
+}
+
+.site-info-child div,
+.site-info-child span {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Photo CTA */
@@ -1429,6 +1440,11 @@ nav.navigation.post-navigation {
   margin-top: -50px;
 }
 
+#featured-posts .entry-title {
+  margin: auto;
+  position: relative;
+}
+
 @media screen and (min-width: 1200px) {
   #featured-posts {
     min-height: 400px;
@@ -1462,7 +1478,7 @@ nav.navigation.post-navigation {
   filter: brightness(1.1) saturate(1.2);
 }
 
-#featured-posts :nth-child(2) {
+#featured-posts > :nth-child(2) {
   margin-right: 1%;
   margin-left: 1%;
 }
@@ -1470,20 +1486,22 @@ nav.navigation.post-navigation {
 #featured-posts .entry-header {
   position: absolute;
   text-align: center;
-  margin: 0 3em;
+  margin: 1em 3em;
   bottom: 0;
   width: 80%;
   border-radius: 10px;
   transform: scale(1, 1.25);
   opacity: 0.8;
   transition: 0.3s all ease;
+  height: auto;
+  overflow: hidden;
 }
 
 #featured-posts .post:hover > .entry-header {
   opacity: 1;
 }
 
-#featured-posts .entry-title {
+#featured-posts .entry-header {
   box-shadow: var(--box-shadow-outset-high-flat);
 }
 

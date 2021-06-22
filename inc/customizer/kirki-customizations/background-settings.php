@@ -92,7 +92,7 @@ Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'color',
 		'settings'    => 'background_color_settings',
 		'label'       => __( 'Site Background Color', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'Set the background color for the page body. This becomes the page background. This will overlay any body background image set above. Click "Clear" to remove the color and show the body background image (if set).   NOTE: The alpha slider on the right of the color tool can be used to lower the transparency of the color to to reveal the body background image (if set). This can be used to artistically to add a color overlay to the body background image, if desired.', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'Set the background color for the page body. This becomes the page background. This will overlay any body background image set above. Click "Clear" to remove the color and show the body background image (if set).   NOTE: The alpha slider on the right of the color tool can be used to lower the transparency of the color to reveal the body background image (if set). This can be used artistically to add a color overlay to the body background image, if desired.', 'gi-essence-theme' ),
 		'section'     => 'background_image',
 		'default'     => $generalThemeDefaults['background']['body_color'],
 		'priority'       => 10,
@@ -155,7 +155,7 @@ Kirki::add_field( 'gi_theme_config', [
 		'transport'   => 'auto',
 		'output'      => [
 			[
-				'element' => 'body #page-container, .single .entry-header .image-overlay, .page .entry-header .image-overlay',
+				'element' => 'body #page-container, .single .entry-header .image-overlay, .page .entry-header .image-overlay, #featured-posts .entry-header > .image-overlay',
 			],
 		],
 	] );
@@ -166,7 +166,7 @@ Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'color',
 		'settings'    => 'content_background_color_settings',
 		'label'       => __( 'Content Area Background Color', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'Set the background color only for the content area of the page. This will overlay any content area background image set above. Click "Clear" to remove the color and show the content area background image (if set).   NOTE: The alpha slider on the right of the color tool can be used to lower the transparency of the color to to reveal the content area background image (if set). This can be used to artistically to add a color overlay to the image.', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'Set the background color for the content area of the page. This will overlay any content area background image set above. This color tool is a little different from the body color tool in that if we want to see the image set above, we can not simply click a "Clear" button to remove the color and show the image (assuming one is set). Read on to see how to accomplish this with the alpha slider. The alpha slider on the right of the color tool can be used to lower the transparency of the color and reveal the content area background image (if set). This can be used to artistically to add a color overlay to the image or, if set to "0", will show the image with no color overlay.', 'gi-essence-theme' ),
 		'section'     => 'background_image',
 		'default'     => $generalThemeDefaults['background']['content_color'],
 		'priority'    => 30,
@@ -185,7 +185,7 @@ Kirki::add_field( 'gi_theme_config', [
 		),
 		'output' => array(
 			array(
-				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay, .home-template #page-title > .color-overlay, #featured-posts header.entry-header .entry-title',
+				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay, .home-template #page-title > .color-overlay, #featured-posts .entry-header > .color-overlay',
 				'property' => 'background-color',
 				),
 			),

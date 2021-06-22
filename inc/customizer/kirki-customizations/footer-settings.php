@@ -58,7 +58,7 @@ Kirki::add_section( 'footer_settings', array(
 		'type'        => 'color',
 		'settings'    => 'footer_backgroundcolor-setting',
 		'label'       => __( 'Footer Background Color', 'gi-essence-theme' ),
-		'description' => esc_attr__( 'Set the background color for the page head. Note: This will only show when there is no background image for the footer.', 'gi-essence-theme' ),
+		'description' => esc_attr__( 'Set the background color for the footer. This will often require the footer text color to be changed. Like all text settings, this can be done in the "Typography" section of the Customizer.', 'gi-essence-theme' ),
 		'section'     => 'footer_settings',
 		'default'     => '',
 		'priority'       => 10,
@@ -430,6 +430,7 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'custom',
             'settings'    => 'footer_tos_title_for_customizer',
+            'description' => 'If turned on, this will look for and use an exiting page titled "Terms of Service". This will then place a link to that page in the footer. We can override the linked-to page using the dropdown menu to link to any existing page we would like.',
             'section'     => 'footer_settings',
                 'default'         => '<div class="customizer-divider">' . __( '"Terms of Service" Page', 'gi-essence-theme' ) . '</div>',
             'priority'    => 10,

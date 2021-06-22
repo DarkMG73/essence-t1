@@ -126,7 +126,8 @@
   #site-navigation .nav-menu > .menu-item:focus-within > ul,
   #site-navigation .nav-menu > .page_item:focus-within > ul {
     max-height: 80vh;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     /* Prevents scrollbar from temorarily appearing when element expanding */
     animation: hide-scroll 0.7s backwards;
   }
@@ -421,7 +422,7 @@
   color: inherit;
 }
 
-#site-navigation .nav-menu > .menu-item-has-children:last-child,
+#site-navigation > .nav-menu > .menu-item-has-children:last-child,
 #site-navigation .nav-menu > .page_item_has_children:last-child {
   margin-bottom: 4em !important;
 }
