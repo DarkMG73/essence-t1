@@ -155,7 +155,7 @@ Kirki::add_field( 'gi_theme_config', [
 		'transport'   => 'auto',
 		'output'      => [
 			[
-				'element' => 'body #page-container, .single .entry-header .image-overlay, .page .entry-header .image-overlay, #featured-posts .entry-header > .image-overlay',
+				'element' => 'body #page-container, .single .entry-header .image-overlay, .page .entry-header .image-overlay, #featured-posts .entry-header > .image-overlay, body #page-container #custom-logo-wrap .image-overlay',
 			],
 		],
 	] );
@@ -185,7 +185,7 @@ Kirki::add_field( 'gi_theme_config', [
 		),
 		'output' => array(
 			array(
-				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay, .home-template #page-title > .color-overlay, #featured-posts .entry-header > .color-overlay',
+				'element'  => 'body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay, .home-template #page-title > .color-overlay, #featured-posts .entry-header > .color-overlay, body #page-container #custom-logo-wrap .color-overlay',
 				'property' => 'background-color',
 				),
 			),

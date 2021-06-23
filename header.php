@@ -49,6 +49,8 @@
 			<div class="site-branding">
 			<?php if ( true == get_theme_mod( 'logo_menubar_toggle_setting', true ) ) : ?>
 				<div id="custom-logo-wrap">
+				<div class="image-overlay"></div>
+				<div class="color-overlay"></div>
 					<div class="custom-logo-positioning-wrap-x">
 						<div class="custom-logo-positioning-wrap-y">
 							<?php

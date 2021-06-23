@@ -874,6 +874,9 @@ nav#site-navigation {
   flex-direction: column;
 }
 
+#masthead .site-branding #custom-logo-wrap {
+  overflow: hidden;
+}
 #masthead .site-branding .menubar-title-positioning-wrap-x {
   z-index: 10;
 }
