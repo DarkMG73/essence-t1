@@ -34,11 +34,7 @@ giGlobalChest.adjustForLetterSpacing = function(elm){
 }
 
 function allowAdjustment() {
-    if(jQuery('#wpadminbar')) {jQuery('body').addClass('has-wp-toolbar'); jQuery('#wpadminbar').addClass('wp-toolbar');
-    alert("Element was removed")}
-    $("#wpadminbar").on("remove", function () {
-        alert("Element was removed");
-    })
+    if(jQuery('#wpadminbar').length) {jQuery('body').addClass('has-wp-toolbar'); jQuery('#wpadminbar').addClass('wp-toolbar');}
 }
 
 
@@ -52,7 +48,6 @@ window.onload = function() {
     giGlobalChest.adjustForLetterSpacing('#site-welcome-container #welcome-title-wrap .page-title')
     giGlobalChest.adjustForLetterSpacing('#site-welcome-container #welcome-title-wrap .site-description')
 
-    allowAdjustment()
-     
+    allowAdjustment() 
 }
 
