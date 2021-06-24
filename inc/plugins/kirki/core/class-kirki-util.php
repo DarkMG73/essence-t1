@@ -43,7 +43,7 @@ class Kirki_Util {
 		$plugins = get_plugins();
 		$_plugin = '';
 		foreach ( $plugins as $plugin => $args ) {
-			if ( ! $is_plugin && isset( $args['Name'] ) && ( 'gi-essence-theme' === $args['Name'] || 'Kirki Toolkit' === $args['Name'] ) ) {
+			if ( ! $is_plugin && isset( $args['Name'] ) && ( 'essencetheme' === $args['Name'] || 'Kirki Toolkit' === $args['Name'] ) ) {
 				$is_plugin = true;
 				$_plugin   = $plugin;
 			}

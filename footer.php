@@ -91,7 +91,7 @@ dynamic_sidebar( 'bottom-widget' );
 								<p>
 									<?php 
 									$cta_text = get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com');
-									printf( esc_html__( '%s', 'gi-essence-theme' ), $cta_text );
+									printf( esc_html__( '%s''essencetheme' ), $cta_text );
 									?>
 								 </p>
 							</div>
@@ -108,11 +108,11 @@ dynamic_sidebar( 'bottom-widget' );
 
 			<div class="site-info container" >
 				<div class="site-info-child">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gi-essence-theme' ) ); ?>">
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/''essencetheme' ) ); ?>">
 
 						<?php
 						/* translators: %s: CMS name, i.e. WordPress. */
-						printf( esc_html__( 'Proudly powered by %s', 'gi-essence-theme' ), 'WordPress' );
+						printf( esc_html__( 'Proudly powered by %s''essencetheme' ), 'WordPress' );
 						?>
 
 					</a>
@@ -123,7 +123,7 @@ dynamic_sidebar( 'bottom-widget' );
 				<div class="site-info-child">
 					<?php
 					/* translators: 1: Theme name, 2: Theme author. */
-					printf( esc_html__( 'Theme: %1$s by %2$s', 'gi-essence-theme' ), 'EssenceTheme', '<a href="http://www.glassinteractive.com">Mike Glass</a>' );
+					printf( esc_html__( 'Theme: %1$s by %2$s''essencetheme' ), 'EssenceTheme', '<a href="http://www.glassinteractive.com">Mike Glass</a>' );
 					?>
 				</div><!-- .site-info-child -->
 
@@ -134,7 +134,7 @@ dynamic_sidebar( 'bottom-widget' );
 						<?php
 							global $generalThemeDefaults;
 							$copyright_text = get_theme_mod( 'gi_footer_copyright_text', $generalThemeDefaults['footer']['copyright_text'] ); 
-							printf( esc_html__( '%s', 'gi-essence-theme' ), $copyright_text);
+							printf( esc_html__( '%s''essencetheme' ), $copyright_text);
 						?>
 					</div><!-- .copyrights -->
 				</div><!-- .site-info-child -->

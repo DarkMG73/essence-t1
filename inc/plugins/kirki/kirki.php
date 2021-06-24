@@ -49,7 +49,7 @@ Kirki_Init::set_url();
 
 new Kirki_Controls();
 
-if ( ! function_exists( 'gi-essence-theme' ) ) {
+if ( ! function_exists( 'essencetheme' ) ) {
 	/**
 	 * Returns an instance of the Kirki object.
 	 */

@@ -81,7 +81,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'color_palette_title_to_customizer',
 	'section'     => 'colors',
-	'default'         => '<div class="intro-text customizer-divider"><h3>' . __( 'About This Section', 'gi-essence-theme' ) . '</h3></div>',
+	'default'         => '<div class="intro-text customizer-divider"><h3>' . __( 'About This Section''essencetheme' ) . '</h3></div>',
 	'priority'    => 0,
 ] );
 
@@ -98,8 +98,8 @@ Kirki::add_field( 'gi_theme_config', [
         Kirki::add_field( 'gi_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c1',
-        	'label'       => __( 'Accent', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'Select the color that should become prominent color on the website. This will be a defining color, but will usually not appear as a background or large area. Instead, this will be placed strategically throughout the website and often used against the Primary color.', 'gi-essence-theme' ),
+        	'label'       => __( 'Accent''essencetheme' ),
+        	'description' => esc_attr__( 'Select the color that should become prominent color on the website. This will be a defining color, but will usually not appear as a background or large area. Instead, this will be placed strategically throughout the website and often used against the Primary color.''essencetheme' ),
         	'section'     => 'colors',
         	'default'     => $themePaletteDefault[0],
         	'transport'   => 'refresh',
@@ -130,8 +130,8 @@ Kirki::add_field( 'gi_theme_config', [
         Kirki::add_field( 'gi_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c2',
-        	'label'       => __( 'Primary', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'Select the color that will become the common background color and compliments the Accent color. Text will often sit on top of the primary color, so it is usually best to make it either very light or very dark. This will allow for either black or white text show well. For text color settings, see the "Typography" section of this Customizer tool.', 'gi-essence-theme' ),
+        	'label'       => __( 'Primary''essencetheme' ),
+        	'description' => esc_attr__( 'Select the color that will become the common background color and compliments the Accent color. Text will often sit on top of the primary color, so it is usually best to make it either very light or very dark. This will allow for either black or white text show well. For text color settings, see the "Typography" section of this Customizer tool.''essencetheme' ),
         	'section'     => 'colors',
         	'default'     => $themePaletteDefault[1],
         	'transport'   => 'refresh',
@@ -152,8 +152,8 @@ Kirki::add_field( 'gi_theme_config', [
         Kirki::add_field( 'gi_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c3',
-        	'label'       => __( 'Secondary Color', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'This color will not be used with default settings, but is meant to be an additional option as you set up the various text and background colors.', 'gi-essence-theme' ),
+        	'label'       => __( 'Secondary Color''essencetheme' ),
+        	'description' => esc_attr__( 'This color will not be used with default settings, but is meant to be an additional option as you set up the various text and background colors.''essencetheme' ),
         	'section'     => 'colors',
         	'default'     => $themePaletteDefault[2],
         	'transport'   => 'refresh',
@@ -174,8 +174,8 @@ Kirki::add_field( 'gi_theme_config', [
         Kirki::add_field( 'gi_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c4',
-        	'label'       => __( 'Alternative Light', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'This color will not be used with default settings, but is meant to be an additional option as you set up the various text and background colors.', 'gi-essence-theme' ),
+        	'label'       => __( 'Alternative Light''essencetheme' ),
+        	'description' => esc_attr__( 'This color will not be used with default settings, but is meant to be an additional option as you set up the various text and background colors.''essencetheme' ),
         	'section'     => 'colors',
         	'default'     => $themePaletteDefault[3],
         	'transport'   => 'refresh',
@@ -196,8 +196,8 @@ Kirki::add_field( 'gi_theme_config', [
         Kirki::add_field( 'gi_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c5',
-        	'label'       => __( 'Alternative Dark', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'This color will not be used with default settings, but is meant to be an additional option as you set up the various text and background colors.', 'gi-essence-theme' ),
+        	'label'       => __( 'Alternative Dark''essencetheme' ),
+        	'description' => esc_attr__( 'This color will not be used with default settings, but is meant to be an additional option as you set up the various text and background colors.''essencetheme' ),
         	'section'     => 'colors',
         	'default'     => $themePaletteDefault[4],
         	'transport'   => 'refresh',
@@ -218,8 +218,8 @@ Kirki::add_field( 'gi_theme_config', [
         Kirki::add_field( 'gi_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c6',
-        	'label'       => __( 'High Contrast: Black (Text)', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'This swatch is reserved for black or a very dark gray that compliments the current palette. This will be the default text color in posts and can be used anytime a high-contrast dark color is needed.', 'gi-essence-theme' ),
+        	'label'       => __( 'High Contrast: Black (Text)''essencetheme' ),
+        	'description' => esc_attr__( 'This swatch is reserved for black or a very dark gray that compliments the current palette. This will be the default text color in posts and can be used anytime a high-contrast dark color is needed.''essencetheme' ),
         	'section'     => 'colors',
         	'default'     => $themePaletteDefault[5],
         	'transport'   => 'refresh',
@@ -240,8 +240,8 @@ Kirki::add_field( 'gi_theme_config', [
         Kirki::add_field( 'gi_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c7',
-        	'label'       => __( 'High Contrast: White (Post Background)', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'This should be pure white or a near-white (light gray, cream, light blue, etc) that compliments the current palette. This will be the default post background color and can be used anytime a high-contrast light color is needed.', 'gi-essence-theme' ),
+        	'label'       => __( 'High Contrast: White (Post Background)''essencetheme' ),
+        	'description' => esc_attr__( 'This should be pure white or a near-white (light gray, cream, light blue, etc) that compliments the current palette. This will be the default post background color and can be used anytime a high-contrast light color is needed.''essencetheme' ),
         	'section'     => 'colors',
         	'default'     => $themePaletteDefault[6],
         	'transport'   => 'refresh',
@@ -262,8 +262,8 @@ Kirki::add_field( 'gi_theme_config', [
         Kirki::add_field( 'gi_theme_config', array(
         	'type'        => 'toggle',
         	'settings'    => 'color_palette_reset',
-        	'label'       => __( 'Reset the Color Paette', 'gi-essence-theme' ),
-        	'description' => esc_attr__( 'This will refresh the Customizer and restore the original theme default colors. NOTE: THIS WILL NOT SAVE ANY UNSAVED CHANGES. If you have other Customizer changes that have not yet been saved, please click the Publish button first, then return here to restore the original theme default colors.', 'gi-essence-theme' ),
+        	'label'       => __( 'Reset the Color Paette''essencetheme' ),
+        	'description' => esc_attr__( 'This will refresh the Customizer and restore the original theme default colors. NOTE: THIS WILL NOT SAVE ANY UNSAVED CHANGES. If you have other Customizer changes that have not yet been saved, please click the Publish button first, then return here to restore the original theme default colors.''essencetheme' ),
         	'section'     => 'colors',
         	'default'     => 'off',
         	'priority'    => 10,

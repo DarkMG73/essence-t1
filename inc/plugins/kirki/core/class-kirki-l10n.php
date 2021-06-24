@@ -21,7 +21,7 @@ class Kirki_L10n {
 	 * @access private
 	 * @var string
 	 */
-	private $textdomain = 'gi-essence-theme';
+	private $textdomain = 'essencetheme';
 
 	/**
 	 * The theme textdomain
@@ -110,11 +110,11 @@ class Kirki_L10n {
 	public function override_load_textdomain( $override, $domain, $mofile ) {
 		global $l10n;
 		if ( isset( $l10n[ $this->get_theme_textdomain() ] ) ) {
-			$l10n['gi-essence-theme'] = $l10n[ $this->get_theme_textdomain() ]; // phpcs:ignore WordPress.WP.GlobalVariablesOverride
+			$l10n['essencetheme'] = $l10n[ $this->get_theme_textdomain() ]; // phpcs:ignore WordPress.WP.GlobalVariablesOverride
 		}
 
 		// Check if the domain is "kirki".
-		if ( 'gi-essence-theme' === $domain ) {
+		if ( 'essencetheme' === $domain ) {
 			return true;
 		}
 		return $override;

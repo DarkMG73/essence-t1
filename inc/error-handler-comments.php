@@ -28,11 +28,11 @@ if(!is_admin() && file_exists($errorTemplate)) {
         $message = "<p>$message</p>";
     }
     if ( isset( $r['back_link'] ) && $r['back_link'] ) {
-        $back_text = $have_gettext? __('&laquo; Back', 'gi-essence-theme') : __('&laquo; Back', 'gi-essence-theme');
+        $back_text = $have_gettext? __('&laquo; Back''essencetheme') : __('&laquo; Back''essencetheme');
         $message .= "\n<p><a href='javascript:history.back()'>$back_text</a></p>";
     }
     if ( empty($title) )
-        $title = $have_gettext ? __('WordPress &rsaquo; Error', 'gi-essence-theme') : __('WordPress &rsaquo; Error', 'gi-essence-theme');
+        $title = $have_gettext ? __('WordPress &rsaquo; Error''essencetheme') : __('WordPress &rsaquo; Error''essencetheme');
     require_once($errorTemplate);
     die();
 } else {

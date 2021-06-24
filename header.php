@@ -42,7 +42,7 @@
 
 		<div class="color-overlay"></div>
 
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'gi-essence-theme' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content''essencetheme' ); ?></a>
 
 		<header id="masthead" class="container site-header">
 			<div class="color-overlay"></div>
@@ -72,7 +72,7 @@
 
 			</div><!-- .site-branding -->
 			
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'gi-essence-theme' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu''essencetheme' ); ?></button>
 			
 			<!-- Primary Navigation
 			============================================= -->

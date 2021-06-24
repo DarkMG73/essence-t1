@@ -9,9 +9,9 @@ function gi_essence_theme_widgets_init() {
 	// Sidebar
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'gi-essence-theme' ),
+			'name'          => esc_html__( 'Sidebar''essencetheme' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'gi-essence-theme' ),
+			'description'   => esc_html__( 'Add widgets here.''essencetheme' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -23,9 +23,9 @@ function gi_essence_theme_widgets_init() {
 	// Footer Widgets
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Column One', 'gi-essence-theme' ),
+			'name'          => esc_html__( 'Footer Column One''essencetheme' ),
 			'id'            => 'footer-col-1',
-			'description'   => esc_html__( 'Add footer widgets here.', 'gi-essence-theme' ),
+			'description'   => esc_html__( 'Add footer widgets here.''essencetheme' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -35,9 +35,9 @@ function gi_essence_theme_widgets_init() {
 	
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Column Two', 'gi-essence-theme' ),
+			'name'          => esc_html__( 'Footer Column Two''essencetheme' ),
 			'id'            => 'footer-col-2',
-			'description'   => esc_html__( 'Add footer widgets here.', 'gi-essence-theme' ),
+			'description'   => esc_html__( 'Add footer widgets here.''essencetheme' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -47,9 +47,9 @@ function gi_essence_theme_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Column Three', 'gi-essence-theme' ),
+			'name'          => esc_html__( 'Footer Column Three''essencetheme' ),
 			'id'            => 'footer-col-3',
-			'description'   => esc_html__( 'Add footer widgets here.', 'gi-essence-theme' ),
+			'description'   => esc_html__( 'Add footer widgets here.''essencetheme' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',

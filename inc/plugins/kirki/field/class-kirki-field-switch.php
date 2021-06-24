@@ -36,8 +36,8 @@ class Kirki_Field_Switch extends Kirki_Field_Checkbox {
 		$this->choices = wp_parse_args(
 			$this->choices,
 			array(
-				'on'    => esc_html__( 'On', 'gi-essence-theme' ),
-				'off'   => esc_html__( 'Off', 'gi-essence-theme' ),
+				'on'    => esc_html__( 'On''essencetheme' ),
+				'off'   => esc_html__( 'Off''essencetheme' ),
 				'round' => false,
 			)
 		);
