@@ -1,4 +1,4 @@
-#site-navigation .nav-menu {
+#site-navigation .menu {
   width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -32,19 +32,19 @@
   margin-left: 0;
 }
 
-#site-navigation .nav-menu .menu-item,
-#site-navigation .nav-menu .page_item {
+#site-navigation .menu .menu-item,
+#site-navigation .menu .page_item {
   display: block;
   position: relative;
   margin: auto 1em;
 }
 
-#masthead #site-navigation .nav-menu ul {
+#masthead #site-navigation .menu ul {
   display: flex;
   flex-direction: column;
 }
 
-#site-navigation .nav-menu ul {
+#site-navigation .menu ul {
   background: var(--color-white);
   position: relative;
   /* width: max-content; */
@@ -63,6 +63,13 @@
   line-height: normal;
 }
 
+#site-navigation .menu > li > ul *,
+#site-navigation .menu .menu-item a,
+#site-navigation .menu .page_item a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
 @keyframes hide-scroll {
   from,
   to {
@@ -70,29 +77,29 @@
   }
 }
 
-#site-navigation .nav-menu ul.sub-menu .menu-item,
-#site-navigation .nav-menu ul.children .page_item {
+#site-navigation .menu ul.sub-menu .menu-item,
+#site-navigation .menu ul.children .page_item {
   margin: 0.5em 1em;
 }
 
-#site-navigation .nav-menu ul.sub-menu .menu-item:not(.menu-item-has-children),
-#site-navigation .nav-menu ul.children .page_item:not(.page_item_has_children) {
+#site-navigation .menu ul.sub-menu .menu-item:not(.menu-item-has-children),
+#site-navigation .menu ul.children .page_item:not(.page_item_has_children) {
   margin: auto;
 }
 
-#site-navigation .nav-menu ul.sub-menu .menu-item,
-#site-navigation .nav-menu ul.children .page_item {
+#site-navigation .menu ul.sub-menu .menu-item,
+#site-navigation .menu ul.children .page_item {
   width: 233px;
   margin: 0.5em auto;
   padding: 0 9px;
 }
 
-#site-navigation .nav-menu > li > ul {
+#site-navigation .menu > li > ul {
   position: absolute;
   max-height: 0;
   max-width: 100vw;
   overflow: hidden;
-  top: 30px;
+  top: 24px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--color-white);
@@ -103,28 +110,28 @@
   border-radius: 10px;
 }
 
-#site-navigation .nav-menu ul.sub-menu-open {
+#site-navigation .menu ul.sub-menu-open {
   max-height: 1000px;
   opacity: 1;
   transition: var(--tran-7);
 }
 
-#site-navigation .nav-menu > li > ul.sub-menu-open {
+#site-navigation .menu > li > ul.sub-menu-open {
   max-height: 75vh;
   overflow: auto;
   /* Prevents scrollbar from temorarily appearing when element expanding */
   animation: hide-scroll 1s backwards;
 }
 
-#site-navigation .nav-menu > li > ul > li {
+#site-navigation .menu > li > ul > li {
   padding: 0 2em;
 }
 
 @media (hover: hover) {
-  #site-navigation .nav-menu > li:hover > ul,
-  #site-navigation .nav-menu > li:focus > ul,
-  #site-navigation .nav-menu > .menu-item:focus-within > ul,
-  #site-navigation .nav-menu > .page_item:focus-within > ul {
+  #site-navigation .menu > li:hover > ul,
+  #site-navigation .menu > li:focus > ul,
+  #site-navigation .menu > .menu-item:focus-within > ul,
+  #site-navigation .menu > .page_item:focus-within > ul {
     max-height: 80vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -133,19 +140,19 @@
   }
 
   /* For accessability: Simulates the javascript click actions */
-  #site-navigation .nav-menu .menu-item-has-children:focus > ul,
-  #site-navigation .nav-menu .menu-item-has-children:focus-within > ul,
-  #site-navigation .nav-menu .page_item_has_children:focus > ul,
-  #site-navigation .nav-menu .page_item_has_children:focus-within > ul {
+  #site-navigation .menu .menu-item-has-children:focus > ul,
+  #site-navigation .menu .menu-item-has-children:focus-within > ul,
+  #site-navigation .menu .page_item_has_children:focus > ul,
+  #site-navigation .menu .page_item_has_children:focus-within > ul {
     max-height: 1000px;
     opacity: 1;
     transition: var(--tran-7);
   }
 
-  #site-navigation .nav-menu > li > .menu-item-has-children:focus > ul,
-  #site-navigation .nav-menu > li > .menu-item-has-children:focus-within > ul,
-  #site-navigation .nav-menu > li > .page_item_has_children:focus > ul,
-  #site-navigation .nav-menu > li > .page_item_has_children:focus-within > ul {
+  #site-navigation .menu > li > .menu-item-has-children:focus > ul,
+  #site-navigation .menu > li > .menu-item-has-children:focus-within > ul,
+  #site-navigation .menu > li > .page_item_has_children:focus > ul,
+  #site-navigation .menu > li > .page_item_has_children:focus-within > ul {
     max-height: 75vh;
     overflow: auto;
     /* Prevents scrollbar from temorarily appearing when element expanding */
@@ -154,31 +161,31 @@
   /* ******* */
 }
 
-#site-navigation .nav-menu li:hover ul,
-#site-navigation .nav-menu li:focus ul {
+#site-navigation .menu li:hover ul,
+#site-navigation .menu li:focus ul {
   /* transition: var(--tran-10-lin); */
   transition-delay: 0s;
 }
 
-#site-navigation .nav-menu li ul *,
-#site-navigation .nav-menu li ul * {
+#site-navigation .menu li ul *,
+#site-navigation .menu li ul * {
   max-width: 100%;
 }
 
-#site-navigation .nav-menu > li > ul > :first-child {
+#site-navigation .menu > li > ul > :first-child {
   display: inline-block;
   margin-top: 0.75em !important;
 }
 
-#masthead #site-navigation .nav-menu ul.sub-menu .menu-item:first-child,
-#masthead #site-navigation .nav-menu ul.children .page_item:first-child {
+#masthead #site-navigation .menu ul.sub-menu .menu-item:first-child,
+#masthead #site-navigation .menu ul.children .page_item:first-child {
   display: inline-block;
   margin-top: 0.75em;
   padding-top: 0.5em;
 }
 
-#masthead #site-navigation .nav-menu ul.sub-menu .menu-item:last-child,
-#masthead #site-navigation .nav-menu ul.children .page_item:last-child {
+#masthead #site-navigation .menu ul.sub-menu .menu-item:last-child,
+#masthead #site-navigation .menu ul.children .page_item:last-child {
   display: inline-block;
   margin-bottom: 1.5em;
 }
@@ -189,12 +196,11 @@
   display: inline;
   margin-right: 0.5em;
   transition: var(--tran-7-lin);
-  position: absolute;
-  transform: translate(-150%, 25%);
   color: inherit;
   opacity: 0.4;
   font-size: 0.75em;
   transition: 0.3s all linear;
+  line-height: 0;
 }
 
 .sub-menu-toggle:hover {
@@ -214,7 +220,7 @@
   transform: translateY(26.5%) rotate(360);
 }
 
-#site-navigation .nav-menu > li > .sub-menu-toggle {
+#site-navigation .menu > li > .sub-menu-toggle {
   display: none;
 }
 
@@ -226,7 +232,7 @@
     display: none;
   }
 
-  #site-navigation .nav-menu > li > .sub-menu-toggle {
+  #site-navigation .menu > li > .sub-menu-toggle {
     display: initial;
   }
 }
@@ -346,12 +352,13 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: inherit;
+    background: var(--color-white);
     justify-content: initial;
     transition: 0.3s all ease;
+    overflow-y: auto;
   }
 
-  #site-navigation .nav-menu {
+  #site-navigation .menu {
     margin: 0 auto;
     max-height: none;
     overflow: hidden;
@@ -363,33 +370,39 @@
     overflow: visible;
   }
 
-  #site-navigation .nav-menu > li > ul {
+  #site-navigation .menu > li > ul {
     box-shadow: none;
   }
 
-  #site-navigation .nav-menu .menu-item,
-  #site-navigation .nav-menu .page_item {
+  #site-navigation .menu .menu-item,
+  #site-navigation .menu .page_item {
     font-size: calc(14px + 1vh);
     width: 100%;
     max-width: 100%;
   }
 
-  #site-navigation .nav-menu ul.sub-menu .menu-item,
-  #site-navigation .nav-menu ul.children .page_item {
+  #site-navigation .menu ul.sub-menu .menu-item,
+  #site-navigation .menu ul.children .page_item {
     width: 100%;
   }
 
-  #site-navigation .nav-menu > li > ul {
+  #site-navigation .menu > li > ul {
     position: relative;
     top: 0;
   }
 
-  .sub-menu-toggle {
-    transform: translate(-150%, 0%);
-  }
-
-  #site-navigation .nav-menu > li > ul > :first-child {
+  #site-navigation .menu > li > ul > :first-child {
     margin-top: 0.5em !important;
+  }
+  /* Offset the open/close toggle button */
+  #site-navigation .menu > .menu-item.menu-item-has-children,
+  #site-navigation .menu > page_item.page_item_has_children {
+    margin-left: -0.25em;
+  }
+  /* Compensate open/close toggle offset */
+  #site-navigation .menu > .menu-item-has-children > .sub-menu,
+  #site-navigation .menu > .page_item_has_children > .sub-menu {
+    margin-left: 0.25em;
   }
 
   /* The following provides an offset for the expand symbol */
@@ -399,8 +412,8 @@
   }
 
   @media (hover: hover) {
-    #site-navigation .nav-menu > li:hover > ul,
-    #site-navigation .nav-menu > li:focus > ul {
+    #site-navigation .menu > li:hover > ul,
+    #site-navigation .menu > li:focus > ul {
       /* max-height: 100vh;
       max-width: 100%;
       max-height: initial; */
@@ -409,49 +422,40 @@
   }
 }
 
-#site-navigation .nav-menu .menu-item,
-#site-navigation .nav-menu .page_item {
+#site-navigation .menu .menu-item,
+#site-navigation .menu .page_item {
   margin: 0.5em auto;
   text-align: center;
 }
 
-#site-navigation .nav-menu ul {
+#site-navigation .menu ul {
   max-width: 100%;
   overflow: hidden;
   background: inherit;
   color: inherit;
 }
 
-#site-navigation > .nav-menu > .menu-item-has-children:last-child,
-#site-navigation .nav-menu > .page_item_has_children:last-child {
+#site-navigation > .menu > .menu-item-has-children:last-child,
+#site-navigation .menu > .page_item_has_children:last-child {
   margin-bottom: 4em !important;
 }
 
-#site-navigation .nav-menu ul.sub-menu-open {
+#site-navigation .menu ul.sub-menu-open {
   max-height: 40em !important;
   margin: 0.5em auto;
   transition: 0.3s all linear;
   box-shadow: inset 0 0 4px -1px;
-  background: inherit;
   color: inherit;
 }
 
 /* Offsets previous rule neded for large menu */
-/* #site-navigation .nav-menu li:hover ul *, */
-#site-navigation .nav-menu li:focus ul * {
+/* #site-navigation .menu li:hover ul *, */
+#site-navigation .menu li:focus ul * {
   max-width: fit-content;
 }
 
-#site-navigation .nav-menu ul.sub-menu .menu-item:not(.menu-item-has-children),
-#site-navigation .nav-menu ul.children .page_item:not(.page_item_has_children) {
+#site-navigation .menu ul.sub-menu .menu-item:not(.menu-item-has-children),
+#site-navigation .menu ul.children .page_item:not(.page_item_has_children) {
   margin: auto;
   padding: 0.5em 2em;
-}
-
-#site-navigation .nav-menu ul.sub-menu .menu-item-has-children ul {
-  left: -0.5em;
-}
-
-#site-navigation .nav-menu ul.sub-menu .menu-item-has-children {
-  left: 0.5em;
 }
