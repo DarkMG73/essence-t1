@@ -119,8 +119,8 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
         add_theme_support( 'custom-header', $default_args );
         
          // Support for menus.
-        register_nav_menu( 'menu-1', __( 'Primary Menu''essencetheme' ) );
-        // register_nav_menu( 'secondary', __( 'Secondary Menu''essencetheme' ) );
+        register_nav_menu( 'menu-1', __( 'Primary Menu', 'essencetheme' ) );
+        // register_nav_menu( 'secondary', __( 'Secondary Menu', 'essencetheme' ) );
      
 
         /**
@@ -139,7 +139,7 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
         //     // Create the custom image attachments used as post thumbnails for pages.
         //     'attachments'               =>  [
         //         'image-about'           =>  [
-        //             'post_title'        =>  __( 'About''essencetheme' ),
+        //             'post_title'        =>  __( 'About', 'essencetheme' ),
         //             'file'              =>  'assets/images/about/1.jpg', // URL relative to the template directory.
         //         ],
         //     ],
@@ -185,7 +185,7 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
         //     'nav_menus'                 =>  [
         //         // Assign a menu to the "top" location.
         //         'primary'               =>  array(
-        //             'name'              =>  __( 'Primary Menu''essencetheme' ),
+        //             'name'              =>  __( 'Primary Menu', 'essencetheme' ),
         //             'items'             =>  array(
         //                 'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
         //                 'page_about',
@@ -196,7 +196,7 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
     
         //         // Assign a menu to the "social" location.
         //         'secondary'             =>  array(
-        //             'name'              =>  __( 'Secondary Menu''essencetheme' ),
+        //             'name'              =>  __( 'Secondary Menu', 'essencetheme' ),
         //             'items'             =>  array(
         //                 'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
         //                 'page_about',

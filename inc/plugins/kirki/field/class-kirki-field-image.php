@@ -44,13 +44,13 @@ class Kirki_Field_Image extends Kirki_Field {
 		$this->button_labels = wp_parse_args(
 			$this->button_labels,
 			array(
-				'select'       => esc_html__( 'Select image''essencetheme' ),
-				'change'       => esc_html__( 'Change image''essencetheme' ),
-				'default'      => esc_html__( 'Default''essencetheme' ),
-				'remove'       => esc_html__( 'Remove''essencetheme' ),
-				'placeholder'  => esc_html__( 'No image selected''essencetheme' ),
-				'frame_title'  => esc_html__( 'Select image''essencetheme' ),
-				'frame_button' => esc_html__( 'Choose image''essencetheme' ),
+				'select'       => esc_html__( 'Select image', 'essencetheme' ),
+				'change'       => esc_html__( 'Change image', 'essencetheme' ),
+				'default'      => esc_html__( 'Default', 'essencetheme' ),
+				'remove'       => esc_html__( 'Remove', 'essencetheme' ),
+				'placeholder'  => esc_html__( 'No image selected', 'essencetheme' ),
+				'frame_title'  => esc_html__( 'Select image', 'essencetheme' ),
+				'frame_button' => esc_html__( 'Choose image', 'essencetheme' ),
 			)
 		);
 	}

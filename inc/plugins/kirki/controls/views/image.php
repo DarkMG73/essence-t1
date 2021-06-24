@@ -31,13 +31,13 @@ if ( _.isObject( data.value ) && ! _.isUndefined( data.value.url ) ) {
 
 data.choices.labels = _.isObject( data.choices.labels ) ? data.choices.labels : {};
 data.choices.labels = _.defaults( data.choices.labels, {
-	select: '<?php esc_html_e( 'Select image''essencetheme' ); ?>',
-	change: '<?php esc_html_e( 'Change image''essencetheme' ); ?>',
-	'default': '<?php esc_html_e( 'Default''essencetheme' ); ?>',
-	remove: '<?php esc_html_e( 'Remove''essencetheme' ); ?>',
-	placeholder: '<?php esc_html_e( 'No image selected''essencetheme' ); ?>',
-	frame_title: '<?php esc_html_e( 'Select image''essencetheme' ); ?>',
-	frame_button: '<?php esc_html_e( 'Choose image''essencetheme' ); ?>',
+	select: '<?php esc_html_e( 'Select image', 'essencetheme' ); ?>',
+	change: '<?php esc_html_e( 'Change image', 'essencetheme' ); ?>',
+	'default': '<?php esc_html_e( 'Default', 'essencetheme' ); ?>',
+	remove: '<?php esc_html_e( 'Remove', 'essencetheme' ); ?>',
+	placeholder: '<?php esc_html_e( 'No image selected', 'essencetheme' ); ?>',
+	frame_title: '<?php esc_html_e( 'Select image', 'essencetheme' ); ?>',
+	frame_button: '<?php esc_html_e( 'Choose image', 'essencetheme' ); ?>',
 } );
 #>
 

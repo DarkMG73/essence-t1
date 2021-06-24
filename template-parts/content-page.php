@@ -21,7 +21,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:''essencetheme' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'essencetheme' ),
 				'after'  => '</div>',
 			)
 		);
@@ -35,7 +35,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>''essencetheme' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'essencetheme' ),
 						array(
 							'span' => array(
 								'class' => array(),

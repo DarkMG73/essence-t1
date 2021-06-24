@@ -32,7 +32,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'branding_title_for_customizer',
 	'section'     => 'title_tagline',
-	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section''essencetheme' ) . '</div>',
+	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essencetheme' ) . '</div>',
 	'priority'    => 0,
 ] );
 
@@ -57,7 +57,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'title_tagline_output_for_customizer',
 	'section'     => 'title_tagline',
-		'default'         => '<div class="customizer-divider">' . __( 'Title & Tagline''essencetheme' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'Title & Tagline', 'essencetheme' ) . '</div>',
 	'priority'    => 2,
 ] );
 
@@ -73,7 +73,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'icon_output_for_customizer',
 	'section'     => 'title_tagline',
-		'default'         => '<div class="customizer-divider">' . __( 'Site Icon''essencetheme' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'Site Icon', 'essencetheme' ) . '</div>',
 	'priority'    => 7,
 ] );
 
@@ -89,9 +89,9 @@ Kirki::add_field( 'gi_theme_config', [
 Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'logo_output_for_customizer',
-	// 'label'       => esc_html__( 'This is the label''essencetheme' ), // optional
+	// 'label'       => esc_html__( 'This is the label', 'essencetheme' ), // optional
 	'section'     => 'title_tagline',
-		'default'         => '<div class="customizer-divider">' . __( 'Site Logo''essencetheme' ) . '</div>',
+		'default'         => '<div class="customizer-divider">' . __( 'Site Logo', 'essencetheme' ) . '</div>',
 	'priority'    => 19,
 ] );
 
@@ -99,7 +99,7 @@ Kirki::add_field( 'gi_theme_config', [
 Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'toggle',
 	'settings'    => 'logo_menubar_toggle_setting',
-	'label'       => esc_html__( 'Show/Hide the logo in the Menu Bar''essencetheme' ),
+	'label'       => esc_html__( 'Show/Hide the logo in the Menu Bar', 'essencetheme' ),
 	'section'     => 'title_tagline',
 	'default'     => $generalThemeDefaults['branding']['show_logo'],
 	'priority'    => 20,
@@ -109,8 +109,8 @@ Kirki::add_field( 'gi_theme_config', [
 Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_size_setting',
-	'label'       => esc_html__( 'Logo size Adjustment.''essencetheme' ),
-	'description'=>  esc_html__( 'Increase or decrease the logo size.''essencetheme' ),
+	'label'       => esc_html__( 'Logo size Adjustment.', 'essencetheme' ),
+	'description'=>  esc_html__( 'Increase or decrease the logo size.', 'essencetheme' ),
 	'section'     => 'title_tagline',
 	'default'     => $generalThemeDefaults['branding']['menubar_width'],
 	'choices'     => [
@@ -133,8 +133,8 @@ Kirki::add_field( 'gi_theme_config', [
 Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_container_shape_setting',
-	'label'       => esc_html__( 'Logo Container Shape Adjustment.''essencetheme' ),
-	'description'=>  esc_html__( 'Change the shape of the logo container. The purpose of this control is to allow for the logo container to better match the various round, square or rectangle logos. It is not needed to match it exactly, but just to generally allow the whitespace around the logo to be similar in shape.''essencetheme' ),
+	'label'       => esc_html__( 'Logo Container Shape Adjustment.', 'essencetheme' ),
+	'description'=>  esc_html__( 'Change the shape of the logo container. The purpose of this control is to allow for the logo container to better match the various round, square or rectangle logos. It is not needed to match it exactly, but just to generally allow the whitespace around the logo to be similar in shape.', 'essencetheme' ),
 	'section'     => 'title_tagline',
 	'default'     => $generalThemeDefaults['branding']['menubar_logo_cont_shape_adjustment'],
 	'choices'     => [
@@ -158,8 +158,8 @@ Kirki::add_field( 'gi_theme_config', [
 Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_container_vertical_setting',
-	'label'       => esc_html__( 'Logo Container Vertical Adjustment.''essencetheme' ),
-	'description'=>  esc_html__( 'Increase or decrease the position of the logo container. The purpose of this control is to allow for more versatile positioning of the logo container in relation to the menu bar. This becomes very helpful as the size of the logo changes.''essencetheme' ),
+	'label'       => esc_html__( 'Logo Container Vertical Adjustment.', 'essencetheme' ),
+	'description'=>  esc_html__( 'Increase or decrease the position of the logo container. The purpose of this control is to allow for more versatile positioning of the logo container in relation to the menu bar. This becomes very helpful as the size of the logo changes.', 'essencetheme' ),
 	'section'     => 'title_tagline',
 	'default'     => $generalThemeDefaults['branding']['menubar_logo_cont_vertical_adjustment'],
 	'choices'     => [
@@ -182,8 +182,8 @@ Kirki::add_field( 'gi_theme_config', [
 Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_padding_setting',
-	'label'       => esc_html__( 'Logo Padding Adjustment''essencetheme' ),
-	'description'=>  esc_html__( 'Add or remove padding to the logo in the menu bar. NOTE: The logo can be move around inside this padding using the vertical and horizontal sliders below.''essencetheme' ),
+	'label'       => esc_html__( 'Logo Padding Adjustment', 'essencetheme' ),
+	'description'=>  esc_html__( 'Add or remove padding to the logo in the menu bar. NOTE: The logo can be move around inside this padding using the vertical and horizontal sliders below.', 'essencetheme' ),
 	'section'     => 'title_tagline',
 	'default'     => $generalThemeDefaults['branding']['menubar_logo_padding'],
 	'choices'     => [
@@ -206,8 +206,8 @@ Kirki::add_field( 'gi_theme_config', [
 Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_horizonal_setting',
-	'label'       => esc_html__( 'Logo Horizontal Adjustment in the Menu Bar.''essencetheme' ),
-	'description'=>  esc_html__( 'Move the logo in the menu bar left to right.''essencetheme' ),
+	'label'       => esc_html__( 'Logo Horizontal Adjustment in the Menu Bar.', 'essencetheme' ),
+	'description'=>  esc_html__( 'Move the logo in the menu bar left to right.', 'essencetheme' ),
 	'section'     => 'title_tagline',
 	'default'     => $generalThemeDefaults['branding']['menubar_logo_horizontal_adjustment'],
 	'choices'     => [
@@ -231,8 +231,8 @@ Kirki::add_field( 'gi_theme_config', [
 Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar-logo_vertical_setting',
-	'label'       => esc_html__( 'Logo Vertical Adjustment in the menu bar.''essencetheme' ),
-	'description'=>  esc_html__( 'Move the logo in the menu bar upward or downward.''essencetheme' ),
+	'label'       => esc_html__( 'Logo Vertical Adjustment in the menu bar.', 'essencetheme' ),
+	'description'=>  esc_html__( 'Move the logo in the menu bar upward or downward.', 'essencetheme' ),
 	'section'     => 'title_tagline',
 	'default'     => $generalThemeDefaults['branding']['menubar_logo_vertical_adjustment'],
 	'choices'     => [
