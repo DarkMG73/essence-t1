@@ -16,10 +16,10 @@
 
         if( isset($args['title']) && $args['title'] != false  ){
         
-            if(isset($args['title-name'])){
+            if(isset($args['title-name']) && $args['title-name'] != ''){
                 $title_name = $args['title-name'];
             } else {
-                $title_name = wp_title();
+                $title_name = get_bloginfo('name');
             }
         ?>
 

@@ -14,12 +14,18 @@ get_header();
 	<!-- Welcome Section
 	============================================= -->
 	<?php
+	$page_id = get_queried_object_id();
     //Set the thumb variable
     $post_thumbnail_id = get_post_thumbnail_id( $page_id );
     $featured_image = wp_get_attachment_image( $post_thumbnail_id, 'full' );
     $title_name = esc_html( get_the_title($page_id) );
 	
-	get_template_part( 'template-parts/top-page-welcome-section',  'welcome-section', ['image' => $featured_image, 'title' => 'true', 'title-name'=> $title_name] );
+	if(is_front_page()){
+		get_template_part( 'template-parts/top-site-welcome-section',  'welcome-section' ); 
+	} else {
+		get_template_part( 'template-parts/top-page-welcome-section',  'welcome-section', ['image' => $featured_image, 'title' => true, 'title-name'=> $title_name] );
+	}
+
     ?>
 	
 	<!-- Transition Section

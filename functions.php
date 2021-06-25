@@ -72,15 +72,24 @@ include( get_theme_file_path( '/inc/frontend-specific/pagination.php') );
 /* Comment Error Handler */
 include( get_theme_file_path( '/inc/error-handler-comments.php') );
 
+/* Registers an editor stylesheet for the theme. */
+add_theme_support( 'editor-styles' );
+add_editor_style( get_theme_file_path('css/gi-editor-style.css') );
+
+
 
 /****************
  * Hooks
  ***************/
 add_filter('wp_die_handler', 'get_gi_custom_die_handler');
+add_action('wp_head', 'the_ajaxurl');
+function the_ajaxurl() {
+    echo '<script type="text/javascript">
+           var ajaxurl = "' . admin_url('admin-ajax.php') . '";
+         </script>';
+}
 
-/* Registers an editor stylesheet for the theme. */
-add_theme_support( 'editor-styles' );
-add_editor_style( get_theme_file_path('css/gi-editor-style.css') );
+
 
 /****************
  * Shortcodes
