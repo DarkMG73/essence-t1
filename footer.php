@@ -288,10 +288,9 @@ dynamic_sidebar( 'bottom-widget' );
 			
 			</div><!-- .site-info-container  -->
 		</footer><!-- #colophon -->
-	</div><!-- #page -->
+	</div><!-- #page-container -->
 
 	<?php wp_footer(); ?>
 
-</div><!-- #page-container -->
 </body>
 </html>

@@ -56,5 +56,5 @@
                 </div><!-- .positioning-wrap-y -->
             </div><!-- .positioning-wrap-x -->
         </div><!-- #welcom-title-wrap -->
-    </section><!-- welcome-title-wrap -->
+    </section><!-- #top-welcome-section -->
 </div><!-- #site-welcome-container -->

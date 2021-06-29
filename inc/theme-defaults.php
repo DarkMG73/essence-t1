@@ -242,9 +242,7 @@ function post_color_pallet(){
 					/* Color Pallet "Color Serve" from https://www.design-seeds.com/tag/black/ */
 					--color-accent: '. $themePalette[0] . ';
 					--color-primary: '. $themePalette[1] . ';
-					--color-primary-dark: rgb(var(--color-primary), 0.5);
 					--color-secondary: '. $themePalette[2] . ';
-					--color-secondary-dark: rgb(211, 211, 199);
 					--color-alt-compliment: '. $themePalette[3] . ';
 					--color-alt-contrast: '. $themePalette[4] . ';
 					--color-black: '. $themePalette[5] . ';

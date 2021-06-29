@@ -218,7 +218,6 @@
 
 .sub-menu-open.sub-menu-toggle:before {
   content: "\e71e";
-  transform: translateY(26.5%) rotate(360);
 }
 
 #site-navigation .menu > li > .sub-menu-toggle {
