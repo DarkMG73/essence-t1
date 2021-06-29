@@ -825,7 +825,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				// Display message based on if all plugins are now active or not.
 				if ( $this->is_tgmpa_complete() ) {
 					echo '<p>', sprintf( esc_html( $this->strings['complete'] ), '<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'essencetheme' ) . '</a>' ), '</p>';
-					echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
+					echo '<style>#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 				} else {
 					echo '<p><a href="', esc_url( $this->get_tgmpa_url() ), '" target="_parent">', esc_html( $this->strings['return'] ), '</a></p>';
 				}
@@ -2531,7 +2531,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		public function no_items() {
 			echo esc_html__( 'No plugins to install, update or activate.', 'essencetheme' ) . ' <a href="' . esc_url( self_admin_url() ) . '"> ' . esc_html__( 'Return to the Dashboard', 'essencetheme' ) . '</a>';
-			echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
+			echo '<style>#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 		}
 
 		/**
@@ -3574,7 +3574,7 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 
 						if ( $this->tgmpa->is_tgmpa_complete() ) {
 							// All plugins are active, so we display the complete string and hide the menu to protect users.
-							echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
+							echo '<style>#adminmenu .wp-submenu li.current { display: none !important; }</style>';
 							$update_actions['dashboard'] = sprintf(
 								esc_html( $this->tgmpa->strings['complete'] ),
 								'<a href="' . esc_url( self_admin_url() ) . '">' . esc_html__( 'Return to the Dashboard', 'essencetheme' ) . '</a>'

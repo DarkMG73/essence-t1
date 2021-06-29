@@ -235,9 +235,7 @@ function post_color_pallet(){
 
 	$themePalette = set_color_pallet();
 	// If this in called by the Cutomizer, do not populate the following
-	// Also, if this is not being called for 
 	// if(!is_admin()){
-			$header_text_color = get_header_textcolor();
 			// global $color_palette_css ;
 			$color_palette_css = '/* - Color Palett */
 			:root {
@@ -251,13 +249,7 @@ function post_color_pallet(){
 					--color-alt-contrast: '. $themePalette[4] . ';
 					--color-black: '. $themePalette[5] . ';
 					--color-white: '. $themePalette[6] . ';
-				} 
-				/* User Overrides */
-				.site-title a,
-					.site-description,
-					.page-title {
-						color: #' . esc_attr( $header_text_color ) . ';
-					}';
+			}';
 
 			wp_register_style( 'set_palette', false );
 			wp_enqueue_style( 'set_palette' );

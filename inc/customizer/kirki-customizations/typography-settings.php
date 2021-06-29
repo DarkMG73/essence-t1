@@ -174,7 +174,7 @@ Kirki::add_section( 'body_text_type', array(
 		),
 		'output' => array(
 			array(
-				'element'  => 'a',
+				'element'  => 'a, a:visited',
 				'property' => 'color',
 				),
 			),
@@ -249,7 +249,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'transport'   => 'auto',
 		'output'      => [
 			[
-				'element' => '#masthead, .site-header:not(.site-title a)',
+				'element' => '#masthead',
 			],
 		],
 	] );

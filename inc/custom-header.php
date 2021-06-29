@@ -1,10 +1,6 @@
 <?php
 /**
- * Sample implementation of the Custom Header feature
- *
- * You can add an optional custom header image to header.php like so ...
- *
-	<?php the_header_image_tag(); ?>
+ * Custom Header 
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
@@ -53,7 +49,7 @@ if ( ! function_exists( 'gi_essence_theme_header_style' ) ) :
 
 		// If we get this far, we have custom styles. Let's do this.
 		?>
-		<style type="text/css">
+		<style>
 		<?php
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :

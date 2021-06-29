@@ -6,19 +6,31 @@
 add_action( 'wp_head', 'gi_customizer_css');
 function gi_customizer_css() {
 
+	$site_title_manubar_font_family_override_box = '';
+	if( !empty( get_theme_mod( 'site_title_manubar_font_family_override_box' ) ) ) {
+		$site_title_manubar_font_family_override_box = '.site-branding .site-title a { font-family: '. esc_attr(get_theme_mod( "site_title_manubar_font_family_override_box") ) .'; }';
+	}
+
+	$large_title_font_family_override_box = '';
+	if( !empty( get_theme_mod( 'large_title_font_family_override_box' ) ) ) {
+		$large_title_font_family_override_box = '#central-container #site-welcome-container #welcome-title-wrap .page-title { font-family: '. esc_attr(get_theme_mod( "large_title_font_family_override_box") ) .'; }';
+	}
+
+	$site_description_font_family_override_box = '';
+	if( !empty( get_theme_mod( 'site_description_font_family_override_box' ) ) ) {
+		$site_description_font_family_override_box = '#central-container #site-welcome-container #welcome-title-wrap .site-description { font-family: '. esc_attr(get_theme_mod( "site_description_font_family_override_box") ) .'; }';
+	}
+
 	?>
 
-	<style type="text/css">
+	<style>
 
-		.site-branding .site-title a { font-family: <?php echo esc_attr(get_theme_mod( 'site_title_manubar_font_family_override_box' )); ?> ; }
-
-		#central-container #site-welcome-container #welcome-title-wrap .page-title { font-family: <?php echo esc_attr(get_theme_mod( 'large_title_font_family_override_box' )); ?> ; }
-		
-		#central-container #site-welcome-container #welcome-title-wrap .site-description { font-family: <?php echo esc_attr(get_theme_mod( 'site_description_font_family_override_box' )); ?> ; }
+		<?php echo $site_title_manubar_font_family_override_box; ?>
+		<?php echo $large_title_font_family_override_box; ?>
+		<?php echo $site_description_font_family_override_box; ?>
 
 	</style>
 
 	<?php
-
 
 }
