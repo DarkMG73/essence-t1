@@ -9,7 +9,6 @@
 */  
 Kirki::add_section( 'footer_settings', array(
     'title'       => esc_html__( 'Footer Settings', 'essencetheme' ),
-    'description' => esc_html__( 'Add, remove and edit content in the footer, plus set the color.', 'essencetheme' ),
     'priority'       => 20,
 ) );
 
@@ -26,7 +25,7 @@ Kirki::add_section( 'footer_settings', array(
 	Kirki::add_field( 'gi_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'footer_intro_for_customizer',
-		'section'     => 'footer_intro-settings',
+		'section'     => 'footer_settings',
 			'default'         => '<div class="intro-text"><p>Here we can set up the content and color of the footer. <br><br><b>For footer content:</b> For the content in the three main footer columns, see the "Widgets" section.<br><br><b>For font settings:</b> For the font style, color and more, see the "Typography" section.</div>',
 		'priority'    => 0,
 	] );
@@ -430,7 +429,6 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'custom',
             'settings'    => 'footer_tos_title_for_customizer',
-            'description' => 'If turned on, this will look for and use an exiting page titled "Terms of Service". This will then place a link to that page in the footer. We can override the linked-to page using the dropdown menu to link to any existing page we would like.',
             'section'     => 'footer_settings',
                 'default'         => '<div class="customizer-divider">' . __( '"Terms of Service" Page', 'essencetheme' ) . '</div>',
             'priority'    => 10,
@@ -442,6 +440,7 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'toggle',
             'settings'    => 'footer_tos_on_off_toggle_setting',
             'label'       => esc_html__( 'Terms of Service On/Off Switch', 'essencetheme' ),
+            'description' => 'If turned on, this will look for and use an exiting page titled "Terms of Service". This will then place a link to that page in the footer. We can override the linked-to page using the dropdown menu to link to any existing page we would like.',
             'section'     => 'footer_settings',
             'default'     => $generalThemeDefaults['footer']['footer_tos_on_off_toggle_setting'],
             'priority'    => 10,

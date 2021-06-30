@@ -424,7 +424,6 @@ Kirki::add_section( 'nav_text_type', array(
 */  
 Kirki::add_section( 'page_head_title_type', array(
 	'title'          => esc_html__( 'Large Page Head Titles', 'essencetheme' ),
-	'description'    => esc_html__( 'The style, arrangement, or appearance of large titles in the page heads on the "Front, "Home and standard pages.', 'essencetheme' ),
 	'panel'          => 'typography',
 	'priority'       => 5,
 ) );

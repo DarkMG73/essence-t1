@@ -1030,7 +1030,8 @@ nav.navigation.pagination {
 
 /* Remove arrows from nav menu */
 #page-container .pagenav-special-post .page_item:before,
-#page-container .pagenav-special-post .page_item:after {
+#page-container .pagenav-special-post .page_item:after,
+.pagenav-special-post .page_item .sub-menu-toggle {
   display: none;
 }
 
@@ -1155,8 +1156,12 @@ nav.navigation.post-navigation {
   transform-origin: right;
 }
 
-.next.page-numbers:hover:after, .prev.page-numbers:hover:before,  .next.page-numbers:focus:after, 
-	.prev.page-numbers:focus:before, .next.page-numbers:after, .prev.page-numbers:before/* .icon-long-arrow-right:before*/ {
+.next.page-numbers:hover:after,
+.prev.page-numbers:hover:before,
+.next.page-numbers:focus:after,
+.prev.page-numbers:focus:before,
+.next.page-numbers:focus:after,
+.prev.page-numbers:focus:before {
   transform: scale(3, 0.5);
 }
 

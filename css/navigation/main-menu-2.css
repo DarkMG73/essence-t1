@@ -304,7 +304,11 @@
     animation: hide-scroll 3s backwards;
   }
 
-  button.menu-toggle {
+  .site-branding {
+    margin: auto 0.25em;
+  }
+
+  #masthead .menu-toggle {
     font-size: calc(12px + 1vh);
     background: var(--color-black);
     border: none;
