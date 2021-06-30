@@ -118,7 +118,7 @@
 			'show_logo'									=>	1,
 			'menubar_width'								=>	75,
 			'menubar_logo_cont_shape_adjustment'		=>	49,
-			'menubar_logo_cont_vertical_adjustment'		=>	8,
+			'menubar_logo_cont_vertical_adjustment'		=>	3,
 			'menubar_logo_padding'						=> 3,
 			'menubar_logo_horizontal_adjustment'		=> 0,
 			'menubar_logo_vertical_adjustment'			=> 0,

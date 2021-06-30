@@ -706,6 +706,10 @@ body.has-wp-toolbar .site-header {
   margin: 0 auto;
 }
 
+.footer-topic-column > .widget:first-child .widget-title:first-child {
+  margin-top: 0;
+}
+
 .site-info-child div,
 .site-info-child span {
   display: flex;
@@ -1022,6 +1026,12 @@ nav.navigation.pagination {
   margin: 0.5em;
   align-items: center;
   justify-content: center;
+}
+
+/* Remove arrows from nav menu */
+#page-container .pagenav-special-post .page_item:before,
+#page-container .pagenav-special-post .page_item:after {
+  display: none;
 }
 
 .pagenav-wrap .menu li.page_item_has_children {
