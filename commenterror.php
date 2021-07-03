@@ -1,8 +1,7 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- * @package gi-essence-theme
+ * The template for displaying Comment Errors
+ * @package essence-t1
  */
 
 get_header();
@@ -23,11 +22,11 @@ get_header();
 	
 				<header class="page-header">
 					<br><br>
-					<h1 class="page-title"><?php esc_html_e( 'Oops! It looks like there were problems when submitting the form.', 'essencetheme' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Oops! It looks like there were problems when submitting the form.', 'essence-t1' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="entry-content">
-					<h2 class="comment-error-message"><?php echo $message; ?></h2>
+					<h2 class="comment-error-message"><?php echo esc_html($message); ?></h2>
 
 						<?php
 						get_search_form();
@@ -36,7 +35,7 @@ get_header();
 						?>
 
 						<div class="widget widget_categories">
-							<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'essencetheme' ); ?></h2>
+							<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'essence-t1' ); ?></h2>
 							<ul>
 								<?php
 								wp_list_categories(
@@ -54,7 +53,7 @@ get_header();
 
 						<?php
 						/* translators: %1$s: smiley */
-						$gi_essence_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'essencetheme' ), convert_smilies( ':)' ) ) . '</p>';
+						$gi_essence_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'essence-t1' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$gi_essence_theme_archive_content" );
 
 						the_widget( 'WP_Widget_Tag_Cloud' );

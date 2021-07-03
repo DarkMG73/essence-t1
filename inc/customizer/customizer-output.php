@@ -25,9 +25,9 @@ function gi_customizer_css() {
 
 	<style>
 
-		<?php echo $site_title_manubar_font_family_override_box; ?>
-		<?php echo $large_title_font_family_override_box; ?>
-		<?php echo $site_description_font_family_override_box; ?>
+		<?php echo esc_html($site_title_manubar_font_family_override_box ); ?>
+		<?php echo esc_html($large_title_font_family_override_box); ?>
+		<?php echo esc_html($site_description_font_family_override_box); ?>
 
 	</style>
 

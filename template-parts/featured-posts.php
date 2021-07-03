@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 ?>
@@ -39,9 +39,8 @@ if($the_query->have_posts()){
             
             get_template_part( 'template-parts/content-minimal-image' );
         }
-    } else {
-        // no posts found
     }
+
     /* Restore original Post Data */
     wp_reset_postdata();
 

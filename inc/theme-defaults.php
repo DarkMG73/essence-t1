@@ -163,7 +163,7 @@
 		'footer-photo-cta'													   		 => array(
 			'footer_photo_cta_on_off_toggle_setting'				  => '1',   // Must be set in initial theme activation, as well. See setup.php
 			'footer_photo_cta_text_editor_setting'				   		 => '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com',   // This is also listed as the default on footer.php. It must be for new installations of the theme to render the default on the frontend
-			'photo_cta_photo_one_width'								 	   => '150',
+			'photo_cta_photo_one_width'								 	   => '100',
 			'photo_cta_photo_one_cont_shape_adjustment' 		=> 0,
 			'photo_cta_photo_one_cont_vertical_adjustment' 		=> 0,
 			'photo_cta_photo_one_cont_margin'						  => 0,
@@ -173,7 +173,7 @@
 			'photo_cta_photo_one_vertical_adjustment'  			   => 0,
 			'photo_cta_photo_one_horizontal_adjustment'  	 	 => 0,			
 
-			'photo_cta_photo_two_width'									  => '150',
+			'photo_cta_photo_two_width'									  => '100',
 			'photo_cta_photo_two_cont_shape_adjustment' 	   => 0,
 			'photo_cta_photo_two_cont_vertical_adjustment' 	   => 0,
 			'photo_cta_photo_two_cont_margin'						  => 0,
@@ -183,7 +183,7 @@
 			'photo_cta_photo_two_vertical_adjustment'  			   => 0,
 			'photo_cta_photo_two_horizontal_adjustment'  		 => 0,
 
-			'photo_cta_photo_three_width'								   => '150',
+			'photo_cta_photo_three_width'								   => '100',
 			'photo_cta_photo_three_cont_shape_adjustment' 		=> 0,
 			'photo_cta_photo_three_cont_vertical_adjustment' 	=> 0,
 			'photo_cta_photo_three_cont_margin'						   => 0,

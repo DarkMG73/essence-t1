@@ -2,7 +2,7 @@
 /**
  * The template for displaying category pages
  * @link https://codex.wordpress.org/Category_Templates
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 get_header();

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 ?>
@@ -89,9 +89,10 @@ dynamic_sidebar( 'bottom-widget' );
 							</div>
 							<div class="photo-cta-text">
 								<p>
+
 									<?php 
-									$cta_text = get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com');
-									printf( esc_html__( '%s', 'essencetheme' ), $cta_text );
+										echo get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com') 
+								
 									?>
 								 </p>
 							</div>
@@ -108,11 +109,11 @@ dynamic_sidebar( 'bottom-widget' );
 
 			<div class="site-info container" >
 				<div class="site-info-child">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'essencetheme' ) ); ?>">
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'essence-t1' ) ); ?>">
 
 						<?php
 						/* translators: %s: CMS name, i.e. WordPress. */
-						printf( esc_html__( 'Proudly powered by %s', 'essencetheme' ), 'WordPress' );
+						printf( esc_html__( 'Proudly powered by %s', 'essence-t1' ), 'WordPress' );
 						?>
 
 					</a>
@@ -123,7 +124,7 @@ dynamic_sidebar( 'bottom-widget' );
 				<div class="site-info-child">
 					<?php
 					/* translators: 1: Theme name, 2: Theme author. */
-					printf( esc_html__( 'Theme: %1$s by %2$s', 'essencetheme' ), 'EssenceTheme', '<a href="http://www.glassinteractive.com">Mike Glass</a>' );
+					printf( esc_html__( 'Theme: %1$s by %2$s', 'essence-t1' ), 'Essence T1', '<a href="http://www.glassinteractive.com">Mike Glass</a>' );
 					?>
 				</div><!-- .site-info-child -->
 
@@ -134,7 +135,9 @@ dynamic_sidebar( 'bottom-widget' );
 						<?php
 							global $generalThemeDefaults;
 							$copyright_text = get_theme_mod( 'gi_footer_copyright_text', $generalThemeDefaults['footer']['copyright_text'] ); 
-							printf( esc_html__( '%s', 'essencetheme' ), $copyright_text);
+							
+							
+							echo esc_html( $copyright_text );
 						?>
 					</div><!-- .copyrights -->
 				</div><!-- .site-info-child -->
@@ -145,7 +148,7 @@ dynamic_sidebar( 'bottom-widget' );
 						<span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
 						<div class="site-info-child">
 							<div class="download-link">
-							<a href="<?php echo esc_html(get_theme_mod( 'gi_report_file' )); ?>">Download Report</a><br>
+							<a href="<?php echo esc_url(get_theme_mod( 'gi_report_file' )); ?>">Download Report</a><br>
 						
 							</div>
 						</div><!-- .site-info-child -->
@@ -171,16 +174,15 @@ dynamic_sidebar( 'bottom-widget' );
 										$pages_args = [
 											'sort_column' => 'ID',
 										];
-										$pages = get_pages($pages_args);
-										$first_page = $pages[0]->ID;
+										$pages_array = get_pages($pages_args);
+										$first_page = $pages_array[0]->ID;
 										$tos_page_link = get_the_permalink( $first_page );
 									}
 
 									?><a href="<?php 
-									echo $tos_page_link;
+									echo esc_url($tos_page_link);
 									?>
-									">Terms of Service</a><?php
-							?>
+									">Terms of Service</a>
 						</div>
 					</div><!-- .site-info-child -->
 				<?php
@@ -208,12 +210,12 @@ dynamic_sidebar( 'bottom-widget' );
 							$pages_args = [
 								'sort_column' => 'ID',
 							];
-							$pages = get_pages($pages_args);
-							$first_page = $pages[0]->ID;
+							$pages_array = get_pages($pages_args);
+							$first_page = $pages_array[0]->ID;
 							$privacy_page_link = get_the_permalink( $first_page );
 						}
 						?>
-						<a href="<?php echo $privacy_page_link ?>">Privacy Policy</a>
+						<a href="<?php echo esc_url($privacy_page_link) ?>">Privacy Policy</a>
 				    </div><!-- .site-info-child -->
         		<?php
         		}

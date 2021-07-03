@@ -1,5 +1,5 @@
 /*!
-Theme Name: EssenceTheme
+Theme Name: Essence T1
 Theme URI: http://www.essence-theme.glassinteractive.com/
 Author: Mike Glass
 Author URI: http://www.glassinteractive.com/
@@ -9,7 +9,7 @@ Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: gi-essence-theme
+Text Domain: essence-t1
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -694,6 +694,7 @@ body.has-wp-toolbar .site-header {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  flex-grow: 1;
 }
 
 .footer-topic-column ul {

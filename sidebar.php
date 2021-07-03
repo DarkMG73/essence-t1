@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 if ( !is_active_sidebar( 'sidebar-1' ) ) {

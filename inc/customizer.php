@@ -1,8 +1,8 @@
 <?php
 /**
- * gi-essence-theme Theme Customizer
+ * essence-t1 Theme Customizer
  *
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 /**

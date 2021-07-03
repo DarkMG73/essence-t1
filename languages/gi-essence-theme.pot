@@ -2,8 +2,8 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: gi-essence-theme 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/gi-essence-theme\n"
+"Project-Id-Version: essence-t1 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/essence-t1\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,10 +12,10 @@ msgstr ""
 "POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
-"X-Domain: gi-essence-theme\n"
+"X-Domain: essence-t1\n"
 
 #. Theme Name of the theme
-msgid "gi-essence-theme"
+msgid "essence-t1"
 msgstr ""
 
 #. Theme URI of the theme
@@ -23,7 +23,7 @@ msgid "https://www.essencetheme.glassinteractive.com/"
 msgstr ""
 
 #. Description of the theme
-msgid "Hello. I'm a powerful and elegant theme called <em>EssenceTheme</em>. From a beautiful newCustomizer with many new settings, to a smarter sidebar and more, I am here to be a tremendously enjoyable interaction tool for creating a simple, elegant showcase for products, thoughts, services and anything you can come up with."
+msgid "Hello. I'm a powerful and elegant theme called <em>Essence T1</em>. From a beautiful newCustomizer with many new settings, to a smarter sidebar and more, I am here to be a tremendously enjoyable interaction tool for creating a simple, elegant showcase for products, thoughts, services and anything you can come up with."
 msgstr ""
 
 #. Author of the theme

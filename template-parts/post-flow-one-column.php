@@ -32,7 +32,9 @@ if ( $the_query->have_posts() ) {
 
     }
 } else {
-    // no posts found
+    ?>
+        <p><?php esc_html_e( 'Sorry, but no posts can be found.', 'essence-t1' ); ?></p>
+    <?php
 }
 /* Restore original Post Data */
 // wp_reset_postdata();

@@ -2,7 +2,7 @@
 /**
  * The template for displaying BuddyPress content
  * @link https://codex.buddypress.org/themes/theme-compatibility-1-7/
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 get_header();

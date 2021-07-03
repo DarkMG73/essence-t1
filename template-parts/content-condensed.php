@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 ?>
@@ -48,7 +48,7 @@
 					sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'essencetheme' ),
+							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'essence-t1' ),
 							array(
 								'span' => array(
 									'class' => array(),
@@ -65,7 +65,7 @@
 				<?php
 				wp_link_pages(
 					array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'essencetheme' ),
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'essence-t1' ),
 						'after'  => '</div>',
 					)
 				);

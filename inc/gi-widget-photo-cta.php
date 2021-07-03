@@ -1,6 +1,6 @@
 <?php
 /**
- * This widget provides the unique call to action in the footer of EssenceTheme's demo. There are up to three pictures surounding the CTA.
+ * This widget provides the unique call to action in the footer of Essence T1's demo. There are up to three pictures surounding the CTA.
  */
 
 // Register widget

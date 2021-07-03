@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 /**
@@ -36,7 +36,7 @@ function gi_essence_theme_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'gi-essence-theme-style',
+				'stylesheet' => 'essence-t1-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',

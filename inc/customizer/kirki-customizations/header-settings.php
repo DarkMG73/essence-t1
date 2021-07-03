@@ -27,7 +27,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'header_title_for_customizer',
 	'section'     => 'header_image',
-	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essencetheme' ) . '</div>',
+	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
 	'priority'    => 5,
 ] );
 
@@ -52,8 +52,8 @@ Kirki::add_field( 'gi_theme_config', [
 	Kirki::add_field( 'gi_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'header_backgroundcolor-setting',
-		'label'       => __( 'Header Background Color', 'essencetheme' ),
-		'description' => esc_attr__( 'Set the background color for the page head. NOTE: THIS WILL COVER OVER ANY IMAGE SET BELOW. This allows us to tint the image, if we wish, by setting the color transparency (slider on the far right) to something less than 100%. Setting the transparency slider around half way down will usually provide an ideal tint, but more or less can be used if desired. If we wish to only see the image with no tinting, click the  "Clear" button to remove the color completely.', 'essencetheme' ),
+		'label'       => __( 'Header Background Color', 'essence-t1' ),
+		'description' => esc_attr__( 'Set the background color for the page head. NOTE: THIS WILL COVER OVER ANY IMAGE SET BELOW. This allows us to tint the image, if we wish, by setting the color transparency (slider on the far right) to something less than 100%. Setting the transparency slider around half way down will usually provide an ideal tint, but more or less can be used if desired. If we wish to only see the image with no tinting, click the  "Clear" button to remove the color completely.', 'essence-t1' ),
 		'section'     => 'header_image',
 		'default'     => $generalThemeDefaults['header']['header_background_color'],
 		'priority'       => 5,

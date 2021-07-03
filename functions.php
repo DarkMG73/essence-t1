@@ -1,10 +1,10 @@
 <?php
 /**
- * gi-essence-theme functions and definitions
+ * essence-t1 functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -85,7 +85,7 @@ add_filter('wp_die_handler', 'get_gi_custom_die_handler');
 add_action('wp_head', 'the_ajaxurl');
 function the_ajaxurl() {
     echo '<script type="text/javascript">
-           var ajaxurl = "' . admin_url('admin-ajax.php') . '";
+           var ajaxurl = "' . esc_url(admin_url('admin-ajax.php'), 'essence-t1') . '";
          </script>';
 }
 

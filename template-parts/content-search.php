@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package gi-essence-theme
+ * @package essence-t1
  */
 
 ?>
