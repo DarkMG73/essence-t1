@@ -1841,7 +1841,7 @@ body #page-container > .color-overlay, #page-container .site-header > .color-ove
 }
 
 .comment-error-message a:hover {
-  transform: scale(1.1, 1.25) translateX(0.25em);
+  transform: scaleX(1.125) translateX(-6.25%);
   display: inline-block;
   text-shadow: inherit;
 }
