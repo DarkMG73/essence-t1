@@ -26,7 +26,7 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="entry-content">
-					<h2 class="comment-error-message"><?php echo wp_filter_post_kses($message); ?></h2>
+					<h2 class="comment-error-message"><?php echo wp_kses_data($message); ?></h2>
 					
 						<?php
 						get_search_form();

@@ -1841,10 +1841,11 @@ body #page-container > .color-overlay, #page-container .site-header > .color-ove
 }
 
 .comment-error-message a:hover {
-  transform: scaleX(1.125) translateX(-6.25%);
+  transform: scale(1.1, 1.25) translateX(0.25em);
   display: inline-block;
   text-shadow: inherit;
 }
+
 .comment-error-message a {
   color: var(--color-primary);
   letter-spacing: 0.1em;
