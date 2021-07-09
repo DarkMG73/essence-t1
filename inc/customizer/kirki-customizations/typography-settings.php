@@ -102,7 +102,7 @@ Kirki::add_section( 'body_text_type', array(
 		),
 		'output' => array(
 			array(
-				'element'  => 'body',
+				'element'  => 'body, #site-navigation .menu > li > ul *, #site-navigation .menu .menu-item a, #site-navigation .menu .page_item a',
 				'property' => 'color',
 				),
 			),
@@ -242,9 +242,17 @@ Kirki::add_section( 'nav_text_type', array(
 				'google'   => [ 'trending', 200],
 			],
 			'alpha' => true,
-			'palettes' => $generalThemeDefaults['typography']['menu_bar_type_PALETTE'],
+			'palettes' => array(
+				$colorOne,
+				$colorTwo,
+				$colorThree,
+				$colorFour,
+				$colorFive,
+				$colorSix,
+				$colorSeven,
+				),
 		],
-		'default'     => $generalThemeDefaults['typography']['menu_bar_type_DEFAULTS'],
+		'default'     => $generalThemeDefaults['typography']['menu_bar_type_defaults'],
 		'priority'    => 20,
 		'transport'   => 'auto',
 		'output'      => [

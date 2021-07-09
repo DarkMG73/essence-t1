@@ -31,7 +31,7 @@
 
 		'background' => array(
 			'body_color'								=>	'',
-			'content_color'								=>	$themePaletteDefaults[1],
+			'content_color'								=>	'',
 		), 
 
 		'typography' => array(
@@ -45,11 +45,8 @@
 															'text-transform' => 'none',
 															'text-align'     => 'left',
 															],
-
-			'menu_bar_type_PALETTE' 					=> array(
-																		$themePaletteDefaults[2]
-																		),
-			'menu_bar_type_DEFAULTS'					=> [
+	
+			'menu_bar_type_defaults'					=> [
 															'font-family'    => $default_font,
 																	'font-style'		 => 'normal',
 															'variant'        => 'regular',
@@ -58,7 +55,7 @@
 															'letter-spacing' => '0.01',
 															'text-transform' => 'none',
 															],
-			// 'menubar_general_text_color'   				=> $themePaletteDefaults[1],
+			// 'menubar_general_text_color'   				=> '',
 			'menubar-logo_horizonal_adjustment'			=> 0,
 			'menubar-logo_vertical_adjustment'			=> 0,
 
@@ -76,7 +73,7 @@
 			
 			'site_title_pagehead_toggle'				=> 1,
 
-			'body_text_color'							=> $themePaletteDefaults[5],
+			'body_text_color'							=> '',
 
 			'link_font'									=> [
 															'font-family'    => 'inherit',
@@ -87,7 +84,7 @@
 															'letter-spacing' => 'inherit',
 															'text-transform' => 'inherit',
 															],
-			'link_color'								=> $themePaletteDefaults[0],
+			'link_color'								=> '',
 			
 			'footer_typography'							=>	[
 				'font-family'    => $default_font,
@@ -99,7 +96,7 @@
 				'text-transform' => 'none',
 				'text-align'     => 'center',
 				],
-				'footer_text_color'							=> $themePaletteDefaults[5],
+				'footer_text_color'							=> '',
 				
 				'footer_link_typography'							=>	[
 					'font-family'    => 'inherit',
@@ -110,7 +107,7 @@
 					'letter-spacing' => 'inherit',
 					'text-transform' => 'inherit',
 					],
-					'footer_link_color'							=> $themePaletteDefaults[0],
+					'footer_link_color'							=> '',
 
 		), 
 
@@ -234,9 +231,6 @@ function set_color_pallet(){
 function post_color_pallet(){
 
 	$themePalette = set_color_pallet();
-	// If this in called by the Cutomizer, do not populate the following
-	// if(!is_admin()){
-			// global $color_palette_css ;
 			$color_palette_css = '/* - Color Palett */
 			:root {
 					/* Color Pallet "Color Serve" from https://www.design-seeds.com/tag/black/ */
@@ -252,5 +246,4 @@ function post_color_pallet(){
 			wp_register_style( 'set_palette', false );
 			wp_enqueue_style( 'set_palette' );
 			wp_add_inline_style( 'set_palette', $color_palette_css);
-	// };
 };

@@ -74,3 +74,8 @@ function gi_enqueue_customizer_admin_scripts() {
 	wp_enqueue_script( 'gi-essence-theme-customizer-admin-js' );
 }
 add_action( 'customize_controls_print_scripts', 'gi_enqueue_customizer_admin_scripts', 10, 2 ); 
+
+function gi_essence_theme_customize_control_js() {
+	wp_enqueue_script( 'gi-essence-theme-customize-controls', get_template_directory_uri() . '/js/customizer-controls.js', NULL, _S_VERSION, true );
+}
+add_action( ' customize_controls_enqueue_scripts', 'gi_essence_theme_customize_control_js' );

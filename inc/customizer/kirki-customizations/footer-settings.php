@@ -182,7 +182,9 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'theme_config_id', [
             'type'        => 'image',
             'settings'    => $slug.'_setting_id',
+            /* translators: %s: Section title, i.e. Photo One. */
             'label'       => sprintf( esc_html(' %s '), $section_title ),
+            /* translators: %s: Section description, i.e. With this conttrol we can.... */
             'description' => sprintf( esc_html__(' Select the %s to appear.', 'essence-t1'), $descriptive_use ),
             'section'     => $section,
             'default'     => '',
@@ -198,6 +200,7 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_size_setting',
+             /* translators: %s: Section title, i.e. Photo One. */
             'label'       =>sprintf( esc_html__( '%s  Width', 'essence-t1' ), $section_title),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_width'],
@@ -221,7 +224,9 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_shape_setting',
+            /* translators: %s: Section title, i.e. Photo One. */
             'label'       => sprintf( esc_html__( '%s Container Shape Adjustment', 'essence-t1' ), $section_title),
+            /* translators: %s: Section description, i.e. With this conttrol we can.... */
             'description'=>  sprintf( esc_html__( 'Change the shape of the %s container: round, square or in between.', 'essence-t1' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_shape_adjustment'],
@@ -245,7 +250,9 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_horizonal_setting',
+            /* translators: %s: Section title, i.e. Photo One. */            
             'label'       => sprintf( esc_html__( '%s Horizontal Adjustment', 'essence-t1' ), $section_title),
+            /* translators: %s: Section description, i.e. With this conttrol we can.... */
             'description'=>  sprintf( esc_html__( 'Move the %s left to right.', 'essence-t1' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_horizontal_adjustment'],
@@ -270,7 +277,9 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_vertical_setting',
+            /* translators: %s: Section title, i.e. Photo One. */
             'label'       => sprintf( esc_html__( '%s Container Vertical Adjustment', 'essence-t1' ), $section_title),
+            /* translators: %s: Section description, i.e. With this conttrol we can.... */
             'description'=>  sprintf( esc_html__( 'Increase or decrease the position of the %1$s container. The purpose of this control is to allow for more versatile positioning of the %2$s.', 'essence-t1' ), $descriptive_use, $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_vertical_adjustment'],
@@ -294,7 +303,9 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_zindex_setting',
+            /* translators: %s: Section title, i.e. Photo One. */
             'label'       => sprintf( esc_html__( '%s Container Front-Back Adjustment', 'essence-t1' ), $section_title),
+            /* translators: %s: Section description, i.e. With this conttrol we can.... */
             'description'=>  sprintf( esc_html__( 'When images are overlapping each other, move the %s  container in front of or behind the other images. NOTE: This only has an affect when we have the set the images to be overlapping each other.', 'essence-t1' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_cont_zindex_adjustment'],
@@ -317,7 +328,9 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_size_setting',
+            /* translators: %s: Section title, i.e. Photo One. */
             'label'       => sprintf( esc_html__( '%s Inner Image Size', 'essence-t1' ), $section_title),
+            /* translators: %s: Section description, i.e. With this conttrol we can.... */
             'description'=>  sprintf( esc_html__( 'Adjust the %s size within the photo container. This can be used along with the "Inner Image Vertical Adjustment" setting to perfectly frame or zoom in on any specific part of the image.', 'essence-t1' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_size_adjustment'],
@@ -342,7 +355,9 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_vertical_setting',
+            /* translators: %s: Section title, i.e. Photo One. */
             'label'       => sprintf( esc_html__( '%s Inner Image Vertical Adjustment', 'essence-t1' ), $section_title),
+            /* translators: %s: Section description, i.e. With this conttrol we can.... */
             'description'=>  sprintf( esc_html__( 'Move the %s upward or downward within the photo container. This can be used along with the "Inner Image Size" adjustment to perfectly frame or zoom in on any specific part of the image.', 'essence-t1' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_vertical_adjustment'],
@@ -366,7 +381,9 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'gi_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_horizontal_setting',
+            /* translators: %s: Section title, i.e. Photo One */
             'label'       => sprintf( esc_html__( '%s Inner Image Horizontal Adjustment', 'essence-t1' ), $section_title),
+            /* translators: %s: Section description, i.e. With this conttrol we can.... */
             'description'=>  sprintf( esc_html__( 'Move the %s left or right within the photo container. This can be used along with the "Inner Image Size" adjustment to perfectly frame or zoom in on any specific part of the image.', 'essence-t1' ), $descriptive_use),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_vertical_adjustment'],

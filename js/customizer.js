@@ -69,8 +69,6 @@
 			  data: data,
 			  dataType: 'json',
 			  success: function(data) {
-				  console.log(data.status);
-				  console.log(data.msg);
 				if(data.status == 'success'){
 					window.top.location.reload();
 				}else if(data.status == 'nochange'){
@@ -109,5 +107,5 @@
 		} );
 	} );
 	////////////////////////////////////////////////////////////////
-	
+
 }( jQuery ) );

@@ -188,3 +188,95 @@ input[type="range"]::-webkit-slider-thumb {
   background: rgba(0, 115, 170, 0.075);
   transform: translate3d(100%, -50%, 0) scale(1.25);
 }
+
+/* Toggle color palette warning (if it exists) based on open/closed color picker */
+.wp-picker-container.wp-picker-active .color-palette-warning {
+  display: flex;
+}
+.color-palette-warning {
+  display: none;
+}
+
+.save-warning-wrap {
+  position: absolute;
+  z-index: 100000000;
+  top: 25%;
+  left: 0;
+  width: 11em;
+  padding: 1em 2em;
+  border-radius: 0 50PX 50PX 0;
+  font-size: 18px;
+  background: rgb(239 230 222);
+  box-shadow: inset 7px 7px 10px -7px rgb(255 255 255), inset -7px -7px 10px -7px rgb(0 0 0 / 35%), 3px 3px 4px -3px rgb(0 0 0 / 50%);
+}
+
+.color-palette-warning {
+  color: white;
+  background: #ff4d00e0;
+  padding: 1em 2em;
+  box-shadow: inset 3px 3px 4px -3px hsl(0deg 0% 0% / 50%), inset -3px -3px 4px -3px rgb(255 255 255);
+  margin: 1em auto;
+}
+
+.save-warning-wrap h3, .color-palette-warning h3 {
+  width: 80%;
+  color: #16161608;
+  text-align: center;
+  letter-spacing: 0.25em;
+  font-size: 24px;
+  padding: 1em 0.25em;
+  font-weight: 900;
+  line-height: 1.125;
+  text-shadow: -1px -1px 1px rgb(0 0 0 / 25%), 1px 1px 1px white;
+}
+
+.save-warning-wrap p {
+  font-size: inherit;
+}
+
+.color-palette-warning b {
+  display: block;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.save-warning-btn {
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: inset 7px 7px 10px -7px white, inset -7px -7px 10px -7px rgb(0 0 0 / 50%);
+  border: none;
+  transition: 0.3s all ease;
+}
+
+.save-warning-btn:hover {
+  transform: scale(1.1);
+}
+
+.save-warning-btn {
+  color: white;
+  background: #2271b1;
+}
+
+.gi-btn-down {
+  opacity: 0.5;
+  pointerevents: none;
+  cursor; not-allowed;
+}
+
+
+/* Adjustments to accomodate Publish button replacment */
+.accomodateReloadButton #customize-save-button-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.accomodateReloadButton #customize-save-button-wrapper #save {
+  visibility: hidden;
+  position: fixed;
+  z-index: -1;
+}
+
+.accomodateReloadButton #customize-save-button-wrapper .save-warning-btn {
+  padding: 0 1em;
+  border-radius: 10px 0 0 10px;
+}
