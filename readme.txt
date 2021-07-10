@@ -90,7 +90,7 @@ In addition, Essence T1 includes extended optimized support for:
 * Kirki Customizer Framework https://kirki.org/, (c) 2020 Ari Stathopoulos (@aristath), [MIT](https://opensource.org/licenses/MIT)
 * TGM Plugin Activation http://tgmpluginactivation.com, Copyright (c) 2011, Thomas Griffin, license  GPL-2.0+ https://opensource.org/licenses/gpl-2.0.php
 * minimasonry.js , Copyright (c) 2017 Spope, [MIT](https://opensource.org/licenses/MIT)
-* Image for theme screenshot, Copyright Mike Glass (includes compilation of images with full rights granted by Unsplash License at https://unsplash.com/license)
+* Image for theme screenshot, Copyright Mike Glass 
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://www.essencetheme.glassinteractive.com/wp-content/uploads/2021/05/cropped-cropped-cropped-header_image-birds_on_wire-2-1-1.jpg.
 * Image for theme default_avatar7.png, Copyright Mike Glass License: CC0 1.0 Universal (CC0 1.0) Source: https://i0.wp.com/www.essencetheme.glassinteractive.com/wp-content/themes/essence-t1/assets/images/default_avatar7.png?ssl=1.
