@@ -91,7 +91,7 @@ dynamic_sidebar( 'bottom-widget' );
 								<p>
 
 									<?php 
-										echo wp_filter_post_kses(get_theme_mod('footer_photo_cta_photo_text_editor_setting', '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com')) 
+										echo wp_kses_post(get_theme_mod('footer_photo_cta_photo_text_editor_setting', true) ) 
 								
 									?>
 								 </p>

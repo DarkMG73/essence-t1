@@ -159,7 +159,7 @@
 		), 
 		'footer-photo-cta'													   		 => array(
 			'footer_photo_cta_on_off_toggle_setting'				  => '1',   // Must be set in initial theme activation, as well. See setup.php
-			'footer_photo_cta_text_editor_setting'				   		 => '<strong>Hire Us!</strong><br>123-456-7891<br>email@email-address.com',   // This is also listed as the default on footer.php. It must be for new installations of the theme to render the default on the frontend
+			'footer_photo_cta_text_editor_setting'				   		 => '',   // This is also listed as the default on footer.php. It must be for new installations of the theme to render the default on the frontend
 			'photo_cta_photo_one_width'								 	   => '100',
 			'photo_cta_photo_one_cont_shape_adjustment' 		=> 0,
 			'photo_cta_photo_one_cont_vertical_adjustment' 		=> 0,
@@ -203,13 +203,13 @@ function set_color_pallet(){
 				
 	//  Grab the custom palette colors if 
 	//  they exists. Otherwise use the default palette.
-	$colorOne = get_theme_mod( 'color_palette_c1', $themePaletteDefaults[0] );
-	$colorTwo = get_theme_mod( 'color_palette_c2', $themePaletteDefaults[1] );
-	$colorThree = get_theme_mod( 'color_palette_c3', $themePaletteDefaults[2] );
-	$colorFour = get_theme_mod( 'color_palette_c4', $themePaletteDefaults[3] );
-	$colorFive = get_theme_mod( 'color_palette_c5', $themePaletteDefaults[4] );
-	$colorSix = get_theme_mod( 'color_palette_c6', $themePaletteDefaults[5] );
-	$colorSeven = get_theme_mod( 'color_palette_c7', $themePaletteDefaults[6] );
+	$colorOne = esc_html(get_theme_mod( 'color_palette_c1', $themePaletteDefaults[0] ) );
+	$colorTwo = esc_html(get_theme_mod( 'color_palette_c2', $themePaletteDefaults[1] ) );
+	$colorThree = esc_html(get_theme_mod( 'color_palette_c3', $themePaletteDefaults[2] ) );
+	$colorFour = esc_html(get_theme_mod( 'color_palette_c4', $themePaletteDefaults[3] ) );
+	$colorFive = esc_html(get_theme_mod( 'color_palette_c5', $themePaletteDefaults[4] ) );
+	$colorSix = esc_html(get_theme_mod( 'color_palette_c6', $themePaletteDefaults[5] ) );
+	$colorSeven = esc_html(get_theme_mod( 'color_palette_c7', $themePaletteDefaults[6] ) );
 
 	// Build the palette array
 	global $themePalette;

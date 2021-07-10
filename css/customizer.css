@@ -106,7 +106,7 @@
 
 #customize-control-footer_photo_cta_on_off_toggle_setting,
 #customize-control-footer_photo_cta_photo_text_editor_setting,
-li[id*="photo_cta"] {
+li[id*="photo_cta"], .wp-editor-container .quicktags-toolbar input {
   background: #0273aa;
   color: white;
 }

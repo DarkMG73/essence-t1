@@ -41,7 +41,7 @@ function gi_essence_theme_scripts() {
 	wp_register_script( 'main-menu-2-js',  $uri.'/js/navigation/main-menu-2.js', ['jquery'] ,  $ver);
 	wp_enqueue_script('main-menu-2-js');
 
-	wp_register_script( 'mini-masonry',  $uri.'/js/minimasonry.min.js', [] ,  $ver);
+	wp_register_script( 'mini-masonry',  $uri.'/js/MiniMasonry.js-master/build/minimasonry.min.js', [] ,  $ver);
 	wp_enqueue_script('mini-masonry');
 	
 	wp_register_style( 'gi_animate',  $uri.'/css/animate.css', [] ,  $ver);

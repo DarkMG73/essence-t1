@@ -201,12 +201,12 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_size_setting',
              /* translators: %s: Section title, i.e. Photo One. */
-            'label'       =>sprintf( esc_html__( '%s  Width', 'essence-t1' ), $section_title),
+            'label'       =>sprintf( esc_html__( '%s  Size', 'essence-t1' ), $section_title),
             'section'     => $section,
             'default'     => $generalThemeDefaults['footer-photo-cta'][$slug.'_width'],
             'choices'     => [
                 'min'  => 10,
-                'max'  => 150,
+                'max'  => 200,
                 'step' => 1,
             ],
             'output'      => [

@@ -415,6 +415,17 @@
     padding-left: 1em;
   }
 
+  #site-navigation .menu > li:hover > ul ,
+  #site-navigation .menu > li:focus > ul ,  #site-navigation .menu > li.focus > ul, 
+  #site-navigation .menu > li:focus > ul *,  #site-navigation .menu > li.focus > ul *
+  {max-height: none !important; 
+ }
+
+#site-navigation .menu > li:focus .sub-menu-toggle:before, #site-navigation .menu > li.focus .sub-menu-toggle:before
+  {content: '-';
+ }
+
+
   @media (hover: hover) {
     #site-navigation .menu > li:hover > ul,
     #site-navigation .menu > li:focus > ul {
