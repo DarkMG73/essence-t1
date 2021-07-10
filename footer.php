@@ -91,7 +91,7 @@ dynamic_sidebar( 'bottom-widget' );
 								<p>
 
 									<?php 
-										echo wp_kses_post(get_theme_mod('footer_photo_cta_photo_text_editor_setting', true) ) 
+										echo wp_kses_post(get_theme_mod('footer_photo_cta_photo_text_editor_setting') ) 
 								
 									?>
 								 </p>
