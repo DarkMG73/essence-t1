@@ -53,8 +53,8 @@ get_header();
 
 						<?php
 						/* translators: %1$s: smiley */
-						$gi_essence_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'essence-t1' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$gi_essence_theme_archive_content" );
+						$glassinteractive_essence_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'essence-t1' ), convert_smilies( ':)' ) ) . '</p>';
+						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$glassinteractive_essence_theme_archive_content" );
 
 						the_widget( 'WP_Widget_Tag_Cloud' );
 						?>

@@ -20,15 +20,15 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php gi_essence_theme_post_thumbnail(); ?>
+	<?php glassinteractive_essence_theme_post_thumbnail(); ?>
 
 	<div class="post-content-container">
 		
 		<div class="post-data-container">
 			<?php 
-			gi_essence_theme_posted_on();
-			gi_essence_theme_posted_by();
-			gi_essence_theme_entry_footer(); 
+			glassinteractive_essence_theme_posted_on();
+			glassinteractive_essence_theme_posted_by();
+			glassinteractive_essence_theme_entry_footer(); 
 			?>
 		</div>
 

@@ -32,7 +32,7 @@
             <?php
         }
         /* Restore original Post Data */
-        // wp_reset_postdata();
+        wp_reset_postdata();
 
         ?>
         </div><!-- #masonry-container -->

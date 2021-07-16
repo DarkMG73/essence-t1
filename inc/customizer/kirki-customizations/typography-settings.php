@@ -22,7 +22,7 @@ Kirki::add_section( 'body_text_type', array(
 
 	/* Intro Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'bodytext_title_for_customizer',
 		'section'     => 'body_text_type',
@@ -30,7 +30,7 @@ Kirki::add_section( 'body_text_type', array(
 		'priority'    => 0,
 	] );
 
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'bodytext_intro_for_customizer',
 		'section'     => 'body_text_type',
@@ -40,7 +40,7 @@ Kirki::add_section( 'body_text_type', array(
 
 	/* Group Title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'body_text_title_for_customizer',
 		'section'     => 'body_text_type',
@@ -50,7 +50,7 @@ Kirki::add_section( 'body_text_type', array(
 
 	/* Body Font Field
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'typography_setting',
 		'label'       => esc_html__( 'Body Font', 'essence-t1' ),
@@ -79,7 +79,7 @@ Kirki::add_section( 'body_text_type', array(
 
 	/* Color Picker for Body Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'body_general_text_color_setting',
 		'label'       => __( 'Main Body Text Color', 'essence-t1' ),
@@ -113,7 +113,7 @@ Kirki::add_section( 'body_text_type', array(
 	
 	/* Group Title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'link_title_for_customizer',
 		'section'     => 'body_text_type',
@@ -123,7 +123,7 @@ Kirki::add_section( 'body_text_type', array(
 
 	/* Link Font Field
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'link_font_setting',
 		'label'       => esc_html__( 'Link Font & Style', 'essence-t1' ),
@@ -152,7 +152,7 @@ Kirki::add_section( 'body_text_type', array(
 
 	/* Color Picker for Link Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'link_color_setting',
 		'label'       => __( 'Link Color', 'essence-t1' ),
@@ -197,7 +197,7 @@ Kirki::add_section( 'nav_text_type', array(
 
 	/* Intro Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'navtext_title_for_customizer',
 		'section'     => 'nav_text_type',
@@ -205,7 +205,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'priority'    => 0,
 	] );
 
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'navtext_intro_for_customizer',
 		'section'     => 'nav_text_type',
@@ -215,7 +215,7 @@ Kirki::add_section( 'nav_text_type', array(
 
 	/* Group Title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'text_menubar_title_for_customizer',
 		'section'     => 'nav_text_type',
@@ -225,7 +225,7 @@ Kirki::add_section( 'nav_text_type', array(
 
 	/* Nav Menu Bar General Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'menu_bar_type_setting',
 		'label'       => esc_html__( 'Menu Bar Text', 'essence-t1' ),
@@ -271,7 +271,7 @@ Kirki::add_section( 'nav_text_type', array(
 */  
 	/* Group Title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'sitetitle_menubar_title_for_customizer',
 		'section'     => 'nav_text_type',
@@ -282,7 +282,7 @@ Kirki::add_section( 'nav_text_type', array(
 	/* Toggle visibility of
 	   the menu bar site title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'toggle',
 		'settings'    => 'site_title_menubar_toggle_setting',
 		'label'       => esc_html__( 'Show/Hide the Site Title in the Menu Bar', 'essence-t1' ),
@@ -294,7 +294,7 @@ Kirki::add_section( 'nav_text_type', array(
 	/* Horizontal placement of
 	   the menu bar site title
 	----------------------------*/ 
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'menubar-logo_horizonal_setting',
 		'label'       => esc_html__( 'Menu Bar Site Title Horizontal Adjustment', 'essence-t1' ),
@@ -320,7 +320,7 @@ Kirki::add_section( 'nav_text_type', array(
 	/* Horixontal placement of 
 	   the menu bar site title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'menubar-title_vertical_setting',
 		'label'       => esc_html__( 'Menu Bar Site Title Vertical Adjustment', 'essence-t1' ),
@@ -346,7 +346,7 @@ Kirki::add_section( 'nav_text_type', array(
 
 	/* Site Title in Menu Bar Font
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'site_title_font_setting',
 		'label'       => esc_html__( 'Small Site Title Text', 'essence-t1' ),
@@ -390,7 +390,7 @@ Kirki::add_section( 'nav_text_type', array(
 
 	/* Site Title in Menu Bar Color
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'color_title_menubar',
 		'label'       => __( 'Site Title in Menu Bar', 'essence-t1' ),
@@ -438,7 +438,7 @@ Kirki::add_section( 'page_head_title_type', array(
 
  	/* Intro Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'site_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
@@ -446,7 +446,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'priority'    => 0,
 	] );
 
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'site_pagehead_intro_for_customizer',
 		'section'     => 'page_head_title_type',
@@ -457,7 +457,7 @@ Kirki::add_section( 'page_head_title_type', array(
 
 	/* Site title Group Title
 	----------------------------*/
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'sitetitle_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
@@ -469,7 +469,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	/* Toggle Visibility of the
 	   Site Title in Page Head
 	----------------------------*/
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'toggle',
 		'settings'    => 'site_title_pagehead_toggle_setting',
 		'label'       => esc_html__( 'Show/Hide the Site Title in the Page Head (Front & Home Pages Only)', 'essence-t1' ),
@@ -482,7 +482,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	   Site Title & Description
 	   in Page Head
 	----------------------------*/
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_title_horizonal_setting',
 		'label'       => esc_html__( 'Large Site Title Horizontal Plaement ("Front" and "Home" pages only)', 'essence-t1' ),
@@ -510,7 +510,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	   Site Title & Description
 	   in Page Head
 	----------------------------*/
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_title_vertical_setting',
 		'label'       => esc_html__( 'Large Site Title & Description Vertical Plaement ("Front" and "Home" pages only)', 'essence-t1' ),
@@ -537,7 +537,7 @@ Kirki::add_section( 'page_head_title_type', array(
 
 	/* Site Title in Page Head Font
 	----------------------------*/
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'page_title_font_setting',
 		'label'       => esc_html__( 'Large Site Title Text', 'essence-t1' ),
@@ -568,7 +568,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	/* Site Title Size (%)
 		in Page Head
 	----------------------------*/
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'large_page_font_size_setting',
 		'label'       => esc_html__( 'Site Title Font Size', 'essence-t1' ),
@@ -596,7 +596,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	/* Site Title in Page
 	    Head Font Variant
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'select',
 		'settings'    => 'site_title_pagehead_font_variant_setting',
 		'label'       => esc_html__( 'Site Title Font Variant', 'essence-t1' ),
@@ -628,7 +628,7 @@ Kirki::add_section( 'page_head_title_type', array(
 
 	/* Site Title in Page Head Color
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'site_title_color_pagehead_setting',
 		'label'       => __( 'Color the Page Head Site Title', 'essence-t1' ),
@@ -675,7 +675,7 @@ Kirki::add_section( 'page_head_title_type', array(
 
 	/* Site Description Group Title
 	----------------------------*/
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'sitedesc_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
@@ -686,7 +686,7 @@ Kirki::add_section( 'page_head_title_type', array(
  	/* Toggle Visibility of Site 
 	 Description in the Page Head
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'toggle',
 		'settings'    => 'site_description_pagehead_toggle_setting',
 		'label'       => esc_html__( 'Show/Hide the Site description in the Page Head (Front & Home Pages Only)', 'essence-t1' ),
@@ -698,7 +698,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	/* Horizontal Placement of Site 
 	 Descripton in the Page Head
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'page_description_horizontal_setting',
 		'label'       => esc_html__( 'Page Description Horizontal Plaement', 'essence-t1' ),
@@ -724,7 +724,7 @@ Kirki::add_section( 'page_head_title_type', array(
  	/* Vertical Placement of Site 
 	 Descripton in the Page Head
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'page_description_vertical_setting',
 		'label'       => esc_html__( 'Page Description Vertical Plaement', 'essence-t1' ),
@@ -751,7 +751,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	/* Site Description Font 
 	    in the Page Head
 	----------------------------*/ 
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'description_font_setting',
 		'label'       => esc_html__( 'Page & Site Description Text', 'essence-t1' ),
@@ -782,7 +782,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	/* Site Description
 	Size (%) in Page Head
 	----------------------------*/	
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'slider',
 		'settings'    => 'site_description_font_size_setting',
 		'label'       => esc_html__( 'Site Description Font Size', 'essence-t1' ),
@@ -809,7 +809,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	/* Site Description in Page
 		Head Font Variant
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'select',
 		'settings'    => 'site_description_pagehead_font_variant_setting',
 		'label'       => esc_html__( 'Site Description Font Variant', 'essence-t1' ),
@@ -842,7 +842,7 @@ Kirki::add_section( 'page_head_title_type', array(
 	/* Site Description in 
 	   Page Head Color
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'site_description_color_pagehead_setting',
 		'label'       => __( 'Color the Page Head Site Description', 'essence-t1' ),
@@ -902,7 +902,7 @@ Kirki::add_section( 'footer_text', array(
 
 	/* Intro Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'footer_title_for_customizer',
 		'section'     => 'footer_text',
@@ -910,7 +910,7 @@ Kirki::add_section( 'footer_text', array(
 		'priority'    => 0,
 	] );
 
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'footer_intro_for_customizer',
 		'section'     => 'footer_text',
@@ -921,7 +921,7 @@ Kirki::add_section( 'footer_text', array(
 
 	/* Group Title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'footer_title_for_customizer',
 		'section'     => 'footer_text',
@@ -931,7 +931,7 @@ Kirki::add_section( 'footer_text', array(
 
 	/* Footer Font Field
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'footer_typography_setting',
 		'label'       => esc_html__( 'Footer Font', 'essence-t1' ),
@@ -959,7 +959,7 @@ Kirki::add_section( 'footer_text', array(
 
 	/* Color Picker for footer Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'footer_text_color_setting',
 		'label'       => __( 'Footer Text Color', 'essence-t1' ),
@@ -991,7 +991,7 @@ Kirki::add_section( 'footer_text', array(
 
 		/* Footer Link Font Field
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'typography',
 		'settings'    => 'footer_link_typography_setting',
 		'label'       => esc_html__( 'Footer Link Font', 'essence-t1' ),
@@ -1019,7 +1019,7 @@ Kirki::add_section( 'footer_text', array(
 
 	/* Color Picker for footer Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'footer_link_color_setting',
 		'label'       => __( 'Footer Link Color', 'essence-t1' ),

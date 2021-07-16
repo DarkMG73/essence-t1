@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function gi_essence_theme_widgets_init() {
+function glassinteractive_essence_theme_widgets_init() {
 
 	// Sidebar
 	register_sidebar(
@@ -57,4 +57,4 @@ function gi_essence_theme_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'gi_essence_theme_widgets_init' );
+add_action( 'widgets_init', 'glassinteractive_essence_theme_widgets_init' );

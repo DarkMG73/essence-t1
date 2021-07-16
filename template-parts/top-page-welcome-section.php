@@ -34,11 +34,11 @@
                         <h1 class="page-title"><?php ; echo $title_name;?></h1>
 
                         <?php
-                        $gi_essence_theme_description = get_bloginfo( 'description', 'display' );
-                        if ( $gi_essence_theme_description || is_customize_preview() ) :
+                        $glassinteractive_essence_theme_description = get_bloginfo( 'description', 'display' );
+                        if ( $glassinteractive_essence_theme_description || is_customize_preview() ) :
                             ?>
 
-                            <p class="site-description"><?php echo $gi_essence_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+                            <p class="site-description"><?php echo $glassinteractive_essence_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 
                         <?php endif;
                     else :

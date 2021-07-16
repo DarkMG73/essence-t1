@@ -6,7 +6,7 @@
     
 ----------------------------
 */   
-function gi_customizer_default_branding_mods( $wp_customize ) {
+function glassinteractive_customizer_default_branding_mods( $wp_customize ) {
 
     $wp_customize->get_section( 'title_tagline'  )->title   = 'Branding';
 	$wp_customize->get_section( 'title_tagline'  )->priority   = 5;
@@ -18,7 +18,7 @@ function gi_customizer_default_branding_mods( $wp_customize ) {
     
     $wp_customize->remove_control( 'display_header_text'  );
 }
-add_action( 'customize_register', 'gi_customizer_default_branding_mods' );
+add_action( 'customize_register', 'glassinteractive_customizer_default_branding_mods' );
 
 
 /*
@@ -28,7 +28,7 @@ add_action( 'customize_register', 'gi_customizer_default_branding_mods' );
     
 ----------------------------
 */   
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'branding_title_for_customizer',
 	'section'     => 'title_tagline',
@@ -36,7 +36,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'priority'    => 0,
 ] );
 
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'brand_intro_output_for_customizer',
 	'section'     => 'title_tagline',
@@ -53,7 +53,7 @@ Kirki::add_field( 'gi_theme_config', [
     
 ----------------------------
 */   
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'title_tagline_output_for_customizer',
 	'section'     => 'title_tagline',
@@ -69,7 +69,7 @@ Kirki::add_field( 'gi_theme_config', [
     
 ----------------------------
 */   
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'icon_output_for_customizer',
 	'section'     => 'title_tagline',
@@ -86,7 +86,7 @@ Kirki::add_field( 'gi_theme_config', [
 ----------------------------
 */   
 
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'logo_output_for_customizer',
 	// 'label'       => esc_html__( 'This is the label', 'essence-t1' ), // optional
@@ -96,7 +96,7 @@ Kirki::add_field( 'gi_theme_config', [
 ] );
 
 // Toggle visibility of the logo in the menu bar
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'toggle',
 	'settings'    => 'logo_menubar_toggle_setting',
 	'label'       => esc_html__( 'Show/Hide the logo in the Menu Bar', 'essence-t1' ),
@@ -106,7 +106,7 @@ Kirki::add_field( 'gi_theme_config', [
 ] );
 
 // Adjust the width of the logo in the menu bar
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_size_setting',
 	'label'       => esc_html__( 'Logo size Adjustment.', 'essence-t1' ),
@@ -130,7 +130,7 @@ Kirki::add_field( 'gi_theme_config', [
 ] );
 
 // Adjust the shape of the logo container
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_container_shape_setting',
 	'label'       => esc_html__( 'Logo Container Shape Adjustment.', 'essence-t1' ),
@@ -155,7 +155,7 @@ Kirki::add_field( 'gi_theme_config', [
 ] );
 
 // Adjust the vertical position of the logo container
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_container_vertical_setting',
 	'label'       => esc_html__( 'Logo Container Vertical Adjustment.', 'essence-t1' ),
@@ -179,7 +179,7 @@ Kirki::add_field( 'gi_theme_config', [
 ] );
 
 // Adjust the logo padding in the menu bar
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_padding_setting',
 	'label'       => esc_html__( 'Logo Padding Adjustment', 'essence-t1' ),
@@ -203,7 +203,7 @@ Kirki::add_field( 'gi_theme_config', [
 ] );
 
 // Adjust the horixontal placement of the logo in the menu bar
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar_logo_horizonal_setting',
 	'label'       => esc_html__( 'Logo Horizontal Adjustment in the Menu Bar.', 'essence-t1' ),
@@ -228,7 +228,7 @@ Kirki::add_field( 'gi_theme_config', [
 ] );
 
 // Adjust the vertical placement of the logo in the menu bar
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'slider',
 	'settings'    => 'menubar-logo_vertical_setting',
 	'label'       => esc_html__( 'Logo Vertical Adjustment in the menu bar.', 'essence-t1' ),

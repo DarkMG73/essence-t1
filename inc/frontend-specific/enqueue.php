@@ -6,18 +6,18 @@
 /**
  * Enqueue scripts and styles.
  */
-add_action( 'wp_enqueue_scripts', 'gi_essence_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'glassinteractive_essence_theme_scripts' );
 
-function gi_essence_theme_scripts() {
+function glassinteractive_essence_theme_scripts() {
 
 	$uri = get_theme_file_uri();
-	$ver = gi_DEV_MODE ? time() : false; 
+	$ver = glassinteractive_DEV_MODE ? time() : false; 
 	
 	/****************************
 	 *           Fonts
 	 ****************************/
-	wp_register_style( 'gi_google_font', 'https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap', [],  $ver);
-	wp_enqueue_style('gi_google_font');
+	wp_register_style( 'glassinteractive_google_font', 'https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap', [],  $ver);
+	wp_enqueue_style('glassinteractive_google_font');
 
 	
 	/****************************
@@ -44,14 +44,14 @@ function gi_essence_theme_scripts() {
 	wp_register_script( 'mini-masonry',  $uri.'/js/MiniMasonry.js-master/build/minimasonry.min.js', [] ,  $ver);
 	wp_enqueue_script('mini-masonry');
 	
-	wp_register_style( 'gi_animate',  $uri.'/css/animate.css', [] ,  $ver);
-	wp_enqueue_style('gi_animate');
+	wp_register_style( 'glassinteractive_animate',  $uri.'/css/animate.css', [] ,  $ver);
+	wp_enqueue_style('glassinteractive_animate');
 
-	wp_register_style( 'gi_magnific-popup',  $uri.'/css/magnific-popup.css', [],  $ver );
-	wp_enqueue_style('gi_magnific-popup');
+	wp_register_style( 'glassinteractive_magnific-popup',  $uri.'/css/magnific-popup.css', [],  $ver );
+	wp_enqueue_style('glassinteractive_magnific-popup');
 
-	wp_register_style( 'gi_font-icons',  $uri.'/css/font-icons.css', [],  $ver );
-	wp_enqueue_style('gi_font-icons');
+	wp_register_style( 'glassinteractive_font-icons',  $uri.'/css/font-icons.css', [],  $ver );
+	wp_enqueue_style('glassinteractive_font-icons');
 
 	wp_enqueue_style( 'essence-t1-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'essence-t1-style', 'rtl', 'replace' );
@@ -72,16 +72,16 @@ function gi_essence_theme_scripts() {
 	/****************************
 	 *           Layout
 	 ****************************/
-	wp_register_style( 'gi_responsive',  $uri.'/css/responsive.css', [] ,  $ver);
-	wp_enqueue_style('gi_responsive');
+	wp_register_style( 'glassinteractive_responsive',  $uri.'/css/responsive.css', [] ,  $ver);
+	wp_enqueue_style('glassinteractive_responsive');
 
 	/*** Right-to_left ***/
-    wp_register_style( 'gi_font_icons_rtl', $uri . '/css/font-icons-rtl.css' );
-	wp_register_style( 'gi_responsive_rtl', $uri . '/css/responsive-rtl.css' );
+    wp_register_style( 'glassinteractive_font_icons_rtl', $uri . '/css/font-icons-rtl.css' );
+	wp_register_style( 'glassinteractive_responsive_rtl', $uri . '/css/responsive-rtl.css' );
 
 	if( is_rtl() ){
-        wp_enqueue_style( 'gi_font_icons_rtl' );
-        wp_enqueue_style( 'gi_responsive_rtl' );
+        wp_enqueue_style( 'glassinteractive_font_icons_rtl' );
+        wp_enqueue_style( 'glassinteractive_responsive_rtl' );
     }
 }
 

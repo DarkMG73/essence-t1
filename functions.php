@@ -9,10 +9,10 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1.2' );
 }
 
-define( 'gi_DEV_MODE', false);
+define( 'glassinteractive_DEV_MODE', false);
 
 // Dev use only
 // function  removeHeadCSS(){
@@ -81,9 +81,9 @@ add_editor_style( get_theme_file_path('css/gi-editor-style.css') );
 /****************
  * Hooks
  ***************/
-add_filter('wp_die_handler', 'get_gi_custom_die_handler');
-add_action('wp_head', 'the_ajaxurl');
-function the_ajaxurl() {
+add_filter('wp_die_handler', 'get_glassinteractive_custom_die_handler');
+add_action('wp_head', 'glassinteractive_ajaxurl');
+function glassinteractive_ajaxurl() {
     echo '<script type="text/javascript">
            var ajaxurl = "' . esc_url(admin_url('admin-ajax.php'), 'essence-t1') . '";
          </script>';

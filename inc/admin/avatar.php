@@ -1,7 +1,7 @@
 <?php
 
 /* Custom Default Avatar */
-function gi_new_avatar($avatar_defaults){
+function glassinteractive_new_avatar($avatar_defaults){
     
     $avatar_url                 =  get_template_directory_uri() . '/assets/images/default_avatar7.png';
 
@@ -11,4 +11,4 @@ function gi_new_avatar($avatar_defaults){
 
     return $new_avatar_defaults;
 }
-add_filter( 'avatar_defaults', 'gi_new_avatar' );
+add_filter( 'avatar_defaults', 'glassinteractive_new_avatar' );

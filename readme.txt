@@ -2,12 +2,14 @@
 Donate link: https://www.glassinteractive.com/donate/
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, buddy-press, woo-commerce, customizable, professional
 Requires at least: 4.5
-Tested up to: 5.4
+Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+Essence T1 WordPress Theme, Copyright 2020 Mike Glass
+Essence T1 is distributed under the terms of the GNU GPL
 
 == Description ==  
 Essence T1 is a powerful and elegant theme focused on providing all of the needed functionality, without extra gadgets and filler, plus a wealth of very fine-grain and easy customization tools. All of this is housed in a classy and comfortable design that highlights the content, not the theme. Ultimately, Essence T1 was designed to stay out of the creator’s way, while providing an assortment of helpful tools to showcase any material and reach any audience with both grace and style.
@@ -92,5 +94,5 @@ In addition, Essence T1 includes extended optimized support for:
 * minimasonry.js , Copyright (c) 2017 Spope, [MIT](https://opensource.org/licenses/MIT)
 * Image for theme screenshot, Copyright Mike Glass 
 License: CC0 1.0 Universal (CC0 1.0)
-Source: https://www.essencetheme.glassinteractive.com/wp-content/uploads/2021/05/cropped-cropped-cropped-header_image-birds_on_wire-2-1-1.jpg.
+License URL: https://www.essencetheme.glassinteractive.com/wp-content/uploads/2021/07/screenshot.jpg.
 * Image for theme default_avatar7.png, Copyright Mike Glass License: CC0 1.0 Universal (CC0 1.0) Source: https://i0.wp.com/www.essencetheme.glassinteractive.com/wp-content/themes/essence-t1/assets/images/default_avatar7.png?ssl=1.

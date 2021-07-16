@@ -10,7 +10,7 @@ include('footer-settings.php');
 
 
 // Theme config
-Kirki::add_config( 'gi_theme_config', array(
+Kirki::add_config( 'glassinteractive_theme_config', array(
 	'capability'    => 'edit_theme_options',
 	'option_type'   => 'theme_mod',
 ) );

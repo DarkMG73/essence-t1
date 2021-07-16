@@ -1,6 +1,6 @@
 <?php
 // Add custom 'die' handler to avoid the very plain default WP error page
-function gi_custom_die_handler($message, $title='', $args=array()) {
+function glassinteractive_custom_die_handler($message, $title='', $args=array()) {
 $errorTemplate = get_theme_root().'/'.get_template().'/commenterror.php';
 if(!is_admin() && file_exists($errorTemplate)) {
     $defaults = array( 'response' => 500 );
@@ -40,6 +40,6 @@ if(!is_admin() && file_exists($errorTemplate)) {
 }
 
 }
-function get_gi_custom_die_handler() {
-return 'gi_custom_die_handler';
+function get_glassinteractive_custom_die_handler() {
+return 'glassinteractive_custom_die_handler';
 }

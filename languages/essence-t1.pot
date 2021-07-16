@@ -1,0 +1,1663 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Essence T1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-16 04:10+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.7.2\n"
+"X-Domain: essence-t1"
+
+#. %s: Section description, i.e. With this conttrol we can....
+#: inc/customizer/kirki-customizations/footer-settings.php:188
+#, php-format
+msgid " Select the %s to appear."
+msgstr ""
+
+#. The field ID where the error occurs.
+#: inc/plugins/kirki/core/class-kirki-field.php:498
+#: inc/plugins/kirki/core/class-kirki-field.php:509
+#, php-format
+msgid ""
+"\"output\" invalid format in field %s. The \"output\" argument should be "
+"defined as an array of arrays."
+msgstr ""
+
+#. %1$s represents the field ID where the error occurs.
+#: inc/plugins/kirki/core/class-kirki-field.php:375
+#, php-format
+msgid "\"partial_refresh\" invalid entry in field %s"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:489
+msgid "\"Privacy Page\" Link"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:450
+msgid "\"Terms of Service\" Page"
+msgstr ""
+
+#: inc/plugins/kirki/deprecated/functions.php:19
+#, php-format
+msgid "%1$s or %2$s"
+msgstr ""
+
+#. %s: Section title, i.e. Photo One.
+#: inc/customizer/kirki-customizations/footer-settings.php:204
+#, php-format
+msgid "%s  Size"
+msgstr ""
+
+#. %s: Section title, i.e. Photo One.
+#: inc/customizer/kirki-customizations/footer-settings.php:307
+#, php-format
+msgid "%s Container Front-Back Adjustment"
+msgstr ""
+
+#. %s: Section title, i.e. Photo One.
+#: inc/customizer/kirki-customizations/footer-settings.php:228
+#, php-format
+msgid "%s Container Shape Adjustment"
+msgstr ""
+
+#. %s: Section title, i.e. Photo One.
+#: inc/customizer/kirki-customizations/footer-settings.php:281
+#, php-format
+msgid "%s Container Vertical Adjustment"
+msgstr ""
+
+#. %s: Section title, i.e. Photo One.
+#: inc/customizer/kirki-customizations/footer-settings.php:254
+#, php-format
+msgid "%s Horizontal Adjustment"
+msgstr ""
+
+#. %s: Section title, i.e. Photo One
+#: inc/customizer/kirki-customizations/footer-settings.php:385
+#, php-format
+msgid "%s Inner Image Horizontal Adjustment"
+msgstr ""
+
+#. %s: Section title, i.e. Photo One.
+#: inc/customizer/kirki-customizations/footer-settings.php:332
+#, php-format
+msgid "%s Inner Image Size"
+msgstr ""
+
+#. %s: Section title, i.e. Photo One.
+#: inc/customizer/kirki-customizations/footer-settings.php:359
+#, php-format
+msgid "%s Inner Image Vertical Adjustment"
+msgstr ""
+
+#: inc/error-handler-comments.php:31
+msgid "&laquo; Back"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:610
+#: inc/customizer/kirki-customizations/typography-settings.php:823
+msgid "-none-"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/home-page-settings.php:34
+#: inc/customizer/kirki-customizations/background-settings.php:36
+#: inc/customizer/kirki-customizations/branding-settings.php:35
+#: inc/customizer/kirki-customizations/colors-settings.php:84
+#: inc/customizer/kirki-customizations/typography-settings.php:29
+#: inc/customizer/kirki-customizations/typography-settings.php:204
+#: inc/customizer/kirki-customizations/typography-settings.php:445
+#: inc/customizer/kirki-customizations/typography-settings.php:909
+#: inc/customizer/kirki-customizations/footer-settings.php:21
+#: inc/customizer/kirki-customizations/header-settings.php:30
+msgid "About This Section"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:101
+msgid "Accent"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:419
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:423
+msgid "Add File"
+msgstr ""
+
+#: inc/widget-areas.php:28 inc/widget-areas.php:40 inc/widget-areas.php:52
+msgid "Add footer widgets here."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:387
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:391
+msgid "Add Image"
+msgstr ""
+
+#. %s represents the label of the row.
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:86
+#, php-format
+msgid "Add new %s"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:186
+msgid ""
+"Add or remove padding to the logo in the menu bar. NOTE: The logo can be "
+"move around inside this padding using the vertical and horizontal sliders "
+"below."
+msgstr ""
+
+#: inc/widget-areas.php:14
+msgid "Add widgets here."
+msgstr ""
+
+#. %s: Section description, i.e. With this conttrol we can....
+#: inc/customizer/kirki-customizations/footer-settings.php:334
+#, php-format
+msgid ""
+"Adjust the %s size within the photo container. This can be used along with "
+"the \"Inner Image Vertical Adjustment\" setting to perfectly frame or zoom "
+"in on any specific part of the image."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:614
+#: inc/customizer/kirki-customizations/typography-settings.php:827
+msgid "all-petite-caps"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:612
+#: inc/customizer/kirki-customizations/typography-settings.php:825
+msgid "all-small-caps"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:199
+msgid "Alternative Dark"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:177
+msgid "Alternative Light"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/background-settings.php:145
+msgid ""
+"An image selected here will become the content area background image.   NOTE:"
+" This will only show when there is no background color set for the content "
+"area, or the color is set to some level of transparency (see \"Content Area "
+"Background Color\" below)."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/background-settings.php:71
+msgid ""
+"An image selected here will become the main background image for the entire "
+"page.   NOTE: This will only show when there is no background color for the "
+"body, or the color is set to some level of transparency (see \"Body "
+"Background Color\" below)"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:106
+msgid "Auto"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:113
+msgid "Background Attachment"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:48
+msgid "Background Color"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:54
+msgid "Background Image"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:81
+msgid "Background Position"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:70
+msgid "Background Repeat"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:97
+msgid "Background Size"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:87
+msgid "Backup Font"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/background-settings.php:61
+#: inc/customizer/kirki-customizations/background-settings.php:70
+msgid "Body Background"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:56
+msgid "Body Font"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:18
+msgid "Body Typography"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:213
+msgid "Bold 700"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:214
+msgid "Bold 700 Italic"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:203
+msgid "Book 300"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:204
+msgid "Book 300 Italic"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-spacing.php:33
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:130
+msgid "Bottom"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:177
+msgid "Capitalize"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:133
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:151
+msgid "Center"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:122
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:91
+msgid "Center Bottom"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:121
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:90
+msgid "Center Center"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:120
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:89
+msgid "Center Top"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:419
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:421
+msgid "Change File"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:387
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:389
+msgid "Change Image"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-image.php:48
+#: inc/plugins/kirki/controls/views/image.php:35
+msgid "Change image"
+msgstr ""
+
+#. %s: Section description, i.e. With this conttrol we can....
+#: inc/customizer/kirki-customizations/footer-settings.php:230
+#, php-format
+msgid "Change the shape of the %s container: round, square or in between."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:137
+msgid ""
+"Change the shape of the logo container. The purpose of this control is to "
+"allow for the logo container to better match the various round, square or "
+"rectangle logos. It is not needed to match it exactly, but just to generally "
+"allow the whitespace around the logo to be similar in shape."
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-image.php:53
+#: inc/plugins/kirki/controls/views/image.php:40
+msgid "Choose image"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:221
+msgid "Color"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:848
+msgid "Color the Page Head Site Description"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:634
+msgid "Color the Page Head Site Title"
+msgstr ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:36
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:617
+#: inc/customizer/kirki-customizations/typography-settings.php:830
+msgid "common-lig-values"
+msgstr ""
+
+#. %1$s represents the field ID where the error occurs. %2$s is the URL in the documentation site.
+#: inc/plugins/kirki/core/class-kirki-field.php:257
+#: inc/plugins/kirki/core/class-kirki-field.php:267
+#, php-format
+msgid ""
+"Config not defined for field %1$s - See %2$s for details on how to properly "
+"add fields."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:103
+msgid "Contain"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/background-settings.php:168
+msgid "Content Area Background Color"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/background-settings.php:135
+#: inc/customizer/kirki-customizations/background-settings.php:144
+msgid "Content Background"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content-masonry.php:36
+#: template-parts/content-condensed.php:51 template-parts/content.php:47
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:421
+#: inc/customizer/kirki-customizations/footer-settings.php:430
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:100
+msgid "Cover"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-base.php:138
+msgid "CSS Defaults"
+msgstr ""
+
+#: inc/plugins/kirki/modules/custom-sections/sections/class-kirki-sections-nested-section.php:61
+msgid "Customizing"
+msgstr ""
+
+#. The title.
+#: inc/plugins/kirki/modules/custom-sections/sections/class-kirki-sections-nested-section.php:64
+#, php-format
+msgid "Customizing &#9656; %s"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-image.php:49
+#: inc/plugins/kirki/controls/php/class-kirki-control-base.php:134
+#: inc/plugins/kirki/controls/views/image.php:36
+msgid "Default"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-base.php:139
+msgid "Default Browser Font-Family"
+msgstr ""
+
+#. Description of the theme
+msgid "Description"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/home-page-settings.php:67
+msgid "Disabled"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-color.php:52
+msgid ""
+"Do not use \"alpha\" as an argument in color controls. Use \"choices[alpha]"
+"\" instead."
+msgstr ""
+
+#: inc/plugins/kirki/core/class-kirki-init.php:369
+msgid "Don't show this again"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:100 template-parts/content-page.php:38
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/home-page-settings.php:66
+msgid "Enabled"
+msgstr ""
+
+#. %1$s represents the field ID where the error occurs. %2%s is buttonset/image.
+#: inc/plugins/kirki/field/class-kirki-field-radio.php:37
+#, php-format
+msgid ""
+"Error in field %1$s. The \"mode\" argument has been deprecated since Kirki "
+"v0.8. Use the \"radio-%2$s\" type instead."
+msgstr ""
+
+#. Name of the theme
+msgid "Essence T1"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:215
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:216
+msgid "Extra-Bold 800"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:217
+msgid "Extra-Bold 800 Italic"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:119
+msgid "Fixed"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:82
+msgid "Font Family"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:123
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:102
+msgid "Font Size"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:126
+msgid "Font Style"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:124
+msgid "Font Weight"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:49
+#: inc/customizer/kirki-customizations/footer-settings.php:59
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/widget-areas.php:26
+msgid "Footer Column One"
+msgstr ""
+
+#: inc/widget-areas.php:50
+msgid "Footer Column Three"
+msgstr ""
+
+#: inc/widget-areas.php:38
+msgid "Footer Column Two"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:937
+msgid "Footer Font"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:1025
+msgid "Footer Link Color"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:997
+msgid "Footer Link Font"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:11
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:928
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:965
+msgid "Footer Text Color"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:898
+msgid "Footer Typography"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:47
+msgid "General Body Text"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:222
+msgid "General Text in Menubar"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-base.php:137
+msgid "Google Fonts"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/header-settings.php:55
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:137
+msgid "Height"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:122
+msgid ""
+"Here we add the call-to-action text. this can be as simple as \"Hire Us!\" "
+"with contact info, or more elaborate with links, icons, and more"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:758
+msgid ""
+"Here we can control the page and site descriptions shown under the title in "
+"the page head."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/home-page-settings.php:42
+msgid "Here we can define and adjust the \"Home\" and \"Front\" pages."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:603
+msgid ""
+"Here we can make the site title small caps, petite caps and more. NOTE: "
+"These options will only work if the specific font being used supplies them. "
+"For example, most fonts will have small caps, but not all will have petite "
+"caps."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:29
+msgid ""
+"Here we can set up the content and color of the footer. <br><br><b>For "
+"footer content:</b> For the content in the three main footer columns, see "
+"the \"Widgets\" section.<br><br><b>For font settings:</b> For the font style,"
+" color and more, see the \"Typography\" section."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:221
+msgid "High Contrast: Black (Text)"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:243
+msgid "High Contrast: White (Post Background)"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.glassinteractive.com/"
+msgstr ""
+
+#: footer.php:112
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://www.essencetheme.glassinteractive.com/essence-t1-features/"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:460
+msgid ""
+"If turned on, this will look for and use an exiting page titled \"Terms of "
+"Service\". This will then place a link to that page in the footer. We can "
+"override the linked-to page using the dropdown menu to link to any existing "
+"page we would like."
+msgstr ""
+
+#: inc/plugins/kirki/upgrade-notifications.php:30
+msgid "Important Upgrade Notice:"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:113
+msgid "Increase or decrease the logo size."
+msgstr ""
+
+#. %s: Section description, i.e. With this conttrol we can....
+#: inc/customizer/kirki-customizations/footer-settings.php:283
+#, php-format
+msgid ""
+"Increase or decrease the position of the %1$s container. The purpose of this "
+"control is to allow for more versatile positioning of the %2$s."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:162
+msgid ""
+"Increase or decrease the position of the logo container. The purpose of this "
+"control is to allow for more versatile positioning of the logo container in "
+"relation to the menu bar. This becomes very helpful as the size of the logo "
+"changes."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:139
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:181
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:197
+msgid "Inherit"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:180
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:196
+msgid "Initial"
+msgstr ""
+
+#: inc/plugins/kirki/core/class-kirki-init.php:368
+msgid "Install Plugin"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:138
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimension.php:41
+msgid "Invalid Value"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:130
+msgid ""
+"It is unlikely to ever want to have a different font family for the links, "
+"but styling links bold, italics, etc, is not uncommon. This tool will "
+"default to the body font settings for almost everything, but we can override "
+"them here, if desired. &nbsp; &nbsp; NOTE: This will affect posts in the "
+"masonry post display, but not affect the link color in the one-column post "
+"display. This is due to the latter being designed with a white background "
+"and dark text as part of intended style"
+msgstr ""
+
+#: 404.php:38
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:163
+msgid "Justify"
+msgstr ""
+
+#: inc/plugins/kirki/core/class-kirki.php:237
+msgid ""
+"Kirki fields should not be added on customize_register. Please add them "
+"directly, or on init."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:434
+msgid "Large Page Head Titles"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:516
+msgid ""
+"Large Site Title & Description Vertical Plaement (\"Front\" and \"Home\" "
+"pages only)"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:488
+msgid ""
+"Large Site Title Horizontal Plaement (\"Front\" and \"Home\" pages only)"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:666
+msgid "Large Site Title Manual Override"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:543
+msgid "Large Site Title Text"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:83
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-spacing.php:34
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:131
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:145
+msgid "Left"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:116
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:85
+msgid "Left Bottom"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:115
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:84
+msgid "Left Center"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:114
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:83
+msgid "Left Top"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:127
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:118
+msgid "Letter Spacing"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:201
+msgid "Light 200"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:202
+msgid "Light 200 Italic"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:816
+msgid ""
+"Like the site title, we can make the site description small caps, petite "
+"caps and more. NOTE: These options will only work if the specific font being "
+"used supplies them. For example, most fonts will have small caps, but not "
+"all will have petite caps."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:789
+msgid ""
+"Like the site title, we want the site description in the page head to look "
+"good on all devices. Setting this size as a percentage here, along with some "
+"wizardry behind the scenes, will keep the description looking right on cell "
+"phones and large 4K monitors."
+msgstr ""
+
+#. %s represents the number of rows we're limiting the repeater to allow.
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:227
+#, php-format
+msgid "Limit: %s rows"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:125
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:110
+msgid "Line Height"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:195
+msgid "Line-Through"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:158
+msgid "Link Color"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:129
+msgid "Link Font & Style"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:120
+msgid "Link Text"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:70
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:136
+msgid "Logo Container Shape Adjustment."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:161
+msgid "Logo Container Vertical Adjustment."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:209
+msgid "Logo Horizontal Adjustment in the Menu Bar."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:185
+msgid "Logo Padding Adjustment"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:112
+msgid "Logo size Adjustment."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:234
+msgid "Logo Vertical Adjustment in the menu bar."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:179
+msgid "Lowercase"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:85
+msgid "Main Body Text Color"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:213
+msgid "Margin Bottom"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:205
+msgid "Margin Top"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/home-page-settings.php:60
+msgid "Masonry Post Flow"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:208
+msgid "Medium 500"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:209
+msgid "Medium 500 Italic"
+msgstr ""
+
+#: header.php:71
+msgid "Menu"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:300
+msgid "Menu Bar Site Title Horizontal Adjustment"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:382
+msgid "Menu Bar Site Title Manual Override"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:326
+msgid "Menu Bar Site Title Vertical Adjustment"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:231
+msgid "Menu Bar Text"
+msgstr ""
+
+#. Author of the theme
+msgid "Mike Glass"
+msgstr ""
+
+#: 404.php:47 commenterror.php:38 search.php:68
+msgid "Most Used Categories"
+msgstr ""
+
+#. %s: Section description, i.e. With this conttrol we can....
+#: inc/customizer/kirki-customizations/footer-settings.php:387
+#, php-format
+msgid ""
+"Move the %s left or right within the photo container. This can be used along "
+"with the \"Inner Image Size\" adjustment to perfectly frame or zoom in on "
+"any specific part of the image."
+msgstr ""
+
+#. %s: Section description, i.e. With this conttrol we can....
+#: inc/customizer/kirki-customizations/footer-settings.php:256
+#, php-format
+msgid "Move the %s left to right."
+msgstr ""
+
+#. %s: Section description, i.e. With this conttrol we can....
+#: inc/customizer/kirki-customizations/footer-settings.php:361
+#, php-format
+msgid ""
+"Move the %s upward or downward within the photo container. This can be used "
+"along with the \"Inner Image Size\" adjustment to perfectly frame or zoom in "
+"on any specific part of the image."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:489
+#: inc/customizer/kirki-customizations/typography-settings.php:517
+msgid ""
+"Move the large site title up or down. NOTE: This will only affect the large "
+"site title on the \"Front\" and \"Home\" pages, not the page title on all "
+"other pages."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:210
+msgid "Move the logo in the menu bar left to right."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:235
+msgid "Move the logo in the menu bar upward or downward."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:301
+msgid ""
+"Move the menu bar site title left or right NOTE: IN some cases the page must "
+"be SCROLLED UPWARD to see the site title."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:327
+msgid ""
+"Move the menu bar site title up or down NOTE: In some cases the page must be "
+"SCROLLED UPWARD to see the site title."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:705
+msgid "Move the page description left or right."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:731
+msgid "Move the page description up or down."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:193
+msgid "Navigation Typography"
+msgstr ""
+
+#: single.php:40 attachment.php:48
+msgid "Next:"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-base.php:132
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:59
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:408
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:413
+msgid "No File Selected"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:376
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:381
+msgid "No Image Selected"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-image.php:51
+#: inc/plugins/kirki/controls/views/image.php:38
+msgid "No image selected"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:72
+msgid "No Repeat"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:618
+#: inc/customizer/kirki-customizations/typography-settings.php:831
+msgid "no-common-ligatures"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:176
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:192
+msgid "None"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:205
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:206
+msgid "Normal 400"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:207
+msgid "Normal 400 Italic"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-switch.php:40
+#: inc/plugins/kirki/controls/php/class-kirki-control-switch.php:56
+msgid "Off"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-switch.php:39
+#: inc/plugins/kirki/controls/php/class-kirki-control-switch.php:52
+msgid "On"
+msgstr ""
+
+#. 1: title.
+#: comments.php:30
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: commenterror.php:25
+msgid "Oops! It looks like there were problems when submitting the form."
+msgstr ""
+
+#: 404.php:34
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:194
+msgid "Overline"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:757
+msgid "Page & Site Description Text"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:704
+msgid "Page Description Horizontal Plaement"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:730
+msgid "Page Description Vertical Plaement"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:682
+msgid "Page Head Site Description"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:464
+msgid "Page Head Site Title"
+msgstr ""
+
+#: template-parts/content-masonry.php:49
+#: template-parts/content-condensed.php:68 template-parts/content-page.php:24
+#: template-parts/content.php:60
+msgid "Pages:"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:613
+#: inc/customizer/kirki-customizations/typography-settings.php:826
+msgid "petite-caps"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:101
+msgid "Photo Call-To-Action"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:110
+msgid "Photo CTA On/Off Switch"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:121
+msgid "Photo CTA Text"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:46
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:30
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:66
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: single.php:41 attachment.php:47
+msgid "Previous:"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:133
+msgid "Primary"
+msgstr ""
+
+#: inc/setup.php:122
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:498
+msgid "Privacy Page On/Off Switch"
+msgstr ""
+
+#. %s: CMS name, i.e. WordPress.
+#: footer.php:116
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-image.php:50
+#: inc/plugins/kirki/controls/php/class-kirki-control-base.php:133
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:62
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:386
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:418
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:443
+#: inc/plugins/kirki/controls/views/image.php:37
+msgid "Remove"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:73
+msgid "Repeat All"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:74
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:75
+msgid "Repeat Vertically"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-slider.php:67
+msgid "Reset"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:265
+msgid "Reset the Color Paette"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-spacing.php:35
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:132
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:157
+msgid "Right"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:119
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:88
+msgid "Right Bottom"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:118
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:87
+msgid "Right Center"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:117
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:86
+msgid "Right Top"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:77
+msgid "row"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:116
+msgid "Scroll"
+msgstr ""
+
+#: searchform.php:9
+msgid "Search"
+msgstr ""
+
+#. %s: search query.
+#: search.php:31
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:155
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-repeater.php:121
+msgid "Select a Page"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:509
+msgid "Select a Privacy Page"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:469
+msgid "Select a TOS Page"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:606
+#: inc/customizer/kirki-customizations/typography-settings.php:819
+msgid "Select an option..."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-base.php:135
+#: inc/plugins/kirki/controls/php/class-kirki-control-background.php:63
+msgid "Select File"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:83
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:88
+msgid "Select Font Family"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-image.php:47
+#: inc/plugins/kirki/field/class-kirki-field-image.php:52
+#: inc/plugins/kirki/controls/views/image.php:34
+#: inc/plugins/kirki/controls/views/image.php:39
+msgid "Select image"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:102
+msgid ""
+"Select the color that should become prominent color on the website. This "
+"will be a defining color, but will usually not appear as a background or "
+"large area. Instead, this will be placed strategically throughout the "
+"website and often used against the Primary color."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:134
+msgid ""
+"Select the color that will become the common background color and "
+"compliments the Accent color. Text will often sit on top of the primary "
+"color, so it is usually best to make it either very light or very dark. This "
+"will allow for either black or white text show well. For text color settings,"
+" see the \"Typography\" section of this Customizer tool."
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:210
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:211
+msgid "Semi-Bold 600"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:212
+msgid "Semi-Bold 600 Italic"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/background-settings.php:169
+msgid ""
+"Set the background color for the content area of the page. This will overlay "
+"any content area background image set above. This color tool is a little "
+"different from the body color tool in that if we want to see the image set "
+"above, we can not simply click a \"Clear\" button to remove the color and "
+"show the image (assuming one is set). Read on to see how to accomplish this "
+"with the alpha slider. The alpha slider on the right of the color tool can "
+"be used to lower the transparency of the color and reveal the content area "
+"background image (if set). This can be used to artistically to add a color "
+"overlay to the image or, if set to \"0\", will show the image with no color "
+"overlay."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:60
+msgid ""
+"Set the background color for the footer. This will often require the footer "
+"text color to be changed. Like all text settings, this can be done in the "
+"\"Typography\" section of the Customizer."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/background-settings.php:95
+msgid ""
+"Set the background color for the page body. This becomes the page background."
+" This will overlay any body background image set above. Click \"Clear\" to "
+"remove the color and show the body background image (if set).   NOTE: The "
+"alpha slider on the right of the color tool can be used to lower the "
+"transparency of the color to reveal the body background image (if set). This "
+"can be used artistically to add a color overlay to the body background image,"
+" if desired."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/header-settings.php:56
+msgid ""
+"Set the background color for the page head. NOTE: THIS WILL COVER OVER ANY "
+"IMAGE SET BELOW. This allows us to tint the image, if we wish, by setting "
+"the color transparency (slider on the far right) to something less than 100%."
+" Setting the transparency slider around half way down will usually provide "
+"an ideal tint, but more or less can be used if desired. If we wish to only "
+"see the image with no tinting, click the  \"Clear\" button to remove the "
+"color completely."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:635
+msgid "Set the color for the large site title in the page head."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:849
+msgid ""
+"Set the color for the site description in the page head (Front & Home Pages "
+"Only)."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:397
+msgid "Set the color for the small site title in the menu bar."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:102
+msgid "Show/Hide the logo in the Menu Bar"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:692
+msgid ""
+"Show/Hide the Site description in the Page Head (Front & Home Pages Only)"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:288
+msgid "Show/Hide the Site Title in the Menu Bar"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:475
+msgid "Show/Hide the Site Title in the Page Head (Front & Home Pages Only)"
+msgstr ""
+
+#: inc/widget-areas.php:12
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/background-settings.php:94
+msgid "Site Background Color"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:788
+msgid "Site Description Font Size"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:815
+msgid "Site Description Font Variant"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:880
+msgid "Site Description Manual Override"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:76
+msgid "Site Icon"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:94
+msgid "Site Logo"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:574
+msgid "Site Title Font Size"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:602
+msgid "Site Title Font Variant"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:396
+msgid "Site Title in Menu Bar"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:278
+msgid "Site Title in Menubar"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:134
+msgid "Size"
+msgstr ""
+
+#: header.php:33
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:352
+msgid "Small Site Title Text"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:611
+#: inc/customizer/kirki-customizations/typography-settings.php:824
+msgid "small-caps"
+msgstr ""
+
+#: template-parts/post-flow-masonry.php:31
+#: template-parts/post-flow-one-column.php:36
+msgid "Sorry, but no posts can be found."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:135
+msgid "Spacing"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-base.php:136
+msgid "Standard Fonts"
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:73
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/footer-settings.php:459
+msgid "Terms of Service On/Off Switch"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:134
+msgid "Text Align"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:189
+msgid "Text Decoration"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:173
+msgid "Text Transform"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/home-page-settings.php:61
+msgid ""
+"The standard WordPress layout for posts is a single column. Our theme "
+"provides a powerful and effective masonry post flow to display the posts in "
+"multiple columns without unnecessary whitespace. This masonry post flow is "
+"turned on and off here."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:6
+msgid "The style, arrangement, or appearance of all of the text."
+msgstr ""
+
+#. 1: Theme name, 2: Theme author.
+#: footer.php:127
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:881
+msgid ""
+"These settings override the font-family setting above. This can be any font "
+"you wish to apply to the large title selector. For example: font-family: "
+"\"Good Times Rg\", Arial, sans; NOTE: THIS DOES NOT LOAD THE FONT INTO THE "
+"BROWSER. If the font is not already one of the included Google fonts or part "
+"of the browser, this will need to be loaded either through a plugin or by "
+"adding the font via linking in the document head. Information on this is "
+"readily available online. If you are not familiar with this, it might be "
+"best to stick to the many supplied Google and browser fonts."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:667
+msgid ""
+"These settings override the font-family setting above. This can be any font "
+"you wish to apply to the large title selector. For example: font-family: "
+"\"Good Times Rg\"; NOTE: THIS DOES NOT LOAD THE FONT INTO THE BROWSER. If "
+"the font is not already one of the included Google fonts or part of the "
+"browser, this will need to be loaded either through a plugin or by adding "
+"the font via linking in the document head. Information on this is readily "
+"available online. If you are not familiar with this, it might be best to "
+"stick to the many supplied Google and browser fonts."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:383
+msgid ""
+"These settings override the font-family setting above. This can be any font "
+"you wish to apply. For example: font-family: \"Good Times Rg\"; NOTE: THIS "
+"DOES NOT LOAD THE FONT INTO THE BROWSER. If the font is not already one of "
+"the included Google fonts or part of the browser, this will need to be "
+"loaded either through a plugin or by adding the font via linking in the "
+"document head. Information on this is readily available online. If you are "
+"not familiar with this, it might be best to stick to the many supplied "
+"Google and browser fonts."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:156
+#: inc/customizer/kirki-customizations/colors-settings.php:178
+#: inc/customizer/kirki-customizations/colors-settings.php:200
+msgid ""
+"This color will not be used with default settings, but is meant to be an "
+"additional option as you set up the various text and background colors."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:244
+msgid ""
+"This should be pure white or a near-white (light gray, cream, light blue, "
+"etc) that compliments the current palette. This will be the default post "
+"background color and can be used anytime a high-contrast light color is "
+"needed."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:222
+msgid ""
+"This swatch is reserved for black or a very dark gray that compliments the "
+"current palette. This will be the default text color in posts and can be "
+"used anytime a high-contrast dark color is needed."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:544
+msgid ""
+"This will control all settings for the large site title in the page head of "
+"standard pages. In addition, this will control the large site title that is "
+"used in the page head on the \"Home\" and \"Front\" pages, but settings for "
+"this can be overridden in the \"Large Site Title Text\" controller above, "
+"which allows us to make the site title unique, if we wish."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:232
+msgid ""
+"This will control the settings for the menu bar text. NOTE: This will not "
+"affect the small site title in the menu bar. That is controlled in the "
+"\"Small Site Title Text\" controller above."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:353
+msgid ""
+"This will control the settings ONLY for the website title in the menu bar. "
+"This will not control the large site title that appears in the page head on "
+"the \"Front and \"Home\" pages. For that, use the \"Large Site Title Text\" "
+"controller."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/colors-settings.php:266
+msgid ""
+"This will refresh the Customizer and restore the original theme default "
+"colors. NOTE: THIS WILL NOT SAVE ANY UNSAVED CHANGES. If you have other "
+"Customizer changes that have not yet been saved, please click the Publish "
+"button first, then return here to restore the original theme default colors."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:86
+msgid ""
+"This will set the color for most of the text, but will not affect the site "
+"titles or logos. Those have their owns sections in this Customizer tool. "
+"&nbsp; &nbsp; NOTE: This will affect posts in the masonry post display, but "
+"not affect the text color in the one-column post display. This is due to the "
+"latter being designed with a white background and dark text as part of "
+"intended style"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:966
+msgid ""
+"This will set the footer text. The link colors can be set separately with "
+"the controls below this section."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/branding-settings.php:60
+msgid "Title & Tagline"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:616
+#: inc/customizer/kirki-customizations/typography-settings.php:829
+msgid "titling-caps"
+msgstr ""
+
+#: inc/plugins/kirki/field/class-kirki-field-spacing.php:32
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:129
+msgid "Top"
+msgstr ""
+
+#. %1$s: smiley
+#: 404.php:65 commenterror.php:56 search.php:86
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#. %1$s represents the field ID where the error occurs.
+#: inc/plugins/kirki/core/class-kirki-field.php:358
+#, php-format
+msgid "Typo found in field %s - \"theme_mods\" vs \"theme_mod\""
+msgstr ""
+
+#. %s represents the field ID where the error occurs.
+#: inc/plugins/kirki/core/class-kirki-field.php:248
+#, php-format
+msgid "Typo found in field %s - setting instead of settings."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:5
+msgid "Typography"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:218
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:219
+msgid "Ultra-Bold 900"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:220
+msgid "Ultra-Bold 900 Italic"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:198
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:199
+msgid "Ultra-Light 100"
+msgstr ""
+
+#: inc/plugins/kirki/modules/webfonts/class-kirki-fonts.php:200
+msgid "Ultra-Light 100 Italic"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:193
+msgid "Underline"
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:615
+#: inc/customizer/kirki-customizations/typography-settings.php:828
+msgid "unicase"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:178
+msgid "Uppercase"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:93
+msgid "Variant"
+msgstr ""
+
+#: inc/plugins/kirki/core/class-kirki-init.php:289
+msgid ""
+"We detected you're using Kirki_Init::get_variables(). Please use Kirki_Util::"
+"get_variables() instead."
+msgstr ""
+
+#: inc/customizer/kirki-customizations/typography-settings.php:575
+msgid ""
+"We want the site title in the page head to look good on all devices. Setting "
+"this size as a percentage here, along with some wizardry behind the scenes, "
+"will keep the title looking right on cell phones as well as 4K monitors."
+msgstr ""
+
+#. %s: Section description, i.e. With this conttrol we can....
+#: inc/customizer/kirki-customizations/footer-settings.php:309
+#, php-format
+msgid ""
+"When images are overlapping each other, move the %s  container in front of "
+"or behind the other images. NOTE: This only has an affect when we have the "
+"set the images to be overlapping each other."
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:136
+msgid "Width"
+msgstr ""
+
+#: inc/plugins/kirki/controls/php/class-kirki-control-dimensions.php:128
+#: inc/plugins/kirki/controls/php/class-kirki-control-typography.php:126
+msgid "Word Spacing"
+msgstr ""
+
+#: inc/error-handler-comments.php:35
+msgid "WordPress &rsaquo; Error"
+msgstr ""
+
+#: inc/plugins/kirki/core/class-kirki-init.php:365
+msgid ""
+"Your theme uses a Font Awesome field for icons. To avoid issues with missing "
+"icons on your frontend we recommend you install the official Font Awesome "
+"plugin."
+msgstr ""

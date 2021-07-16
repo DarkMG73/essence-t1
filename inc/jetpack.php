@@ -15,7 +15,7 @@
  * See: https://jetpack.com/support/content-options/
  */
 
-function gi_essence_theme_jetpack_setup() {
+function glassinteractive_essence_theme_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	// JetPack infinite scroll is not supported at t
 	// his time, but will be in a  future release.
@@ -23,7 +23,7 @@ function gi_essence_theme_jetpack_setup() {
 	// 	'infinite-scroll',
 	// 	array(
 	// 		'container' => 'gi-infinite-container',
-	// 		'render'    => 'gi_essence_theme_infinite_scroll_render',
+	// 		'render'    => 'glassinteractive_essence_theme_infinite_scroll_render',
 	// 		'footer'    => 'page',
 	// 	)
 	// );
@@ -51,12 +51,12 @@ function gi_essence_theme_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'gi_essence_theme_jetpack_setup' );
+add_action( 'after_setup_theme', 'glassinteractive_essence_theme_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-// function gi_essence_theme_infinite_scroll_render() {
+// function glassinteractive_essence_theme_infinite_scroll_render() {
 // 	while ( have_posts() ) {
 // 		the_post();
 // 		if ( is_search() ) :

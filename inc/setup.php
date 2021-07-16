@@ -22,7 +22,7 @@ function setup_theme_options () {
   }
 
 
-if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
+if ( ! function_exists( 'glassinteractive_essence_theme_setup' ) ) :
 	/**
      ******* Theme Support Setup **********
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -31,7 +31,7 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function gi_essence_theme_setup() {
+	function glassinteractive_essence_theme_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -82,7 +82,7 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'gi_essence_theme_custom_background_args',
+				'glassinteractive_essence_theme_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -131,7 +131,7 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
         // add_theme_support( 'starter-content', [
         //     'widgets'                   =>  [
         //         // Place three core-defined widgets in the sidebar area.
-        //         'gi_sidebar'            =>  [
+        //         'glassinteractive_sidebar'            =>  [
         //             'text_business_info', 'search', 'text_about',
         //         ]
         //     ],
@@ -172,13 +172,13 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
     
         //     // Set the front page section theme mods to the IDs of the core-registered pages.
         //     'theme_mods'                =>  [
-        //         'gi_facebook_handle'    =>  'essencetheme',
-        //         'gi_twitter_handle'     =>  'essencetheme',
-        //         'gi_instagram_handle'   =>  'essencetheme',
-        //         'gi_email'              =>  'essencetheme',
-        //         'gi_phone_number'       =>  'essencetheme',
-        //         'gi_header_show_search' =>  'yes',
-        //         'gi_header_show_cart'   =>  'yes',
+        //         'glassinteractive_facebook_handle'    =>  'essencetheme',
+        //         'glassinteractive_twitter_handle'     =>  'essencetheme',
+        //         'glassinteractive_instagram_handle'   =>  'essencetheme',
+        //         'glassinteractive_email'              =>  'essencetheme',
+        //         'glassinteractive_phone_number'       =>  'essencetheme',
+        //         'glassinteractive_header_show_search' =>  'yes',
+        //         'glassinteractive_header_show_cart'   =>  'yes',
         //     ],
     
         //     // Set up nav menus for each of the two areas registered in the theme.
@@ -224,14 +224,14 @@ if ( ! function_exists( 'gi_essence_theme_setup' ) ) :
         */
         if (function_exists('quads_register_ad')){
             quads_register_ad( array(
-                'location' => 'gi_header', 
+                'location' => 'glassinteractive_header', 
                 'description' => 'Theme Header position') );
             }
 
 
 	}
 endif;
-add_action( 'after_setup_theme', 'gi_essence_theme_setup' );
+add_action( 'after_setup_theme', 'glassinteractive_essence_theme_setup' );
 
 
 
@@ -243,10 +243,10 @@ add_action( 'after_setup_theme', 'gi_essence_theme_setup' );
  *
  * @global int $content_width
  */
-function gi_essence_theme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'gi_essence_theme_content_width', 640 );
+function glassinteractive_essence_theme_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'glassinteractive_essence_theme_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'gi_essence_theme_content_width', 0 );
+add_action( 'after_setup_theme', 'glassinteractive_essence_theme_content_width', 0 );
 
 
 

@@ -1,8 +1,8 @@
 <?php
 
-add_action( 'tgmpa_register', 'gi_register_required_plugins' );
+add_action( 'tgmpa_register', 'glassinteractive_register_required_plugins' );
 
-function gi_register_required_plugins(){
+function glassinteractive_register_required_plugins(){
   $config               =   [];
   $plugins              =   [
 

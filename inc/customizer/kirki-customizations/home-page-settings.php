@@ -7,7 +7,7 @@
     
 ----------------------------
 */   
-function gi_customizer_default_homepage_mods( $wp_customize ) {
+function glassinteractive_customizer_default_homepage_mods( $wp_customize ) {
 
     $wp_customize->get_section( 'static_front_page'  )->title   = 'Home/Front Page';
     $wp_customize->get_section( 'static_front_page'  )->description   = '';
@@ -17,7 +17,7 @@ function gi_customizer_default_homepage_mods( $wp_customize ) {
     $wp_customize->get_control( 'show_on_front'  )->description   = 'We can choose what is displayed on the first page of this site. It can be a standard blog page with posts in reverse chronological order, or a fixed/static page. To set a static first page, we first need to create two pages. One will become the "Front" page with a custom-made display, and the other will be the "Home" page where the posts are displayed.';
     
 }
-add_action( 'customize_register', 'gi_customizer_default_homepage_mods' );
+add_action( 'customize_register', 'glassinteractive_customizer_default_homepage_mods' );
 
 
 /*
@@ -27,7 +27,7 @@ add_action( 'customize_register', 'gi_customizer_default_homepage_mods' );
     
 ----------------------------
 */   
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'static_front_page_title_for_customizer',
 	'section'     => 'static_front_page',
@@ -35,7 +35,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'priority'    => 0,
 ] );
 
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'static_front_page_intro_output_for_customizer',
 	'section'     => 'static_front_page',
@@ -54,7 +54,7 @@ Kirki::add_field( 'gi_theme_config', [
 	/* Enable Masonry Post FLow
 	----------------------------*/  
 
-    Kirki::add_field( 'gi_theme_config', [
+    Kirki::add_field( 'glassinteractive_theme_config', [
         'type'        => 'switch',
         'settings'    => 'home_page_masonry_posts_enable_setting',
         'label'       => esc_html__( 'Masonry Post Flow', 'essence-t1' ),

@@ -4,8 +4,8 @@ Theme URI: https://www.essencetheme.glassinteractive.com/essence-t1-features/
 Author: Mike Glass
 Author URI: http://www.glassinteractive.com/
 Description: Description
-Version: 1.0.1.1
-Tested up to: 5.4
+Version: 1.0.1.2
+Tested up to: 5.7
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -1230,16 +1230,18 @@ nav.navigation.post-navigation {
   font-size: 0.9rem;
 }
 
-@media screen and (min-width: 1600px)
-{
+@media screen and (min-width: 1600px) {
   #page-container #site-welcome-container #welcome-title-wrap .page-title {
     font-size: 72px;
-    }
+  }
 
-    #page-container #site-welcome-container #welcome-title-wrap .site-description {
-        font-size: 18px;
-    } 
-}  
+  #page-container
+    #site-welcome-container
+    #welcome-title-wrap
+    .site-description {
+    font-size: 18px;
+  }
+}
 
 #welcome-title-wrap .site-description {
   /* Margin left & right must be auto as 
@@ -1468,7 +1470,15 @@ nav.navigation.post-navigation {
   display: none;
 }
 
-body #page-container > .color-overlay, #page-container .site-header > .color-overlay, .single .entry-header > .color-overlay, .page .entry-header > .color-overlay, .search .page-header > .color-overlay, .category #page-title > .color-overlay, .home-template #page-title > .color-overlay, #featured-posts .entry-header > .color-overlay, body #page-container #custom-logo-wrap .color-overlay {
+body #page-container > .color-overlay,
+#page-container .site-header > .color-overlay,
+.single .entry-header > .color-overlay,
+.page .entry-header > .color-overlay,
+.search .page-header > .color-overlay,
+.category #page-title > .color-overlay,
+.home-template #page-title > .color-overlay,
+#featured-posts .entry-header > .color-overlay,
+body #page-container #custom-logo-wrap .color-overlay {
   background-color: white;
   background-color: var(--color-primary);
 }

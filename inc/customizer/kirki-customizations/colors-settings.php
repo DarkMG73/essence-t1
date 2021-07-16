@@ -45,7 +45,7 @@ $themePalette = array(
 	
 ----------------------------
 */  
-function gi_customizer_default_color_mods( $wp_customize ) {
+function glassinteractive_customizer_default_color_mods( $wp_customize ) {
 	/* Some modifiable settings */
 	// [capability] => 
 	// [priority] => 10
@@ -59,7 +59,7 @@ function gi_customizer_default_color_mods( $wp_customize ) {
 	$wp_customize->remove_control( 'header_textcolor'  );
 	$wp_customize->remove_control( 'background_color'  );
 }
-add_action( 'customize_register', 'gi_customizer_default_color_mods' );
+add_action( 'customize_register', 'glassinteractive_customizer_default_color_mods' );
 
 /*
 ----------------------------
@@ -77,7 +77,7 @@ function display_mat_des_colors(){
 	}
 }
 
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'color_palette_title_to_customizer',
 	'section'     => 'colors',
@@ -85,7 +85,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'priority'    => 0,
 ] );
 
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'color_palette_intro_to_customizer',
 	'section'     => 'colors',
@@ -95,7 +95,7 @@ Kirki::add_field( 'gi_theme_config', [
 ] );
 
         //  Color Palette 1
-        Kirki::add_field( 'gi_theme_config', array(
+        Kirki::add_field( 'glassinteractive_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c1',
         	'label'       => __( 'Accent', 'essence-t1' ),
@@ -127,7 +127,7 @@ Kirki::add_field( 'gi_theme_config', [
         );
         
         //  Color Palette 2
-        Kirki::add_field( 'gi_theme_config', array(
+        Kirki::add_field( 'glassinteractive_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c2',
         	'label'       => __( 'Primary', 'essence-t1' ),
@@ -149,7 +149,7 @@ Kirki::add_field( 'gi_theme_config', [
         );
         
         //  Color Palette 3
-        Kirki::add_field( 'gi_theme_config', array(
+        Kirki::add_field( 'glassinteractive_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c3',
         	'label'       => __( 'Secondary Color', 'essence-t1' ),
@@ -171,7 +171,7 @@ Kirki::add_field( 'gi_theme_config', [
         );
 
         //  Color Palette 4
-        Kirki::add_field( 'gi_theme_config', array(
+        Kirki::add_field( 'glassinteractive_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c4',
         	'label'       => __( 'Alternative Light', 'essence-t1' ),
@@ -193,7 +193,7 @@ Kirki::add_field( 'gi_theme_config', [
         );
 
         //  Color Palette 5
-        Kirki::add_field( 'gi_theme_config', array(
+        Kirki::add_field( 'glassinteractive_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c5',
         	'label'       => __( 'Alternative Dark', 'essence-t1' ),
@@ -215,7 +215,7 @@ Kirki::add_field( 'gi_theme_config', [
         );
         
         //  Color Palette 6
-        Kirki::add_field( 'gi_theme_config', array(
+        Kirki::add_field( 'glassinteractive_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c6',
         	'label'       => __( 'High Contrast: Black (Text)', 'essence-t1' ),
@@ -237,7 +237,7 @@ Kirki::add_field( 'gi_theme_config', [
         );
 
         //  Color Palette 7
-        Kirki::add_field( 'gi_theme_config', array(
+        Kirki::add_field( 'glassinteractive_theme_config', array(
         	'type'        => 'color',
         	'settings'    => 'color_palette_c7',
         	'label'       => __( 'High Contrast: White (Post Background)', 'essence-t1' ),
@@ -259,7 +259,7 @@ Kirki::add_field( 'gi_theme_config', [
         );
 
         //  Reset switch
-        Kirki::add_field( 'gi_theme_config', array(
+        Kirki::add_field( 'glassinteractive_theme_config', array(
         	'type'        => 'toggle',
         	'settings'    => 'color_palette_reset',
         	'label'       => __( 'Reset the Color Paette', 'essence-t1' ),

@@ -37,7 +37,7 @@ if ( $the_query->have_posts() ) {
     <?php
 }
 /* Restore original Post Data */
-// wp_reset_postdata();
+wp_reset_postdata();
 
 ?>
 </div><!-- #one-column-container -->

@@ -7,13 +7,13 @@
     
 ----------------------------
 */   
-function gi_customizer_default_header_mods( $wp_customize ) {
+function glassinteractive_customizer_default_header_mods( $wp_customize ) {
 
     $wp_customize->get_section( 'header_image'  )->title   = 'Home Page Header Background';
 	$wp_customize->get_section( 'header_image'  )->priority   = 10;
     $wp_customize->get_control( 'header_image'  )->priority   = 10;
 }
-add_action( 'customize_register', 'gi_customizer_default_header_mods' );
+add_action( 'customize_register', 'glassinteractive_customizer_default_header_mods' );
 
 
 /*
@@ -23,7 +23,7 @@ add_action( 'customize_register', 'gi_customizer_default_header_mods' );
     
 ----------------------------
 */   
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'header_title_for_customizer',
 	'section'     => 'header_image',
@@ -31,7 +31,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'priority'    => 5,
 ] );
 
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'header_intro_output_for_customizer',
 	'section'     => 'header_image',
@@ -49,7 +49,7 @@ Kirki::add_field( 'gi_theme_config', [
 */  
 	/* 
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'header_backgroundcolor-setting',
 		'label'       => __( 'Header Background Color', 'essence-t1' ),

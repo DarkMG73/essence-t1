@@ -25,8 +25,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				gi_essence_theme_posted_on();
-				gi_essence_theme_posted_by();
+				glassinteractive_essence_theme_posted_on();
+				glassinteractive_essence_theme_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -34,7 +34,7 @@
 
 	<?php  
 	if( $args['featured_image'] != false){
-		gi_essence_theme_post_thumbnail();
+		glassinteractive_essence_theme_post_thumbnail();
 	}
 	?>
 
@@ -65,6 +65,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php gi_essence_theme_entry_footer(); ?>
+		<?php glassinteractive_essence_theme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

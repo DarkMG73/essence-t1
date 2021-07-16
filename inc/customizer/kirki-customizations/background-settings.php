@@ -7,7 +7,7 @@
     
 ----------------------------
 */   
-function gi_customizer_default_background_mods( $wp_customize ) {
+function glassinteractive_customizer_default_background_mods( $wp_customize ) {
 
     $wp_customize->get_section( 'background_image'  )->title   = 'Body & Content Backgrounds';
 	$wp_customize->get_section( 'background_image'  )->priority   = 15;
@@ -19,7 +19,7 @@ function gi_customizer_default_background_mods( $wp_customize ) {
 	$wp_customize->remove_control( 'background_repeat'  );
 	$wp_customize->remove_control( 'background_attachment'  );
 }
-add_action( 'customize_register', 'gi_customizer_default_background_mods' );
+add_action( 'customize_register', 'glassinteractive_customizer_default_background_mods' );
 
 
 /*
@@ -29,7 +29,7 @@ add_action( 'customize_register', 'gi_customizer_default_background_mods' );
     
 ----------------------------
 */   
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'background_title_for_customizer',
 	'section'     => 'background_image',
@@ -37,7 +37,7 @@ Kirki::add_field( 'gi_theme_config', [
 	'priority'    => 0,
 ] );
 
-Kirki::add_field( 'gi_theme_config', [
+Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'background_intro_output_for_customizer',
 	'section'     => 'background_image',
@@ -54,7 +54,7 @@ Kirki::add_field( 'gi_theme_config', [
 */  
 	/* Group Title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'body_background_title_for_customizer',
 		'section'     => 'background_image',
@@ -64,7 +64,7 @@ Kirki::add_field( 'gi_theme_config', [
 
 	/* Body Background Image
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'background',
 		'settings'    => 'body_background_image_settings',
 		'label'       => esc_html__( 'Body Background', 'essence-t1' ),
@@ -88,7 +88,7 @@ Kirki::add_field( 'gi_theme_config', [
 
 	/* Body Background Color
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'background_color_settings',
 		'label'       => __( 'Site Background Color', 'essence-t1' ),
@@ -128,7 +128,7 @@ Kirki::add_field( 'gi_theme_config', [
 
 	/* Group Title
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'content_background_title_for_customizer',
 		'section'     => 'background_image',
@@ -138,7 +138,7 @@ Kirki::add_field( 'gi_theme_config', [
 
 	/* Content Background Image
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'background',
 		'settings'    => 'content_background_image_settings',
 		'label'       => esc_html__( 'Content Background', 'essence-t1' ),
@@ -162,7 +162,7 @@ Kirki::add_field( 'gi_theme_config', [
 
 	/* Content Background Color
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'content_background_color_settings',
 		'label'       => __( 'Content Area Background Color', 'essence-t1' ),

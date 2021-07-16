@@ -14,7 +14,7 @@ Kirki::add_section( 'footer_settings', array(
 
 	/* Intro Text
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'footer_title_for_customizer',
 		'section'     => 'footer_settings',
@@ -22,7 +22,7 @@ Kirki::add_section( 'footer_settings', array(
 		'priority'    => 0,
 	] );
 
-	Kirki::add_field( 'gi_theme_config', [
+	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'footer_intro_for_customizer',
 		'section'     => 'footer_settings',
@@ -42,7 +42,7 @@ Kirki::add_section( 'footer_settings', array(
 */  
 	/* Group Title
 	----------------------------*/  
-    Kirki::add_field( 'gi_theme_config', [
+    Kirki::add_field( 'glassinteractive_theme_config', [
         'type'        => 'custom',
         'settings'    => 'footer_background_title_for_customizer',
         'section'     => 'footer_settings',
@@ -53,7 +53,7 @@ Kirki::add_section( 'footer_settings', array(
 	/* Footer Background 
        Color Control
 	----------------------------*/  
-	Kirki::add_field( 'gi_theme_config', array(
+	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'footer_backgroundcolor-setting',
 		'label'       => __( 'Footer Background Color', 'essence-t1' ),
@@ -94,7 +94,7 @@ Kirki::add_section( 'footer_settings', array(
 */  
 	/* Group Title
 	----------------------------*/  
-    Kirki::add_field( 'gi_theme_config', [
+    Kirki::add_field( 'glassinteractive_theme_config', [
         'type'        => 'custom',
         'settings'    => 'footer_photo_cta_title_for_customizer',
         'section'     => 'footer_settings',
@@ -104,7 +104,7 @@ Kirki::add_section( 'footer_settings', array(
 
     /* Group Toggle
 	----------------------------*/  
-    Kirki::add_field( 'gi_theme_config', [
+    Kirki::add_field( 'glassinteractive_theme_config', [
         'type'        => 'toggle',
         'settings'    => 'footer_photo_cta_on_off_toggle_setting',
         'label'       => esc_html__( 'Photo CTA On/Off Switch', 'essence-t1' ),
@@ -115,7 +115,7 @@ Kirki::add_section( 'footer_settings', array(
 
     /* CTA Main Text Editor Control
 	----------------------------*/  
-    Kirki::add_field( 'gi_theme_config', [
+    Kirki::add_field( 'glassinteractive_theme_config', [
         'type'        => 'editor',
         'settings'    => 'footer_photo_cta_photo_text_editor_setting',
         'label'       => esc_html__( 'Photo CTA Text', 'essence-t1' ),
@@ -170,7 +170,7 @@ Kirki::add_section( 'footer_settings', array(
         $priority = $photo['priority'];
 
         // Image Group Title
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'custom',
             'settings'    => $slug . 'subgroup_title_for_customizer',
             'section'     => 'footer_settings',
@@ -197,7 +197,7 @@ Kirki::add_section( 'footer_settings', array(
 
 
         // Adjust the width of the photo wrap
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_size_setting',
              /* translators: %s: Section title, i.e. Photo One. */
@@ -221,7 +221,7 @@ Kirki::add_section( 'footer_settings', array(
         ] );
 
         // Adjust the shape of the photo container
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_shape_setting',
             /* translators: %s: Section title, i.e. Photo One. */
@@ -247,7 +247,7 @@ Kirki::add_section( 'footer_settings', array(
         ] );
 
         // Adjust the horizontal placement
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_horizonal_setting',
             /* translators: %s: Section title, i.e. Photo One. */            
@@ -274,7 +274,7 @@ Kirki::add_section( 'footer_settings', array(
         ] );
 
         // Adjust the vertical position of the photo container
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_vertical_setting',
             /* translators: %s: Section title, i.e. Photo One. */
@@ -300,7 +300,7 @@ Kirki::add_section( 'footer_settings', array(
         ] );
 
         // Adjust the z-index of the photo container
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_wrap_zindex_setting',
             /* translators: %s: Section title, i.e. Photo One. */
@@ -325,7 +325,7 @@ Kirki::add_section( 'footer_settings', array(
         ] );
 
         // Adjust the inner image size within the container
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_size_setting',
             /* translators: %s: Section title, i.e. Photo One. */
@@ -352,7 +352,7 @@ Kirki::add_section( 'footer_settings', array(
         ] );
 
         // Adjust the inner image vertical placement within the container
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_vertical_setting',
             /* translators: %s: Section title, i.e. Photo One. */
@@ -378,7 +378,7 @@ Kirki::add_section( 'footer_settings', array(
         ] );
 
         // Adjust the inner image horizontal placement within the container
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'slider',
             'settings'    => $slug.'_horizontal_setting',
             /* translators: %s: Section title, i.e. Photo One */
@@ -414,7 +414,7 @@ Kirki::add_section( 'footer_settings', array(
 */ 
 	/* Group Title
 	----------------------------*/  
-    Kirki::add_field( 'gi_theme_config', [
+    Kirki::add_field( 'glassinteractive_theme_config', [
         'type'        => 'custom',
         'settings'    => 'footer_copyright_title_for_customizer',
         'section'     => 'footer_settings',
@@ -424,9 +424,9 @@ Kirki::add_section( 'footer_settings', array(
 
     /* Copywrite Text Control
 	----------------------------*/  
-    Kirki::add_field( 'gi_theme_config', [
+    Kirki::add_field( 'glassinteractive_theme_config', [
         'type'     => 'text',
-        'settings' => 'gi_footer_copyright_text',
+        'settings' => 'glassinteractive_footer_copyright_text',
         'label'    => esc_html__( 'Copyright Text', 'essence-t1' ),
         'section'  => 'footer_settings',
         'default'  => sprintf( esc_html( '%s'), $generalThemeDefaults['footer']['copyright_text']),
@@ -443,7 +443,7 @@ Kirki::add_section( 'footer_settings', array(
     */
         /* Group Title
         ----------------------------*/  
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'custom',
             'settings'    => 'footer_tos_title_for_customizer',
             'section'     => 'footer_settings',
@@ -453,7 +453,7 @@ Kirki::add_section( 'footer_settings', array(
 
         /* Group Toggle
         ----------------------------*/  
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'toggle',
             'settings'    => 'footer_tos_on_off_toggle_setting',
             'label'       => esc_html__( 'Terms of Service On/Off Switch', 'essence-t1' ),
@@ -463,9 +463,9 @@ Kirki::add_section( 'footer_settings', array(
             'priority'    => 10,
         ] );
   
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'dropdown-pages',
-            'settings'    => 'gi_footer_tos_page',
+            'settings'    => 'glassinteractive_footer_tos_page',
             'label'       => esc_html__( 'Select a TOS Page', 'essence-t1' ),
             'section'     => 'footer_settings',
             'order'       => 'DESC',
@@ -482,7 +482,7 @@ Kirki::add_section( 'footer_settings', array(
     */
         /* Group Title
         ----------------------------*/  
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'custom',
             'settings'    => 'priacy_page_title_for_customizer',
             'section'     => 'footer_settings',
@@ -492,7 +492,7 @@ Kirki::add_section( 'footer_settings', array(
 
         /* Group Toggle
         ----------------------------*/  
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'toggle',
             'settings'    => 'footer_privacy_page_on_off_toggle_setting',
             'label'       => esc_html__( 'Privacy Page On/Off Switch', 'essence-t1' ),
@@ -503,9 +503,9 @@ Kirki::add_section( 'footer_settings', array(
 
         /* Privacy Page Control
         ----------------------------*/  
-        Kirki::add_field( 'gi_theme_config', [
+        Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'dropdown-pages',
-            'settings'    => 'gi_footer_privacy_page',
+            'settings'    => 'glassinteractive_footer_privacy_page',
             'label'       => esc_html__( 'Select a Privacy Page', 'essence-t1' ),
             'section'     => 'footer_settings',
             'default'     => 3,

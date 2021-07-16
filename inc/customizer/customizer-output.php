@@ -3,8 +3,8 @@
  This theme uses the Kirky Customizer framework, so most CSS output to the fronend is handled by Kirky. Any custom entries are passed along here.
 ----------------------------*/
 
-add_action( 'wp_head', 'gi_customizer_css');
-function gi_customizer_css() {
+add_action( 'wp_head', 'glassinteractive_customizer_css');
+function glassinteractive_customizer_css() {
 
 	$site_title_manubar_font_family_override_box = '';
 	if( !empty( get_theme_mod( 'site_title_manubar_font_family_override_box' ) ) ) {

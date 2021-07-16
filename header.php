@@ -29,6 +29,8 @@
 			itemscope itemtype="https://schema.org/WebPage">
 
 	<?php wp_body_open(); ?>
+	
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'essence-t1' ); ?></a>
 
 	<div class="color-overlay"></div>
 
@@ -37,8 +39,6 @@
 	<div id="page-container" class="container site">
 
 		<div class="color-overlay"></div>
-
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'essence-t1' ); ?></a>
 
 		<header id="masthead" class="container site-header">
 			<div class="color-overlay"></div>
