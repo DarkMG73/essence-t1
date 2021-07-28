@@ -18,7 +18,7 @@ Kirki::add_section( 'footer_settings', array(
 		'type'        => 'custom',
 		'settings'    => 'footer_title_for_customizer',
 		'section'     => 'footer_settings',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider"><b>' . __( 'About This Section', 'essence-t1' ) . '</b></div>',
 		'priority'    => 0,
 	] );
 
@@ -46,7 +46,7 @@ Kirki::add_section( 'footer_settings', array(
         'type'        => 'custom',
         'settings'    => 'footer_background_title_for_customizer',
         'section'     => 'footer_settings',
-            'default'         => '<div class="customizer-divider">' . __( 'Footer Background Color', 'essence-t1' ) . '</div>',
+            'default'         => '<hr class="customizer-divider"><br></hr>',
         'priority'    => 10,
     ] );
 
@@ -91,14 +91,24 @@ Kirki::add_section( 'footer_settings', array(
    Footer Photo CTA
     
 ----------------------------
-*/  
+
+  /* Group HR
+	----------------------------*/  
+    Kirki::add_field( 'glassinteractive_theme_config', [
+        'type'        => 'custom',
+        'settings'    => 'footer_photo_cta_title_intro_hr',
+        'section'     => 'footer_settings',
+        'default'         => '<hr class="customizer-divider"><br></hr>',
+        'priority'    => 30,
+    ] );
+
 	/* Group Title
 	----------------------------*/  
     Kirki::add_field( 'glassinteractive_theme_config', [
         'type'        => 'custom',
         'settings'    => 'footer_photo_cta_title_for_customizer',
         'section'     => 'footer_settings',
-            'default'         => '<div class="customizer-divider">' . __( 'Photo Call-To-Action', 'essence-t1' ) . '</div>',
+            'default'         => '<div class="customizer-divider"><b>' . __( 'Photo Call-To-Action', 'essence-t1' ) . '</b></div>',
         'priority'    => 30,
     ] );
 
@@ -169,14 +179,15 @@ Kirki::add_section( 'footer_settings', array(
         $section = $photo['section'];
         $priority = $photo['priority'];
 
-        // Image Group Title
+            /* Group HR
+        ----------------------------*/  
         Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'custom',
-            'settings'    => $slug . 'subgroup_title_for_customizer',
+            'settings'    => $slug . 'subgroup_intro_hr',
             'section'     => 'footer_settings',
-            'default'         =>  ' <div class="photo-cta-image-subgroup-title">' . sprintf( esc_html('%s'), $section_title ) . ' Settings Group </div>',
+            'default'         => '<hr class="customizer-divider"><br></hr>',
             'priority'    => $priority,
-    ] );
+        ] );
    
         // Select the image
         Kirki::add_field( 'theme_config_id', [
@@ -418,7 +429,7 @@ Kirki::add_section( 'footer_settings', array(
         'type'        => 'custom',
         'settings'    => 'footer_copyright_title_for_customizer',
         'section'     => 'footer_settings',
-            'default'         => '<div class="customizer-divider">' . __( 'Copyright Text', 'essence-t1' ) . '</div>',
+        'default'         => '<hr class="customizer-divider"><br></hr>',
         'priority'    => 10,
     ] );
 
@@ -433,6 +444,15 @@ Kirki::add_section( 'footer_settings', array(
         'priority' => 10,
     ] );
 
+    	/* Group HR
+	----------------------------*/  
+    Kirki::add_field( 'glassinteractive_theme_config', [
+        'type'        => 'custom',
+        'settings'    => 'footer_copyright_end_hr_for_customizer',
+        'section'     => 'footer_settings',
+        'default'         => '<hr class="customizer-divider"><br></hr>',
+        'priority'    => 10,
+    ] );
 
     /*
     ----------------------------
@@ -447,7 +467,7 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'custom',
             'settings'    => 'footer_tos_title_for_customizer',
             'section'     => 'footer_settings',
-                'default'         => '<div class="customizer-divider">' . __( '"Terms of Service" Page', 'essence-t1' ) . '</div>',
+                'default'         => '<div class="customizer-divider"><b>' . __( '"Terms of Service" (TOS) Page', 'essence-t1' ) . '</b></div>',
             'priority'    => 10,
         ] );
 
@@ -456,7 +476,7 @@ Kirki::add_section( 'footer_settings', array(
         Kirki::add_field( 'glassinteractive_theme_config', [
             'type'        => 'toggle',
             'settings'    => 'footer_tos_on_off_toggle_setting',
-            'label'       => esc_html__( 'Terms of Service On/Off Switch', 'essence-t1' ),
+            'label'       => esc_html__( 'TOS On/Off Switch', 'essence-t1' ),
             'description' => __('If turned on, this will look for and use an exiting page titled "Terms of Service". This will then place a link to that page in the footer. We can override the linked-to page using the dropdown menu to link to any existing page we would like.', 'essence-t1' ),
             'section'     => 'footer_settings',
             'default'     => $generalThemeDefaults['footer']['footer_tos_on_off_toggle_setting'],
@@ -472,6 +492,15 @@ Kirki::add_section( 'footer_settings', array(
             'priority'    => 10,
         ] );
 
+    /* Group HR
+	----------------------------*/  
+    Kirki::add_field( 'glassinteractive_theme_config', [
+        'type'        => 'custom',
+        'settings'    => 'glassinteractive_footer_tos_page_end_hr',
+        'section'     => 'footer_settings',
+        'default'         => '<hr class="customizer-divider"><br></hr>',
+        'priority'    => 10,
+    ] );
 
     /*
     ----------------------------
@@ -486,7 +515,7 @@ Kirki::add_section( 'footer_settings', array(
             'type'        => 'custom',
             'settings'    => 'priacy_page_title_for_customizer',
             'section'     => 'footer_settings',
-                'default'         => '<div class="customizer-divider">' . __( '"Privacy Page" Link', 'essence-t1' ) . '</div>',
+                'default'         => '<div class="customizer-divider"><b>' . __( '"Privacy Page" Link', 'essence-t1' ) . '<b></div>',
             'priority'    => 10,
         ] );
 

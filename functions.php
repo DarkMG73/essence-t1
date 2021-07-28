@@ -9,16 +9,11 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.1.2' );
+	define( '_S_VERSION', '1.0.1.3' );
 }
 
 define( 'glassinteractive_DEV_MODE', false);
 
-// Dev use only
-// function  removeHeadCSS(){
-// 	unset($set_color_pallet);
-// }
-// add_action('wp_sitemaps_init', 'removeHeadCSS', 1);
 
 /****************
  * Includes

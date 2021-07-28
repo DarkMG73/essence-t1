@@ -27,8 +27,8 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'header_title_for_customizer',
 	'section'     => 'header_image',
-	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
-	'priority'    => 5,
+	'default'         => '<div class="intro-text customizer-divider"><b>' . __( 'About This Section', 'essence-t1' ) . '</b></div>',
+	'priority'    => 0,
 ] );
 
 Kirki::add_field( 'glassinteractive_theme_config', [

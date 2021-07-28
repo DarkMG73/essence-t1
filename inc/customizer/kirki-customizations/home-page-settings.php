@@ -31,7 +31,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'static_front_page_title_for_customizer',
 	'section'     => 'static_front_page',
-	'default'         => '<div class="intro-text customizer-divider">' . esc_html__(  'About This Section', 'essence-t1' ) . '</div>',
+	'default'         => '<div class="intro-text customizer-divider"><b>' . esc_html__(  'About This Section', 'essence-t1' ) . '</b></div>',
 	'priority'    => 0,
 ] );
 
@@ -40,7 +40,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 	'settings'    => 'static_front_page_intro_output_for_customizer',
 	'section'     => 'static_front_page',
 		'default'         => '<div class="intro-text"><p>' .esc_html__( 'Here we can define and adjust the "Home" and "Front" pages.', 'essence-t1' ) . '</p></div>',
-	'priority'    => 0,
+	'priority'    => 1,
 ] );
 
 
@@ -60,7 +60,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
         'label'       => esc_html__( 'Masonry Post Flow', 'essence-t1' ),
         'description'    => esc_html__('The standard WordPress layout for posts is a single column. Our theme provides a powerful and effective masonry post flow to display the posts in multiple columns without unnecessary whitespace. This masonry post flow is turned on and off here.', 'essence-t1' ),
         'section'     => 'static_front_page',
-        'default'     => '1',
+        'default'     => 'off',
         'priority'    => 10,
         'choices'     => [
             'on'  => esc_html__( 'Enabled', 'essence-t1' ),

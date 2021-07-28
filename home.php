@@ -45,7 +45,8 @@ get_header();
 		if ( have_posts() ) :
   
 			// Post flow enable on Home/Front Page section of the Customizer
-			if ( true == get_theme_mod( 'home_page_masonry_posts_enable_setting', true ) ) : 
+			echo get_theme_mod( 'home_page_masonry_posts_enable_setting' );
+			if ( 'on' == get_theme_mod( 'home_page_masonry_posts_enable_setting' ) ) : 
 				get_template_part( 'template-parts/post-flow', 'masonry', [ 'exclude_featured' => $exclude_featured ]);
 			else : 
 				get_template_part( 'template-parts/post-flow', 'one-column', [ 'exclude_featured' => $exclude_featured ]);

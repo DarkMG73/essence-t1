@@ -143,20 +143,6 @@ dynamic_sidebar( 'bottom-widget' );
 				</div><!-- .site-info-child -->
 
 				<?php
-					if( get_theme_mod( 'glassinteractive_report_file' ) ){
-						?>
-						<span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-						<div class="site-info-child">
-							<div class="download-link">
-							<a href="<?php echo esc_url(get_theme_mod( 'glassinteractive_report_file' )); ?>">Download Report</a><br>
-						
-							</div>
-						</div><!-- .site-info-child -->
-			    <?php
-				}
-				?>
-
-				<?php
 				if( get_theme_mod('footer_tos_on_off_toggle_setting') >= 1 ){
 				?>
 					<span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
@@ -182,7 +168,9 @@ dynamic_sidebar( 'bottom-widget' );
 									?><a href="<?php 
 									echo esc_url($tos_page_link);
 									?>
-									">Terms of Service</a>
+									">
+										<?php _e( 'Terms of Service', 'essence-t1' ) ?>
+									</a>
 						</div>
 					</div><!-- .site-info-child -->
 				<?php
@@ -220,73 +208,6 @@ dynamic_sidebar( 'bottom-widget' );
         		<?php
         		}
         		?>
-
-			<span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-
-			<div class="site-info-child">
-				<a href="/sitemap.xml">Sitemap</a>
-			</div><!-- .site-info-child -->
-
-			<?php
-			if( get_theme_mod( 'glassinteractive_facebook_handle' ) 	||
-							get_theme_mod( 'glassinteractive_twitter_handle' ) 	|| 
-							get_theme_mod( 'glassinteractive_email' ) 			||
-							get_theme_mod( 'glassinteractive_phone_number' )
-							) {
-			?>
-			<span class="sep">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
-
-				<div class="site-info-child">
-				
-						<div class="footer-social">
-							<?php
-							if( get_theme_mod( 'glassinteractive_facebook_handle' ) ){
-								?>
-								<a href="https://facebook.com/<?php echo esc_url(get_theme_mod( 'glassinteractive_facebook_handle' )); ?>" class="social-icon si-small si-borderless si-facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-								<?php
-							}
-							if( get_theme_mod( 'glassinteractive_twitter_handle' ) ){
-								?>
-								<a href="https://twitter.com/<?php echo esc_url(get_theme_mod( 'glassinteractive_twitter_handle' )); ?>" class="social-icon si-small si-borderless si-twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-								<?php
-							}
-							?>
-						</div>
-				</div><!-- .site-info-child -->
-			<?php
-			}
-			?>
-
-			<?php
-			if( get_theme_mod( 'glassinteractive_email' ) ){
-					?>
-				<div class="site-info-child">
-					<div class="footer-email">
-						<i class="icon-envelope2"></i> <?php echo esc_url(get_theme_mod( 'glassinteractive_email' )); ?>
-					</div>
-				</div><!-- .site-info-child -->
-			<?php
-			}
-			?>
-
-			<?php
-				if( get_theme_mod( 'glassinteractive_phone_number' ) ){
-					?>
-				<div class="site-info-child">
-					<div class="footer-phone-number">
-								<span class="middot">&middot;</span>
-								<i class="icon-headphones"></i> +<?php echo esc_html(get_theme_mod( 'glassinteractive_phone_number' )); ?>
-					</div>
-				</div><!-- .site-info-child -->
-			<?php
-			}
-			?>
 			
 			</div><!-- .site-info-container  -->
 		</footer><!-- #colophon -->

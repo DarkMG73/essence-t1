@@ -33,7 +33,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'background_title_for_customizer',
 	'section'     => 'background_image',
-	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
+	'default'         => '<div class="intro-text customizer-divider"><b>' . __( 'About This Section', 'essence-t1' ) . '</b></div>',
 	'priority'    => 0,
 ] );
 
@@ -42,7 +42,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 	'settings'    => 'background_intro_output_for_customizer',
 	'section'     => 'background_image',
 		'default'         => '<div class="intro-text"><p>Here we can setup the background for the body and the main content area. <i><b>NOTE:</b> Images will override colors.</i></p></div>',
-	'priority'    => 1,
+	'priority'    => 0,
 ] );
 
 /*
@@ -58,7 +58,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'body_background_title_for_customizer',
 		'section'     => 'background_image',
-		'default'         => '<div class="customizer-divider">' . __( 'Body Background', 'essence-t1' ) . '</div>',
+		'default'         => '<hr class="customizer-divider"><br></hr>',
 		'priority'    => 5,
 	] );
 
@@ -132,7 +132,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
 		'settings'    => 'content_background_title_for_customizer',
 		'section'     => 'background_image',
-		'default'         => '<div class="customizer-divider">' . __( 'Content Background', 'essence-t1' ) . '</div>',
+		'default'         => '<hr class="customizer-divider"><br></hr>',
 		'priority'    => 30,
 	] );
 

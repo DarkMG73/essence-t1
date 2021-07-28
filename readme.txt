@@ -2,9 +2,9 @@
 Donate link: https://www.glassinteractive.com/donate/
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, buddy-press, woo-commerce, customizable, professional
 Requires at least: 4.5
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 1.0.1.2
+Stable tag: 1.0.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -92,7 +92,26 @@ In addition, Essence T1 includes extended optimized support for:
 * Kirki Customizer Framework https://kirki.org/, (c) 2020 Ari Stathopoulos (@aristath), [MIT](https://opensource.org/licenses/MIT)
 * TGM Plugin Activation http://tgmpluginactivation.com, Copyright (c) 2011, Thomas Griffin, license  GPL-2.0+ https://opensource.org/licenses/gpl-2.0.php
 * minimasonry.js , Copyright (c) 2017 Spope, [MIT](https://opensource.org/licenses/MIT)
-* Image for theme screenshot, Copyright Mike Glass 
+* Image for theme default_avatar7.png, Copyright Mike Glass 
+License: CC0 1.0 Universal (CC0 1.0) 
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://i0.wp.com/www.essencetheme.glassinteractive.com/wp-content/themes/essence-t1/assets/images/default_avatar7.png?ssl=1.
+
+* Image 1 for theme screenshot: "Birds on White", Credit Mike Glass 
 License: CC0 1.0 Universal (CC0 1.0)
-License URL: https://www.essencetheme.glassinteractive.com/wp-content/uploads/2021/07/screenshot.jpg.
-* Image for theme default_avatar7.png, Copyright Mike Glass License: CC0 1.0 Universal (CC0 1.0) Source: https://i0.wp.com/www.essencetheme.glassinteractive.com/wp-content/themes/essence-t1/assets/images/default_avatar7.png?ssl=1.
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source:  https://www.essencetheme.glassinteractive.com/wp-content/uploads/2021/07/screenshot.jpg.
+* Image 2 for theme screenshot: "La Jolla 1", Credit Mike Glass 
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source:  https://www.essencetheme.glassinteractive.com/wp-content/uploads/2021/07/screenshot.jpg.
+* Image 3 for theme screenshot: "La Jolla 2", Credit Mike Glass 
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source:  https://www.essencetheme.glassinteractive.com/wp-content/uploads/2021/07/screenshot.jpg.
+* Image 4 for theme screenshot: "La Jolla 3", Credit Mike Glass 
+License: CC0 1.0 Universal (CC0 1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source:  https://www.essencetheme.glassinteractive.com/wp-content/uploads/2021/07/screenshot.jpg.
+
+

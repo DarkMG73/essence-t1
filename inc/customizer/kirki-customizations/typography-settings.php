@@ -26,9 +26,10 @@ Kirki::add_section( 'body_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'bodytext_title_for_customizer',
 		'section'     => 'body_text_type',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider"><b>' . __( 'About This Section', 'essence-t1' ) . '</b></div>',
 		'priority'    => 0,
 	] );
+
 
 	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
@@ -38,14 +39,12 @@ Kirki::add_section( 'body_text_type', array(
 		'priority'    => 0,
 	] );
 
-	/* Group Title
-	----------------------------*/  
 	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
-		'settings'    => 'body_text_title_for_customizer',
+		'settings'    => 'bodytext_title_hr',
 		'section'     => 'body_text_type',
-		'default'         => '<div class="customizer-divider">' . __( 'General Body Text', 'essence-t1' ) . '</div>',
-		'priority'    => 5,
+			'default'         => '<hr class="customizer-divider"><br></hr>',
+		'priority'    => 0,
 	] );
 
 	/* Body Font Field
@@ -117,7 +116,7 @@ Kirki::add_section( 'body_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'link_title_for_customizer',
 		'section'     => 'body_text_type',
-		'default'         => '<div class="customizer-divider">' . __( 'Link Text', 'essence-t1' ) . '</div>',
+		'default'         => '<hr class="customizer-divider"></hr>',
 		'priority'    => 40,
 	] );
 
@@ -201,9 +200,10 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'navtext_title_for_customizer',
 		'section'     => 'nav_text_type',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider"><b>' . __( 'About This Section', 'essence-t1' ) . '</b></div>',
 		'priority'    => 0,
 	] );
+
 
 	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
@@ -213,15 +213,14 @@ Kirki::add_section( 'nav_text_type', array(
 		'priority'    => 0,
 	] );
 
-	/* Group Title
-	----------------------------*/  
 	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
-		'settings'    => 'text_menubar_title_for_customizer',
+		'settings'    => 'navtext_title_hr',
 		'section'     => 'nav_text_type',
-		'default'         => '<div class="customizer-divider">' . __( 'General Text in Menubar', 'essence-t1' ) . '</div>',
-		'priority'    => 20,
+			'default'         => '<hr class="customizer-divider"><br></hr>',
+		'priority'    => 0,
 	] );
+
 
 	/* Nav Menu Bar General Text
 	----------------------------*/  
@@ -262,6 +261,15 @@ Kirki::add_section( 'nav_text_type', array(
 		],
 	] );
 
+	Kirki::add_field( 'glassinteractive_theme_config', [
+		'type'        => 'custom',
+		'settings'    => 'menu_bar_type_setting_hr',
+		'section'     => 'nav_text_type',
+			'default'         => '<hr class="customizer-divider"><br></hr>',
+		'priority'    => 20,
+	] );
+
+	
 /*
 ----------------------------
     
@@ -275,7 +283,7 @@ Kirki::add_section( 'nav_text_type', array(
 		'type'        => 'custom',
 		'settings'    => 'sitetitle_menubar_title_for_customizer',
 		'section'     => 'nav_text_type',
-		'default'         => '<div class="customizer-divider">' . __( 'Site Title in Menubar', 'essence-t1' ) . '</div>',
+		'default'         => '<div class="customizer-divider"><b>' . __( 'Site Title in Menubar', 'essence-t1' ) . '</b></div>',
 		'priority'    => 30,
 	] );
 
@@ -393,7 +401,7 @@ Kirki::add_section( 'nav_text_type', array(
 	Kirki::add_field( 'glassinteractive_theme_config', array(
 		'type'        => 'color',
 		'settings'    => 'color_title_menubar',
-		'label'       => __( 'Site Title in Menu Bar', 'essence-t1' ),
+		'label'       => __( 'Menubar Title Color', 'essence-t1' ),
 		'description' => esc_attr__( 'Set the color for the small site title in the menu bar.', 'essence-t1' ),
 		'section'     => 'nav_text_type',
 		'default'     => $generalThemeDefaults['typography']['color_title_menubar'],
@@ -442,7 +450,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'custom',
 		'settings'    => 'site_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider"><b>' . __( 'About This Section', 'essence-t1' ) . '</b></div>',
 		'priority'    => 0,
 	] );
 
@@ -454,6 +462,13 @@ Kirki::add_section( 'page_head_title_type', array(
 		'priority'    => 0,
 	] );
 
+	Kirki::add_field( 'glassinteractive_theme_config', [
+		'type'        => 'custom',
+		'settings'    => 'site_pagehead_title_hr',
+		'section'     => 'page_head_title_type',
+			'default'         => '<hr class="customizer-divider"><br></hr>',
+		'priority'    => 0,
+	] );
 
 	/* Site title Group Title
 	----------------------------*/
@@ -461,7 +476,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'custom',
 		'settings'    => 'sitetitle_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
-			'default'         => '<div class="customizer-divider">' . __( 'Page Head Site Title', 'essence-t1' ) . '</div>',
+			'default'         => '<div class="customizer-divider"><b>' . __( 'Page Head Site Title', 'essence-t1' ) . '</b></div>',
 		'priority'    => 50,
 	] );
 
@@ -672,6 +687,14 @@ Kirki::add_section( 'page_head_title_type', array(
 		) 
 	);
 
+	Kirki::add_field( 'glassinteractive_theme_config', [
+		'type'        => 'custom',
+		'settings'    => 'large_title_hr',
+		'section'     => 'page_head_title_type',
+			'default'         => '<hr class="customizer-divider"><br></hr>',
+		'priority'    => 60,
+	] );
+
 
 	/* Site Description Group Title
 	----------------------------*/
@@ -679,7 +702,7 @@ Kirki::add_section( 'page_head_title_type', array(
 		'type'        => 'custom',
 		'settings'    => 'sitedesc_pagehead_title_for_customizer',
 		'section'     => 'page_head_title_type',
-			'default'         => '<div class="customizer-divider">' . __( 'Page Head Site Description', 'essence-t1' ) . '</div>',
+			'default'         => '<div class="customizer-divider"><b>' . __( 'Page Head Site Description', 'essence-t1' ) . '</b></div>',
 		'priority'    => 70,
 	] );
 
@@ -904,19 +927,28 @@ Kirki::add_section( 'footer_text', array(
 	----------------------------*/  
 	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
-		'settings'    => 'footer_title_for_customizer',
+		'settings'    => 'footer_typography_title_for_customizer',
 		'section'     => 'footer_text',
-		'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
+		'default'         => '<div class="intro-text customizer-divider"><b>' . __( 'About This Section', 'essence-t1' ) . '</b></div>',
 		'priority'    => 0,
 	] );
 
 	Kirki::add_field( 'glassinteractive_theme_config', [
 		'type'        => 'custom',
-		'settings'    => 'footer_intro_for_customizer',
+		'settings'    => 'footer_typography_intro_for_customizer',
 		'section'     => 'footer_text',
 			'default'         => '<div class="intro-text"><p>Here we can set up the font, size, color and more for the footer text.</p></div>',
 		'priority'    => 0,
 	] );
+
+	Kirki::add_field( 'glassinteractive_theme_config', [
+		'type'        => 'custom',
+		'settings'    => 'footer_title_hr',
+		'section'     => 'footer_text',
+			'default'         => '<hr class="customizer-divider"><br></hr>',
+		'priority'    => 0,
+	] );
+
 
 
 	/* Group Title

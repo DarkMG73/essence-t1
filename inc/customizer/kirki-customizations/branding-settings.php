@@ -32,7 +32,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'branding_title_for_customizer',
 	'section'     => 'title_tagline',
-	'default'         => '<div class="intro-text customizer-divider">' . __( 'About This Section', 'essence-t1' ) . '</div>',
+	'default'         => '<div class="intro-text customizer-divider"><b>' . __( 'About This Section', 'essence-t1' ) . '</b></div>',
 	'priority'    => 0,
 ] );
 
@@ -52,12 +52,12 @@ Kirki::add_field( 'glassinteractive_theme_config', [
     Site Title and Tagline
     
 ----------------------------
-*/   
+*/    
 Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
-	'settings'    => 'title_tagline_output_for_customizer',
+	'settings'    => 'title_tagline_hr_for_customizer',
 	'section'     => 'title_tagline',
-		'default'         => '<div class="customizer-divider">' . __( 'Title & Tagline', 'essence-t1' ) . '</div>',
+		'default'         => '<hr class="customizer-divider"><br></hr>',
 	'priority'    => 2,
 ] );
 
@@ -73,7 +73,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 	'type'        => 'custom',
 	'settings'    => 'icon_output_for_customizer',
 	'section'     => 'title_tagline',
-		'default'         => '<div class="customizer-divider">' . __( 'Site Icon', 'essence-t1' ) . '</div>',
+		'default'         => '<hr class="customizer-divider"><br></hr>',
 	'priority'    => 7,
 ] );
 
@@ -91,7 +91,7 @@ Kirki::add_field( 'glassinteractive_theme_config', [
 	'settings'    => 'logo_output_for_customizer',
 	// 'label'       => esc_html__( 'This is the label', 'essence-t1' ), // optional
 	'section'     => 'title_tagline',
-		'default'         => '<div class="customizer-divider">' . __( 'Site Logo', 'essence-t1' ) . '</div>',
+	'default'         => '<hr class="customizer-divider"><br></hr>',
 	'priority'    => 19,
 ] );
 

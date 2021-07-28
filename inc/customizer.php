@@ -63,12 +63,6 @@ add_action( 'customize_preview_init', 'glassinteractive_essence_theme_customize_
 /**
  * Customizer admin styles and scripts
  */
-function glassinteractive_enqueue_customizer_stylesheet() {
-	wp_register_style( 'gi-essence-theme-customizer-css', get_template_directory_uri() . '/css/customizer.css', NULL, _S_VERSION, 'all' );
-	wp_enqueue_style( 'gi-essence-theme-customizer-css' );
-}
-add_action( 'customize_controls_print_styles', 'glassinteractive_enqueue_customizer_stylesheet', 10, 2 ); 
-
 function glassinteractive_enqueue_customizer_admin_scripts() {
 	wp_register_script( 'gi-essence-theme-customizer-admin-js', get_template_directory_uri() . '/js/customizer-admin.js', NULL, _S_VERSION, 'all' );
 	wp_enqueue_script( 'gi-essence-theme-customizer-admin-js' );
